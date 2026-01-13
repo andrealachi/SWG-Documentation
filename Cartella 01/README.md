@@ -8,6 +8,26 @@ The data model can be viewed at:
 
 ---
 
+
+> [!NOTE]
+> **Definizione — SoilSite**  
+> Sito (stazione) in cui vengono effettuate le osservazioni pedologiche e i rilievi associati.
+
+
+
+<details>
+  <summary><strong>Definizione — SoilSite</strong></summary>
+
+  Sito (stazione) in cui vengono effettuate le osservazioni pedologiche
+  e i rilievi associati.
+</details>
+
+
+<dl>
+  <dt>SoilSite</dt>
+  <dd>Sito (stazione) per osservazioni pedologiche e rilievi.</dd>
+</dl>
+
 ## Recreating the Geopackage Containing the SoilWise Structure
 
 To do this:  
@@ -30,6 +50,38 @@ To do this:
 
 
 ---
+
+> [!NOTE]
+> Questo è un blocco **Nota**: evidenzia informazioni utili da non perdere.
+
+> [!TIP]
+> Suggerimenti o best practice.
+
+> [!IMPORTANT]
+> Informazioni **cruciali** per il successo dell’operazione.
+
+> [!WARNING]
+> Contenuto **critico**: attenzione a possibili rischi.
+
+> [!CAUTION]
+> Conseguenze negative potenziali: prosegui con cautela.
+
+
+> [!NOTE]
+> Puoi inserire **testo**, _formattazione_, link e persino codice:
+> 
+> ```bash
+> # Esempio: esporta variabile d'ambiente per SoilWise
+> export SOILWISE_DB=/percorso/al/db.sqlite
+> ```
+> 
+> Vedi anche: documentazione/soilsite.md
+
+
+
+> Nota: questa operazione richiede i permessi di scrittura.
+``
+
 
 ## Create More Than One Geometric Layer Linked to the SoilBody Table  
 
