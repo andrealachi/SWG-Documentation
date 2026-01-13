@@ -52,6 +52,8 @@ Some names in the code need to be changed for it to work correctly, as described
 
 4. gpkg_geometry_columns INSERT 
     - 'soilbody_newname',  ** CHANGE NAME ** the name should be as entered in point 1
+    - 
+<img width="9933" height="8246" alt="Geopackage_05" src="https://github.com/user-attachments/assets/b09cdb52-0c3c-4d1c-bfe4-c5c2cf62000d" />
 
 ---
 # Database Structure Report
