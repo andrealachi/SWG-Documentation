@@ -92,7 +92,7 @@ INSPIRE registry
  
 
 ## List of Features with their respective codelists:
-
+![TABELLA SOILSITE EXP](https://github.com/user-attachments/assets/0f75ce14-0b79-430b-8d4e-e8e81c0d95e3)
 
 
 ### FEATURE soilsite
@@ -111,6 +111,24 @@ http://inspire.ec.europa.eu/codelist/SoilPlotTypeValue
 
 ### FEATURE  soilprofile
 
+
+
+<table>
+  <tr>
+    <td style="vertical-align: top;">
+      <img src="https://github.com/user-attachments/assets/0f75ce14-0b79-430b-8d4e-e8e81c0d95e3" width="220">
+    </td>
+    <td style="vertical-align: top;">
+      <strong>TABELLA SOILSITE EXP</strong><br>
+      Testo esplicativo su più righe.<br>
+      Anche qui puoi usare Markdown (grassetto, link) dentro l’HTML.
+    </td>
+  </tr>
+</table>
+``
+
+
+
 WRBReferenceSoilGroupValue (2006)
 CODELIST ***INSPIRE***
 http://inspire.ec.europa.eu/codelist/WRBReferenceSoilGroupValue
@@ -126,12 +144,38 @@ https://obrl-soil.github.io/wrbsoil2022/
 
 ### FEATURE othersoilnametype
 
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation">
+  <tr>
+    <td width="35%" valign="top">
+      <img src="https://github.com/user-attachments/assets/0f75ce14-0b79-430b-8d4e-e8e81c0d95e3"
+           alt="TABELLA SOILSITE EXP" width="220">
+    </td>
+    <td width="65%" valign="top">
+      <strong>TABELLA SOILSITE EXP</strong><br>
+      Testo a destra dell’immagine su più righe. Puoi inserire link, elenchi ecc.
+    </td>
+  </tr>
+</table>
+
+
 OtherSoilNameTypeValue
 CODELIST ***INSPIRE***
 https://inspire.ec.europa.eu/codelist/OtherSoilNameTypeValue 
 
 
 ### FEATURE profileelement
+<p>&nbsp;</p>
+
+<p>
+  <img src="https://github.com/user-attachments/assets/0f75ce14-0b79-430b-8d4e-e8e81c0d95e3"
+       alt="TABELLA SOILSITE EXP" align="left" width="220">
+  <strong>TABELLA SOILSITE EXP</strong><br>
+  Testo a destra dell’immagine. Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando un anonimo tipografo prese una cassetta di caratteri e li assemblò per preparare un testo campione. È sopravvissuto non solo a più di cinque secoli, ma anche al passaggio alla videoimpaginazione, pervenendoci sostanzialmente inalterato. Fu reso popolare, negli anni ’60, con la diffusione dei fogli di caratteri trasferibili “Letraset”, che contenevano passaggi del Lorem Ipsum, e più recentemente da software di impaginazione come Aldus PageMaker, che includeva versioni del Lorem Ipsum.
+</p>
+
+<br clear="all">
+<p>&nbsp;</p>
 
 LayerTypeValue
 CODELIST ***INSPIRE***
