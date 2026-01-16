@@ -8,7 +8,29 @@ The data model can be viewed at:
 
 ---
 
+
+> [!NOTE]
+> **Definizione — SoilSite**  
+> Sito (stazione) in cui vengono effettuate le osservazioni pedologiche e i rilievi associati.
+
+
+
+<details>
+  <summary><strong>Definizione — SoilSite</strong></summary>
+
+  Sito (stazione) in cui vengono effettuate le osservazioni pedologiche
+  e i rilievi associati.
+</details>
+
+
+<dl>
+  <dt>SoilSite</dt>
+  <dd>Sito (stazione) per osservazioni pedologiche e rilievi.</dd>
+</dl>
+
 ## Recreating the Geopackage Containing the SoilWise Structure
+
+
 
 To do this:  
 1. Open the empty GeoPackage model available at [http://www.geopackage.org/data/empty.gpkg](http://www.geopackage.org/data/empty.gpkg) using a database manager (e.g., DBeaver).  
@@ -31,6 +53,38 @@ To do this:
 
 ---
 
+> [!NOTE]
+> Questo è un blocco **Nota**: evidenzia informazioni utili da non perdere.
+
+> [!TIP]
+> Suggerimenti o best practice.
+
+> [!IMPORTANT]
+> Informazioni **cruciali** per il successo dell’operazione.
+
+> [!WARNING]
+> Contenuto **critico**: attenzione a possibili rischi.
+
+> [!CAUTION]
+> Conseguenze negative potenziali: prosegui con cautela.
+
+
+> [!NOTE]
+> Puoi inserire **testo**, _formattazione_, link e persino codice:
+> 
+> ```bash
+> # Esempio: esporta variabile d'ambiente per SoilWise
+> export SOILWISE_DB=/percorso/al/db.sqlite
+> ```
+> 
+> Vedi anche: documentazione/soilsite.md
+
+
+
+> Nota: questa operazione richiede i permessi di scrittura.
+``
+
+
 ## Create More Than One Geometric Layer Linked to the SoilBody Table  
 
 It is possible to create more than one geometric layer linked to the SoilBody table, to do this use the code provided in `SoilBody_newgeom.sql`.
@@ -52,6 +106,9 @@ Some names in the code need to be changed for it to work correctly, as described
 
 4. gpkg_geometry_columns INSERT 
     - 'soilbody_newname',  ** CHANGE NAME ** the name should be as entered in point 1
+
+<h1 align="center">Geopackage SoilWise</h1>
+<img width="9933" height="8246" alt="Geopackage_05" src="https://github.com/user-attachments/assets/b09cdb52-0c3c-4d1c-bfe4-c5c2cf62000d" />
 
 ---
 # Database Structure Report
@@ -90,7 +147,7 @@ INSPIRE registry
  
 
 ## List of Features with their respective codelists:
-
+![TABELLA SOILSITE EXP](https://github.com/user-attachments/assets/0f75ce14-0b79-430b-8d4e-e8e81c0d95e3)
 
 
 ### FEATURE soilsite
@@ -109,6 +166,24 @@ http://inspire.ec.europa.eu/codelist/SoilPlotTypeValue
 
 ### FEATURE  soilprofile
 
+
+
+<table>
+  <tr>
+    <td style="vertical-align: top;">
+      <img src="https://github.com/user-attachments/assets/0f75ce14-0b79-430b-8d4e-e8e81c0d95e3" width="220">
+    </td>
+    <td style="vertical-align: top;">
+      <strong>TABELLA SOILSITE EXP</strong><br>
+      Testo esplicativo su più righe.<br>
+      Anche qui puoi usare Markdown (grassetto, link) dentro l’HTML.
+    </td>
+  </tr>
+</table>
+``
+
+
+
 WRBReferenceSoilGroupValue (2006)
 CODELIST ***INSPIRE***
 http://inspire.ec.europa.eu/codelist/WRBReferenceSoilGroupValue
@@ -124,12 +199,38 @@ https://obrl-soil.github.io/wrbsoil2022/
 
 ### FEATURE othersoilnametype
 
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation">
+  <tr>
+    <td width="35%" valign="top">
+      <img src="https://github.com/user-attachments/assets/0f75ce14-0b79-430b-8d4e-e8e81c0d95e3"
+           alt="TABELLA SOILSITE EXP" width="220">
+    </td>
+    <td width="65%" valign="top">
+      <strong>TABELLA SOILSITE EXP</strong><br>
+      Testo a destra dell’immagine su più righe. Puoi inserire link, elenchi ecc.
+    </td>
+  </tr>
+</table>
+
+
 OtherSoilNameTypeValue
 CODELIST ***INSPIRE***
 https://inspire.ec.europa.eu/codelist/OtherSoilNameTypeValue 
 
 
 ### FEATURE profileelement
+<p>&nbsp;</p>
+
+<p>
+  <img src="https://github.com/user-attachments/assets/0f75ce14-0b79-430b-8d4e-e8e81c0d95e3"
+       alt="TABELLA SOILSITE EXP" align="left" width="220">
+  <strong>TABELLA SOILSITE EXP</strong><br>
+  Testo a destra dell’immagine. Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando un anonimo tipografo prese una cassetta di caratteri e li assemblò per preparare un testo campione. È sopravvissuto non solo a più di cinque secoli, ma anche al passaggio alla videoimpaginazione, pervenendoci sostanzialmente inalterato. Fu reso popolare, negli anni ’60, con la diffusione dei fogli di caratteri trasferibili “Letraset”, che contenevano passaggi del Lorem Ipsum, e più recentemente da software di impaginazione come Aldus PageMaker, che includeva versioni del Lorem Ipsum.
+</p>
+
+<br clear="all">
+<p>&nbsp;</p>
 
 LayerTypeValue
 CODELIST ***INSPIRE***
