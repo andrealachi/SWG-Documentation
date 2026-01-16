@@ -1,0 +1,228 @@
+name,guid,definition,values_count,values_preview,values_file
+weatherConditions,d0a10f1a-d94a-468a-8fed-13521650e943,http://w3id.org/glosis/model/codelists/weatherConditionsValueCode,12,extremely rainy time or snow melting; heavier rain for some days or rainstorm in the last 24 hours; no rain in the last 24 hours,values/weatherConditionsValueCode.csv
+coatingAbundance,627db445-b83f-489e-908b-0e92c5b4a472,http://w3id.org/glosis/model/codelists/coatingAbundanceValueCode,7,Abundant; Common; Dominant,values/coatingAbundanceValueCode.csv
+weathering,d6ce95a9-b748-4845-84e9-fe8482335360,http://w3id.org/glosis/model/codelists/weatheringValueCode,3,Fresh or slightly weathered; Strongly weathered; Weathered,values/weatheringValueCode.csv
+coatingContrast,f7bf91b9-865b-4126-888a-e7e4d689f9f2,http://w3id.org/glosis/model/codelists/coatingContrastValueCode,3,Distinct; Faint; Prominent,values/coatingContrastValueCode.csv
+coatingForm,504817cb-8115-47db-aca2-a13170cc0781,http://w3id.org/glosis/model/codelists/coatingFormValueCode,6,"Continuous; Continuous irregular (non-uniform, heterogeneous); Dendroidal",values/coatingFormValueCode.csv
+biologicalFeatures,3ad10ad2-d7ba-4f99-b5b1-32eb1d9bde1e,http://w3id.org/glosis/model/codelists/biologicalFeaturesValueCode,9,Artefacts; Burrows (unspecified); Charcoal,values/biologicalFeaturesValueCode.csv
+coatingLocation,05dcae1a-3230-49a9-8994-be7c84dc4a02,http://w3id.org/glosis/model/codelists/coatingLocationValueCode,8,Bridges between sand grains; Coarse fragments; Horizontal pedfaces,values/coatingLocationValueCode.csv
+coatingNature,ac965fe5-f26f-470e-b19a-ce30f88c519e,http://w3id.org/glosis/model/codelists/coatingNatureValueCode,18,Calcium carbonate; Clay; Clay and humus (organic matter),values/coatingNatureValueCode.csv
+consistenceDry,6560d880-e7f8-4942-b6e5-95c720d2fd4b,http://w3id.org/glosis/model/codelists/consistenceDryValueCode,9,Extremely hard; Hard; hard to very hard,values/consistenceDryValueCode.csv
+consistenceMoist,02b78802-dd53-4c9f-a6df-31adc2a81f6e,http://w3id.org/glosis/model/codelists/consistenceMoistValueCode,6,Extremely firm; Firm; Friable,values/consistenceMoistValueCode.csv
+contrast,165dc060-e2d7-4b46-b7d4-796e66ba4e3c,http://w3id.org/glosis/model/codelists/contrastValueCode,3,Distinct; Faint; Prominent,values/contrastValueCode.csv
+cracksDepth,5ca22b00-f3b7-4c61-978c-4ca125b59a9b,http://w3id.org/glosis/model/codelists/cracksDepthValueCode,4,Deep 10–20; Medium 2–10; Surface < 2,values/cracksDepthValueCode.csv
+cracksDistance,35aa0ef0-ca64-4115-980d-989865da8777,http://w3id.org/glosis/model/codelists/cracksDistanceValueCode,5,Closely spaced 0.2–0.5; Moderately widely spaced 0.5–2; Very closely spaced < 0.2,values/cracksDistanceValueCode.csv
+cracksWidth,4888bca3-64d5-430a-9b23-aee441a77660,http://w3id.org/glosis/model/codelists/cracksWidthValueCode,5,Extremely wide > 10cm; Fine < 1cm; Medium 1cm–2cm,values/cracksWidthValueCode.csv
+cropClass,dc62f0cc-ef7b-4284-87d3-38430154c422,http://w3id.org/glosis/model/codelists/cropClassValueCode,57,Alfalfa; Apples; Bananas,values/cropClassValueCode.csv
+bleachedSand,3413b056-fef2-4e27-9eaa-772c6b8b21d6,http://w3id.org/glosis/model/codelists/bleachedSandValueCode,5,Bleached sand of surface coverage  40-80%; Bleached sand of surface coverage 0-2%; Bleached sand of surface coverage 15-40%,values/bleachedSandValueCode.csv
+erosionActivityPeriod,ff123064-31c0-45e9-a504-3f59a3e24991,http://w3id.org/glosis/model/codelists/erosionActivityPeriodValueCode,5,Accelerated and natural erosion not distinguished; Active at present; Active in historical times,values/erosionActivityPeriodValueCode.csv
+erosionAreaAffected,e9df9ce3-5925-4d27-a29e-fffe2fbfc43a,http://w3id.org/glosis/model/codelists/erosionAreaAffectedValueCode,6,Between 0% and 5%; Between 10% and 25%; Between 25% and 50%,values/erosionAreaAffectedValueCode.csv
+erosionCategory,4b0309c2-d7b8-4f0f-9b72-65ba285f2555,http://w3id.org/glosis/model/codelists/erosionCategoryValueCode,15,Deposition by water; Gully erosion; Mass movement,values/erosionCategoryValueCode.csv
+erosionDegree,238d4717-ca4c-455d-92d6-21cc870aedee,http://w3id.org/glosis/model/codelists/erosionDegreeValueCode,4,Extreme; Moderate; Severe,values/erosionDegreeValueCode.csv
+erosionTotalAreaAffected,a127e308-7fe5-4f09-815d-63eb1c6cef88,http://w3id.org/glosis/model/codelists/erosionTotalAreaAffectedValueCode,6,Between 0% and 5%; Between 10% and 25%; Between 25% and 50%,values/erosionTotalAreaAffectedValueCode.csv
+boundaryClassification,9f6f76fe-773d-4451-a53e-b59593b31295,http://w3id.org/glosis/model/codelists/boundaryClassificationValueCode,3,Clear; Diffuse; Sharp,values/boundaryClassificationValueCode.csv
+fragmentCover,15ab8cac-5ae8-4528-b4b4-e1baa7f83187,http://w3id.org/glosis/model/codelists/fragmentCoverValueCode,7,Abundant; Common; Dominant,values/fragmentCoverValueCode.csv
+fragmentsClass,5a3c8cd1-73cc-4701-b96c-59e680d7cb1a,http://w3id.org/glosis/model/codelists/fragmentsClassValueCode,10,FragmentsGravimetricFraction01; FragmentsGravimetricFraction02; FragmentsGravimetricFraction03,values/fragmentsClassValueCode.csv
+fragmentsSize,71af80ac-8274-42c6-a960-bab2a203cf3b,http://w3id.org/glosis/model/codelists/fragmentsSizeValueCode,6,Boulders; Coarse gravel; Fine gravel,values/fragmentsSizeValueCode.csv
+gypsumContent,10903413-9e20-4b5c-8afe-8e8e0300468f,http://w3id.org/glosis/model/codelists/gypsumContentValueCode,5,Extremely gypsiric; Moderately gypsiric; Non-gypsiric,values/gypsumContentValueCode.csv
+gypsumForms,63af6715-ce4f-4830-a0aa-9c7666086d90,http://w3id.org/glosis/model/codelists/gypsumFormsValueCode,4,disperse powdery gypsum; gazha; hard cemented layer or layers of gypsum,values/gypsumFormsValueCode.csv
+boundaryDistinctness,cb1379e6-651d-4da8-b500-ed968de95d78,http://w3id.org/glosis/model/codelists/boundaryDistinctnessValueCode,4,Abrupt; Clear; Diffuse,values/boundaryDistinctnessValueCode.csv
+humanInfluenceClass,0d8d668a-6036-4858-9c92-564eccac7019,http://w3id.org/glosis/model/codelists/humanInfluenceClassValueCode,35,"Application of fertilizers; Archaeological (burial mound, midden); Artificial drainage",values/humanInfluenceClassValueCode.csv
+landUseClass,4072bfd6-547d-4cf1-9a1d-f3f9e1a9031b,http://w3id.org/glosis/model/codelists/landUseClassValueCode,50,Agroforestry; Agropastoralism; Animal husbandry,values/landUseClassValueCode.csv
+boundaryTopography,dde3a4b4-95ae-437d-83de-01e51f933af8,http://w3id.org/glosis/model/codelists/boundaryTopographyValueCode,4,Broken; Irregular; Smooth,values/boundaryTopographyValueCode.csv
+landformComplex,a0df5bce-34de-443d-bd74-0923262eeff8,http://w3id.org/glosis/model/codelists/landformComplexValueCode,9,Cuesta-shaped; Dome-shaped; Dune-shaped,values/landformComplexValueCode.csv
+bulkDensityMineral,3a6537c7-7866-4ce5-a98a-ea2c95f93f7f,http://w3id.org/glosis/model/codelists/bulkDensityMineralValueCode,5,"Knife can be pushed into the moist soil with weak pressure, sample disintegrates into few fragments, which may be further divided.; Knife penetrates only 1–2 cm into the moist soil, some effort required, sample disintegrates into few fragments, which cannot be subdivided further.; Many pores, moist materials drop easily out of the auger.",values/bulkDensityMineralValueCode.csv
+lithology,579fb467-0153-4f3f-9e3c-87b1cc9612f6,http://w3id.org/glosis/model/codelists/lithologyValueCode,88,(green)schist; acid igneous; acid metamorphic,values/lithologyValueCode.csv
+bulkDensityPeat,ecab7a7c-16dc-49e3-8a69-4387c7cde3f0,http://w3id.org/glosis/model/codelists/bulkDensityPeatValueCode,5,Low; Moderate high; Moderate low,values/bulkDensityPeatValueCode.csv
+majorLandForm,4b9886ab-b838-4a4f-9715-31b68a57184b,http://w3id.org/glosis/model/codelists/majorLandFormValueCode,16,depression; dissected plain; high-gradient escarpment zone,values/majorLandFormValueCode.csv
+mineralConcColour,3ae52955-c2f4-45ec-b628-32b9a85558d4,http://w3id.org/glosis/model/codelists/mineralConcColourValueCode,17,Black; Blue; Bluish-black,values/mineralConcColourValueCode.csv
+carbonatesContent,9fcd867c-fc4d-427c-beca-5112b030f256,http://w3id.org/glosis/model/codelists/carbonatesContentValueCode,5,Extremely calcareous; Moderately calcareous; Non-calcareous,values/carbonatesContentValueCode.csv
+mineralConcHardness,ece0eae1-f849-4ecf-b466-67834e554831,http://w3id.org/glosis/model/codelists/mineralConcHardnessValueCode,3,Both hard and soft.; Hard; Soft,values/mineralConcHardnessValueCode.csv
+mineralConcKind,337fcb51-ba33-4dc4-9ad1-7772378ce0bd,http://w3id.org/glosis/model/codelists/mineralConcKindValueCode,9,Concretion; Crack infillings; Crystal,values/mineralConcKindValueCode.csv
+mineralConcNature,a3d7b957-3adf-423f-ba25-ac5070ffd4a8,http://w3id.org/glosis/model/codelists/mineralConcNatureValueCode,14,Carbonates (calcareous); Carbonates–silica; Clay (argillaceous),values/mineralConcNatureValueCode.csv
+mineralConcShape,56589846-0f0b-4c86-913d-b8795c6b30ac,http://w3id.org/glosis/model/codelists/mineralConcShapeValueCode,5,Angular; Elongated; Flat,values/mineralConcShapeValueCode.csv
+mineralConcSize,19231507-3d71-4cb0-b4fd-c2646d947ff8,http://w3id.org/glosis/model/codelists/mineralConcSizeValueCode,4,Coarse; Fine; Medium,values/mineralConcSizeValueCode.csv
+mineralConcVolume,f31153c3-375f-44ef-bfba-2e461350c198,http://w3id.org/glosis/model/codelists/mineralConcVolumeValueCode,7,Abundant; Common; Dominant,values/mineralConcVolumeValueCode.csv
+mineralFragments,7a5ae2f2-47bf-417a-ac93-bc85d46049cf,http://w3id.org/glosis/model/codelists/mineralFragmentsValueCode,3,Feldspar; Mica; Quartz,values/mineralFragmentsValueCode.csv
+mottlesAbundance,64cc7436-5c58-45f5-9577-47e6cba8c9da,http://w3id.org/glosis/model/codelists/mottlesAbundanceValueCode,6,Abundant; Common; Few,values/mottlesAbundanceValueCode.csv
+carbonatesForms,e1550663-3b05-4549-b4ce-5d22e6a8af74,http://w3id.org/glosis/model/codelists/carbonatesFormsValueCode,7,disperse powdery lime; hard cemented layer or layers of carbonates (less than 10 cm thick); hard concretions,values/carbonatesFormsValueCode.csv
+mottlesSize,a2c73d17-795e-419d-876c-c61e55351613,http://w3id.org/glosis/model/codelists/mottlesSizeValueCode,4,Coarse; F Fine; M Medium,values/mottlesSizeValueCode.csv
+peatDecompostion,ca88d2ef-255a-4a78-9ec4-6bc05e261b7e,http://w3id.org/glosis/model/codelists/peatDecompostionValueCode,9,Fibric; Hemic; low,values/peatDecompostionValueCode.csv
+peatDrainage,41cb0388-aa0c-481c-a32e-9d1ec8121e6e,http://w3id.org/glosis/model/codelists/peatDrainageValueCode,4,Moderately drained; Undrained; Weakly drained,values/peatDrainageValueCode.csv
+peatVolume,1f6f81e9-d184-415d-b64c-c25b09d16d97,http://w3id.org/glosis/model/codelists/peatVolumeValueCode,5,Between 3% and 5%; Between 5% and 8%; Between 8% and 12%,values/peatVolumeValueCode.csv
+cementationContinuity,3b0b162a-6615-46b4-bf47-fe99c40b3d64,http://w3id.org/glosis/model/codelists/cementationContinuityValueCode,3,Broken; Continuous; Discontinuous,values/cementationContinuityValueCode.csv
+biologicalAbundance,548f769f-6254-4576-959a-c95d6227edb3,http://w3id.org/glosis/model/codelists/biologicalAbundanceValueCode,4,Common; Few; Many,values/biologicalAbundanceValueCode.csv
+cementationDegree,b73016ca-9fa0-42ce-827c-49ad07fdca2b,http://w3id.org/glosis/model/codelists/cementationDegreeValueCode,6,Cemented; Compacted but non-cemented; Indurated,values/cementationDegreeValueCode.csv
+physiography,e6a9dfc8-8b47-4192-9f1d-8b9a0185a223,http://w3id.org/glosis/model/codelists/physiographyValueCode,10,Bottom (drainage line); Bottom (flat); Crest (summit),values/physiographyValueCode.csv
+plasticity,1efa3a27-5a9c-43e4-8a3a-9cc36e56a05d,http://w3id.org/glosis/model/codelists/plasticityValueCode,6,Non-plastic; Plastic; plastic to very plastic,values/plasticityValueCode.csv
+poresAbundance,a043b2c2-ce9d-4d9c-81a1-efe6d00c9bb5,http://w3id.org/glosis/model/codelists/poresAbundanceValueCode,5,Common; Few; Many,values/poresAbundanceValueCode.csv
+porosityClass,f71060d3-12fc-4cd3-8747-ef5f2e7c3fff,http://w3id.org/glosis/model/codelists/porosityClassValueCode,5,High; Low; Medium,values/porosityClassValueCode.csv
+profileDescriptionStatus,9db8169c-05e9-4b3e-90b8-4386d34681d3,http://w3id.org/glosis/model/codelists/profileDescriptionStatusValueCode,9,Incomplete description; Incomplete description - no sampling; Other descriptions,values/profileDescriptionStatusValueCode.csv
+rockAbundance,22a71ab2-9383-4d1c-b237-12af30405e56,http://w3id.org/glosis/model/codelists/rockAbundanceValueCode,8,Abundant; Common; Dominant,values/rockAbundanceValueCode.csv
+rockOutcropsCover,dc1ad36e-930f-4cb3-aa7a-db895113a126,http://w3id.org/glosis/model/codelists/rockOutcropsCoverValueCode,7,Abundant; Common; Dominant,values/rockOutcropsCoverValueCode.csv
+rockOutcropsDistance,c428a347-3902-4960-8233-bab471833805,http://w3id.org/glosis/model/codelists/rockOutcropsDistanceValueCode,5,Between 20m and 50m; Between 2m and 5m; Between 5m and 20m,values/rockOutcropsDistanceValueCode.csv
+rockShape,d7b2a2dd-42c5-42d4-b611-3413097a0199,http://w3id.org/glosis/model/codelists/rockShapeValueCode,4,Angular; Flat; Rounded,values/rockShapeValueCode.csv
+rockSize,5e1bf331-8652-46f3-8d04-5a19d50bdcc0,http://w3id.org/glosis/model/codelists/rockSizeValueCode,18,Artefacts; Boulders; Boulders and large boulders,values/rockSizeValueCode.csv
+cementationFabric,30b93785-2f67-4772-8b09-61a02191967a,http://w3id.org/glosis/model/codelists/cementationFabricValueCode,4,Nodular; Pisolithic; Platy,values/cementationFabricValueCode.csv
+rootsAbundance,d1b1458e-0214-4029-9146-8c65bdf2ff0c,http://w3id.org/glosis/model/codelists/rootsAbundanceValueCode,5,Common; Few; Many,values/rootsAbundanceValueCode.csv
+saltContent,41d9b473-8495-4e1c-b55e-2b41de565ea7,http://w3id.org/glosis/model/codelists/saltContentValueCode,6,(nearly)Not salty; Extremely salty; Moderately salty,values/saltContentValueCode.csv
+saltCover,1ae54454-9160-4248-af0f-158a02af057e,http://w3id.org/glosis/model/codelists/saltCoverValueCode,5,Dominant; High; Low,values/saltCoverValueCode.csv
+saltThickness,23f9b107-6248-438d-a9ab-0d1637727b6c,http://w3id.org/glosis/model/codelists/saltThicknessValueCode,5,Medium; None; Thick,values/saltThicknessValueCode.csv
+cementationNature,7c81b713-250b-4475-afb0-23958c54f52a,http://w3id.org/glosis/model/codelists/cementationNatureValueCode,13,Carbonates; Carbonates–silica; Clay,values/cementationNatureValueCode.csv
+sandyTexture,b7587f36-55b5-42ee-b76d-668a24bfdc41,http://w3id.org/glosis/model/codelists/sandyTextureValueCode,10,Coarse sand; Coarse sandy loam; Fine sand,values/sandyTextureValueCode.csv
+sealingConsistence,6823eefa-ed63-4348-92e9-052ed5f29d8c,http://w3id.org/glosis/model/codelists/sealingConsistenceValueCode,4,Extremely hard; Hard; Slightly hard,values/sealingConsistenceValueCode.csv
+sealingThickness,d77da748-b058-45da-9f77-8a772d739b51,http://w3id.org/glosis/model/codelists/sealingThicknessValueCode,5,Medium; None; Thick,values/sealingThicknessValueCode.csv
+slopeForm,cf9e5069-7d46-4938-affa-de8b8e9fcca7,http://w3id.org/glosis/model/codelists/slopeFormValueCode,5,complex (irregular); concave; convex,values/slopeFormValueCode.csv
+slopeGradientClass,32f83c56-58c6-4c36-a85d-d9a453877058,http://w3id.org/glosis/model/codelists/slopeGradientClassValueCode,10,Flat; Gently sloping; Level,values/slopeGradientClassValueCode.csv
+slopePathways,8a850c34-6aa0-480f-a3f4-f7adc7114cad,http://w3id.org/glosis/model/codelists/slopePathwaysValueCode,9,CC; CS; CV,values/slopePathwaysValueCode.csv
+stickiness,228b7b7b-df51-4d25-bb07-fcd8543827f7,http://w3id.org/glosis/model/codelists/stickinessValueCode,6,Non-sticky; Slightly sticky; slightly sticky to sticky,values/stickinessValueCode.csv
+structureGrade,5a46dd1b-9e8d-4138-86aa-410289cdfe57,http://w3id.org/glosis/model/codelists/structureGradeValueCode,5,Moderate; Moderate to strong; Strong,values/structureGradeValueCode.csv
+structureSize,c40a1e8a-9aa1-4f97-be5b-f053ce8a2890,http://w3id.org/glosis/model/codelists/structureSizeValueCode,6,Coarse/thick; Extremely coarse; Fine/thin,values/structureSizeValueCode.csv
+surfaceAge,953a3ce0-f992-43a9-b746-aeb3b559310c,http://w3id.org/glosis/model/codelists/surfaceAgeValueCode,14,"Holocene anthropogeomorphic; Holocene natural; Late Pleistocene, ice covered",values/surfaceAgeValueCode.csv
+vegetationClass,8e18bd14-f491-43b9-b866-afafabf7ae5d,http://w3id.org/glosis/model/codelists/vegetationClassValueCode,29,Closed forest; Coniferous forest; Deciduous dwarf shrub,values/vegetationClassValueCode.csv
+voidsClassification,cef6d110-c603-4280-ae7d-52c013e4b292,http://w3id.org/glosis/model/codelists/voidsClassificationValueCode,5,Channels; Interstitial; Planes,values/voidsClassificationValueCode.csv
+voidsDiameter,c8cc9fff-f4eb-470d-a1fc-38c0793ad77e,http://w3id.org/glosis/model/codelists/voidsDiameterValueCode,8,Coarse; Fine; fine and medium,values/voidsDiameterValueCode.csv
+Aciexc,fa690496-bbd4-4fb9-aa85-6edb70b78e5e,http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Aciexc,0,,
+Aciext,aa6e259d-e2b9-4fc8-8fa2-9f77477c2433,http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Aciext,0,,
+Alu,c8fda617-0615-4901-bc7b-ae99caaf2820,http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Alu,0,,
+Aludit,c82f2de7-287c-411b-9486-2b74adb2e72c,http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Aludit,0,,
+Aluexc,790f3270-ac45-4e5c-a675-f2f43c3df547,http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Aluexc,0,,
+Aluext,dbc9b971-620e-45a6-8b42-8184bc505bd0,http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Aluext,0,,
+Aluoxa,a7eec5f0-15d2-494d-8fc5-e6e1d559081a,http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Aluoxa,0,,
+Alupyr,fde6a5f3-0e7f-4841-86b3-a2aaf330a1b6,http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Alupyr,0,,
+Alusat,5eadcbe9-36c8-465c-98d3-21135574b384,http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Alusat,0,,
+Alutot,f5ba4320-09c9-4cb5-8a05-742158e47a7b,http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Alutot,0,,
+Avavol,e95103ee-f9b2-4c8d-9577-9591bc568017,http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Avavol,0,,
+Bascal,bf771dfa-b719-4460-9a80-cb4a026ebf64,http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Bascal,0,,
+Basexc,f9fedb81-83cd-4adf-9bb5-e5e614a01a24,http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Basexc,0,,
+Bassum,63285183-74f1-49e2-8f12-cce6870f9737,http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Bassum,0,,
+Borext,19f75870-1382-4e53-b348-28d4b76d5283,http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Borext,0,,
+Bortot,c4d46d2f-db48-4cb1-8536-1dc477d89ee5,http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Bortot,0,,
+Brod,45706630-b0a0-4d03-b05b-9b0bb036f737,http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Brod,0,,
+Brot,91d7cd70-c294-45e9-a729-569ec84f1a23,http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Brot,0,,
+BulDfine,98861b36-7670-4c00-a886-3f501ca294df,http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-BulDfine,0,,
+BulDwhole,bfa9f4e4-04cf-436b-b942-3f3e4850a11b,http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-BulDwhole,0,,
+CEC,ab6ebe5f-be2e-48b2-ba21-c77febd9f072,http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-CEC,0,,
+CaN,ee5da973-b6b1-4bd7-b0bc-d3b12b5b44be,http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-CaN,0,,
+Cad,ea67fefe-5328-4e3e-a3cd-e73192682a9c,http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Cad,0,,
+Calexc,8bff64ab-5bf2-46ea-90d1-a3ed0e3501b1,http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Calexc,0,,
+Calext,7e2579dd-b674-405b-bfde-d3b67868d851,http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Calext,0,,
+Calfra,9120a40f-8800-4e7a-86b1-6a5b1d416fd8,http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Calfra,0,,
+Calsol,cc0ea06b-e954-45f5-89e9-65fbf5d840e8,http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Calsol,0,,
+Caltot,43c34161-f4a3-495f-85cb-68a9bfaeb4c1,http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Caltot,0,,
+Car,c44eec99-4d0d-45b6-badf-7bfb11f1c5e9,http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Car,0,,
+Carful,3b24e0df-34d3-4db4-921b-cb69b86320cb,http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Carful,0,,
+Carhum,a2bed510-4953-437e-910b-e8917a704e08,http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Carhum,0,,
+Carinorg,aba52acc-5ba4-4940-9f6d-22a5b816adbc,http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Carinorg,0,,
+Carorg,09b9f784-0bee-49ee-aaae-9320e0e258f6,http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Carorg,0,,
+Carpyr,6d3f7122-ada8-4574-b172-85aad6971e8d,http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Carpyr,0,,
+Cartoh,a0ae637a-e938-46e1-8b89-9d5189ff9eba,http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Cartoh,0,,
+Cartot,6022fde8-d281-4d85-92ae-2279f6415245,http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Cartot,0,,
+Ccetot,7976704c-e21d-4655-a1fa-a0d831905ad8,http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Ccetot,0,,
+Chl,4126df87-3fbd-4e93-8fe4-2bd96314a546,http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Chl,0,,
+Copext,0879b015-8a22-44f7-9efe-bd6291ffb0d2,http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Copext,0,,
+Coptot,01be5661-8e3f-4c69-866e-531442f9ac70,http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Coptot,0,,
+ECEC,71d446b5-8f17-4c48-825f-4feab5d9c8e0,http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-ECEC,0,,
+Eleccond,01a9e264-60c9-4e0b-b6ec-07d90557c283,http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Eleccond,0,,
+Gyp,5318570c-5de1-48dc-a2a9-542cdd171227,http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Gyp,0,,
+Hyd,7e5ccc11-a74b-4213-8085-55f86bab78f8,http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Hyd,0,,
+Hydcond,36577047-aca6-4447-8bd0-ce14d879ae14,http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Hydcond,0,,
+Hydexc,3b52fa20-9293-4df3-b8bd-d3cea132150a,http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Hydexc,0,,
+Irodit,a4f6715f-e17b-454b-bc3a-c33f02a9cfe3,http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Irodit,0,,
+Iroext,432d2273-cefa-4eea-8d8d-2d307ba8550a,http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Iroext,0,,
+Irooxa,2ed2b773-30ce-42a6-9500-cc42995d7ff1,http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Irooxa,0,,
+Iropyr,de5070e5-cd98-41f2-a850-b429b00982a2,http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Iropyr,0,,
+Irotot,de48684a-be4f-4ddd-9724-6ab84da7a49b,http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Irotot,0,,
+Magexc,ecdc594a-192e-44f2-9eac-02e0cf88dcf8,http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Magexc,0,,
+Magext,d59986f5-4772-4b12-a4e8-f428e015d258,http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Magext,0,,
+Magsol,98fa52a4-995a-48cf-ac74-09ddc111d2fd,http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Magsol,0,,
+Magtot,313d5600-9205-4579-b4cf-527f6be7f18d,http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Magtot,0,,
+ManKCl,44e49b00-b8d9-4408-ad98-7c8a144e0baf,http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-ManKCl,0,,
+Mandit,70dd09b3-5faa-4ef6-88d3-a40181fa3e97,http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Mandit,0,,
+Manext,e9fa59bb-f44e-4ad6-ab16-932030105bcf,http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Manext,0,,
+Manoxa,943811b4-5251-42ce-bb3f-063f1af2cf90,http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Manoxa,0,,
+Manpyr,de6b09cf-fdee-4968-9646-69b741f41764,http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Manpyr,0,,
+Mantot,11d03741-4b78-49c1-8b78-38f49f35d2df,http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Mantot,0,,
+Mol,6f8d29bc-ac7c-48db-ac96-d270766030c7,http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Mol,0,,
+Nit2,7d7efca5-7d80-4032-9a7d-e3c680939b98,http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Nit2,0,,
+Nit3,e0af530e-7908-42c9-b662-bb29a2590787,http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Nit3,0,,
+Nittot,a5fa9eab-0305-4d90-9c80-cf33d087529d,http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Nittot,0,,
+Orgmat,56225c56-7520-434c-8529-7cc965c0538d,http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Orgmat,0,,
+Pho,edace05c-0f38-419a-af05-e580535f40d3,http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Pho,0,,
+Phoext,fc99170c-43ce-40c1-b380-f16db3523162,http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Phoext,0,,
+Phooxa,d71268e6-395c-4c1a-850b-cf907ea333b0,http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Phooxa,0,,
+Phoret,5d699ce2-35d1-44e7-a2d2-4b3d11d4a00b,http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Phoret,0,,
+Photot,53f488d6-161e-42e4-ab01-b69725914a89,http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Photot,0,,
+Por,99f083ac-278e-488b-b9e9-88dcadfbfebf,http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Por,0,,
+Potexc,b48bc603-3ba8-45a9-9a5d-ceb7c80d8915,http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Potexc,0,,
+Potext,ef63b62a-c995-495e-95bb-993a393a47c8,http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Potext,0,,
+Potsol,bdf2fa99-43da-48e5-8110-e5ca41e0192b,http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Potsol,0,,
+Pottot,00681f3b-5f61-4199-b505-4d5be9d96366,http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Pottot,0,,
+Selext,9fee2f39-b188-47d5-8c1d-3f296a00b4e1,http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Selext,0,,
+Seltot,e8cf7bb9-9393-4a2b-9fb0-5aaa74cc9eb3,http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Seltot,0,,
+Siloxa,eaf4ebd9-74d6-4c89-9084-700ea8fbd6ee,http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Siloxa,0,,
+Sodexc,3ef32e4b-a921-4cde-a0ca-b85755299fbc,http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Sodexc,0,,
+Sodexp,994ab9b9-e756-4ad9-89d5-df71ad748ef4,http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Sodexp,0,,
+Sodext,f06fd980-3a38-465d-8446-336b16b20ad3,http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Sodext,0,,
+Sodsol,b9492066-9f37-4794-912b-b2f1cffec668,http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Sodsol,0,,
+Sodtot,01a64a79-b383-4057-9068-c16ce0034f71,http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Sodtot,0,,
+Solsal,7ee4d784-3abd-4f52-8f14-13c4f964c7e0,http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Solsal,0,,
+Sul,849c3d8b-b572-496c-8d2b-f74e3cf6309d,http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Sul,0,,
+Sulext,b1077f43-a994-4d15-8abe-f2bd3c4691a7,http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Sulext,0,,
+Sultot,d8629550-4e68-4f9b-b03b-f396871e8d49,http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Sultot,0,,
+Zin,534a2647-122a-46fe-86b6-84f2c927cb2e,http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Zin,0,,
+Zinext,236f8de3-72de-4532-8bb8-bcaa5115b4fb,http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-Zinext,0,,
+pH,2422dfa9-82a2-4e73-9f63-630d055dcd43,http://w3id.org/glosis/model/codelists/physioChemicalPropertyCode-pH,0,,
+SWD1,a34df578-e959-49af-9def-bda0ab31abd6,http://w3id.org/glosis/model/codelists/sandPropertyCode-SWD1,0,,
+SWD2,838a7c53-1d29-4746-ac09-de007c86ca53,http://w3id.org/glosis/model/codelists/sandPropertyCode-SWD2,0,,
+SWD3,67eca92c-6f35-470c-a6c7-a10b0e327f34,http://w3id.org/glosis/model/codelists/sandPropertyCode-SWD3,0,,
+SWD4,24a697c4-aac6-4fd1-828a-b3dfd22b8b2b,http://w3id.org/glosis/model/codelists/sandPropertyCode-SWD4,0,,
+SWD5,291af6a3-db29-4ee4-a078-8378f921d62b,http://w3id.org/glosis/model/codelists/sandPropertyCode-SWD5,0,,
+SWDT,96fc8e13-2b50-424e-9506-8710556fecbb,http://w3id.org/glosis/model/codelists/sandPropertyCode-SWDT,0,,
+SWDF1,e1e50f31-f824-4789-af78-99288e5950b3,http://w3id.org/glosis/model/codelists/siltPropertyCode-SWDF1,0,,
+SWDF2,c21091d2-9444-40bd-88bc-efc72f3ebfa8,http://w3id.org/glosis/model/codelists/siltPropertyCode-SWDF2,0,,
+SWDFT,2881fb05-98b1-4c7c-8e4d-5e63085866c7,http://w3id.org/glosis/model/codelists/siltPropertyCode-SWDFT,0,,
+CC,ecca9e14-4864-465a-9724-2fea4fca075b,http://w3id.org/glosis/model/codelists/clayPropertyCode-CC,0,,
+CNC,ea29e06b-8041-4218-8292-53dbfda596a8,http://w3id.org/glosis/model/codelists/clayPropertyCode-CNC,0,,
+CWT,c6420ef2-ae59-49fb-b5f3-f9f34f9ec472,http://w3id.org/glosis/model/codelists/clayPropertyCode-CWT,0,,
+Cl,f53e6d21-7f11-4b4c-bfce-1e312632c3a3,http://w3id.org/glosis/model/codelists/textClayPropertyCode-Cl,0,,
+Sa_ISO,728a5f08-c29d-4a80-86ea-6c6b31912e10,http://w3id.org/glosis/model/codelists/textSandPropertyCode-Sa_ISO,0,,
+Sa_ISSS,e82a6dc3-54db-4159-8230-b6b2b1aebf97,http://w3id.org/glosis/model/codelists/textSandPropertyCode-Sa_ISSS,0,,
+Sa_USDA,e1e1e2ad-87bc-4085-b024-015c052398e8,http://w3id.org/glosis/model/codelists/textSandPropertyCode-Sa_USDA,0,,
+cSa_ISO,a6a333ea-2df7-4ea5-b8d7-fd62610f97c8,http://w3id.org/glosis/model/codelists/textSandPropertyCode-cSa_ISO,0,,
+cSa_ISSS,cf397104-d4c8-46f3-8425-a569f6d4e210,http://w3id.org/glosis/model/codelists/textSandPropertyCode-cSa_ISSS,0,,
+cSa_USDA,99eb7522-91fd-486d-a180-baf12d153064,http://w3id.org/glosis/model/codelists/textSandPropertyCode-cSa_USDA,0,,
+fSa_ISO,a46c1b52-cee7-4b0b-9f7e-f9d5fcea5856,http://w3id.org/glosis/model/codelists/textSandPropertyCode-fSa_ISO,0,,
+fSa_ISSS,6a922874-5135-4bf3-b96e-22ecde05a615,http://w3id.org/glosis/model/codelists/textSandPropertyCode-fSa_ISSS,0,,
+fSa_USDA,76b83fe2-d86e-4976-a030-4b34cdb8d3b8,http://w3id.org/glosis/model/codelists/textSandPropertyCode-fSa_USDA,0,,
+mSa_ISO,67b4c7e4-1f00-4b1a-a7e6-01a29d867b84,http://w3id.org/glosis/model/codelists/textSandPropertyCode-mSa_ISO,0,,
+mSa_ISSS,2a31d91e-b8a2-48ac-bd0e-e324aae01479,http://w3id.org/glosis/model/codelists/textSandPropertyCode-mSa_ISSS,0,,
+mSa_USDA,de88f7b3-708e-4ba8-b892-ce8eaac53054,http://w3id.org/glosis/model/codelists/textSandPropertyCode-mSa_USDA,0,,
+vcSa_ISSS,379ded7d-716b-429a-bda1-0b4e954aad76,http://w3id.org/glosis/model/codelists/textSandPropertyCode-vcSa_ISSS,0,,
+vcSa_USDA,f8c16e08-731d-4ac5-bb0f-76f4db28d19c,http://w3id.org/glosis/model/codelists/textSandPropertyCode-vcSa_USDA,0,,
+vfSa_ISSS,1c6e7fc5-bcb6-4db5-8b6e-931a7118b7cd,http://w3id.org/glosis/model/codelists/textSandPropertyCode-vfSa_ISSS,0,,
+vfSa_USDA,55bf74f3-940a-4825-842a-a595b8f8bf92,http://w3id.org/glosis/model/codelists/textSandPropertyCode-vfSa_USDA,0,,
+Si_ISO,175f5de8-c1f3-4cb7-b7ef-f5a62e4a923d,http://w3id.org/glosis/model/codelists/textSiltPropertyCode-Si_ISO,0,,
+Si_ISSS,c2a3edf2-82a5-4623-b351-6c91111bde8f,http://w3id.org/glosis/model/codelists/textSiltPropertyCode-Si_ISSS,0,,
+Si_USDA,06be85b9-e16d-4609-b974-3addc06df264,http://w3id.org/glosis/model/codelists/textSiltPropertyCode-Si_USDA,0,,
+cSi_ISO,08f8bd3b-4443-4e9d-b34f-56bd70328e81,http://w3id.org/glosis/model/codelists/textSiltPropertyCode-cSi_ISO,0,,
+cSi_USDA,0ee1970f-c739-4cd3-b46d-da6f7d0694fd,http://w3id.org/glosis/model/codelists/textSiltPropertyCode-cSi_USDA,0,,
+fSi_ISO,09fbf88d-e3ce-48a4-9a23-8e7952d4bd4f,http://w3id.org/glosis/model/codelists/textSiltPropertyCode-fSi_ISO,0,,
+fSi_USDA,1f7c5a91-4753-422a-9710-64d5d0790137,http://w3id.org/glosis/model/codelists/textSiltPropertyCode-fSi_USDA,0,,
+mSi_ISO,f7830d2f-f26d-408b-9200-2b302c741cde,http://w3id.org/glosis/model/codelists/textSiltPropertyCode-mSi_ISO,0,,
+WRG,f3a8965e-9371-48a2-b667-9f6f2f00fe26,http://w3id.org/glosis/model/codelists/waterRetentionPropertyCode-WRG,0,,
+WRG10,76bf1b2b-436c-4ea1-9913-5fc598099d08,http://w3id.org/glosis/model/codelists/waterRetentionPropertyCode-WRG10,0,,
+WRG100,6f6b7e16-b2a6-40e4-a930-5281b92abf7f,http://w3id.org/glosis/model/codelists/waterRetentionPropertyCode-WRG100,0,,
+WRG1500,f155e61d-afb1-4ef9-8b99-1f7817d5554e,http://w3id.org/glosis/model/codelists/waterRetentionPropertyCode-WRG1500,0,,
+WRG200,ea9a2990-2eb8-455b-9415-6bf52f4ecf84,http://w3id.org/glosis/model/codelists/waterRetentionPropertyCode-WRG200,0,,
+WRG33,b6991e72-9e87-4486-a0db-f43da27d1ac7,http://w3id.org/glosis/model/codelists/waterRetentionPropertyCode-WRG33,0,,
+WRG500,b43af117-a718-4741-9ed3-9372de6971a2,http://w3id.org/glosis/model/codelists/waterRetentionPropertyCode-WRG500,0,,
+WRG6,4693fac2-d0da-4058-a8c9-77bfc7e02bc7,http://w3id.org/glosis/model/codelists/waterRetentionPropertyCode-WRG6,0,,
+WRV,4fad4a91-9959-423d-b09b-78e6dee08849,http://w3id.org/glosis/model/codelists/waterRetentionPropertyCode-WRV,0,,
+WRV10,a8e5f075-0467-44cb-bbab-a979da17f1ee,http://w3id.org/glosis/model/codelists/waterRetentionPropertyCode-WRV10,0,,
+WRV100,701a4cfb-9bca-4202-88f3-27dfa578f58d,http://w3id.org/glosis/model/codelists/waterRetentionPropertyCode-WRV100,0,,
+WRV1500,d065a5df-8f3b-4952-9e43-3374aac2208a,http://w3id.org/glosis/model/codelists/waterRetentionPropertyCode-WRV1500,0,,
+WRV200,5ef4a4c3-b726-40c4-a3f3-3b856b2c1535,http://w3id.org/glosis/model/codelists/waterRetentionPropertyCode-WRV200,0,,
+WRV33,b30570f3-a499-4a43-9a1f-2c7e7e3014c2,http://w3id.org/glosis/model/codelists/waterRetentionPropertyCode-WRV33,0,,
+WRV500,2479640a-f4ad-4a5e-8995-c2ae3f7bc22f,http://w3id.org/glosis/model/codelists/waterRetentionPropertyCode-WRV500,0,,
+WRV6,c1a3d6d8-07ff-4b5d-a34f-9dab9ae3bc4a,http://w3id.org/glosis/model/codelists/waterRetentionPropertyCode-WRV6,0,,
