@@ -1,0 +1,5 @@
+collection,label,id
+http://w3id.org/glosis/model/codelists/boundaryDistinctnessValueCode,Abrupt,http://w3id.org/glosis/model/codelists/boundaryDistinctnessValueCode-A
+http://w3id.org/glosis/model/codelists/boundaryDistinctnessValueCode,Clear,http://w3id.org/glosis/model/codelists/boundaryDistinctnessValueCode-C
+http://w3id.org/glosis/model/codelists/boundaryDistinctnessValueCode,Diffuse,http://w3id.org/glosis/model/codelists/boundaryDistinctnessValueCode-D
+http://w3id.org/glosis/model/codelists/boundaryDistinctnessValueCode,Gradual,http://w3id.org/glosis/model/codelists/boundaryDistinctnessValueCode-G

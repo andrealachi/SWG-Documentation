@@ -1,0 +1,10 @@
+collection,label,id
+http://w3id.org/glosis/model/codelists/mineralConcKindValueCode,Concretion,http://w3id.org/glosis/model/codelists/mineralConcKindValueCode-C
+http://w3id.org/glosis/model/codelists/mineralConcKindValueCode,Crack infillings,http://w3id.org/glosis/model/codelists/mineralConcKindValueCode-IC
+http://w3id.org/glosis/model/codelists/mineralConcKindValueCode,Crystal,http://w3id.org/glosis/model/codelists/mineralConcKindValueCode-T
+http://w3id.org/glosis/model/codelists/mineralConcKindValueCode,Nodule,http://w3id.org/glosis/model/codelists/mineralConcKindValueCode-N
+http://w3id.org/glosis/model/codelists/mineralConcKindValueCode,Other,http://w3id.org/glosis/model/codelists/mineralConcKindValueCode-O
+http://w3id.org/glosis/model/codelists/mineralConcKindValueCode,Pore infillings,http://w3id.org/glosis/model/codelists/mineralConcKindValueCode-IP
+http://w3id.org/glosis/model/codelists/mineralConcKindValueCode,Residual rock fragment,http://w3id.org/glosis/model/codelists/mineralConcKindValueCode-R
+http://w3id.org/glosis/model/codelists/mineralConcKindValueCode,Soft concretion,http://w3id.org/glosis/model/codelists/mineralConcKindValueCode-SC
+http://w3id.org/glosis/model/codelists/mineralConcKindValueCode,Soft segregation (or soft accumulation),http://w3id.org/glosis/model/codelists/mineralConcKindValueCode-S

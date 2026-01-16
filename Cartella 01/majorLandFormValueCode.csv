@@ -1,0 +1,17 @@
+collection,label,id
+http://w3id.org/glosis/model/codelists/majorLandFormValueCode,depression,http://w3id.org/glosis/model/codelists/majorLandFormValueCode-LD
+http://w3id.org/glosis/model/codelists/majorLandFormValueCode,dissected plain,http://w3id.org/glosis/model/codelists/majorLandFormValueCode-SP
+http://w3id.org/glosis/model/codelists/majorLandFormValueCode,high-gradient escarpment zone,http://w3id.org/glosis/model/codelists/majorLandFormValueCode-TE
+http://w3id.org/glosis/model/codelists/majorLandFormValueCode,high-gradient hill,http://w3id.org/glosis/model/codelists/majorLandFormValueCode-TH
+http://w3id.org/glosis/model/codelists/majorLandFormValueCode,high-gradient mountain,http://w3id.org/glosis/model/codelists/majorLandFormValueCode-TM
+http://w3id.org/glosis/model/codelists/majorLandFormValueCode,high-gradient valley,http://w3id.org/glosis/model/codelists/majorLandFormValueCode-TV
+http://w3id.org/glosis/model/codelists/majorLandFormValueCode,level land,http://w3id.org/glosis/model/codelists/majorLandFormValueCode-L
+http://w3id.org/glosis/model/codelists/majorLandFormValueCode,medium-gradient escarpment zone,http://w3id.org/glosis/model/codelists/majorLandFormValueCode-SE
+http://w3id.org/glosis/model/codelists/majorLandFormValueCode,medium-gradient hill,http://w3id.org/glosis/model/codelists/majorLandFormValueCode-SH
+http://w3id.org/glosis/model/codelists/majorLandFormValueCode,medium-gradient mountain,http://w3id.org/glosis/model/codelists/majorLandFormValueCode-SM
+http://w3id.org/glosis/model/codelists/majorLandFormValueCode,medium-gradient valley,http://w3id.org/glosis/model/codelists/majorLandFormValueCode-SV
+http://w3id.org/glosis/model/codelists/majorLandFormValueCode,plain,http://w3id.org/glosis/model/codelists/majorLandFormValueCode-LP
+http://w3id.org/glosis/model/codelists/majorLandFormValueCode,plateau,http://w3id.org/glosis/model/codelists/majorLandFormValueCode-LL
+http://w3id.org/glosis/model/codelists/majorLandFormValueCode,sloping land,http://w3id.org/glosis/model/codelists/majorLandFormValueCode-S
+http://w3id.org/glosis/model/codelists/majorLandFormValueCode,steep land,http://w3id.org/glosis/model/codelists/majorLandFormValueCode-T
+http://w3id.org/glosis/model/codelists/majorLandFormValueCode,valley floor,http://w3id.org/glosis/model/codelists/majorLandFormValueCode-LV

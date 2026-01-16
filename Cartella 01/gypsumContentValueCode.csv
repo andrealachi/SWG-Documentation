@@ -1,0 +1,6 @@
+collection,label,id
+http://w3id.org/glosis/model/codelists/gypsumContentValueCode,Extremely gypsiric,http://w3id.org/glosis/model/codelists/gypsumContentValueCode-EX
+http://w3id.org/glosis/model/codelists/gypsumContentValueCode,Moderately gypsiric,http://w3id.org/glosis/model/codelists/gypsumContentValueCode-MO
+http://w3id.org/glosis/model/codelists/gypsumContentValueCode,Non-gypsiric,http://w3id.org/glosis/model/codelists/gypsumContentValueCode-N
+http://w3id.org/glosis/model/codelists/gypsumContentValueCode,Slightly gypsiric,http://w3id.org/glosis/model/codelists/gypsumContentValueCode-SL
+http://w3id.org/glosis/model/codelists/gypsumContentValueCode,Strongly gypsiric,http://w3id.org/glosis/model/codelists/gypsumContentValueCode-ST

@@ -1,0 +1,6 @@
+collection,label,id
+http://w3id.org/glosis/model/codelists/structureGradeValueCode,Moderate,http://w3id.org/glosis/model/codelists/structureGradeValueCode-MO
+http://w3id.org/glosis/model/codelists/structureGradeValueCode,Moderate to strong,http://w3id.org/glosis/model/codelists/structureGradeValueCode-MS
+http://w3id.org/glosis/model/codelists/structureGradeValueCode,Strong,http://w3id.org/glosis/model/codelists/structureGradeValueCode-ST
+http://w3id.org/glosis/model/codelists/structureGradeValueCode,Weak,http://w3id.org/glosis/model/codelists/structureGradeValueCode-WE
+http://w3id.org/glosis/model/codelists/structureGradeValueCode,Weak to moderate,http://w3id.org/glosis/model/codelists/structureGradeValueCode-WM

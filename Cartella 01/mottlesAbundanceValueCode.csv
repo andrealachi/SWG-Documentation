@@ -1,0 +1,7 @@
+collection,label,id
+http://w3id.org/glosis/model/codelists/mottlesAbundanceValueCode,Abundant,http://w3id.org/glosis/model/codelists/mottlesAbundanceValueCode-A
+http://w3id.org/glosis/model/codelists/mottlesAbundanceValueCode,Common,http://w3id.org/glosis/model/codelists/mottlesAbundanceValueCode-C
+http://w3id.org/glosis/model/codelists/mottlesAbundanceValueCode,Few,http://w3id.org/glosis/model/codelists/mottlesAbundanceValueCode-F
+http://w3id.org/glosis/model/codelists/mottlesAbundanceValueCode,Many,http://w3id.org/glosis/model/codelists/mottlesAbundanceValueCode-M
+http://w3id.org/glosis/model/codelists/mottlesAbundanceValueCode,None,http://w3id.org/glosis/model/codelists/mottlesAbundanceValueCode-N
+http://w3id.org/glosis/model/codelists/mottlesAbundanceValueCode,Very few,http://w3id.org/glosis/model/codelists/mottlesAbundanceValueCode-V

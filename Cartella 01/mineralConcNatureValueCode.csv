@@ -1,0 +1,15 @@
+collection,label,id
+http://w3id.org/glosis/model/codelists/mineralConcNatureValueCode,Carbonates (calcareous),http://w3id.org/glosis/model/codelists/mineralConcNatureValueCode-K
+http://w3id.org/glosis/model/codelists/mineralConcNatureValueCode,Carbonates–silica,http://w3id.org/glosis/model/codelists/mineralConcNatureValueCode-KQ
+http://w3id.org/glosis/model/codelists/mineralConcNatureValueCode,Clay (argillaceous),http://w3id.org/glosis/model/codelists/mineralConcNatureValueCode-C
+http://w3id.org/glosis/model/codelists/mineralConcNatureValueCode,Clay–sesquioxides,http://w3id.org/glosis/model/codelists/mineralConcNatureValueCode-CS
+http://w3id.org/glosis/model/codelists/mineralConcNatureValueCode,Gibbsite,http://w3id.org/glosis/model/codelists/mineralConcNatureValueCode-GB
+http://w3id.org/glosis/model/codelists/mineralConcNatureValueCode,Gypsum (gypsiferous),http://w3id.org/glosis/model/codelists/mineralConcNatureValueCode-GY
+http://w3id.org/glosis/model/codelists/mineralConcNatureValueCode,Iron (ferruginous),http://w3id.org/glosis/model/codelists/mineralConcNatureValueCode-F
+http://w3id.org/glosis/model/codelists/mineralConcNatureValueCode,Iron–manganese (sesquioxides),http://w3id.org/glosis/model/codelists/mineralConcNatureValueCode-FM
+http://w3id.org/glosis/model/codelists/mineralConcNatureValueCode,Jarosite,http://w3id.org/glosis/model/codelists/mineralConcNatureValueCode-JA
+http://w3id.org/glosis/model/codelists/mineralConcNatureValueCode,Manganese (manganiferous),http://w3id.org/glosis/model/codelists/mineralConcNatureValueCode-M
+http://w3id.org/glosis/model/codelists/mineralConcNatureValueCode,Not known,http://w3id.org/glosis/model/codelists/mineralConcNatureValueCode-NK
+http://w3id.org/glosis/model/codelists/mineralConcNatureValueCode,Salt (saline),http://w3id.org/glosis/model/codelists/mineralConcNatureValueCode-SA
+http://w3id.org/glosis/model/codelists/mineralConcNatureValueCode,Silica (siliceous),http://w3id.org/glosis/model/codelists/mineralConcNatureValueCode-Q
+http://w3id.org/glosis/model/codelists/mineralConcNatureValueCode,Sulphur (sulphurous),http://w3id.org/glosis/model/codelists/mineralConcNatureValueCode-S

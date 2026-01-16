@@ -1,0 +1,4 @@
+collection,label,id
+http://w3id.org/glosis/model/codelists/weatheringValueCode,Fresh or slightly weathered,http://w3id.org/glosis/model/codelists/weatheringValueCode-F
+http://w3id.org/glosis/model/codelists/weatheringValueCode,Strongly weathered,http://w3id.org/glosis/model/codelists/weatheringValueCode-S
+http://w3id.org/glosis/model/codelists/weatheringValueCode,Weathered,http://w3id.org/glosis/model/codelists/weatheringValueCode-W

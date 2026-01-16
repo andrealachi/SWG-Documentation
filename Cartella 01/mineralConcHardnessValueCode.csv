@@ -1,0 +1,4 @@
+collection,label,id
+http://w3id.org/glosis/model/codelists/mineralConcHardnessValueCode,Both hard and soft.,http://w3id.org/glosis/model/codelists/mineralConcHardnessValueCode-B
+http://w3id.org/glosis/model/codelists/mineralConcHardnessValueCode,Hard,http://w3id.org/glosis/model/codelists/mineralConcHardnessValueCode-H
+http://w3id.org/glosis/model/codelists/mineralConcHardnessValueCode,Soft,http://w3id.org/glosis/model/codelists/mineralConcHardnessValueCode-S

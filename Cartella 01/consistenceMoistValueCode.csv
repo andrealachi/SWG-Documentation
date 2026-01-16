@@ -1,0 +1,7 @@
+collection,label,id
+http://w3id.org/glosis/model/codelists/consistenceMoistValueCode,Extremely firm,http://w3id.org/glosis/model/codelists/consistenceMoistValueCode-EFI
+http://w3id.org/glosis/model/codelists/consistenceMoistValueCode,Firm,http://w3id.org/glosis/model/codelists/consistenceMoistValueCode-FI
+http://w3id.org/glosis/model/codelists/consistenceMoistValueCode,Friable,http://w3id.org/glosis/model/codelists/consistenceMoistValueCode-FR
+http://w3id.org/glosis/model/codelists/consistenceMoistValueCode,Loose,http://w3id.org/glosis/model/codelists/consistenceMoistValueCode-LO
+http://w3id.org/glosis/model/codelists/consistenceMoistValueCode,Very firm,http://w3id.org/glosis/model/codelists/consistenceMoistValueCode-VFI
+http://w3id.org/glosis/model/codelists/consistenceMoistValueCode,Very friable,http://w3id.org/glosis/model/codelists/consistenceMoistValueCode-VFR

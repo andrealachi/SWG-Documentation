@@ -1,0 +1,6 @@
+collection,label,id
+http://w3id.org/glosis/model/codelists/sealingThicknessValueCode,Medium,http://w3id.org/glosis/model/codelists/sealingThicknessValueCode-M
+http://w3id.org/glosis/model/codelists/sealingThicknessValueCode,None,http://w3id.org/glosis/model/codelists/sealingThicknessValueCode-N
+http://w3id.org/glosis/model/codelists/sealingThicknessValueCode,Thick,http://w3id.org/glosis/model/codelists/sealingThicknessValueCode-C
+http://w3id.org/glosis/model/codelists/sealingThicknessValueCode,Thin,http://w3id.org/glosis/model/codelists/sealingThicknessValueCode-F
+http://w3id.org/glosis/model/codelists/sealingThicknessValueCode,Very thick,http://w3id.org/glosis/model/codelists/sealingThicknessValueCode-V

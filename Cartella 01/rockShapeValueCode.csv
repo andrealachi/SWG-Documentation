@@ -1,0 +1,5 @@
+collection,label,id
+http://w3id.org/glosis/model/codelists/rockShapeValueCode,Angular,http://w3id.org/glosis/model/codelists/rockShapeValueCode-A
+http://w3id.org/glosis/model/codelists/rockShapeValueCode,Flat,http://w3id.org/glosis/model/codelists/rockShapeValueCode-F
+http://w3id.org/glosis/model/codelists/rockShapeValueCode,Rounded,http://w3id.org/glosis/model/codelists/rockShapeValueCode-R
+http://w3id.org/glosis/model/codelists/rockShapeValueCode,Subrounded,http://w3id.org/glosis/model/codelists/rockShapeValueCode-S

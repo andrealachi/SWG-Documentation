@@ -1,0 +1,4 @@
+collection,label,id
+http://w3id.org/glosis/model/codelists/contrastValueCode,Distinct,http://w3id.org/glosis/model/codelists/contrastValueCode-D
+http://w3id.org/glosis/model/codelists/contrastValueCode,Faint,http://w3id.org/glosis/model/codelists/contrastValueCode-F
+http://w3id.org/glosis/model/codelists/contrastValueCode,Prominent,http://w3id.org/glosis/model/codelists/contrastValueCode-P

@@ -1,0 +1,5 @@
+collection,label,id
+http://w3id.org/glosis/model/codelists/gypsumFormsValueCode,disperse powdery gypsum,http://w3id.org/glosis/model/codelists/gypsumFormsValueCode-D
+http://w3id.org/glosis/model/codelists/gypsumFormsValueCode,gazha,http://w3id.org/glosis/model/codelists/gypsumFormsValueCode-G
+http://w3id.org/glosis/model/codelists/gypsumFormsValueCode,hard cemented layer or layers of gypsum,http://w3id.org/glosis/model/codelists/gypsumFormsValueCode-HL
+http://w3id.org/glosis/model/codelists/gypsumFormsValueCode,soft concretions,http://w3id.org/glosis/model/codelists/gypsumFormsValueCode-SC

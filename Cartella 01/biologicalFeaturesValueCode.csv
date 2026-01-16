@@ -1,0 +1,10 @@
+collection,label,id
+http://w3id.org/glosis/model/codelists/biologicalFeaturesValueCode,Artefacts,http://w3id.org/glosis/model/codelists/biologicalFeaturesValueCode-A
+http://w3id.org/glosis/model/codelists/biologicalFeaturesValueCode,Burrows (unspecified),http://w3id.org/glosis/model/codelists/biologicalFeaturesValueCode-B
+http://w3id.org/glosis/model/codelists/biologicalFeaturesValueCode,Charcoal,http://w3id.org/glosis/model/codelists/biologicalFeaturesValueCode-C
+http://w3id.org/glosis/model/codelists/biologicalFeaturesValueCode,Earthworm channels,http://w3id.org/glosis/model/codelists/biologicalFeaturesValueCode-E
+http://w3id.org/glosis/model/codelists/biologicalFeaturesValueCode,Infilled large burrows,http://w3id.org/glosis/model/codelists/biologicalFeaturesValueCode-BI
+http://w3id.org/glosis/model/codelists/biologicalFeaturesValueCode,Open large burrows,http://w3id.org/glosis/model/codelists/biologicalFeaturesValueCode-BO
+http://w3id.org/glosis/model/codelists/biologicalFeaturesValueCode,Other insect activity,http://w3id.org/glosis/model/codelists/biologicalFeaturesValueCode-I
+http://w3id.org/glosis/model/codelists/biologicalFeaturesValueCode,Pedotubules,http://w3id.org/glosis/model/codelists/biologicalFeaturesValueCode-P
+http://w3id.org/glosis/model/codelists/biologicalFeaturesValueCode,Termite or ant channels and nests,http://w3id.org/glosis/model/codelists/biologicalFeaturesValueCode-T

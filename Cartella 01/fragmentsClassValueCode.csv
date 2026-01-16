@@ -1,0 +1,11 @@
+collection,label,id
+http://w3id.org/glosis/model/codelists/fragmentsClassValueCode,FragmentsGravimetricFraction01,http://w3id.org/glosis/model/codelists/fragmentsClassValueCode-FGF1
+http://w3id.org/glosis/model/codelists/fragmentsClassValueCode,FragmentsGravimetricFraction02,http://w3id.org/glosis/model/codelists/fragmentsClassValueCode-FGF2
+http://w3id.org/glosis/model/codelists/fragmentsClassValueCode,FragmentsGravimetricFraction03,http://w3id.org/glosis/model/codelists/fragmentsClassValueCode-FGF3
+http://w3id.org/glosis/model/codelists/fragmentsClassValueCode,FragmentsGravimetricFraction04,http://w3id.org/glosis/model/codelists/fragmentsClassValueCode-FGF4
+http://w3id.org/glosis/model/codelists/fragmentsClassValueCode,FragmentsGravimetricTotal,http://w3id.org/glosis/model/codelists/fragmentsClassValueCode-FGT
+http://w3id.org/glosis/model/codelists/fragmentsClassValueCode,FragmentsVolumetric01,http://w3id.org/glosis/model/codelists/fragmentsClassValueCode-FV1
+http://w3id.org/glosis/model/codelists/fragmentsClassValueCode,FragmentsVolumetric02,http://w3id.org/glosis/model/codelists/fragmentsClassValueCode-FV2
+http://w3id.org/glosis/model/codelists/fragmentsClassValueCode,FragmentsVolumetric03,http://w3id.org/glosis/model/codelists/fragmentsClassValueCode-FV3
+http://w3id.org/glosis/model/codelists/fragmentsClassValueCode,FragmentsVolumetricEstimate,http://w3id.org/glosis/model/codelists/fragmentsClassValueCode-FVE
+http://w3id.org/glosis/model/codelists/fragmentsClassValueCode,FragmentsVolumetricTotal,http://w3id.org/glosis/model/codelists/fragmentsClassValueCode-FVT

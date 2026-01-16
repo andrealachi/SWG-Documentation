@@ -1,0 +1,7 @@
+collection,label,id
+http://w3id.org/glosis/model/codelists/coatingFormValueCode,Continuous,http://w3id.org/glosis/model/codelists/coatingFormValueCode-C
+http://w3id.org/glosis/model/codelists/coatingFormValueCode,"Continuous irregular (non-uniform, heterogeneous)",http://w3id.org/glosis/model/codelists/coatingFormValueCode-CI
+http://w3id.org/glosis/model/codelists/coatingFormValueCode,Dendroidal,http://w3id.org/glosis/model/codelists/coatingFormValueCode-DE
+http://w3id.org/glosis/model/codelists/coatingFormValueCode,Discontinuous circular,http://w3id.org/glosis/model/codelists/coatingFormValueCode-DC
+http://w3id.org/glosis/model/codelists/coatingFormValueCode,Discontinuous irregular,http://w3id.org/glosis/model/codelists/coatingFormValueCode-DI
+http://w3id.org/glosis/model/codelists/coatingFormValueCode,Other,http://w3id.org/glosis/model/codelists/coatingFormValueCode-O

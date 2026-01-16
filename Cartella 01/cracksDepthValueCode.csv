@@ -1,0 +1,5 @@
+collection,label,id
+http://w3id.org/glosis/model/codelists/cracksDepthValueCode,Deep 10–20,http://w3id.org/glosis/model/codelists/cracksDepthValueCode-D
+http://w3id.org/glosis/model/codelists/cracksDepthValueCode,Medium 2–10,http://w3id.org/glosis/model/codelists/cracksDepthValueCode-M
+http://w3id.org/glosis/model/codelists/cracksDepthValueCode,Surface < 2,http://w3id.org/glosis/model/codelists/cracksDepthValueCode-S
+http://w3id.org/glosis/model/codelists/cracksDepthValueCode,Very deep > 20,http://w3id.org/glosis/model/codelists/cracksDepthValueCode-V

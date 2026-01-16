@@ -1,0 +1,6 @@
+collection,label,id
+http://w3id.org/glosis/model/codelists/rockOutcropsDistanceValueCode,Between 20m and 50m,http://w3id.org/glosis/model/codelists/rockOutcropsDistanceValueCode-2
+http://w3id.org/glosis/model/codelists/rockOutcropsDistanceValueCode,Between 2m and 5m,http://w3id.org/glosis/model/codelists/rockOutcropsDistanceValueCode-4
+http://w3id.org/glosis/model/codelists/rockOutcropsDistanceValueCode,Between 5m and 20m,http://w3id.org/glosis/model/codelists/rockOutcropsDistanceValueCode-3
+http://w3id.org/glosis/model/codelists/rockOutcropsDistanceValueCode,Less than 2,http://w3id.org/glosis/model/codelists/rockOutcropsDistanceValueCode-5
+http://w3id.org/glosis/model/codelists/rockOutcropsDistanceValueCode,More than 50m,http://w3id.org/glosis/model/codelists/rockOutcropsDistanceValueCode-1

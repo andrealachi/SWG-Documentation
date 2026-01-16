@@ -1,0 +1,19 @@
+collection,label,id
+http://w3id.org/glosis/model/codelists/rockSizeValueCode,Artefacts,http://w3id.org/glosis/model/codelists/rockSizeValueCode-A
+http://w3id.org/glosis/model/codelists/rockSizeValueCode,Boulders,http://w3id.org/glosis/model/codelists/rockSizeValueCode-RB
+http://w3id.org/glosis/model/codelists/rockSizeValueCode,Boulders and large boulders,http://w3id.org/glosis/model/codelists/rockSizeValueCode-BL
+http://w3id.org/glosis/model/codelists/rockSizeValueCode,Coarse artefacts,http://w3id.org/glosis/model/codelists/rockSizeValueCode-AC
+http://w3id.org/glosis/model/codelists/rockSizeValueCode,Coarse gravel,http://w3id.org/glosis/model/codelists/rockSizeValueCode-RC
+http://w3id.org/glosis/model/codelists/rockSizeValueCode,Coarse gravel and stones,http://w3id.org/glosis/model/codelists/rockSizeValueCode-CS
+http://w3id.org/glosis/model/codelists/rockSizeValueCode,Combination of classes,http://w3id.org/glosis/model/codelists/rockSizeValueCode-C
+http://w3id.org/glosis/model/codelists/rockSizeValueCode,Fine and medium gravel/artefacts,http://w3id.org/glosis/model/codelists/rockSizeValueCode-FM
+http://w3id.org/glosis/model/codelists/rockSizeValueCode,Fine artefacts,http://w3id.org/glosis/model/codelists/rockSizeValueCode-AF
+http://w3id.org/glosis/model/codelists/rockSizeValueCode,Fine gravel,http://w3id.org/glosis/model/codelists/rockSizeValueCode-RF
+http://w3id.org/glosis/model/codelists/rockSizeValueCode,Large boulders,http://w3id.org/glosis/model/codelists/rockSizeValueCode-RL
+http://w3id.org/glosis/model/codelists/rockSizeValueCode,Medium and coarse gravel/artefacts,http://w3id.org/glosis/model/codelists/rockSizeValueCode-MC
+http://w3id.org/glosis/model/codelists/rockSizeValueCode,Medium artefacts,http://w3id.org/glosis/model/codelists/rockSizeValueCode-AM
+http://w3id.org/glosis/model/codelists/rockSizeValueCode,Medium gravel,http://w3id.org/glosis/model/codelists/rockSizeValueCode-RM
+http://w3id.org/glosis/model/codelists/rockSizeValueCode,Rock fragments,http://w3id.org/glosis/model/codelists/rockSizeValueCode-R
+http://w3id.org/glosis/model/codelists/rockSizeValueCode,Stones,http://w3id.org/glosis/model/codelists/rockSizeValueCode-RS
+http://w3id.org/glosis/model/codelists/rockSizeValueCode,Stones and boulders,http://w3id.org/glosis/model/codelists/rockSizeValueCode-SB
+http://w3id.org/glosis/model/codelists/rockSizeValueCode,Very fine artefacts,http://w3id.org/glosis/model/codelists/rockSizeValueCode-AV

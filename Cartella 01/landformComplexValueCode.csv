@@ -1,0 +1,10 @@
+collection,label,id
+http://w3id.org/glosis/model/codelists/landformComplexValueCode,Cuesta-shaped,http://w3id.org/glosis/model/codelists/landformComplexValueCode-CU
+http://w3id.org/glosis/model/codelists/landformComplexValueCode,Dome-shaped,http://w3id.org/glosis/model/codelists/landformComplexValueCode-DO
+http://w3id.org/glosis/model/codelists/landformComplexValueCode,Dune-shaped,http://w3id.org/glosis/model/codelists/landformComplexValueCode-DU
+http://w3id.org/glosis/model/codelists/landformComplexValueCode,Inselberg covered (occupying > 1% of level land),http://w3id.org/glosis/model/codelists/landformComplexValueCode-IN
+http://w3id.org/glosis/model/codelists/landformComplexValueCode,Ridged,http://w3id.org/glosis/model/codelists/landformComplexValueCode-RI
+http://w3id.org/glosis/model/codelists/landformComplexValueCode,Strong karst,http://w3id.org/glosis/model/codelists/landformComplexValueCode-KA
+http://w3id.org/glosis/model/codelists/landformComplexValueCode,Terraced,http://w3id.org/glosis/model/codelists/landformComplexValueCode-TE
+http://w3id.org/glosis/model/codelists/landformComplexValueCode,With intermontane plains (occupying > 15%),http://w3id.org/glosis/model/codelists/landformComplexValueCode-IM
+http://w3id.org/glosis/model/codelists/landformComplexValueCode,With wetlands (occupying > 15%),http://w3id.org/glosis/model/codelists/landformComplexValueCode-WE

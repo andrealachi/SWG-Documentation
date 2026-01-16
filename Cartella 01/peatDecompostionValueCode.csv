@@ -1,0 +1,10 @@
+collection,label,id
+http://w3id.org/glosis/model/codelists/peatDecompostionValueCode,Fibric,http://w3id.org/glosis/model/codelists/peatDecompostionValueCode-Fibric
+http://w3id.org/glosis/model/codelists/peatDecompostionValueCode,Hemic,http://w3id.org/glosis/model/codelists/peatDecompostionValueCode-Hemic
+http://w3id.org/glosis/model/codelists/peatDecompostionValueCode,low,http://w3id.org/glosis/model/codelists/peatDecompostionValueCode-D2
+http://w3id.org/glosis/model/codelists/peatDecompostionValueCode,moderate,http://w3id.org/glosis/model/codelists/peatDecompostionValueCode-D3
+http://w3id.org/glosis/model/codelists/peatDecompostionValueCode,moderately strong,http://w3id.org/glosis/model/codelists/peatDecompostionValueCode-D5.1
+http://w3id.org/glosis/model/codelists/peatDecompostionValueCode,Sapric,http://w3id.org/glosis/model/codelists/peatDecompostionValueCode-Sapric
+http://w3id.org/glosis/model/codelists/peatDecompostionValueCode,strong,http://w3id.org/glosis/model/codelists/peatDecompostionValueCode-D4
+http://w3id.org/glosis/model/codelists/peatDecompostionValueCode,very low,http://w3id.org/glosis/model/codelists/peatDecompostionValueCode-D1
+http://w3id.org/glosis/model/codelists/peatDecompostionValueCode,very strong,http://w3id.org/glosis/model/codelists/peatDecompostionValueCode-D5.2

@@ -1,0 +1,6 @@
+collection,label,id
+http://w3id.org/glosis/model/codelists/saltCoverValueCode,Dominant,http://w3id.org/glosis/model/codelists/saltCoverValueCode-4
+http://w3id.org/glosis/model/codelists/saltCoverValueCode,High,http://w3id.org/glosis/model/codelists/saltCoverValueCode-3
+http://w3id.org/glosis/model/codelists/saltCoverValueCode,Low,http://w3id.org/glosis/model/codelists/saltCoverValueCode-1
+http://w3id.org/glosis/model/codelists/saltCoverValueCode,Moderate,http://w3id.org/glosis/model/codelists/saltCoverValueCode-2
+http://w3id.org/glosis/model/codelists/saltCoverValueCode,None,http://w3id.org/glosis/model/codelists/saltCoverValueCode-0

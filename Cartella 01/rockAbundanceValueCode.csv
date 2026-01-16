@@ -1,0 +1,9 @@
+collection,label,id
+http://w3id.org/glosis/model/codelists/rockAbundanceValueCode,Abundant,http://w3id.org/glosis/model/codelists/rockAbundanceValueCode-A
+http://w3id.org/glosis/model/codelists/rockAbundanceValueCode,Common,http://w3id.org/glosis/model/codelists/rockAbundanceValueCode-C
+http://w3id.org/glosis/model/codelists/rockAbundanceValueCode,Dominant,http://w3id.org/glosis/model/codelists/rockAbundanceValueCode-D
+http://w3id.org/glosis/model/codelists/rockAbundanceValueCode,Few,http://w3id.org/glosis/model/codelists/rockAbundanceValueCode-F
+http://w3id.org/glosis/model/codelists/rockAbundanceValueCode,Many,http://w3id.org/glosis/model/codelists/rockAbundanceValueCode-M
+http://w3id.org/glosis/model/codelists/rockAbundanceValueCode,None,http://w3id.org/glosis/model/codelists/rockAbundanceValueCode-N
+http://w3id.org/glosis/model/codelists/rockAbundanceValueCode,Stone line,http://w3id.org/glosis/model/codelists/rockAbundanceValueCode-S
+http://w3id.org/glosis/model/codelists/rockAbundanceValueCode,Very few,http://w3id.org/glosis/model/codelists/rockAbundanceValueCode-V

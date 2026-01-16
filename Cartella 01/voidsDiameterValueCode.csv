@@ -1,0 +1,9 @@
+collection,label,id
+http://w3id.org/glosis/model/codelists/voidsDiameterValueCode,Coarse,http://w3id.org/glosis/model/codelists/voidsDiameterValueCode-C
+http://w3id.org/glosis/model/codelists/voidsDiameterValueCode,Fine,http://w3id.org/glosis/model/codelists/voidsDiameterValueCode-F
+http://w3id.org/glosis/model/codelists/voidsDiameterValueCode,fine and medium,http://w3id.org/glosis/model/codelists/voidsDiameterValueCode-FM
+http://w3id.org/glosis/model/codelists/voidsDiameterValueCode,fine and very fine,http://w3id.org/glosis/model/codelists/voidsDiameterValueCode-FF
+http://w3id.org/glosis/model/codelists/voidsDiameterValueCode,Medium,http://w3id.org/glosis/model/codelists/voidsDiameterValueCode-M
+http://w3id.org/glosis/model/codelists/voidsDiameterValueCode,medium and coarse,http://w3id.org/glosis/model/codelists/voidsDiameterValueCode-MC
+http://w3id.org/glosis/model/codelists/voidsDiameterValueCode,Very coarse,http://w3id.org/glosis/model/codelists/voidsDiameterValueCode-VC
+http://w3id.org/glosis/model/codelists/voidsDiameterValueCode,Very fine,http://w3id.org/glosis/model/codelists/voidsDiameterValueCode-V

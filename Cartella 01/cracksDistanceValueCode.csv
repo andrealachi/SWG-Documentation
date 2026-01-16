@@ -1,0 +1,6 @@
+collection,label,id
+http://w3id.org/glosis/model/codelists/cracksDistanceValueCode,Closely spaced 0.2–0.5,http://w3id.org/glosis/model/codelists/cracksDistanceValueCode-D
+http://w3id.org/glosis/model/codelists/cracksDistanceValueCode,Moderately widely spaced 0.5–2,http://w3id.org/glosis/model/codelists/cracksDistanceValueCode-M
+http://w3id.org/glosis/model/codelists/cracksDistanceValueCode,Very closely spaced < 0.2,http://w3id.org/glosis/model/codelists/cracksDistanceValueCode-C
+http://w3id.org/glosis/model/codelists/cracksDistanceValueCode,Very widely spaced > 5,http://w3id.org/glosis/model/codelists/cracksDistanceValueCode-V
+http://w3id.org/glosis/model/codelists/cracksDistanceValueCode,Widely spaced 2–5,http://w3id.org/glosis/model/codelists/cracksDistanceValueCode-W

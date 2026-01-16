@@ -1,0 +1,4 @@
+collection,label,id
+http://w3id.org/glosis/model/codelists/boundaryClassificationValueCode,Clear,http://w3id.org/glosis/model/codelists/boundaryClassificationValueCode-C
+http://w3id.org/glosis/model/codelists/boundaryClassificationValueCode,Diffuse,http://w3id.org/glosis/model/codelists/boundaryClassificationValueCode-D
+http://w3id.org/glosis/model/codelists/boundaryClassificationValueCode,Sharp,http://w3id.org/glosis/model/codelists/boundaryClassificationValueCode-S

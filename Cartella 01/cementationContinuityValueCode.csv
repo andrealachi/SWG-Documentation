@@ -1,0 +1,4 @@
+collection,label,id
+http://w3id.org/glosis/model/codelists/cementationContinuityValueCode,Broken,http://w3id.org/glosis/model/codelists/cementationContinuityValueCode-B
+http://w3id.org/glosis/model/codelists/cementationContinuityValueCode,Continuous,http://w3id.org/glosis/model/codelists/cementationContinuityValueCode-C
+http://w3id.org/glosis/model/codelists/cementationContinuityValueCode,Discontinuous,http://w3id.org/glosis/model/codelists/cementationContinuityValueCode-D

@@ -1,0 +1,6 @@
+collection,label,id
+http://w3id.org/glosis/model/codelists/saltThicknessValueCode,Medium,http://w3id.org/glosis/model/codelists/saltThicknessValueCode-M
+http://w3id.org/glosis/model/codelists/saltThicknessValueCode,None,http://w3id.org/glosis/model/codelists/saltThicknessValueCode-N
+http://w3id.org/glosis/model/codelists/saltThicknessValueCode,Thick,http://w3id.org/glosis/model/codelists/saltThicknessValueCode-C
+http://w3id.org/glosis/model/codelists/saltThicknessValueCode,Thin,http://w3id.org/glosis/model/codelists/saltThicknessValueCode-F
+http://w3id.org/glosis/model/codelists/saltThicknessValueCode,Very thick,http://w3id.org/glosis/model/codelists/saltThicknessValueCode-V

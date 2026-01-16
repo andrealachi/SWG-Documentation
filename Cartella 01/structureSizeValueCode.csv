@@ -1,0 +1,7 @@
+collection,label,id
+http://w3id.org/glosis/model/codelists/structureSizeValueCode,Coarse/thick,http://w3id.org/glosis/model/codelists/structureSizeValueCode-CO
+http://w3id.org/glosis/model/codelists/structureSizeValueCode,Extremely coarse,http://w3id.org/glosis/model/codelists/structureSizeValueCode-EC
+http://w3id.org/glosis/model/codelists/structureSizeValueCode,Fine/thin,http://w3id.org/glosis/model/codelists/structureSizeValueCode-FI
+http://w3id.org/glosis/model/codelists/structureSizeValueCode,Medium,http://w3id.org/glosis/model/codelists/structureSizeValueCode-ME
+http://w3id.org/glosis/model/codelists/structureSizeValueCode,Very coarse/thick,http://w3id.org/glosis/model/codelists/structureSizeValueCode-VC
+http://w3id.org/glosis/model/codelists/structureSizeValueCode,Very fine/thin,http://w3id.org/glosis/model/codelists/structureSizeValueCode-VF

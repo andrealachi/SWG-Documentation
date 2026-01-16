@@ -1,0 +1,7 @@
+collection,label,id
+http://w3id.org/glosis/model/codelists/stickinessValueCode,Non-sticky,http://w3id.org/glosis/model/codelists/stickinessValueCode-NST
+http://w3id.org/glosis/model/codelists/stickinessValueCode,Slightly sticky,http://w3id.org/glosis/model/codelists/stickinessValueCode-SST
+http://w3id.org/glosis/model/codelists/stickinessValueCode,slightly sticky to sticky,http://w3id.org/glosis/model/codelists/stickinessValueCode-SSS
+http://w3id.org/glosis/model/codelists/stickinessValueCode,Sticky,http://w3id.org/glosis/model/codelists/stickinessValueCode-ST
+http://w3id.org/glosis/model/codelists/stickinessValueCode,sticky to very sticky,http://w3id.org/glosis/model/codelists/stickinessValueCode-SVS
+http://w3id.org/glosis/model/codelists/stickinessValueCode,Very sticky,http://w3id.org/glosis/model/codelists/stickinessValueCode-VST

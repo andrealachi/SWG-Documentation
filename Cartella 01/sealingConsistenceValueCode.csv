@@ -1,0 +1,5 @@
+collection,label,id
+http://w3id.org/glosis/model/codelists/sealingConsistenceValueCode,Extremely hard,http://w3id.org/glosis/model/codelists/sealingConsistenceValueCode-E
+http://w3id.org/glosis/model/codelists/sealingConsistenceValueCode,Hard,http://w3id.org/glosis/model/codelists/sealingConsistenceValueCode-H
+http://w3id.org/glosis/model/codelists/sealingConsistenceValueCode,Slightly hard,http://w3id.org/glosis/model/codelists/sealingConsistenceValueCode-S
+http://w3id.org/glosis/model/codelists/sealingConsistenceValueCode,Very hard,http://w3id.org/glosis/model/codelists/sealingConsistenceValueCode-V

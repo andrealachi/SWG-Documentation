@@ -1,0 +1,7 @@
+collection,label,id
+http://w3id.org/glosis/model/codelists/cementationDegreeValueCode,Cemented,http://w3id.org/glosis/model/codelists/cementationDegreeValueCode-C
+http://w3id.org/glosis/model/codelists/cementationDegreeValueCode,Compacted but non-cemented,http://w3id.org/glosis/model/codelists/cementationDegreeValueCode-Y
+http://w3id.org/glosis/model/codelists/cementationDegreeValueCode,Indurated,http://w3id.org/glosis/model/codelists/cementationDegreeValueCode-I
+http://w3id.org/glosis/model/codelists/cementationDegreeValueCode,Moderately cemented,http://w3id.org/glosis/model/codelists/cementationDegreeValueCode-M
+http://w3id.org/glosis/model/codelists/cementationDegreeValueCode,Non-cemented and non-compacted,http://w3id.org/glosis/model/codelists/cementationDegreeValueCode-N
+http://w3id.org/glosis/model/codelists/cementationDegreeValueCode,Weakly cemented,http://w3id.org/glosis/model/codelists/cementationDegreeValueCode-W

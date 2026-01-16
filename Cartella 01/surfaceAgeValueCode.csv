@@ -1,0 +1,15 @@
+collection,label,id
+http://w3id.org/glosis/model/codelists/surfaceAgeValueCode,Holocene anthropogeomorphic,http://w3id.org/glosis/model/codelists/surfaceAgeValueCode-Ha
+http://w3id.org/glosis/model/codelists/surfaceAgeValueCode,Holocene natural,http://w3id.org/glosis/model/codelists/surfaceAgeValueCode-Hn
+http://w3id.org/glosis/model/codelists/surfaceAgeValueCode,"Late Pleistocene, ice covered",http://w3id.org/glosis/model/codelists/surfaceAgeValueCode-lPi
+http://w3id.org/glosis/model/codelists/surfaceAgeValueCode,"Late Pleistocene, periglacial",http://w3id.org/glosis/model/codelists/surfaceAgeValueCode-lPp
+http://w3id.org/glosis/model/codelists/surfaceAgeValueCode,"Late Pleistocene, without periglacial influence.",http://w3id.org/glosis/model/codelists/surfaceAgeValueCode-lPf
+http://w3id.org/glosis/model/codelists/surfaceAgeValueCode,"Older Pleistocene, ice covered",http://w3id.org/glosis/model/codelists/surfaceAgeValueCode-oPi
+http://w3id.org/glosis/model/codelists/surfaceAgeValueCode,"Older Pleistocene, with periglacial influence",http://w3id.org/glosis/model/codelists/surfaceAgeValueCode-oPp
+http://w3id.org/glosis/model/codelists/surfaceAgeValueCode,"Older Pleistocene, without periglacial influence.",http://w3id.org/glosis/model/codelists/surfaceAgeValueCode-oPf
+http://w3id.org/glosis/model/codelists/surfaceAgeValueCode,"Older, pre-Tertiary land surfaces",http://w3id.org/glosis/model/codelists/surfaceAgeValueCode-O
+http://w3id.org/glosis/model/codelists/surfaceAgeValueCode,Tertiary land surfaces,http://w3id.org/glosis/model/codelists/surfaceAgeValueCode-T
+http://w3id.org/glosis/model/codelists/surfaceAgeValueCode,Very young anthropogeomorphic,http://w3id.org/glosis/model/codelists/surfaceAgeValueCode-vYa
+http://w3id.org/glosis/model/codelists/surfaceAgeValueCode,Very young natural,http://w3id.org/glosis/model/codelists/surfaceAgeValueCode-vYn
+http://w3id.org/glosis/model/codelists/surfaceAgeValueCode,Young anthropogeomorphic,http://w3id.org/glosis/model/codelists/surfaceAgeValueCode-Ya
+http://w3id.org/glosis/model/codelists/surfaceAgeValueCode,Young natural,http://w3id.org/glosis/model/codelists/surfaceAgeValueCode-Yn

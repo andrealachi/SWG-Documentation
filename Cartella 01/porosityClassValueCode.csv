@@ -1,0 +1,6 @@
+collection,label,id
+http://w3id.org/glosis/model/codelists/porosityClassValueCode,High,http://w3id.org/glosis/model/codelists/porosityClassValueCode-4
+http://w3id.org/glosis/model/codelists/porosityClassValueCode,Low,http://w3id.org/glosis/model/codelists/porosityClassValueCode-2
+http://w3id.org/glosis/model/codelists/porosityClassValueCode,Medium,http://w3id.org/glosis/model/codelists/porosityClassValueCode-3
+http://w3id.org/glosis/model/codelists/porosityClassValueCode,Very high,http://w3id.org/glosis/model/codelists/porosityClassValueCode-5
+http://w3id.org/glosis/model/codelists/porosityClassValueCode,Very low,http://w3id.org/glosis/model/codelists/porosityClassValueCode-1

@@ -1,0 +1,5 @@
+collection,label,id
+http://w3id.org/glosis/model/codelists/biologicalAbundanceValueCode,Common,http://w3id.org/glosis/model/codelists/biologicalAbundanceValueCode-C
+http://w3id.org/glosis/model/codelists/biologicalAbundanceValueCode,Few,http://w3id.org/glosis/model/codelists/biologicalAbundanceValueCode-F
+http://w3id.org/glosis/model/codelists/biologicalAbundanceValueCode,Many,http://w3id.org/glosis/model/codelists/biologicalAbundanceValueCode-M
+http://w3id.org/glosis/model/codelists/biologicalAbundanceValueCode,None,http://w3id.org/glosis/model/codelists/biologicalAbundanceValueCode-N

@@ -1,0 +1,8 @@
+collection,label,id
+http://w3id.org/glosis/model/codelists/coatingAbundanceValueCode,Abundant,http://w3id.org/glosis/model/codelists/coatingAbundanceValueCode-A
+http://w3id.org/glosis/model/codelists/coatingAbundanceValueCode,Common,http://w3id.org/glosis/model/codelists/coatingAbundanceValueCode-C
+http://w3id.org/glosis/model/codelists/coatingAbundanceValueCode,Dominant,http://w3id.org/glosis/model/codelists/coatingAbundanceValueCode-D
+http://w3id.org/glosis/model/codelists/coatingAbundanceValueCode,Few,http://w3id.org/glosis/model/codelists/coatingAbundanceValueCode-F
+http://w3id.org/glosis/model/codelists/coatingAbundanceValueCode,Many,http://w3id.org/glosis/model/codelists/coatingAbundanceValueCode-M
+http://w3id.org/glosis/model/codelists/coatingAbundanceValueCode,None,http://w3id.org/glosis/model/codelists/coatingAbundanceValueCode-N
+http://w3id.org/glosis/model/codelists/coatingAbundanceValueCode,Very few,http://w3id.org/glosis/model/codelists/coatingAbundanceValueCode-V

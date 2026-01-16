@@ -1,0 +1,13 @@
+collection,label,id
+http://w3id.org/glosis/model/codelists/weatherConditionsValueCode,extremely rainy time or snow melting,http://w3id.org/glosis/model/codelists/weatherConditionsValueCode-WC6
+http://w3id.org/glosis/model/codelists/weatherConditionsValueCode,heavier rain for some days or rainstorm in the last 24 hours,http://w3id.org/glosis/model/codelists/weatherConditionsValueCode-WC5
+http://w3id.org/glosis/model/codelists/weatherConditionsValueCode,no rain in the last 24 hours,http://w3id.org/glosis/model/codelists/weatherConditionsValueCode-WC3
+http://w3id.org/glosis/model/codelists/weatherConditionsValueCode,no rain in the last month,http://w3id.org/glosis/model/codelists/weatherConditionsValueCode-WC1
+http://w3id.org/glosis/model/codelists/weatherConditionsValueCode,no rain in the last week,http://w3id.org/glosis/model/codelists/weatherConditionsValueCode-WC2
+http://w3id.org/glosis/model/codelists/weatherConditionsValueCode,overcast,http://w3id.org/glosis/model/codelists/weatherConditionsValueCode-OV
+http://w3id.org/glosis/model/codelists/weatherConditionsValueCode,partly cloudy,http://w3id.org/glosis/model/codelists/weatherConditionsValueCode-PC
+http://w3id.org/glosis/model/codelists/weatherConditionsValueCode,rain,http://w3id.org/glosis/model/codelists/weatherConditionsValueCode-RA
+http://w3id.org/glosis/model/codelists/weatherConditionsValueCode,rainy without heavy rain in the last 24 hours,http://w3id.org/glosis/model/codelists/weatherConditionsValueCode-WC4
+http://w3id.org/glosis/model/codelists/weatherConditionsValueCode,sleet,http://w3id.org/glosis/model/codelists/weatherConditionsValueCode-SL
+http://w3id.org/glosis/model/codelists/weatherConditionsValueCode,snow,http://w3id.org/glosis/model/codelists/weatherConditionsValueCode-SN
+http://w3id.org/glosis/model/codelists/weatherConditionsValueCode,sunny/clear,http://w3id.org/glosis/model/codelists/weatherConditionsValueCode-SU

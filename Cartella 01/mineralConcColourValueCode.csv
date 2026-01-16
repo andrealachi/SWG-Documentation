@@ -1,0 +1,18 @@
+collection,label,id
+http://w3id.org/glosis/model/codelists/mineralConcColourValueCode,Black,http://w3id.org/glosis/model/codelists/mineralConcColourValueCode-BL
+http://w3id.org/glosis/model/codelists/mineralConcColourValueCode,Blue,http://w3id.org/glosis/model/codelists/mineralConcColourValueCode-BU
+http://w3id.org/glosis/model/codelists/mineralConcColourValueCode,Bluish-black,http://w3id.org/glosis/model/codelists/mineralConcColourValueCode-BB
+http://w3id.org/glosis/model/codelists/mineralConcColourValueCode,Brown,http://w3id.org/glosis/model/codelists/mineralConcColourValueCode-BR
+http://w3id.org/glosis/model/codelists/mineralConcColourValueCode,Brownish,http://w3id.org/glosis/model/codelists/mineralConcColourValueCode-BS
+http://w3id.org/glosis/model/codelists/mineralConcColourValueCode,Greenish,http://w3id.org/glosis/model/codelists/mineralConcColourValueCode-GE
+http://w3id.org/glosis/model/codelists/mineralConcColourValueCode,Grey,http://w3id.org/glosis/model/codelists/mineralConcColourValueCode-GR
+http://w3id.org/glosis/model/codelists/mineralConcColourValueCode,Greyish,http://w3id.org/glosis/model/codelists/mineralConcColourValueCode-GS
+http://w3id.org/glosis/model/codelists/mineralConcColourValueCode,Multicoloured,http://w3id.org/glosis/model/codelists/mineralConcColourValueCode-MC
+http://w3id.org/glosis/model/codelists/mineralConcColourValueCode,Red,http://w3id.org/glosis/model/codelists/mineralConcColourValueCode-RE
+http://w3id.org/glosis/model/codelists/mineralConcColourValueCode,Reddish,http://w3id.org/glosis/model/codelists/mineralConcColourValueCode-RS
+http://w3id.org/glosis/model/codelists/mineralConcColourValueCode,Reddish brown,http://w3id.org/glosis/model/codelists/mineralConcColourValueCode-RB
+http://w3id.org/glosis/model/codelists/mineralConcColourValueCode,Reddish yellow,http://w3id.org/glosis/model/codelists/mineralConcColourValueCode-RY
+http://w3id.org/glosis/model/codelists/mineralConcColourValueCode,White,http://w3id.org/glosis/model/codelists/mineralConcColourValueCode-WH
+http://w3id.org/glosis/model/codelists/mineralConcColourValueCode,Yellow,http://w3id.org/glosis/model/codelists/mineralConcColourValueCode-YE
+http://w3id.org/glosis/model/codelists/mineralConcColourValueCode,Yellowish brown,http://w3id.org/glosis/model/codelists/mineralConcColourValueCode-YB
+http://w3id.org/glosis/model/codelists/mineralConcColourValueCode,Yellowish red,http://w3id.org/glosis/model/codelists/mineralConcColourValueCode-YR

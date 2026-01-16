@@ -1,0 +1,7 @@
+collection,label,id
+http://w3id.org/glosis/model/codelists/erosionTotalAreaAffectedValueCode,Between 0% and 5%,http://w3id.org/glosis/model/codelists/erosionTotalAreaAffectedValueCode-1
+http://w3id.org/glosis/model/codelists/erosionTotalAreaAffectedValueCode,Between 10% and 25%,http://w3id.org/glosis/model/codelists/erosionTotalAreaAffectedValueCode-3
+http://w3id.org/glosis/model/codelists/erosionTotalAreaAffectedValueCode,Between 25% and 50%,http://w3id.org/glosis/model/codelists/erosionTotalAreaAffectedValueCode-4
+http://w3id.org/glosis/model/codelists/erosionTotalAreaAffectedValueCode,Between 5% and 10%,http://w3id.org/glosis/model/codelists/erosionTotalAreaAffectedValueCode-2
+http://w3id.org/glosis/model/codelists/erosionTotalAreaAffectedValueCode,More than 50%,http://w3id.org/glosis/model/codelists/erosionTotalAreaAffectedValueCode-5
+http://w3id.org/glosis/model/codelists/erosionTotalAreaAffectedValueCode,Zero,http://w3id.org/glosis/model/codelists/erosionTotalAreaAffectedValueCode-0

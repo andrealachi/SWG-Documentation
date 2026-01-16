@@ -1,0 +1,9 @@
+collection,label,id
+http://w3id.org/glosis/model/codelists/coatingLocationValueCode,Bridges between sand grains,http://w3id.org/glosis/model/codelists/coatingLocationValueCode-BR
+http://w3id.org/glosis/model/codelists/coatingLocationValueCode,Coarse fragments,http://w3id.org/glosis/model/codelists/coatingLocationValueCode-CF
+http://w3id.org/glosis/model/codelists/coatingLocationValueCode,Horizontal pedfaces,http://w3id.org/glosis/model/codelists/coatingLocationValueCode-PH
+http://w3id.org/glosis/model/codelists/coatingLocationValueCode,Lamellae (clay bands),http://w3id.org/glosis/model/codelists/coatingLocationValueCode-LA
+http://w3id.org/glosis/model/codelists/coatingLocationValueCode,No specific location,http://w3id.org/glosis/model/codelists/coatingLocationValueCode-NS
+http://w3id.org/glosis/model/codelists/coatingLocationValueCode,Pedfaces,http://w3id.org/glosis/model/codelists/coatingLocationValueCode-P
+http://w3id.org/glosis/model/codelists/coatingLocationValueCode,Vertical pedfaces,http://w3id.org/glosis/model/codelists/coatingLocationValueCode-PV
+http://w3id.org/glosis/model/codelists/coatingLocationValueCode,Voids,http://w3id.org/glosis/model/codelists/coatingLocationValueCode-VO

@@ -1,0 +1,6 @@
+collection,label,id
+http://w3id.org/glosis/model/codelists/bulkDensityPeatValueCode,Low,http://w3id.org/glosis/model/codelists/bulkDensityPeatValueCode-BD2
+http://w3id.org/glosis/model/codelists/bulkDensityPeatValueCode,Moderate high,http://w3id.org/glosis/model/codelists/bulkDensityPeatValueCode-BD4
+http://w3id.org/glosis/model/codelists/bulkDensityPeatValueCode,Moderate low,http://w3id.org/glosis/model/codelists/bulkDensityPeatValueCode-BD3
+http://w3id.org/glosis/model/codelists/bulkDensityPeatValueCode,Strong (hemic),http://w3id.org/glosis/model/codelists/bulkDensityPeatValueCode-BD5
+http://w3id.org/glosis/model/codelists/bulkDensityPeatValueCode,Very low,http://w3id.org/glosis/model/codelists/bulkDensityPeatValueCode-BD1

@@ -1,0 +1,8 @@
+collection,label,id
+http://w3id.org/glosis/model/codelists/carbonatesFormsValueCode,disperse powdery lime,http://w3id.org/glosis/model/codelists/carbonatesFormsValueCode-D
+http://w3id.org/glosis/model/codelists/carbonatesFormsValueCode,hard cemented layer or layers of carbonates (less than 10 cm thick),http://w3id.org/glosis/model/codelists/carbonatesFormsValueCode-HL
+http://w3id.org/glosis/model/codelists/carbonatesFormsValueCode,hard concretions,http://w3id.org/glosis/model/codelists/carbonatesFormsValueCode-HC
+http://w3id.org/glosis/model/codelists/carbonatesFormsValueCode,hard hollow concretions,http://w3id.org/glosis/model/codelists/carbonatesFormsValueCode-HHC
+http://w3id.org/glosis/model/codelists/carbonatesFormsValueCode,marl layer,http://w3id.org/glosis/model/codelists/carbonatesFormsValueCode-M
+http://w3id.org/glosis/model/codelists/carbonatesFormsValueCode,"pseudomycelia* (carbonate infillings in pores, resembling mycelia)",http://w3id.org/glosis/model/codelists/carbonatesFormsValueCode-PM
+http://w3id.org/glosis/model/codelists/carbonatesFormsValueCode,soft concretions,http://w3id.org/glosis/model/codelists/carbonatesFormsValueCode-SC

@@ -1,0 +1,5 @@
+collection,label,id
+http://w3id.org/glosis/model/codelists/boundaryTopographyValueCode,Broken,http://w3id.org/glosis/model/codelists/boundaryTopographyValueCode-B
+http://w3id.org/glosis/model/codelists/boundaryTopographyValueCode,Irregular,http://w3id.org/glosis/model/codelists/boundaryTopographyValueCode-I
+http://w3id.org/glosis/model/codelists/boundaryTopographyValueCode,Smooth,http://w3id.org/glosis/model/codelists/boundaryTopographyValueCode-S
+http://w3id.org/glosis/model/codelists/boundaryTopographyValueCode,Wavy,http://w3id.org/glosis/model/codelists/boundaryTopographyValueCode-W

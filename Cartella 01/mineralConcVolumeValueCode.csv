@@ -1,0 +1,8 @@
+collection,label,id
+http://w3id.org/glosis/model/codelists/mineralConcVolumeValueCode,Abundant,http://w3id.org/glosis/model/codelists/mineralConcVolumeValueCode-A
+http://w3id.org/glosis/model/codelists/mineralConcVolumeValueCode,Common,http://w3id.org/glosis/model/codelists/mineralConcVolumeValueCode-C
+http://w3id.org/glosis/model/codelists/mineralConcVolumeValueCode,Dominant,http://w3id.org/glosis/model/codelists/mineralConcVolumeValueCode-D
+http://w3id.org/glosis/model/codelists/mineralConcVolumeValueCode,Few,http://w3id.org/glosis/model/codelists/mineralConcVolumeValueCode-F
+http://w3id.org/glosis/model/codelists/mineralConcVolumeValueCode,Many,http://w3id.org/glosis/model/codelists/mineralConcVolumeValueCode-M
+http://w3id.org/glosis/model/codelists/mineralConcVolumeValueCode,None,http://w3id.org/glosis/model/codelists/mineralConcVolumeValueCode-N
+http://w3id.org/glosis/model/codelists/mineralConcVolumeValueCode,Very few,http://w3id.org/glosis/model/codelists/mineralConcVolumeValueCode-V

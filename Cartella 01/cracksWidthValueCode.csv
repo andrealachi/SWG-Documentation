@@ -1,0 +1,6 @@
+collection,label,id
+http://w3id.org/glosis/model/codelists/cracksWidthValueCode,Extremely wide > 10cm,http://w3id.org/glosis/model/codelists/cracksWidthValueCode-E
+http://w3id.org/glosis/model/codelists/cracksWidthValueCode,Fine < 1cm,http://w3id.org/glosis/model/codelists/cracksWidthValueCode-F
+http://w3id.org/glosis/model/codelists/cracksWidthValueCode,Medium 1cm–2cm,http://w3id.org/glosis/model/codelists/cracksWidthValueCode-M
+http://w3id.org/glosis/model/codelists/cracksWidthValueCode,Very wide 5cm–10cm,http://w3id.org/glosis/model/codelists/cracksWidthValueCode-V
+http://w3id.org/glosis/model/codelists/cracksWidthValueCode,Wide 2cm–5cm,http://w3id.org/glosis/model/codelists/cracksWidthValueCode-W

@@ -1,0 +1,6 @@
+collection,label,id
+http://w3id.org/glosis/model/codelists/voidsClassificationValueCode,Channels,http://w3id.org/glosis/model/codelists/voidsClassificationValueCode-C
+http://w3id.org/glosis/model/codelists/voidsClassificationValueCode,Interstitial,http://w3id.org/glosis/model/codelists/voidsClassificationValueCode-I
+http://w3id.org/glosis/model/codelists/voidsClassificationValueCode,Planes,http://w3id.org/glosis/model/codelists/voidsClassificationValueCode-P
+http://w3id.org/glosis/model/codelists/voidsClassificationValueCode,Vesicular,http://w3id.org/glosis/model/codelists/voidsClassificationValueCode-B
+http://w3id.org/glosis/model/codelists/voidsClassificationValueCode,Vughs,http://w3id.org/glosis/model/codelists/voidsClassificationValueCode-V

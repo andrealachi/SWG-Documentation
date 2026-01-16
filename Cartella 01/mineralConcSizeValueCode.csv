@@ -1,0 +1,5 @@
+collection,label,id
+http://w3id.org/glosis/model/codelists/mineralConcSizeValueCode,Coarse,http://w3id.org/glosis/model/codelists/mineralConcSizeValueCode-C
+http://w3id.org/glosis/model/codelists/mineralConcSizeValueCode,Fine,http://w3id.org/glosis/model/codelists/mineralConcSizeValueCode-F
+http://w3id.org/glosis/model/codelists/mineralConcSizeValueCode,Medium,http://w3id.org/glosis/model/codelists/mineralConcSizeValueCode-M
+http://w3id.org/glosis/model/codelists/mineralConcSizeValueCode,Very fine,http://w3id.org/glosis/model/codelists/mineralConcSizeValueCode-V

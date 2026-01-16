@@ -1,0 +1,6 @@
+collection,label,id
+http://w3id.org/glosis/model/codelists/mineralConcShapeValueCode,Angular,http://w3id.org/glosis/model/codelists/mineralConcShapeValueCode-A
+http://w3id.org/glosis/model/codelists/mineralConcShapeValueCode,Elongated,http://w3id.org/glosis/model/codelists/mineralConcShapeValueCode-E
+http://w3id.org/glosis/model/codelists/mineralConcShapeValueCode,Flat,http://w3id.org/glosis/model/codelists/mineralConcShapeValueCode-F
+http://w3id.org/glosis/model/codelists/mineralConcShapeValueCode,Irregular,http://w3id.org/glosis/model/codelists/mineralConcShapeValueCode-I
+http://w3id.org/glosis/model/codelists/mineralConcShapeValueCode,Rounded (spherical),http://w3id.org/glosis/model/codelists/mineralConcShapeValueCode-R

@@ -1,0 +1,6 @@
+collection,label,id
+http://w3id.org/glosis/model/codelists/rootsAbundanceValueCode,Common,http://w3id.org/glosis/model/codelists/rootsAbundanceValueCode-C
+http://w3id.org/glosis/model/codelists/rootsAbundanceValueCode,Few,http://w3id.org/glosis/model/codelists/rootsAbundanceValueCode-F
+http://w3id.org/glosis/model/codelists/rootsAbundanceValueCode,Many,http://w3id.org/glosis/model/codelists/rootsAbundanceValueCode-M
+http://w3id.org/glosis/model/codelists/rootsAbundanceValueCode,None,http://w3id.org/glosis/model/codelists/rootsAbundanceValueCode-N
+http://w3id.org/glosis/model/codelists/rootsAbundanceValueCode,Very few,http://w3id.org/glosis/model/codelists/rootsAbundanceValueCode-V

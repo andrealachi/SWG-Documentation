@@ -1,0 +1,6 @@
+collection,label,id
+http://w3id.org/glosis/model/codelists/bleachedSandValueCode,Bleached sand of surface coverage  40-80%,http://w3id.org/glosis/model/codelists/bleachedSandValueCode-3
+http://w3id.org/glosis/model/codelists/bleachedSandValueCode,Bleached sand of surface coverage 0-2%,http://w3id.org/glosis/model/codelists/bleachedSandValueCode-0
+http://w3id.org/glosis/model/codelists/bleachedSandValueCode,Bleached sand of surface coverage 15-40%,http://w3id.org/glosis/model/codelists/bleachedSandValueCode-2
+http://w3id.org/glosis/model/codelists/bleachedSandValueCode,Bleached sand of surface coverage 2-15%,http://w3id.org/glosis/model/codelists/bleachedSandValueCode-1
+http://w3id.org/glosis/model/codelists/bleachedSandValueCode,Bleached sand of surface coverage more than 80%,http://w3id.org/glosis/model/codelists/bleachedSandValueCode-4

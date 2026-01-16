@@ -1,0 +1,16 @@
+collection,label,id
+http://w3id.org/glosis/model/codelists/erosionCategoryValueCode,Deposition by water,http://w3id.org/glosis/model/codelists/erosionCategoryValueCode-WD
+http://w3id.org/glosis/model/codelists/erosionCategoryValueCode,Gully erosion,http://w3id.org/glosis/model/codelists/erosionCategoryValueCode-WG
+http://w3id.org/glosis/model/codelists/erosionCategoryValueCode,Mass movement,http://w3id.org/glosis/model/codelists/erosionCategoryValueCode-M
+http://w3id.org/glosis/model/codelists/erosionCategoryValueCode,No evidence of erosion,http://w3id.org/glosis/model/codelists/erosionCategoryValueCode-N
+http://w3id.org/glosis/model/codelists/erosionCategoryValueCode,Not known,http://w3id.org/glosis/model/codelists/erosionCategoryValueCode-NK
+http://w3id.org/glosis/model/codelists/erosionCategoryValueCode,Rill erosion,http://w3id.org/glosis/model/codelists/erosionCategoryValueCode-WR
+http://w3id.org/glosis/model/codelists/erosionCategoryValueCode,Salt deposition,http://w3id.org/glosis/model/codelists/erosionCategoryValueCode-AZ
+http://w3id.org/glosis/model/codelists/erosionCategoryValueCode,Sheet erosion,http://w3id.org/glosis/model/codelists/erosionCategoryValueCode-WS
+http://w3id.org/glosis/model/codelists/erosionCategoryValueCode,Shifting sands,http://w3id.org/glosis/model/codelists/erosionCategoryValueCode-AS
+http://w3id.org/glosis/model/codelists/erosionCategoryValueCode,Tunnel erosion,http://w3id.org/glosis/model/codelists/erosionCategoryValueCode-WT
+http://w3id.org/glosis/model/codelists/erosionCategoryValueCode,Water and wind erosion,http://w3id.org/glosis/model/codelists/erosionCategoryValueCode-WA
+http://w3id.org/glosis/model/codelists/erosionCategoryValueCode,Water erosion or deposition,http://w3id.org/glosis/model/codelists/erosionCategoryValueCode-W
+http://w3id.org/glosis/model/codelists/erosionCategoryValueCode,Wind (aeolian) erosion or deposition,http://w3id.org/glosis/model/codelists/erosionCategoryValueCode-A
+http://w3id.org/glosis/model/codelists/erosionCategoryValueCode,Wind deposition,http://w3id.org/glosis/model/codelists/erosionCategoryValueCode-AD
+http://w3id.org/glosis/model/codelists/erosionCategoryValueCode,Wind erosion and deposition,http://w3id.org/glosis/model/codelists/erosionCategoryValueCode-AM

@@ -1,0 +1,7 @@
+collection,label,id
+http://w3id.org/glosis/model/codelists/fragmentsSizeValueCode,Boulders,http://w3id.org/glosis/model/codelists/fragmentsSizeValueCode-B
+http://w3id.org/glosis/model/codelists/fragmentsSizeValueCode,Coarse gravel,http://w3id.org/glosis/model/codelists/fragmentsSizeValueCode-C
+http://w3id.org/glosis/model/codelists/fragmentsSizeValueCode,Fine gravel,http://w3id.org/glosis/model/codelists/fragmentsSizeValueCode-F
+http://w3id.org/glosis/model/codelists/fragmentsSizeValueCode,Large boulders,http://w3id.org/glosis/model/codelists/fragmentsSizeValueCode-L
+http://w3id.org/glosis/model/codelists/fragmentsSizeValueCode,Medium gravel,http://w3id.org/glosis/model/codelists/fragmentsSizeValueCode-M
+http://w3id.org/glosis/model/codelists/fragmentsSizeValueCode,Stones,http://w3id.org/glosis/model/codelists/fragmentsSizeValueCode-S

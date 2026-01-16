@@ -1,0 +1,11 @@
+collection,label,id
+http://w3id.org/glosis/model/codelists/sandyTextureValueCode,Coarse sand,http://w3id.org/glosis/model/codelists/sandyTextureValueCode-CS
+http://w3id.org/glosis/model/codelists/sandyTextureValueCode,Coarse sandy loam,http://w3id.org/glosis/model/codelists/sandyTextureValueCode-CSL
+http://w3id.org/glosis/model/codelists/sandyTextureValueCode,Fine sand,http://w3id.org/glosis/model/codelists/sandyTextureValueCode-FS
+http://w3id.org/glosis/model/codelists/sandyTextureValueCode,Fine sandy loam,http://w3id.org/glosis/model/codelists/sandyTextureValueCode-FSL
+http://w3id.org/glosis/model/codelists/sandyTextureValueCode,Loamy coarse sand,http://w3id.org/glosis/model/codelists/sandyTextureValueCode-LCS
+http://w3id.org/glosis/model/codelists/sandyTextureValueCode,Loamy fine sand,http://w3id.org/glosis/model/codelists/sandyTextureValueCode-LFS
+http://w3id.org/glosis/model/codelists/sandyTextureValueCode,Loamy very fine sand,http://w3id.org/glosis/model/codelists/sandyTextureValueCode-LVFS
+http://w3id.org/glosis/model/codelists/sandyTextureValueCode,Medium sand,http://w3id.org/glosis/model/codelists/sandyTextureValueCode-MS
+http://w3id.org/glosis/model/codelists/sandyTextureValueCode,"Sand, unsorted",http://w3id.org/glosis/model/codelists/sandyTextureValueCode-US
+http://w3id.org/glosis/model/codelists/sandyTextureValueCode,Very fine sand,http://w3id.org/glosis/model/codelists/sandyTextureValueCode-VFS

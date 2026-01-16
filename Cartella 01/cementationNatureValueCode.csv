@@ -1,0 +1,14 @@
+collection,label,id
+http://w3id.org/glosis/model/codelists/cementationNatureValueCode,Carbonates,http://w3id.org/glosis/model/codelists/cementationNatureValueCode-K
+http://w3id.org/glosis/model/codelists/cementationNatureValueCode,Carbonates–silica,http://w3id.org/glosis/model/codelists/cementationNatureValueCode-KQ
+http://w3id.org/glosis/model/codelists/cementationNatureValueCode,Clay,http://w3id.org/glosis/model/codelists/cementationNatureValueCode-C
+http://w3id.org/glosis/model/codelists/cementationNatureValueCode,Clay–sesquioxides,http://w3id.org/glosis/model/codelists/cementationNatureValueCode-CS
+http://w3id.org/glosis/model/codelists/cementationNatureValueCode,Gypsum,http://w3id.org/glosis/model/codelists/cementationNatureValueCode-GY
+http://w3id.org/glosis/model/codelists/cementationNatureValueCode,Ice,http://w3id.org/glosis/model/codelists/cementationNatureValueCode-I
+http://w3id.org/glosis/model/codelists/cementationNatureValueCode,Iron,http://w3id.org/glosis/model/codelists/cementationNatureValueCode-F
+http://w3id.org/glosis/model/codelists/cementationNatureValueCode,Iron–manganese (sesquioxides),http://w3id.org/glosis/model/codelists/cementationNatureValueCode-FM
+http://w3id.org/glosis/model/codelists/cementationNatureValueCode,Iron–organic matter,http://w3id.org/glosis/model/codelists/cementationNatureValueCode-FO
+http://w3id.org/glosis/model/codelists/cementationNatureValueCode,Mechanical,http://w3id.org/glosis/model/codelists/cementationNatureValueCode-M
+http://w3id.org/glosis/model/codelists/cementationNatureValueCode,Not known,http://w3id.org/glosis/model/codelists/cementationNatureValueCode-NK
+http://w3id.org/glosis/model/codelists/cementationNatureValueCode,Ploughing,http://w3id.org/glosis/model/codelists/cementationNatureValueCode-P
+http://w3id.org/glosis/model/codelists/cementationNatureValueCode,Silica,http://w3id.org/glosis/model/codelists/cementationNatureValueCode-Q

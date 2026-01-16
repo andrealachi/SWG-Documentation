@@ -1,0 +1,58 @@
+collection,label,id
+http://w3id.org/glosis/model/codelists/cropClassValueCode,Alfalfa,http://w3id.org/glosis/model/codelists/cropClassValueCode-Fo_Al
+http://w3id.org/glosis/model/codelists/cropClassValueCode,Apples,http://w3id.org/glosis/model/codelists/cropClassValueCode-Fr_Ap
+http://w3id.org/glosis/model/codelists/cropClassValueCode,Bananas,http://w3id.org/glosis/model/codelists/cropClassValueCode-Fr_Ba
+http://w3id.org/glosis/model/codelists/cropClassValueCode,Barley,http://w3id.org/glosis/model/codelists/cropClassValueCode-Ce_Ba
+http://w3id.org/glosis/model/codelists/cropClassValueCode,Beans,http://w3id.org/glosis/model/codelists/cropClassValueCode-Pu_Be
+http://w3id.org/glosis/model/codelists/cropClassValueCode,Cassava,http://w3id.org/glosis/model/codelists/cropClassValueCode-Ro_Ca
+http://w3id.org/glosis/model/codelists/cropClassValueCode,Cereals,http://w3id.org/glosis/model/codelists/cropClassValueCode-Ce
+http://w3id.org/glosis/model/codelists/cropClassValueCode,Citrus,http://w3id.org/glosis/model/codelists/cropClassValueCode-Fr_Ci
+http://w3id.org/glosis/model/codelists/cropClassValueCode,Clover,http://w3id.org/glosis/model/codelists/cropClassValueCode-Fo_Cl
+http://w3id.org/glosis/model/codelists/cropClassValueCode,Cocoa,http://w3id.org/glosis/model/codelists/cropClassValueCode-Lu_Cc
+http://w3id.org/glosis/model/codelists/cropClassValueCode,Coconuts,http://w3id.org/glosis/model/codelists/cropClassValueCode-Oi_Cc
+http://w3id.org/glosis/model/codelists/cropClassValueCode,Coffee,http://w3id.org/glosis/model/codelists/cropClassValueCode-Lu_Co
+http://w3id.org/glosis/model/codelists/cropClassValueCode,Cotton,http://w3id.org/glosis/model/codelists/cropClassValueCode-Fi_Co
+http://w3id.org/glosis/model/codelists/cropClassValueCode,Fibre crops,http://w3id.org/glosis/model/codelists/cropClassValueCode-Fi
+http://w3id.org/glosis/model/codelists/cropClassValueCode,Fodder plants,http://w3id.org/glosis/model/codelists/cropClassValueCode-Fo
+http://w3id.org/glosis/model/codelists/cropClassValueCode,Fruits and melons,http://w3id.org/glosis/model/codelists/cropClassValueCode-Fr
+http://w3id.org/glosis/model/codelists/cropClassValueCode,"Grapes, Wine, Raisins",http://w3id.org/glosis/model/codelists/cropClassValueCode-Fr_Gr
+http://w3id.org/glosis/model/codelists/cropClassValueCode,Grasses,http://w3id.org/glosis/model/codelists/cropClassValueCode-Fo_Gr
+http://w3id.org/glosis/model/codelists/cropClassValueCode,Groundnuts,http://w3id.org/glosis/model/codelists/cropClassValueCode-Oi_Gr
+http://w3id.org/glosis/model/codelists/cropClassValueCode,Hay,http://w3id.org/glosis/model/codelists/cropClassValueCode-Fo_Ha
+http://w3id.org/glosis/model/codelists/cropClassValueCode,Jute,http://w3id.org/glosis/model/codelists/cropClassValueCode-Fi_Ju
+http://w3id.org/glosis/model/codelists/cropClassValueCode,Leguminous,http://w3id.org/glosis/model/codelists/cropClassValueCode-Fo_Le
+http://w3id.org/glosis/model/codelists/cropClassValueCode,Lentils,http://w3id.org/glosis/model/codelists/cropClassValueCode-Pu_Le
+http://w3id.org/glosis/model/codelists/cropClassValueCode,Linseed,http://w3id.org/glosis/model/codelists/cropClassValueCode-Oi_Li
+http://w3id.org/glosis/model/codelists/cropClassValueCode,Maize,http://w3id.org/glosis/model/codelists/cropClassValueCode-Ce_Ma
+http://w3id.org/glosis/model/codelists/cropClassValueCode,Maize,http://w3id.org/glosis/model/codelists/cropClassValueCode-Fo_Ma
+http://w3id.org/glosis/model/codelists/cropClassValueCode,Mangoes,http://w3id.org/glosis/model/codelists/cropClassValueCode-Fr_Ma
+http://w3id.org/glosis/model/codelists/cropClassValueCode,Melons,http://w3id.org/glosis/model/codelists/cropClassValueCode-Fr_Me
+http://w3id.org/glosis/model/codelists/cropClassValueCode,Millet,http://w3id.org/glosis/model/codelists/cropClassValueCode-Ce_Mi
+http://w3id.org/glosis/model/codelists/cropClassValueCode,Oats,http://w3id.org/glosis/model/codelists/cropClassValueCode-Ce_Oa
+http://w3id.org/glosis/model/codelists/cropClassValueCode,Oil-palm,http://w3id.org/glosis/model/codelists/cropClassValueCode-Oi_Op
+http://w3id.org/glosis/model/codelists/cropClassValueCode,Oilcrops,http://w3id.org/glosis/model/codelists/cropClassValueCode-Oi
+http://w3id.org/glosis/model/codelists/cropClassValueCode,Olives,http://w3id.org/glosis/model/codelists/cropClassValueCode-Ol
+http://w3id.org/glosis/model/codelists/cropClassValueCode,Other crops,http://w3id.org/glosis/model/codelists/cropClassValueCode-Ot
+http://w3id.org/glosis/model/codelists/cropClassValueCode,"Palm (fibres, kernels)",http://w3id.org/glosis/model/codelists/cropClassValueCode-Ot_Pa
+http://w3id.org/glosis/model/codelists/cropClassValueCode,Peas,http://w3id.org/glosis/model/codelists/cropClassValueCode-Pu_Pe
+http://w3id.org/glosis/model/codelists/cropClassValueCode,Potatoes,http://w3id.org/glosis/model/codelists/cropClassValueCode-Ro_Po
+http://w3id.org/glosis/model/codelists/cropClassValueCode,Pulses,http://w3id.org/glosis/model/codelists/cropClassValueCode-Pu
+http://w3id.org/glosis/model/codelists/cropClassValueCode,Pumpkins,http://w3id.org/glosis/model/codelists/cropClassValueCode-Fo_Pu
+http://w3id.org/glosis/model/codelists/cropClassValueCode,Rape,http://w3id.org/glosis/model/codelists/cropClassValueCode-Oi_Ra
+http://w3id.org/glosis/model/codelists/cropClassValueCode,"Rice, dry",http://w3id.org/glosis/model/codelists/cropClassValueCode-Ce_Ri
+http://w3id.org/glosis/model/codelists/cropClassValueCode,"Rice, paddy",http://w3id.org/glosis/model/codelists/cropClassValueCode-Ce_Pa
+http://w3id.org/glosis/model/codelists/cropClassValueCode,Roots and tubers,http://w3id.org/glosis/model/codelists/cropClassValueCode-Ro
+http://w3id.org/glosis/model/codelists/cropClassValueCode,Rubber,http://w3id.org/glosis/model/codelists/cropClassValueCode-Ot_Ru
+http://w3id.org/glosis/model/codelists/cropClassValueCode,Rye,http://w3id.org/glosis/model/codelists/cropClassValueCode-Ce_Ry
+http://w3id.org/glosis/model/codelists/cropClassValueCode,Semi-luxury foods and tobacco,http://w3id.org/glosis/model/codelists/cropClassValueCode-Lu
+http://w3id.org/glosis/model/codelists/cropClassValueCode,Sesame,http://w3id.org/glosis/model/codelists/cropClassValueCode-Oi_Se
+http://w3id.org/glosis/model/codelists/cropClassValueCode,Sorghum,http://w3id.org/glosis/model/codelists/cropClassValueCode-Ce_So
+http://w3id.org/glosis/model/codelists/cropClassValueCode,Soybeans,http://w3id.org/glosis/model/codelists/cropClassValueCode-Oi_So
+http://w3id.org/glosis/model/codelists/cropClassValueCode,Sugar beets,http://w3id.org/glosis/model/codelists/cropClassValueCode-Ro_Su
+http://w3id.org/glosis/model/codelists/cropClassValueCode,Sugar cane,http://w3id.org/glosis/model/codelists/cropClassValueCode-Ot_Sc
+http://w3id.org/glosis/model/codelists/cropClassValueCode,Sunflower,http://w3id.org/glosis/model/codelists/cropClassValueCode-Oi_Su
+http://w3id.org/glosis/model/codelists/cropClassValueCode,Tea,http://w3id.org/glosis/model/codelists/cropClassValueCode-Lu_Te
+http://w3id.org/glosis/model/codelists/cropClassValueCode,Tobacco,http://w3id.org/glosis/model/codelists/cropClassValueCode-Lu_To
+http://w3id.org/glosis/model/codelists/cropClassValueCode,Vegetables,http://w3id.org/glosis/model/codelists/cropClassValueCode-Ve
+http://w3id.org/glosis/model/codelists/cropClassValueCode,Wheat,http://w3id.org/glosis/model/codelists/cropClassValueCode-Ce_Wh
+http://w3id.org/glosis/model/codelists/cropClassValueCode,Yams,http://w3id.org/glosis/model/codelists/cropClassValueCode-Ro_Ya

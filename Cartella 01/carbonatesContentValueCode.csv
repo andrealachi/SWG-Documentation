@@ -1,0 +1,6 @@
+collection,label,id
+http://w3id.org/glosis/model/codelists/carbonatesContentValueCode,Extremely calcareous,http://w3id.org/glosis/model/codelists/carbonatesContentValueCode-EX
+http://w3id.org/glosis/model/codelists/carbonatesContentValueCode,Moderately calcareous,http://w3id.org/glosis/model/codelists/carbonatesContentValueCode-MO
+http://w3id.org/glosis/model/codelists/carbonatesContentValueCode,Non-calcareous,http://w3id.org/glosis/model/codelists/carbonatesContentValueCode-N
+http://w3id.org/glosis/model/codelists/carbonatesContentValueCode,Slightly calcareous,http://w3id.org/glosis/model/codelists/carbonatesContentValueCode-SL
+http://w3id.org/glosis/model/codelists/carbonatesContentValueCode,Strongly calcareous,http://w3id.org/glosis/model/codelists/carbonatesContentValueCode-ST

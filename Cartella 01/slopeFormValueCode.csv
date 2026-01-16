@@ -1,0 +1,6 @@
+collection,label,id
+http://w3id.org/glosis/model/codelists/slopeFormValueCode,complex (irregular),http://w3id.org/glosis/model/codelists/slopeFormValueCode-X
+http://w3id.org/glosis/model/codelists/slopeFormValueCode,concave,http://w3id.org/glosis/model/codelists/slopeFormValueCode-C
+http://w3id.org/glosis/model/codelists/slopeFormValueCode,convex,http://w3id.org/glosis/model/codelists/slopeFormValueCode-V
+http://w3id.org/glosis/model/codelists/slopeFormValueCode,straight,http://w3id.org/glosis/model/codelists/slopeFormValueCode-S
+http://w3id.org/glosis/model/codelists/slopeFormValueCode,terraced,http://w3id.org/glosis/model/codelists/slopeFormValueCode-T

@@ -1,0 +1,6 @@
+collection,label,id
+http://w3id.org/glosis/model/codelists/bulkDensityMineralValueCode,"Knife can be pushed into the moist soil with weak pressure, sample disintegrates into few fragments, which may be further divided.",http://w3id.org/glosis/model/codelists/bulkDensityMineralValueCode-BD3
+http://w3id.org/glosis/model/codelists/bulkDensityMineralValueCode,"Knife penetrates only 1–2 cm into the moist soil, some effort required, sample disintegrates into few fragments, which cannot be subdivided further.",http://w3id.org/glosis/model/codelists/bulkDensityMineralValueCode-BD4
+http://w3id.org/glosis/model/codelists/bulkDensityMineralValueCode,"Many pores, moist materials drop easily out of the auger.",http://w3id.org/glosis/model/codelists/bulkDensityMineralValueCode-BD1
+http://w3id.org/glosis/model/codelists/bulkDensityMineralValueCode,Sample disintegrates into numerous fragments after application of weak pressure.,http://w3id.org/glosis/model/codelists/bulkDensityMineralValueCode-BD2
+http://w3id.org/glosis/model/codelists/bulkDensityMineralValueCode,"Very large pressure necessary to force knife into the soil, no further disintegration of sample.",http://w3id.org/glosis/model/codelists/bulkDensityMineralValueCode-BD5

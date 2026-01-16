@@ -1,0 +1,5 @@
+collection,label,id
+http://w3id.org/glosis/model/codelists/erosionDegreeValueCode,Extreme,http://w3id.org/glosis/model/codelists/erosionDegreeValueCode-E
+http://w3id.org/glosis/model/codelists/erosionDegreeValueCode,Moderate,http://w3id.org/glosis/model/codelists/erosionDegreeValueCode-M
+http://w3id.org/glosis/model/codelists/erosionDegreeValueCode,Severe,http://w3id.org/glosis/model/codelists/erosionDegreeValueCode-V
+http://w3id.org/glosis/model/codelists/erosionDegreeValueCode,Slight,http://w3id.org/glosis/model/codelists/erosionDegreeValueCode-S

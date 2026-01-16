@@ -1,0 +1,5 @@
+collection,label,id
+http://w3id.org/glosis/model/codelists/cementationFabricValueCode,Nodular,http://w3id.org/glosis/model/codelists/cementationFabricValueCode-D
+http://w3id.org/glosis/model/codelists/cementationFabricValueCode,Pisolithic,http://w3id.org/glosis/model/codelists/cementationFabricValueCode-Pi
+http://w3id.org/glosis/model/codelists/cementationFabricValueCode,Platy,http://w3id.org/glosis/model/codelists/cementationFabricValueCode-Pl
+http://w3id.org/glosis/model/codelists/cementationFabricValueCode,Vesicular,http://w3id.org/glosis/model/codelists/cementationFabricValueCode-V

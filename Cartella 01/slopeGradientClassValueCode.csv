@@ -1,0 +1,11 @@
+collection,label,id
+http://w3id.org/glosis/model/codelists/slopeGradientClassValueCode,Flat,http://w3id.org/glosis/model/codelists/slopeGradientClassValueCode-1
+http://w3id.org/glosis/model/codelists/slopeGradientClassValueCode,Gently sloping,http://w3id.org/glosis/model/codelists/slopeGradientClassValueCode-5
+http://w3id.org/glosis/model/codelists/slopeGradientClassValueCode,Level,http://w3id.org/glosis/model/codelists/slopeGradientClassValueCode-2
+http://w3id.org/glosis/model/codelists/slopeGradientClassValueCode,Moderately steep,http://w3id.org/glosis/model/codelists/slopeGradientClassValueCode-8
+http://w3id.org/glosis/model/codelists/slopeGradientClassValueCode,Nearly level,http://w3id.org/glosis/model/codelists/slopeGradientClassValueCode-3
+http://w3id.org/glosis/model/codelists/slopeGradientClassValueCode,Sloping,http://w3id.org/glosis/model/codelists/slopeGradientClassValueCode-6
+http://w3id.org/glosis/model/codelists/slopeGradientClassValueCode,Steep,http://w3id.org/glosis/model/codelists/slopeGradientClassValueCode-9
+http://w3id.org/glosis/model/codelists/slopeGradientClassValueCode,Strongly sloping,http://w3id.org/glosis/model/codelists/slopeGradientClassValueCode-7
+http://w3id.org/glosis/model/codelists/slopeGradientClassValueCode,Very gently sloping,http://w3id.org/glosis/model/codelists/slopeGradientClassValueCode-4
+http://w3id.org/glosis/model/codelists/slopeGradientClassValueCode,Very steep,http://w3id.org/glosis/model/codelists/slopeGradientClassValueCode-10

@@ -1,0 +1,6 @@
+collection,label,id
+http://w3id.org/glosis/model/codelists/poresAbundanceValueCode,Common,http://w3id.org/glosis/model/codelists/poresAbundanceValueCode-C
+http://w3id.org/glosis/model/codelists/poresAbundanceValueCode,Few,http://w3id.org/glosis/model/codelists/poresAbundanceValueCode-F
+http://w3id.org/glosis/model/codelists/poresAbundanceValueCode,Many,http://w3id.org/glosis/model/codelists/poresAbundanceValueCode-M
+http://w3id.org/glosis/model/codelists/poresAbundanceValueCode,None,http://w3id.org/glosis/model/codelists/poresAbundanceValueCode-N
+http://w3id.org/glosis/model/codelists/poresAbundanceValueCode,Very few,http://w3id.org/glosis/model/codelists/poresAbundanceValueCode-V

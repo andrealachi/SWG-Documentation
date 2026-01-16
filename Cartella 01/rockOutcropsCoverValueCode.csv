@@ -1,0 +1,8 @@
+collection,label,id
+http://w3id.org/glosis/model/codelists/rockOutcropsCoverValueCode,Abundant,http://w3id.org/glosis/model/codelists/rockOutcropsCoverValueCode-A
+http://w3id.org/glosis/model/codelists/rockOutcropsCoverValueCode,Common,http://w3id.org/glosis/model/codelists/rockOutcropsCoverValueCode-C
+http://w3id.org/glosis/model/codelists/rockOutcropsCoverValueCode,Dominant,http://w3id.org/glosis/model/codelists/rockOutcropsCoverValueCode-D
+http://w3id.org/glosis/model/codelists/rockOutcropsCoverValueCode,Few,http://w3id.org/glosis/model/codelists/rockOutcropsCoverValueCode-F
+http://w3id.org/glosis/model/codelists/rockOutcropsCoverValueCode,Many,http://w3id.org/glosis/model/codelists/rockOutcropsCoverValueCode-M
+http://w3id.org/glosis/model/codelists/rockOutcropsCoverValueCode,None,http://w3id.org/glosis/model/codelists/rockOutcropsCoverValueCode-N
+http://w3id.org/glosis/model/codelists/rockOutcropsCoverValueCode,Very few,http://w3id.org/glosis/model/codelists/rockOutcropsCoverValueCode-V

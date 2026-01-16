@@ -1,0 +1,5 @@
+collection,label,id
+http://w3id.org/glosis/model/codelists/peatDrainageValueCode,Moderately drained,http://w3id.org/glosis/model/codelists/peatDrainageValueCode-DC3
+http://w3id.org/glosis/model/codelists/peatDrainageValueCode,Undrained,http://w3id.org/glosis/model/codelists/peatDrainageValueCode-DC1
+http://w3id.org/glosis/model/codelists/peatDrainageValueCode,Weakly drained,http://w3id.org/glosis/model/codelists/peatDrainageValueCode-DC2
+http://w3id.org/glosis/model/codelists/peatDrainageValueCode,Well drained,http://w3id.org/glosis/model/codelists/peatDrainageValueCode-DC4

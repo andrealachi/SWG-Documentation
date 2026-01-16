@@ -1,0 +1,36 @@
+collection,label,id
+http://w3id.org/glosis/model/codelists/humanInfluenceClassValueCode,Application of fertilizers,http://w3id.org/glosis/model/codelists/humanInfluenceClassValueCode-FE
+http://w3id.org/glosis/model/codelists/humanInfluenceClassValueCode,"Archaeological (burial mound, midden)",http://w3id.org/glosis/model/codelists/humanInfluenceClassValueCode-AC
+http://w3id.org/glosis/model/codelists/humanInfluenceClassValueCode,Artificial drainage,http://w3id.org/glosis/model/codelists/humanInfluenceClassValueCode-AD
+http://w3id.org/glosis/model/codelists/humanInfluenceClassValueCode,Border irrigation,http://w3id.org/glosis/model/codelists/humanInfluenceClassValueCode-IB
+http://w3id.org/glosis/model/codelists/humanInfluenceClassValueCode,Borrow pit,http://w3id.org/glosis/model/codelists/humanInfluenceClassValueCode-BP
+http://w3id.org/glosis/model/codelists/humanInfluenceClassValueCode,Bunding,http://w3id.org/glosis/model/codelists/humanInfluenceClassValueCode-BU
+http://w3id.org/glosis/model/codelists/humanInfluenceClassValueCode,Burning,http://w3id.org/glosis/model/codelists/humanInfluenceClassValueCode-BR
+http://w3id.org/glosis/model/codelists/humanInfluenceClassValueCode,Clearing,http://w3id.org/glosis/model/codelists/humanInfluenceClassValueCode-CL
+http://w3id.org/glosis/model/codelists/humanInfluenceClassValueCode,Drip irrigation,http://w3id.org/glosis/model/codelists/humanInfluenceClassValueCode-ID
+http://w3id.org/glosis/model/codelists/humanInfluenceClassValueCode,Dump (not specified),http://w3id.org/glosis/model/codelists/humanInfluenceClassValueCode-DU
+http://w3id.org/glosis/model/codelists/humanInfluenceClassValueCode,Flood irrigation,http://w3id.org/glosis/model/codelists/humanInfluenceClassValueCode-IP
+http://w3id.org/glosis/model/codelists/humanInfluenceClassValueCode,Furrow irrigation,http://w3id.org/glosis/model/codelists/humanInfluenceClassValueCode-IF
+http://w3id.org/glosis/model/codelists/humanInfluenceClassValueCode,Impact crater,http://w3id.org/glosis/model/codelists/humanInfluenceClassValueCode-CR
+http://w3id.org/glosis/model/codelists/humanInfluenceClassValueCode,Irrigation (not specified),http://w3id.org/glosis/model/codelists/humanInfluenceClassValueCode-IU
+http://w3id.org/glosis/model/codelists/humanInfluenceClassValueCode,Landfill (also sanitary),http://w3id.org/glosis/model/codelists/humanInfluenceClassValueCode-LF
+http://w3id.org/glosis/model/codelists/humanInfluenceClassValueCode,Levelling,http://w3id.org/glosis/model/codelists/humanInfluenceClassValueCode-LV
+http://w3id.org/glosis/model/codelists/humanInfluenceClassValueCode,"Mine (surface, including openpit, gravel and quarries)",http://w3id.org/glosis/model/codelists/humanInfluenceClassValueCode-MI
+http://w3id.org/glosis/model/codelists/humanInfluenceClassValueCode,Mineral additions (not specified),http://w3id.org/glosis/model/codelists/humanInfluenceClassValueCode-MU
+http://w3id.org/glosis/model/codelists/humanInfluenceClassValueCode,No influence,http://w3id.org/glosis/model/codelists/humanInfluenceClassValueCode-N
+http://w3id.org/glosis/model/codelists/humanInfluenceClassValueCode,Not known,http://w3id.org/glosis/model/codelists/humanInfluenceClassValueCode-NK
+http://w3id.org/glosis/model/codelists/humanInfluenceClassValueCode,Organic additions (not specified),http://w3id.org/glosis/model/codelists/humanInfluenceClassValueCode-MO
+http://w3id.org/glosis/model/codelists/humanInfluenceClassValueCode,Plaggen,http://w3id.org/glosis/model/codelists/humanInfluenceClassValueCode-MP
+http://w3id.org/glosis/model/codelists/humanInfluenceClassValueCode,Ploughing,http://w3id.org/glosis/model/codelists/humanInfluenceClassValueCode-PL
+http://w3id.org/glosis/model/codelists/humanInfluenceClassValueCode,Pollution,http://w3id.org/glosis/model/codelists/humanInfluenceClassValueCode-PO
+http://w3id.org/glosis/model/codelists/humanInfluenceClassValueCode,Raised beds (agricultural purposes),http://w3id.org/glosis/model/codelists/humanInfluenceClassValueCode-MR
+http://w3id.org/glosis/model/codelists/humanInfluenceClassValueCode,Raised beds (engineering purposes),http://w3id.org/glosis/model/codelists/humanInfluenceClassValueCode-ME
+http://w3id.org/glosis/model/codelists/humanInfluenceClassValueCode,Sand additions,http://w3id.org/glosis/model/codelists/humanInfluenceClassValueCode-MS
+http://w3id.org/glosis/model/codelists/humanInfluenceClassValueCode,Scalped area,http://w3id.org/glosis/model/codelists/humanInfluenceClassValueCode-SA
+http://w3id.org/glosis/model/codelists/humanInfluenceClassValueCode,Sprinkler irrigation,http://w3id.org/glosis/model/codelists/humanInfluenceClassValueCode-IS
+http://w3id.org/glosis/model/codelists/humanInfluenceClassValueCode,Surface compaction,http://w3id.org/glosis/model/codelists/humanInfluenceClassValueCode-SC
+http://w3id.org/glosis/model/codelists/humanInfluenceClassValueCode,Terracing,http://w3id.org/glosis/model/codelists/humanInfluenceClassValueCode-TE
+http://w3id.org/glosis/model/codelists/humanInfluenceClassValueCode,Vegetation disturbed (not specified),http://w3id.org/glosis/model/codelists/humanInfluenceClassValueCode-VU
+http://w3id.org/glosis/model/codelists/humanInfluenceClassValueCode,Vegetation moderately disturbed,http://w3id.org/glosis/model/codelists/humanInfluenceClassValueCode-VM
+http://w3id.org/glosis/model/codelists/humanInfluenceClassValueCode,Vegetation slightly disturbed,http://w3id.org/glosis/model/codelists/humanInfluenceClassValueCode-VS
+http://w3id.org/glosis/model/codelists/humanInfluenceClassValueCode,Vegetation strongly disturbed,http://w3id.org/glosis/model/codelists/humanInfluenceClassValueCode-VE

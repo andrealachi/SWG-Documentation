@@ -1,0 +1,10 @@
+collection,label,id
+http://w3id.org/glosis/model/codelists/profileDescriptionStatusValueCode,Incomplete description,http://w3id.org/glosis/model/codelists/profileDescriptionStatusValueCode-3
+http://w3id.org/glosis/model/codelists/profileDescriptionStatusValueCode,Incomplete description - no sampling,http://w3id.org/glosis/model/codelists/profileDescriptionStatusValueCode-3.1
+http://w3id.org/glosis/model/codelists/profileDescriptionStatusValueCode,Other descriptions,http://w3id.org/glosis/model/codelists/profileDescriptionStatusValueCode-5
+http://w3id.org/glosis/model/codelists/profileDescriptionStatusValueCode,Reference profile description,http://w3id.org/glosis/model/codelists/profileDescriptionStatusValueCode-1
+http://w3id.org/glosis/model/codelists/profileDescriptionStatusValueCode,Reference profile description - no sampling,http://w3id.org/glosis/model/codelists/profileDescriptionStatusValueCode-1.1
+http://w3id.org/glosis/model/codelists/profileDescriptionStatusValueCode,Routine profile description,http://w3id.org/glosis/model/codelists/profileDescriptionStatusValueCode-2
+http://w3id.org/glosis/model/codelists/profileDescriptionStatusValueCode,Routine profile description - no sampling,http://w3id.org/glosis/model/codelists/profileDescriptionStatusValueCode-2.1
+http://w3id.org/glosis/model/codelists/profileDescriptionStatusValueCode,Soil augering description,http://w3id.org/glosis/model/codelists/profileDescriptionStatusValueCode-4
+http://w3id.org/glosis/model/codelists/profileDescriptionStatusValueCode,Soil augering description - no sampling,http://w3id.org/glosis/model/codelists/profileDescriptionStatusValueCode-4.1

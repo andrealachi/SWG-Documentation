@@ -1,0 +1,30 @@
+collection,label,id
+http://w3id.org/glosis/model/codelists/vegetationClassValueCode,Closed forest,http://w3id.org/glosis/model/codelists/vegetationClassValueCode-F
+http://w3id.org/glosis/model/codelists/vegetationClassValueCode,Coniferous forest,http://w3id.org/glosis/model/codelists/vegetationClassValueCode-FC
+http://w3id.org/glosis/model/codelists/vegetationClassValueCode,Deciduous dwarf shrub,http://w3id.org/glosis/model/codelists/vegetationClassValueCode-DD
+http://w3id.org/glosis/model/codelists/vegetationClassValueCode,Deciduous forest,http://w3id.org/glosis/model/codelists/vegetationClassValueCode-FD
+http://w3id.org/glosis/model/codelists/vegetationClassValueCode,Deciduous shrub,http://w3id.org/glosis/model/codelists/vegetationClassValueCode-SD
+http://w3id.org/glosis/model/codelists/vegetationClassValueCode,Deciduous woodland,http://w3id.org/glosis/model/codelists/vegetationClassValueCode-WD
+http://w3id.org/glosis/model/codelists/vegetationClassValueCode,Dwarf shrub,http://w3id.org/glosis/model/codelists/vegetationClassValueCode-D
+http://w3id.org/glosis/model/codelists/vegetationClassValueCode,Evergreen broad-leaved forest,http://w3id.org/glosis/model/codelists/vegetationClassValueCode-FE
+http://w3id.org/glosis/model/codelists/vegetationClassValueCode,Evergreen dwarf shrub,http://w3id.org/glosis/model/codelists/vegetationClassValueCode-DE
+http://w3id.org/glosis/model/codelists/vegetationClassValueCode,Evergreen shrub,http://w3id.org/glosis/model/codelists/vegetationClassValueCode-SE
+http://w3id.org/glosis/model/codelists/vegetationClassValueCode,Evergreen woodland,http://w3id.org/glosis/model/codelists/vegetationClassValueCode-WE
+http://w3id.org/glosis/model/codelists/vegetationClassValueCode,Forb,http://w3id.org/glosis/model/codelists/vegetationClassValueCode-HF
+http://w3id.org/glosis/model/codelists/vegetationClassValueCode,Groundwater-fed bog peat,http://w3id.org/glosis/model/codelists/vegetationClassValueCode-B
+http://w3id.org/glosis/model/codelists/vegetationClassValueCode,Herbaceous,http://w3id.org/glosis/model/codelists/vegetationClassValueCode-H
+http://w3id.org/glosis/model/codelists/vegetationClassValueCode,Medium grassland,http://w3id.org/glosis/model/codelists/vegetationClassValueCode-HM
+http://w3id.org/glosis/model/codelists/vegetationClassValueCode,Rainwater-fed moor peat,http://w3id.org/glosis/model/codelists/vegetationClassValueCode-M
+http://w3id.org/glosis/model/codelists/vegetationClassValueCode,Semi-deciduous dwarf shrub,http://w3id.org/glosis/model/codelists/vegetationClassValueCode-DS
+http://w3id.org/glosis/model/codelists/vegetationClassValueCode,Semi-deciduous forest,http://w3id.org/glosis/model/codelists/vegetationClassValueCode-FS
+http://w3id.org/glosis/model/codelists/vegetationClassValueCode,Semi-deciduous shrub,http://w3id.org/glosis/model/codelists/vegetationClassValueCode-SS
+http://w3id.org/glosis/model/codelists/vegetationClassValueCode,Semi-deciduous woodland,http://w3id.org/glosis/model/codelists/vegetationClassValueCode-WS
+http://w3id.org/glosis/model/codelists/vegetationClassValueCode,Short grassland,http://w3id.org/glosis/model/codelists/vegetationClassValueCode-HS
+http://w3id.org/glosis/model/codelists/vegetationClassValueCode,Shrub,http://w3id.org/glosis/model/codelists/vegetationClassValueCode-S
+http://w3id.org/glosis/model/codelists/vegetationClassValueCode,Tall grassland,http://w3id.org/glosis/model/codelists/vegetationClassValueCode-HT
+http://w3id.org/glosis/model/codelists/vegetationClassValueCode,Tundra,http://w3id.org/glosis/model/codelists/vegetationClassValueCode-DT
+http://w3id.org/glosis/model/codelists/vegetationClassValueCode,Woodland,http://w3id.org/glosis/model/codelists/vegetationClassValueCode-W
+http://w3id.org/glosis/model/codelists/vegetationClassValueCode,Xermomorphic dwarf shrub,http://w3id.org/glosis/model/codelists/vegetationClassValueCode-DX
+http://w3id.org/glosis/model/codelists/vegetationClassValueCode,Xeromorphic forest,http://w3id.org/glosis/model/codelists/vegetationClassValueCode-FX
+http://w3id.org/glosis/model/codelists/vegetationClassValueCode,Xeromorphic shrub,http://w3id.org/glosis/model/codelists/vegetationClassValueCode-SX
+http://w3id.org/glosis/model/codelists/vegetationClassValueCode,Xeromorphic woodland,http://w3id.org/glosis/model/codelists/vegetationClassValueCode-WX

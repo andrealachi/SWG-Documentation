@@ -1,0 +1,4 @@
+collection,label,id
+http://w3id.org/glosis/model/codelists/mineralFragmentsValueCode,Feldspar,http://w3id.org/glosis/model/codelists/mineralFragmentsValueCode-FE
+http://w3id.org/glosis/model/codelists/mineralFragmentsValueCode,Mica,http://w3id.org/glosis/model/codelists/mineralFragmentsValueCode-MI
+http://w3id.org/glosis/model/codelists/mineralFragmentsValueCode,Quartz,http://w3id.org/glosis/model/codelists/mineralFragmentsValueCode-QU

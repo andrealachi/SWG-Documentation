@@ -1,0 +1,19 @@
+collection,label,id
+http://w3id.org/glosis/model/codelists/coatingNatureValueCode,Calcium carbonate,http://w3id.org/glosis/model/codelists/coatingNatureValueCode-CC
+http://w3id.org/glosis/model/codelists/coatingNatureValueCode,Clay,http://w3id.org/glosis/model/codelists/coatingNatureValueCode-C
+http://w3id.org/glosis/model/codelists/coatingNatureValueCode,Clay and humus (organic matter),http://w3id.org/glosis/model/codelists/coatingNatureValueCode-CH
+http://w3id.org/glosis/model/codelists/coatingNatureValueCode,Clay and sesquioxides,http://w3id.org/glosis/model/codelists/coatingNatureValueCode-CS
+http://w3id.org/glosis/model/codelists/coatingNatureValueCode,Gibbsite,http://w3id.org/glosis/model/codelists/coatingNatureValueCode-GB
+http://w3id.org/glosis/model/codelists/coatingNatureValueCode,Humus,http://w3id.org/glosis/model/codelists/coatingNatureValueCode-H
+http://w3id.org/glosis/model/codelists/coatingNatureValueCode,"Hypodermic coatings (Hypodermic coatings, as used here, are field-scale features, commonly only expressed as hydromorphic features. Micromorphological hypodermic coatings include non-redox features [Bullock et al., 1985].)",http://w3id.org/glosis/model/codelists/coatingNatureValueCode-HC
+http://w3id.org/glosis/model/codelists/coatingNatureValueCode,Jarosite,http://w3id.org/glosis/model/codelists/coatingNatureValueCode-JA
+http://w3id.org/glosis/model/codelists/coatingNatureValueCode,Manganese,http://w3id.org/glosis/model/codelists/coatingNatureValueCode-MN
+http://w3id.org/glosis/model/codelists/coatingNatureValueCode,Pressure faces,http://w3id.org/glosis/model/codelists/coatingNatureValueCode-PF
+http://w3id.org/glosis/model/codelists/coatingNatureValueCode,Sand coatings,http://w3id.org/glosis/model/codelists/coatingNatureValueCode-SA
+http://w3id.org/glosis/model/codelists/coatingNatureValueCode,Sesquioxides,http://w3id.org/glosis/model/codelists/coatingNatureValueCode-S
+http://w3id.org/glosis/model/codelists/coatingNatureValueCode,Shiny faces (as in nitic horizon),http://w3id.org/glosis/model/codelists/coatingNatureValueCode-SF
+http://w3id.org/glosis/model/codelists/coatingNatureValueCode,Silica (opal),http://w3id.org/glosis/model/codelists/coatingNatureValueCode-SL
+http://w3id.org/glosis/model/codelists/coatingNatureValueCode,Silt coatings,http://w3id.org/glosis/model/codelists/coatingNatureValueCode-ST
+http://w3id.org/glosis/model/codelists/coatingNatureValueCode,"Slickensides, non intersecting",http://w3id.org/glosis/model/codelists/coatingNatureValueCode-SN
+http://w3id.org/glosis/model/codelists/coatingNatureValueCode,"Slickensides, partly intersecting",http://w3id.org/glosis/model/codelists/coatingNatureValueCode-SP
+http://w3id.org/glosis/model/codelists/coatingNatureValueCode,"Slickensides, predominantly intersecting (Slickensides are polished and grooved ped surfaces that are produced by aggregates sliding one past another.)",http://w3id.org/glosis/model/codelists/coatingNatureValueCode-SI

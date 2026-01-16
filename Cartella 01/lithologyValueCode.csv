@@ -1,0 +1,89 @@
+collection,label,id
+http://w3id.org/glosis/model/codelists/lithologyValueCode,(green)schist,http://w3id.org/glosis/model/codelists/lithologyValueCode-MB2
+http://w3id.org/glosis/model/codelists/lithologyValueCode,acid igneous,http://w3id.org/glosis/model/codelists/lithologyValueCode-IA
+http://w3id.org/glosis/model/codelists/lithologyValueCode,acid metamorphic,http://w3id.org/glosis/model/codelists/lithologyValueCode-MA
+http://w3id.org/glosis/model/codelists/lithologyValueCode,amphibolite,http://w3id.org/glosis/model/codelists/lithologyValueCode-MB5
+http://w3id.org/glosis/model/codelists/lithologyValueCode,"andesite, trachyte, phonolite",http://w3id.org/glosis/model/codelists/lithologyValueCode-II1
+http://w3id.org/glosis/model/codelists/lithologyValueCode,"anhydrite, gypsum",http://w3id.org/glosis/model/codelists/lithologyValueCode-SE1
+http://w3id.org/glosis/model/codelists/lithologyValueCode,anthropogenic/technogenic,http://w3id.org/glosis/model/codelists/lithologyValueCode-UA
+http://w3id.org/glosis/model/codelists/lithologyValueCode,basalt,http://w3id.org/glosis/model/codelists/lithologyValueCode-IB2
+http://w3id.org/glosis/model/codelists/lithologyValueCode,basic igneous,http://w3id.org/glosis/model/codelists/lithologyValueCode-IB
+http://w3id.org/glosis/model/codelists/lithologyValueCode,basic metamorphic,http://w3id.org/glosis/model/codelists/lithologyValueCode-MB
+http://w3id.org/glosis/model/codelists/lithologyValueCode,"bauxite, laterite",http://w3id.org/glosis/model/codelists/lithologyValueCode-UR1
+http://w3id.org/glosis/model/codelists/lithologyValueCode,"carbonatic, organic",http://w3id.org/glosis/model/codelists/lithologyValueCode-SO
+http://w3id.org/glosis/model/codelists/lithologyValueCode,clastic sediments,http://w3id.org/glosis/model/codelists/lithologyValueCode-SC
+http://w3id.org/glosis/model/codelists/lithologyValueCode,clay,http://w3id.org/glosis/model/codelists/lithologyValueCode-UU1
+http://w3id.org/glosis/model/codelists/lithologyValueCode,clay and silt,http://w3id.org/glosis/model/codelists/lithologyValueCode-UM2
+http://w3id.org/glosis/model/codelists/lithologyValueCode,"clay, silt and loam",http://w3id.org/glosis/model/codelists/lithologyValueCode-UF2
+http://w3id.org/glosis/model/codelists/lithologyValueCode,"coals, bitumen and related rocks",http://w3id.org/glosis/model/codelists/lithologyValueCode-SO3
+http://w3id.org/glosis/model/codelists/lithologyValueCode,colluvial,http://w3id.org/glosis/model/codelists/lithologyValueCode-UC
+http://w3id.org/glosis/model/codelists/lithologyValueCode,"conglomerate, breccia",http://w3id.org/glosis/model/codelists/lithologyValueCode-SC1
+http://w3id.org/glosis/model/codelists/lithologyValueCode,diorite,http://w3id.org/glosis/model/codelists/lithologyValueCode-IA1
+http://w3id.org/glosis/model/codelists/lithologyValueCode,diorite-syenite,http://w3id.org/glosis/model/codelists/lithologyValueCode-II2
+http://w3id.org/glosis/model/codelists/lithologyValueCode,dolerite,http://w3id.org/glosis/model/codelists/lithologyValueCode-IB3
+http://w3id.org/glosis/model/codelists/lithologyValueCode,eclogite,http://w3id.org/glosis/model/codelists/lithologyValueCode-MB6
+http://w3id.org/glosis/model/codelists/lithologyValueCode,eolian,http://w3id.org/glosis/model/codelists/lithologyValueCode-UE
+http://w3id.org/glosis/model/codelists/lithologyValueCode,evaporites,http://w3id.org/glosis/model/codelists/lithologyValueCode-SE
+http://w3id.org/glosis/model/codelists/lithologyValueCode,fluvial,http://w3id.org/glosis/model/codelists/lithologyValueCode-UF
+http://w3id.org/glosis/model/codelists/lithologyValueCode,gabbro,http://w3id.org/glosis/model/codelists/lithologyValueCode-IB1
+http://w3id.org/glosis/model/codelists/lithologyValueCode,glacial,http://w3id.org/glosis/model/codelists/lithologyValueCode-UG
+http://w3id.org/glosis/model/codelists/lithologyValueCode,gneiss rich in Fe–Mg minerals,http://w3id.org/glosis/model/codelists/lithologyValueCode-MB3
+http://w3id.org/glosis/model/codelists/lithologyValueCode,"gneiss, migmatite",http://w3id.org/glosis/model/codelists/lithologyValueCode-MA2
+http://w3id.org/glosis/model/codelists/lithologyValueCode,grano-diorite,http://w3id.org/glosis/model/codelists/lithologyValueCode-IA2
+http://w3id.org/glosis/model/codelists/lithologyValueCode,"gravel, broken rock",http://w3id.org/glosis/model/codelists/lithologyValueCode-UU5
+http://w3id.org/glosis/model/codelists/lithologyValueCode,gravelly sand,http://w3id.org/glosis/model/codelists/lithologyValueCode-UU4
+http://w3id.org/glosis/model/codelists/lithologyValueCode,groundwater-fed bog peat,http://w3id.org/glosis/model/codelists/lithologyValueCode-UO2
+http://w3id.org/glosis/model/codelists/lithologyValueCode,halite,http://w3id.org/glosis/model/codelists/lithologyValueCode-SE2
+http://w3id.org/glosis/model/codelists/lithologyValueCode,igneous rock,http://w3id.org/glosis/model/codelists/lithologyValueCode-I
+http://w3id.org/glosis/model/codelists/lithologyValueCode,ignimbrite,http://w3id.org/glosis/model/codelists/lithologyValueCode-IP4
+http://w3id.org/glosis/model/codelists/lithologyValueCode,"ilmenite, magnetite, ironstone, serpentine",http://w3id.org/glosis/model/codelists/lithologyValueCode-IU3
+http://w3id.org/glosis/model/codelists/lithologyValueCode,industrial/artisanal deposits,http://w3id.org/glosis/model/codelists/lithologyValueCode-UA2
+http://w3id.org/glosis/model/codelists/lithologyValueCode,intermediate igneous,http://w3id.org/glosis/model/codelists/lithologyValueCode-II
+http://w3id.org/glosis/model/codelists/lithologyValueCode,ironstone,http://w3id.org/glosis/model/codelists/lithologyValueCode-SC5
+http://w3id.org/glosis/model/codelists/lithologyValueCode,kryogenic,http://w3id.org/glosis/model/codelists/lithologyValueCode-UK
+http://w3id.org/glosis/model/codelists/lithologyValueCode,lacustrine,http://w3id.org/glosis/model/codelists/lithologyValueCode-UL
+http://w3id.org/glosis/model/codelists/lithologyValueCode,lahar,http://w3id.org/glosis/model/codelists/lithologyValueCode-UC2
+http://w3id.org/glosis/model/codelists/lithologyValueCode,"limestone, other carbonate rock",http://w3id.org/glosis/model/codelists/lithologyValueCode-SO1
+http://w3id.org/glosis/model/codelists/lithologyValueCode,loam and silt,http://w3id.org/glosis/model/codelists/lithologyValueCode-UU2
+http://w3id.org/glosis/model/codelists/lithologyValueCode,loess,http://w3id.org/glosis/model/codelists/lithologyValueCode-UE1
+http://w3id.org/glosis/model/codelists/lithologyValueCode,"marine, estuarine",http://w3id.org/glosis/model/codelists/lithologyValueCode-UM
+http://w3id.org/glosis/model/codelists/lithologyValueCode,marl and other mixtures,http://w3id.org/glosis/model/codelists/lithologyValueCode-SO2
+http://w3id.org/glosis/model/codelists/lithologyValueCode,metamorphic limestone (marble),http://w3id.org/glosis/model/codelists/lithologyValueCode-MB4
+http://w3id.org/glosis/model/codelists/lithologyValueCode,metamorphic rock,http://w3id.org/glosis/model/codelists/lithologyValueCode-M
+http://w3id.org/glosis/model/codelists/lithologyValueCode,moraine,http://w3id.org/glosis/model/codelists/lithologyValueCode-UG1
+http://w3id.org/glosis/model/codelists/lithologyValueCode,organic,http://w3id.org/glosis/model/codelists/lithologyValueCode-UO
+http://w3id.org/glosis/model/codelists/lithologyValueCode,peridotite,http://w3id.org/glosis/model/codelists/lithologyValueCode-IU1
+http://w3id.org/glosis/model/codelists/lithologyValueCode,periglacial rock debris,http://w3id.org/glosis/model/codelists/lithologyValueCode-UK1
+http://w3id.org/glosis/model/codelists/lithologyValueCode,periglacial solifluction layer,http://w3id.org/glosis/model/codelists/lithologyValueCode-UK2
+http://w3id.org/glosis/model/codelists/lithologyValueCode,pyroclastic,http://w3id.org/glosis/model/codelists/lithologyValueCode-IP
+http://w3id.org/glosis/model/codelists/lithologyValueCode,pyroxenite,http://w3id.org/glosis/model/codelists/lithologyValueCode-IU2
+http://w3id.org/glosis/model/codelists/lithologyValueCode,quartz-diorite,http://w3id.org/glosis/model/codelists/lithologyValueCode-IA3
+http://w3id.org/glosis/model/codelists/lithologyValueCode,quartzite,http://w3id.org/glosis/model/codelists/lithologyValueCode-MA1
+http://w3id.org/glosis/model/codelists/lithologyValueCode,rainwater-fed moor peat,http://w3id.org/glosis/model/codelists/lithologyValueCode-UO1
+http://w3id.org/glosis/model/codelists/lithologyValueCode,redeposited natural material,http://w3id.org/glosis/model/codelists/lithologyValueCode-UA1
+http://w3id.org/glosis/model/codelists/lithologyValueCode,rhyolite,http://w3id.org/glosis/model/codelists/lithologyValueCode-IA4
+http://w3id.org/glosis/model/codelists/lithologyValueCode,sand,http://w3id.org/glosis/model/codelists/lithologyValueCode-UE2
+http://w3id.org/glosis/model/codelists/lithologyValueCode,sand,http://w3id.org/glosis/model/codelists/lithologyValueCode-UL1
+http://w3id.org/glosis/model/codelists/lithologyValueCode,sand,http://w3id.org/glosis/model/codelists/lithologyValueCode-UM1
+http://w3id.org/glosis/model/codelists/lithologyValueCode,sand,http://w3id.org/glosis/model/codelists/lithologyValueCode-UU3
+http://w3id.org/glosis/model/codelists/lithologyValueCode,sand and gravel,http://w3id.org/glosis/model/codelists/lithologyValueCode-UF1
+http://w3id.org/glosis/model/codelists/lithologyValueCode,"sandstone, greywacke, arkose",http://w3id.org/glosis/model/codelists/lithologyValueCode-SC2
+http://w3id.org/glosis/model/codelists/lithologyValueCode,schist,http://w3id.org/glosis/model/codelists/lithologyValueCode-MA4
+http://w3id.org/glosis/model/codelists/lithologyValueCode,sedimentary rock (consolidated),http://w3id.org/glosis/model/codelists/lithologyValueCode-S
+http://w3id.org/glosis/model/codelists/lithologyValueCode,sedimentary rock (unconsolidated),http://w3id.org/glosis/model/codelists/lithologyValueCode-U
+http://w3id.org/glosis/model/codelists/lithologyValueCode,"serpentinite, greenstone",http://w3id.org/glosis/model/codelists/lithologyValueCode-MU1
+http://w3id.org/glosis/model/codelists/lithologyValueCode,shale,http://w3id.org/glosis/model/codelists/lithologyValueCode-SC4
+http://w3id.org/glosis/model/codelists/lithologyValueCode,silt and clay,http://w3id.org/glosis/model/codelists/lithologyValueCode-UL2
+http://w3id.org/glosis/model/codelists/lithologyValueCode,"silt-, mud-, claystone",http://w3id.org/glosis/model/codelists/lithologyValueCode-SC3
+http://w3id.org/glosis/model/codelists/lithologyValueCode,"slate, phyllite (pelitic rocks)",http://w3id.org/glosis/model/codelists/lithologyValueCode-MA3
+http://w3id.org/glosis/model/codelists/lithologyValueCode,"slate, phyllite (pelitic rocks)",http://w3id.org/glosis/model/codelists/lithologyValueCode-MB1
+http://w3id.org/glosis/model/codelists/lithologyValueCode,slope deposits,http://w3id.org/glosis/model/codelists/lithologyValueCode-UC1
+http://w3id.org/glosis/model/codelists/lithologyValueCode,"tuff, tuffite",http://w3id.org/glosis/model/codelists/lithologyValueCode-IP1
+http://w3id.org/glosis/model/codelists/lithologyValueCode,UG2 glacio-fluvial sand,http://w3id.org/glosis/model/codelists/lithologyValueCode-UG2
+http://w3id.org/glosis/model/codelists/lithologyValueCode,UG3 glacio-fluvial gravel,http://w3id.org/glosis/model/codelists/lithologyValueCode-UG3
+http://w3id.org/glosis/model/codelists/lithologyValueCode,ultrabasic igneous,http://w3id.org/glosis/model/codelists/lithologyValueCode-IU
+http://w3id.org/glosis/model/codelists/lithologyValueCode,ultrabasic metamorphic,http://w3id.org/glosis/model/codelists/lithologyValueCode-MU
+http://w3id.org/glosis/model/codelists/lithologyValueCode,unspecified deposits,http://w3id.org/glosis/model/codelists/lithologyValueCode-UU
+http://w3id.org/glosis/model/codelists/lithologyValueCode,volcanic ash,http://w3id.org/glosis/model/codelists/lithologyValueCode-IP3
+http://w3id.org/glosis/model/codelists/lithologyValueCode,volcanic scoria/breccia,http://w3id.org/glosis/model/codelists/lithologyValueCode-IP2
+http://w3id.org/glosis/model/codelists/lithologyValueCode,weathered residuum,http://w3id.org/glosis/model/codelists/lithologyValueCode-UR

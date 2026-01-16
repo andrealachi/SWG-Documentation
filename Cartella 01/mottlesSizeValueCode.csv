@@ -1,0 +1,5 @@
+collection,label,id
+http://w3id.org/glosis/model/codelists/mottlesSizeValueCode,Coarse,http://w3id.org/glosis/model/codelists/mottlesSizeValueCode-A
+http://w3id.org/glosis/model/codelists/mottlesSizeValueCode,F Fine,http://w3id.org/glosis/model/codelists/mottlesSizeValueCode-F
+http://w3id.org/glosis/model/codelists/mottlesSizeValueCode,M Medium,http://w3id.org/glosis/model/codelists/mottlesSizeValueCode-M
+http://w3id.org/glosis/model/codelists/mottlesSizeValueCode,Very fine,http://w3id.org/glosis/model/codelists/mottlesSizeValueCode-V

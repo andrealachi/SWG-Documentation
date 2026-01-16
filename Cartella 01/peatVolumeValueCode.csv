@@ -1,0 +1,6 @@
+collection,label,id
+http://w3id.org/glosis/model/codelists/peatVolumeValueCode,Between 3% and 5%,http://w3id.org/glosis/model/codelists/peatVolumeValueCode-SV2
+http://w3id.org/glosis/model/codelists/peatVolumeValueCode,Between 5% and 8%,http://w3id.org/glosis/model/codelists/peatVolumeValueCode-SV3
+http://w3id.org/glosis/model/codelists/peatVolumeValueCode,Between 8% and 12%,http://w3id.org/glosis/model/codelists/peatVolumeValueCode-SV4
+http://w3id.org/glosis/model/codelists/peatVolumeValueCode,Less than 3%,http://w3id.org/glosis/model/codelists/peatVolumeValueCode-SV1
+http://w3id.org/glosis/model/codelists/peatVolumeValueCode,More than or equal to 12 %,http://w3id.org/glosis/model/codelists/peatVolumeValueCode-SV5

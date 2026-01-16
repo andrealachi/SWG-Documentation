@@ -1,0 +1,10 @@
+collection,label,id
+http://w3id.org/glosis/model/codelists/consistenceDryValueCode,Extremely hard,http://w3id.org/glosis/model/codelists/consistenceDryValueCode-EHA
+http://w3id.org/glosis/model/codelists/consistenceDryValueCode,Hard,http://w3id.org/glosis/model/codelists/consistenceDryValueCode-HA
+http://w3id.org/glosis/model/codelists/consistenceDryValueCode,hard to very hard,http://w3id.org/glosis/model/codelists/consistenceDryValueCode-HVH
+http://w3id.org/glosis/model/codelists/consistenceDryValueCode,Loose,http://w3id.org/glosis/model/codelists/consistenceDryValueCode-LO
+http://w3id.org/glosis/model/codelists/consistenceDryValueCode,Slightly hard,http://w3id.org/glosis/model/codelists/consistenceDryValueCode-SHA
+http://w3id.org/glosis/model/codelists/consistenceDryValueCode,slightly hard to hard,http://w3id.org/glosis/model/codelists/consistenceDryValueCode-SHH
+http://w3id.org/glosis/model/codelists/consistenceDryValueCode,Soft,http://w3id.org/glosis/model/codelists/consistenceDryValueCode-SO
+http://w3id.org/glosis/model/codelists/consistenceDryValueCode,soft to slightly hard,http://w3id.org/glosis/model/codelists/consistenceDryValueCode-SSH
+http://w3id.org/glosis/model/codelists/consistenceDryValueCode,Very hard,http://w3id.org/glosis/model/codelists/consistenceDryValueCode-VHA

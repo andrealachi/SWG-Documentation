@@ -1,0 +1,11 @@
+collection,label,id
+http://w3id.org/glosis/model/codelists/physiographyValueCode,Bottom (drainage line),http://w3id.org/glosis/model/codelists/physiographyValueCode-BOdl
+http://w3id.org/glosis/model/codelists/physiographyValueCode,Bottom (flat),http://w3id.org/glosis/model/codelists/physiographyValueCode-BOf
+http://w3id.org/glosis/model/codelists/physiographyValueCode,Crest (summit),http://w3id.org/glosis/model/codelists/physiographyValueCode-CR
+http://w3id.org/glosis/model/codelists/physiographyValueCode,Higher part (rise),http://w3id.org/glosis/model/codelists/physiographyValueCode-HI
+http://w3id.org/glosis/model/codelists/physiographyValueCode,Intermediate part (talf),http://w3id.org/glosis/model/codelists/physiographyValueCode-IN
+http://w3id.org/glosis/model/codelists/physiographyValueCode,Lower part (and dip),http://w3id.org/glosis/model/codelists/physiographyValueCode-LO
+http://w3id.org/glosis/model/codelists/physiographyValueCode,Lower slope (foot slope),http://w3id.org/glosis/model/codelists/physiographyValueCode-LS
+http://w3id.org/glosis/model/codelists/physiographyValueCode,Middle slope (back slope),http://w3id.org/glosis/model/codelists/physiographyValueCode-MS
+http://w3id.org/glosis/model/codelists/physiographyValueCode,Toe slope,http://w3id.org/glosis/model/codelists/physiographyValueCode-TS
+http://w3id.org/glosis/model/codelists/physiographyValueCode,Upper slope (shoulder),http://w3id.org/glosis/model/codelists/physiographyValueCode-UP

@@ -1,0 +1,8 @@
+collection,label,id
+http://w3id.org/glosis/model/codelists/fragmentCoverValueCode,Abundant,http://w3id.org/glosis/model/codelists/fragmentCoverValueCode-A
+http://w3id.org/glosis/model/codelists/fragmentCoverValueCode,Common,http://w3id.org/glosis/model/codelists/fragmentCoverValueCode-C
+http://w3id.org/glosis/model/codelists/fragmentCoverValueCode,Dominant,http://w3id.org/glosis/model/codelists/fragmentCoverValueCode-D
+http://w3id.org/glosis/model/codelists/fragmentCoverValueCode,Few,http://w3id.org/glosis/model/codelists/fragmentCoverValueCode-F
+http://w3id.org/glosis/model/codelists/fragmentCoverValueCode,Many,http://w3id.org/glosis/model/codelists/fragmentCoverValueCode-M
+http://w3id.org/glosis/model/codelists/fragmentCoverValueCode,None,http://w3id.org/glosis/model/codelists/fragmentCoverValueCode-N
+http://w3id.org/glosis/model/codelists/fragmentCoverValueCode,Very few,http://w3id.org/glosis/model/codelists/fragmentCoverValueCode-V

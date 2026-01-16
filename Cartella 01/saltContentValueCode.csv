@@ -1,0 +1,7 @@
+collection,label,id
+http://w3id.org/glosis/model/codelists/saltContentValueCode,(nearly)Not salty,http://w3id.org/glosis/model/codelists/saltContentValueCode-N
+http://w3id.org/glosis/model/codelists/saltContentValueCode,Extremely salty,http://w3id.org/glosis/model/codelists/saltContentValueCode-EX
+http://w3id.org/glosis/model/codelists/saltContentValueCode,Moderately salty,http://w3id.org/glosis/model/codelists/saltContentValueCode-MO
+http://w3id.org/glosis/model/codelists/saltContentValueCode,Slightly salty,http://w3id.org/glosis/model/codelists/saltContentValueCode-SL
+http://w3id.org/glosis/model/codelists/saltContentValueCode,Strongly salty,http://w3id.org/glosis/model/codelists/saltContentValueCode-ST
+http://w3id.org/glosis/model/codelists/saltContentValueCode,Very strongly salty,http://w3id.org/glosis/model/codelists/saltContentValueCode-VST

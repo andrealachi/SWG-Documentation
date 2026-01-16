@@ -1,0 +1,7 @@
+collection,label,id
+http://w3id.org/glosis/model/codelists/plasticityValueCode,Non-plastic,http://w3id.org/glosis/model/codelists/plasticityValueCode-NPL
+http://w3id.org/glosis/model/codelists/plasticityValueCode,Plastic,http://w3id.org/glosis/model/codelists/plasticityValueCode-PL
+http://w3id.org/glosis/model/codelists/plasticityValueCode,plastic to very plastic,http://w3id.org/glosis/model/codelists/plasticityValueCode-PVP
+http://w3id.org/glosis/model/codelists/plasticityValueCode,Slightly plastic,http://w3id.org/glosis/model/codelists/plasticityValueCode-SPL
+http://w3id.org/glosis/model/codelists/plasticityValueCode,slightly plastic to plastic,http://w3id.org/glosis/model/codelists/plasticityValueCode-SPP
+http://w3id.org/glosis/model/codelists/plasticityValueCode,Very plastic,http://w3id.org/glosis/model/codelists/plasticityValueCode-VPL

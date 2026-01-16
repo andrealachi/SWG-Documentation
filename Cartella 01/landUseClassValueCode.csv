@@ -1,0 +1,51 @@
+collection,label,id
+http://w3id.org/glosis/model/codelists/landUseClassValueCode,Agroforestry,http://w3id.org/glosis/model/codelists/landUseClassValueCode-MF
+http://w3id.org/glosis/model/codelists/landUseClassValueCode,Agropastoralism,http://w3id.org/glosis/model/codelists/landUseClassValueCode-MP
+http://w3id.org/glosis/model/codelists/landUseClassValueCode,Animal husbandry,http://w3id.org/glosis/model/codelists/landUseClassValueCode-H
+http://w3id.org/glosis/model/codelists/landUseClassValueCode,Animal production,http://w3id.org/glosis/model/codelists/landUseClassValueCode-HI1
+http://w3id.org/glosis/model/codelists/landUseClassValueCode,Annual field cropping,http://w3id.org/glosis/model/codelists/landUseClassValueCode-AA
+http://w3id.org/glosis/model/codelists/landUseClassValueCode,Clear felling,http://w3id.org/glosis/model/codelists/landUseClassValueCode-FN2
+http://w3id.org/glosis/model/codelists/landUseClassValueCode,Crop agriculture (cropping),http://w3id.org/glosis/model/codelists/landUseClassValueCode-A
+http://w3id.org/glosis/model/codelists/landUseClassValueCode,Dairying,http://w3id.org/glosis/model/codelists/landUseClassValueCode-HI2
+http://w3id.org/glosis/model/codelists/landUseClassValueCode,Degradation control,http://w3id.org/glosis/model/codelists/landUseClassValueCode-PD
+http://w3id.org/glosis/model/codelists/landUseClassValueCode,Disposal sites,http://w3id.org/glosis/model/codelists/landUseClassValueCode-SD
+http://w3id.org/glosis/model/codelists/landUseClassValueCode,Excavations,http://w3id.org/glosis/model/codelists/landUseClassValueCode-SX
+http://w3id.org/glosis/model/codelists/landUseClassValueCode,Extensive grazing,http://w3id.org/glosis/model/codelists/landUseClassValueCode-HE
+http://w3id.org/glosis/model/codelists/landUseClassValueCode,F = Forestry,http://w3id.org/glosis/model/codelists/landUseClassValueCode-F
+http://w3id.org/glosis/model/codelists/landUseClassValueCode,Fallow system cultivation,http://w3id.org/glosis/model/codelists/landUseClassValueCode-AA2
+http://w3id.org/glosis/model/codelists/landUseClassValueCode,Industrial use,http://w3id.org/glosis/model/codelists/landUseClassValueCode-SI
+http://w3id.org/glosis/model/codelists/landUseClassValueCode,Intensive grazing,http://w3id.org/glosis/model/codelists/landUseClassValueCode-HI
+http://w3id.org/glosis/model/codelists/landUseClassValueCode,Irrigated cultivation,http://w3id.org/glosis/model/codelists/landUseClassValueCode-AA6
+http://w3id.org/glosis/model/codelists/landUseClassValueCode,Irrigated cultivation,http://w3id.org/glosis/model/codelists/landUseClassValueCode-AP2
+http://w3id.org/glosis/model/codelists/landUseClassValueCode,Irrigated shrub crop cultivation,http://w3id.org/glosis/model/codelists/landUseClassValueCode-AT4
+http://w3id.org/glosis/model/codelists/landUseClassValueCode,Irrigated tree crop cultivation,http://w3id.org/glosis/model/codelists/landUseClassValueCode-AT2
+http://w3id.org/glosis/model/codelists/landUseClassValueCode,Ley system cultivation,http://w3id.org/glosis/model/codelists/landUseClassValueCode-AA3
+http://w3id.org/glosis/model/codelists/landUseClassValueCode,M = Mixed farming,http://w3id.org/glosis/model/codelists/landUseClassValueCode-M
+http://w3id.org/glosis/model/codelists/landUseClassValueCode,Military area,http://w3id.org/glosis/model/codelists/landUseClassValueCode-Y
+http://w3id.org/glosis/model/codelists/landUseClassValueCode,Natural forest and woodland,http://w3id.org/glosis/model/codelists/landUseClassValueCode-FN
+http://w3id.org/glosis/model/codelists/landUseClassValueCode,Nature and game preservation,http://w3id.org/glosis/model/codelists/landUseClassValueCode-PN
+http://w3id.org/glosis/model/codelists/landUseClassValueCode,Nomadism,http://w3id.org/glosis/model/codelists/landUseClassValueCode-HE1
+http://w3id.org/glosis/model/codelists/landUseClassValueCode,Non-irrigated cultivation,http://w3id.org/glosis/model/codelists/landUseClassValueCode-AP1
+http://w3id.org/glosis/model/codelists/landUseClassValueCode,Non-irrigated shrub crop cultivation,http://w3id.org/glosis/model/codelists/landUseClassValueCode-AT3
+http://w3id.org/glosis/model/codelists/landUseClassValueCode,Non-irrigated tree crop cultivation,http://w3id.org/glosis/model/codelists/landUseClassValueCode-AT1
+http://w3id.org/glosis/model/codelists/landUseClassValueCode,Not used and not managed,http://w3id.org/glosis/model/codelists/landUseClassValueCode-U
+http://w3id.org/glosis/model/codelists/landUseClassValueCode,Other land uses,http://w3id.org/glosis/model/codelists/landUseClassValueCode-Oi
+http://w3id.org/glosis/model/codelists/landUseClassValueCode,P = Nature protection,http://w3id.org/glosis/model/codelists/landUseClassValueCode-P
+http://w3id.org/glosis/model/codelists/landUseClassValueCode,Parks,http://w3id.org/glosis/model/codelists/landUseClassValueCode-PN2
+http://w3id.org/glosis/model/codelists/landUseClassValueCode,Perennial field cropping,http://w3id.org/glosis/model/codelists/landUseClassValueCode-AP
+http://w3id.org/glosis/model/codelists/landUseClassValueCode,Plantation forestry,http://w3id.org/glosis/model/codelists/landUseClassValueCode-FP
+http://w3id.org/glosis/model/codelists/landUseClassValueCode,Rainfed arable cultivation,http://w3id.org/glosis/model/codelists/landUseClassValueCode-AA4
+http://w3id.org/glosis/model/codelists/landUseClassValueCode,Ranching,http://w3id.org/glosis/model/codelists/landUseClassValueCode-HE3
+http://w3id.org/glosis/model/codelists/landUseClassValueCode,Recreational use,http://w3id.org/glosis/model/codelists/landUseClassValueCode-SC
+http://w3id.org/glosis/model/codelists/landUseClassValueCode,Reserves,http://w3id.org/glosis/model/codelists/landUseClassValueCode-PN1
+http://w3id.org/glosis/model/codelists/landUseClassValueCode,Residential use,http://w3id.org/glosis/model/codelists/landUseClassValueCode-SR
+http://w3id.org/glosis/model/codelists/landUseClassValueCode,"S = Settlement, industry",http://w3id.org/glosis/model/codelists/landUseClassValueCode-S
+http://w3id.org/glosis/model/codelists/landUseClassValueCode,Selective felling,http://w3id.org/glosis/model/codelists/landUseClassValueCode-FN1
+http://w3id.org/glosis/model/codelists/landUseClassValueCode,Semi-nomadism,http://w3id.org/glosis/model/codelists/landUseClassValueCode-HE2
+http://w3id.org/glosis/model/codelists/landUseClassValueCode,Shifting cultivation,http://w3id.org/glosis/model/codelists/landUseClassValueCode-AA1
+http://w3id.org/glosis/model/codelists/landUseClassValueCode,Transport,http://w3id.org/glosis/model/codelists/landUseClassValueCode-ST
+http://w3id.org/glosis/model/codelists/landUseClassValueCode,Tree and shrub cropping,http://w3id.org/glosis/model/codelists/landUseClassValueCode-AT
+http://w3id.org/glosis/model/codelists/landUseClassValueCode,Wet rice cultivation,http://w3id.org/glosis/model/codelists/landUseClassValueCode-AA5
+http://w3id.org/glosis/model/codelists/landUseClassValueCode,Wildlife management,http://w3id.org/glosis/model/codelists/landUseClassValueCode-PN3
+http://w3id.org/glosis/model/codelists/landUseClassValueCode,With interference,http://w3id.org/glosis/model/codelists/landUseClassValueCode-PD2
+http://w3id.org/glosis/model/codelists/landUseClassValueCode,Without interference,http://w3id.org/glosis/model/codelists/landUseClassValueCode-PD1

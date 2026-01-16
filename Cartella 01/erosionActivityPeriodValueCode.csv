@@ -1,0 +1,6 @@
+collection,label,id
+http://w3id.org/glosis/model/codelists/erosionActivityPeriodValueCode,Accelerated and natural erosion not distinguished,http://w3id.org/glosis/model/codelists/erosionActivityPeriodValueCode-X
+http://w3id.org/glosis/model/codelists/erosionActivityPeriodValueCode,Active at present,http://w3id.org/glosis/model/codelists/erosionActivityPeriodValueCode-A
+http://w3id.org/glosis/model/codelists/erosionActivityPeriodValueCode,Active in historical times,http://w3id.org/glosis/model/codelists/erosionActivityPeriodValueCode-H
+http://w3id.org/glosis/model/codelists/erosionActivityPeriodValueCode,Active in recent past,http://w3id.org/glosis/model/codelists/erosionActivityPeriodValueCode-R
+http://w3id.org/glosis/model/codelists/erosionActivityPeriodValueCode,Period of activity not known,http://w3id.org/glosis/model/codelists/erosionActivityPeriodValueCode-N
