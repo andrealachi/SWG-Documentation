@@ -1,3 +1,22 @@
+# Observed Property
+An ObservedProperty is a property of a Feature that is being observed by a Sensor, such as temperature, humidity, population count or color. It should be uniquely identified by its definition, which should point to an external vocabulary by means of a URL, URI or DID.
+
+<p>&nbsp;</p>
+
+<p>
+  <img src="assets/observedproperty.svg"
+     alt="TABELLA SOILSITE EXP"
+     align="left"
+     width="420">
+ <!--
+  <strong>TABELLA SOILSITE EXP</strong><br>
+   Lorem Ipsum.
+ -->
+</p>
+
+<br clear="all">
+<p>&nbsp;</p>
+
 ## Table: `observedproperty`
 
 ### Columns
