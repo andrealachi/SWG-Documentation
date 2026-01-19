@@ -1,3 +1,22 @@
+# Datastream
+A Datastream groups a collection of Observations into a time series measuring the same ObservedProperties by the same Sensor for the same Thing and the same FeatureOfInterest
+
+<p>&nbsp;</p>
+
+<p>
+  <img src="assets/datastream.svg"
+     alt="TABELLA SOILSITE EXP"
+     align="left"
+     width="420">
+ <!--
+  <strong>TABELLA SOILSITE EXP</strong><br>
+   Lorem Ipsum.
+ -->
+</p>
+
+<br clear="all">
+<p>&nbsp;</p>
+
 ## Table: `datastream`
 
 ### Columns
