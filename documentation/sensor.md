@@ -1,3 +1,23 @@
+# Sensor
+A Sensor is an entity that observes a property or phenomenon with the goal of producing an estimate of the value of the property. A Sensor may represent a piece of hardware, but a Sensor may also be a human or an algorithm implemented in software.
+
+A Sensor entity in an OGC SensorThings API deployment can represent either a specific sensor instance, or a more generic sensor type. The distinction is generally quite clear from the Sensor metadata. Does the entity have detailed metadata that is specific to a sensor instance, like a serial number and calibration data, or is it used for many Datastreams attached to many different Things.
+<p>&nbsp;</p>
+
+<p>
+  <img src="assets/sensor.svg"
+     alt="TABELLA SOILSITE EXP"
+     align="left"
+     width="420">
+ <!--
+  <strong>TABELLA SOILSITE EXP</strong><br>
+   Lorem Ipsum.
+ -->
+</p>
+
+<br clear="all">
+<p>&nbsp;</p>
+
 ## Table: `sensor`
 
 ### Columns
