@@ -1,3 +1,25 @@
+# Soil Body
+Part of the soil cover that is delineated and that is homogeneous with regard to certain soil
+properties and/or spatial patterns. The soils present in the soil body are characterized by
+one or more derived soil profiles that are found together in the area specified by the
+"geometry" attribute of the SoilBody.
+
+<p>&nbsp;</p>
+
+<p>
+  <img src="assets/soilbody.svg"
+     alt="TABELLA SOILSITE EXP"
+     align="left"
+     width="420">
+ <!--
+  <strong>TABELLA SOILSITE EXP</strong><br>
+   Lorem Ipsum.
+ -->
+</p>
+
+<br clear="all">
+<p>&nbsp;</p>
+
 ## Table: `soilbody`
 
 ### Columns
