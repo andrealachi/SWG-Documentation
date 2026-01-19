@@ -1,0 +1,59 @@
+## Table: `thing`
+
+### Columns
+
+| Name | Type | Constraints | Description |
+|------|------|-------------|-------------|
+| `id` | `INTEGER` | PRIMARY KEY | A unique, read-only attribute that serves as an identifier for the entity. |
+| `guid` | `TEXT` |  | Universally unique identifier. |
+| `name` | `TEXT` | NOT NULL | A property provides a label for Thing entity, commonly a descriptive name. |
+| `definition` | `TEXT` |  | The URI linking the Thing to an external definition. Dereferencing this URI SHOULD result in a representation of the definition of the Thing. |
+| `description` | `TEXT` |  | This is a short description of the corresponding Thing entity. |
+| `properties` | `TEXT` |  | mime type: 'application/json'. A JSON Object containing user-annotated properties as key-value pairs. |
+
+
+### Table Identifiers
+In this table, the primary key is the *id* field (integer, auto-incrementing).  
+There is also a text field named **GUID**, which stores a *UUID* (Universally Unique Identifier) compliant with RFC 4122.
+
+Although GUID is not mandatory at the schema level (it is not declared NOT NULL), its functional requirement is enforced by two triggers:
+- **thingguid (INSERT)** trigger: if GUID is missing or empty, a correctly formatted UUID is generated and inserted automatically.
+- **thingguidupdate (UPDATE)** trigger: prevents any modification of GUID after insertion, making it immutable (effectively behaving as a stable key).  
+
+Any foreign keys (FK) from other tables reference this table’s GUID field rather than the id field, ensuring stable and interoperable references across datasets and database instances.
+
+
+### Relationships (as child)
+- None
+
+### Referenced by (as parent)
+- `datastream.guid_thing` → `thing.guid` (**ON UPDATE** CASCADE, **ON DELETE** CASCADE)
+
+### Indexes
+
+| Name | Unique | Columns | Origin | Partial |
+|------|--------|---------|--------|---------|
+| `sqlite_autoindex_thing_1` | Yes | `guid` | `u` | No |
+
+### Triggers
+For every trigger you will find:
+
+- **When it runs** (BEFORE/AFTER, INSERT/UPDATE/DELETE)
+- **What it reads and compares** (columns, lookups in other tables)
+- **What happens on success** (the statement proceeds, optional updates)
+- **What happens on failure** (the exact error text raised)
+
+ 
+
+
+#### `thingguid` / `thingguidupdate`
+**When they run:** AFTER INSERT / AFTER UPDATE OF `guid`
+
+**What they do:** Assign GUID at insert when missing; prevent changes later.
+
+**If the check passes:** Insert writes GUID; unchanged updates proceed.
+
+**If the check fails:** On change, abort with: `Cannot update guid column.`
+
+---
+<a id="unitofmeasure"></a>

@@ -1,0 +1,139 @@
+## Table: `soilsite`
+
+### Columns
+
+| Name | Type | Constraints | Description |
+|------|------|-------------|-------------|
+| `id` | `INTEGER` | PRIMARY KEY | Primary Key of the Table. |
+| `guid` | `TEXT` |  | Universally unique identifier |
+| `geometry` | `POLYGON` | NOT NULL | Geometry. |
+| `inspireid_localid` | `TEXT` |  | A local identifier, assigned by the data provider. The local identifier is unique within the namespace, that is no other spatial object carries the same unique identifier. |
+| `inspireid_namespace` | `TEXT` |  | Namespace uniquely identifying the data source of the spatial object. |
+| `inspireid_versionid` | `TEXT` |  | The identifier of the particular version of the spatial object, with a maximum length of 25 characters. If the specification of a spatial object type with an external object identifier includes life-cycle information, the version identifier is used to distinguish between the different versions of a spatial object. Within the set of all versions of a spatial object, the version identifier is unique. |
+| `soilinvestigationpurpose` | `TEXT` | NOT NULL | Indication why a survey was conducted. |
+| `validfrom` | `DATETIME` | NOT NULL, DEFAULT strftime('%Y-%m-%dT%H:%M:%fZ', 'now') | The time when the phenomenon started to exist in the real world. |
+| `validto` | `DATETIME` |  | The time from which the phenomenon no longer exists in the real world. |
+| `beginlifespanversion` | `DATETIME` | NOT NULL, DEFAULT strftime('%Y-%m-%dT%H:%M:%fZ', 'now') | Date and time at which this version of the spatial object was inserted or changed in the spatial data set. |
+| `endlifespanversion` | `DATETIME` |  | Date and time at which this version of the spatial object was superseded or retired in the spatial data set. |
+
+### Table Identifiers
+In this table, the primary key is the *id* field (integer, auto-incrementing).  
+There is also a text field named **GUID**, which stores a *UUID* (Universally Unique Identifier) compliant with RFC 4122.
+
+Although GUID is not mandatory at the schema level (it is not declared NOT NULL), its functional requirement is enforced by two triggers:
+- **soilsiteguid (INSERT)** trigger: if GUID is missing or empty, a correctly formatted UUID is generated and inserted automatically.
+- **soilsiteguidupdate (UPDATE)** trigger: prevents any modification of GUID after insertion, making it immutable (effectively behaving as a stable key).  
+
+Any foreign keys (FK) from other tables reference this table’s GUID field rather than the id field, ensuring stable and interoperable references across datasets and database instances.
+
+
+### Relationships (as child)
+- None
+
+### Referenced by (as parent)
+- `datastream.guid_soilsite` → `soilsite.guid` (**ON UPDATE** CASCADE, **ON DELETE** CASCADE)
+- `soilplot.locatedon` → `soilsite.guid` (**ON UPDATE** CASCADE, **ON DELETE** NO ACTION)
+
+### Indexes
+
+| Name | Unique | Columns | Origin | Partial |
+|------|--------|---------|--------|---------|
+| `idx_soilsite_geom` | No | `geometry` | `c` | No |
+| `sqlite_autoindex_soilsite_1` | Yes | `guid` | `u` | No |
+
+### Triggers
+
+For every trigger you will find:
+
+- **When it runs** (BEFORE/AFTER, INSERT/UPDATE/DELETE)
+- **What it reads and compares** (columns, lookups in other tables)
+- **What happens on success** (the statement proceeds, optional updates)
+- **What happens on failure** (the exact error text raised)
+
+ 
+
+
+#### `soilsiteguid`
+**When it runs:** AFTER INSERT (per row)
+
+**What it does:** It examines the newly inserted row. If `NEW.guid` is `NULL` or absent, it generates a fresh **UUID v4** in lowercase canonical format and prepares to set it.
+
+**If the check passes:** It updates the just-inserted row, setting `guid` to the generated UUID. No error is raised.
+
+**If the check fails:** No failure path — it only assigns when `guid` is missing.
+
+#### `soilsiteguidupdate`
+**When it runs:** AFTER UPDATE OF `guid`
+
+**What it does:** It compares `NEW.guid` with `OLD.guid` to detect any attempt to change the GUID.
+
+**If the check passes:** If the GUID is unchanged, the update proceeds.
+
+**If the check fails:** If `NEW.guid <> OLD.guid`, the statement is aborted with: `Cannot update guid column.`
+
+#### `i_ceckvalidperiodsoilsite`
+**When it runs:** BEFORE INSERT
+
+**What it does:** Reads `validfrom` and `validto` from the new row and checks that the **from** date is **not later** than the **to** date.
+
+**If the check passes:** Insert continues.
+
+**If the check fails:** Aborts with: `Table soilsite: validto must be less than validfrom`.
+
+#### `u_ceckvalidperiodsoilsite`
+**When it runs:** BEFORE UPDATE
+
+**What it does:** Performs the same period consistency check as above using `NEW.validfrom` and `NEW.validto`.
+
+**If the check passes:** Update continues.
+
+**If the check fails:** Aborts with: `Table soilsite: validto must be less than validfrom`.
+
+#### `i_ceckvalidversionsoilsite`
+**When it runs:** BEFORE INSERT
+
+**What it does:** Compares lifecycle fields `beginlifespanversion` and `endlifespanversion`; begin must be **earlier** than end.
+
+**If the check passes:** Insert proceeds.
+
+**If the check fails:** Aborts with: `Table soilsite: beginlifespanversion must be less than endlifespanversion`.
+
+##### `i_soilinvestigationpurpose`
+**When it runs:** BEFORE INSERT
+
+**What it does:** Looks up `soilinvestigationpurpose` in the `codelist` table, restricting to `collection = 'SoilInvestigationPurposeValue'`.
+
+**If the check passes:** Insert proceeds.
+
+**If the check fails:** Aborts with: `Table soilsite: Invalid value for soilinvestigationpurpose. Must be present in id of soilinvestigationpurposevalue codelist.`
+
+#### `u_soilinvestigationpurpose`
+**When it runs:** BEFORE UPDATE
+
+**What it does:** Performs the same codelist membership check as above before updating.
+
+**If the check passes:** Update proceeds.
+
+**If the check fails:** Same abort message as the insert variant.
+
+#### `u_begin_today_soilsite`
+**When it runs:** AFTER UPDATE of selected columns
+
+**What it does:** If `endlifespanversion` is in the **future** or **NULL** (record still active), it refreshes `beginlifespanversion` to the **current timestamp**.
+
+**If the check passes:** The row is updated with the refreshed begin-lifespan timestamp.
+
+**If the check fails:** No explicit failure; this trigger only updates the timestamp.
+
+#### `u_begin_today_soilsite_error`
+**When it runs:** AFTER UPDATE of the same columns
+
+**What it does:** If `endlifespanversion` is **before now**, it blocks the edit.
+
+**If the check passes:** When end is in the future or NULL, the update continues.
+
+**If the check fails:** Aborts with: `If you change record endlifespanversion must be greater than today`.
+
+
+---
+<a id="thing"></a>
