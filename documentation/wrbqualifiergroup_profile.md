@@ -1,3 +1,23 @@
+ # WRB Qualifier Group Profile
+A data type to define the group of a qualifier and its possible specifier(s), its place and
+position with regard to the World Reference Base (WRB)
+
+<p>&nbsp;</p>
+
+<p>
+  <img src="assets/wrbqualifiergroup_profile.svg"
+     alt="TABELLA SOILSITE EXP"
+     align="left"
+     width="420">
+ <!--
+  <strong>TABELLA SOILSITE EXP</strong><br>
+   Lorem Ipsum.
+ -->
+</p>
+
+<br clear="all">
+<p>&nbsp;</p>
+
 ## Table: `wrbqualifiergroup_profile`
 
 ### Columns
