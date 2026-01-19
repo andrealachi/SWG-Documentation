@@ -1,3 +1,23 @@
+# Unit Of Measure
+The uom attribute contains the unit of measurement and is an object that must contain either a code attribute with the UCUM code of the unit, or a href attribute with a URI pointing to a unit definition. It may also contain the label and symbol attributes that can be displayed in user interfaces.
+The unitOfMeasure is part of the SWE-Common structure description found in resultType. 
+
+<p>&nbsp;</p>
+
+<p>
+  <img src="assets/unitofmeasure.svg"
+     alt="TABELLA SOILSITE EXP"
+     align="left"
+     width="420">
+ <!--
+  <strong>TABELLA SOILSITE EXP</strong><br>
+   Lorem Ipsum.
+ -->
+</p>
+
+<br clear="all">
+<p>&nbsp;</p>
+
 ## Table: `unitofmeasure`
 
 ### Columns
