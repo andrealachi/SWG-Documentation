@@ -1,3 +1,24 @@
+# Derived Profile Presence In Soilbody
+Indicates the percentages (lower and upper boundary) that the derived profile takes part
+in the Soil body. When the soil body is characterized by more than one derived profiles, the
+distribution area of these derived soil profiles is not spatially defined, but their presence is
+indicated by a range of percentages.
+
+<p>&nbsp;</p>
+
+<p>
+  <img src="assets/derivedprofilepresenceinsoilbody.svg"
+     alt="TABELLA SOILSITE EXP"
+     align="left"
+     width="420">
+ <!--
+  <strong>TABELLA SOILSITE EXP</strong><br>
+   Lorem Ipsum.
+ -->
+</p>
+
+<br clear="all">
+
 ## Table: `derivedprofilepresenceinsoilbody`
 
 ### Columns
