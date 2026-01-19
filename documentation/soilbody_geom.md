@@ -1,3 +1,21 @@
+# Soil Body Geom
+
+<p>&nbsp;</p>
+
+<p>
+  <img src="assets/soilbody_geom.svg"
+     alt="TABELLA SOILSITE EXP"
+     align="left"
+     width="420">
+ <!--
+  <strong>TABELLA SOILSITE EXP</strong><br>
+   Lorem Ipsum.
+ -->
+</p>
+
+<br clear="all">
+<p>&nbsp;</p>
+
 ## Table: `soilbody_geom`
 
 ### Columns
