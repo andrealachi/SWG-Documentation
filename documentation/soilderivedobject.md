@@ -1,3 +1,27 @@
+# Soil Derived Object
+Spatial object with soil-related property derived from one or more soil and possibly other
+non soil properties. Soil thematic maps can be derived directly from the involved soil
+database (organic matter content, pH, texture, etc.) or they can be derived by using
+pedotransfer functions or pedotransfer rules (e.g. plant available water in the rooting
+depth). Derivation can be simple extraction from a single data field, or a complex
+combination of different kind of data and application of e.g. mathematical or expert
+knowledge-based procedures.
+<p>&nbsp;</p>
+
+<p>
+  <img src="assets/soilderivedobject.svg"
+     alt="TABELLA SOILSITE EXP"
+     align="left"
+     width="420">
+ <!--
+  <strong>TABELLA SOILSITE EXP</strong><br>
+   Lorem Ipsum.
+ -->
+</p>
+
+<br clear="all">
+<p>&nbsp;</p>
+
 ## Table: `soilderivedobject`
 
 ### Columns
