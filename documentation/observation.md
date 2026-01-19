@@ -1,3 +1,22 @@
+# Obrservation
+Observation representing the measurement of a property at a single time instant.
+
+<p>&nbsp;</p>
+
+<p>
+  <img src="assets/observation.svg"
+     alt="TABELLA SOILSITE EXP"
+     align="left"
+     width="420">
+ <!--
+  <strong>TABELLA SOILSITE EXP</strong><br>
+   Lorem Ipsum.
+ -->
+</p>
+
+<br clear="all">
+<p>&nbsp;</p>
+
 ## Table: `observation`
 
 ### Columns
