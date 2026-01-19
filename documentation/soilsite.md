@@ -48,7 +48,8 @@ Although GUID is not mandatory at the schema level (it is not declared NOT NULL)
 
 Any foreign keys (FK) from other tables reference this table’s GUID field rather than the id field, ensuring stable and interoperable references across datasets and database instances.
 
-
+> [!NOTE]
+> **GUID management** is handled by database triggers, which ensure their automatic generation at the time of record insertion, **without any user involvement**.
 
 ### Coded Fields
 
