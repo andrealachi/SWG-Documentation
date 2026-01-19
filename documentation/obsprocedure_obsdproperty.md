@@ -1,3 +1,21 @@
+# Observed Procedure - Observed Property
+
+<p>&nbsp;</p>
+
+<p>
+  <img src="assets/obsprocedure_obsdproperty.svg"
+     alt="TABELLA SOILSITE EXP"
+     align="left"
+     width="420">
+ <!--
+  <strong>TABELLA SOILSITE EXP</strong><br>
+   Lorem Ipsum.
+ -->
+</p>
+
+<br clear="all">
+<p>&nbsp;</p>
+
 ## Table: `obsprocedure_obsdproperty`
 
 ### Columns
