@@ -1,3 +1,26 @@
+# Soil Profile
+
+Soil Profile" can be defined as a cross-section of the soil from the surface down to and
+including the beginning of the fresh material unmodified by pedogenesis, consisting of
+various more or less horizontally oriented features formed by pedogenic processes called
+horizons.
+
+<p>&nbsp;</p>
+
+<p>
+  <img src="assets/soilprofile.svg"
+     alt="TABELLA SOILSITE EXP"
+     align="left"
+     width="420">
+ <!--
+  <strong>TABELLA SOILSITE EXP</strong><br>
+   Lorem Ipsum.
+ -->
+</p>
+
+<br clear="all">
+<p>&nbsp;</p>
+
 ## Table: `soilprofile`
 
 ### Columns
