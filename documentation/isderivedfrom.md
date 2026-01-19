@@ -1,3 +1,27 @@
+# Is Derived From
+As mentioned in the "Soil Profile", section, there is a relationship between "Observed Soil Profile",
+and "Derived Soil Profile".
+"Derived Soil Profile", are composed of one or more "Observed Soil Profiles", while "Observed Soil
+Profiles", can belong to none, one, or more "Derived Soil Profiles".
+Let's see how to view and create these relationships using the forms.
+Please Note (Editing related elements in the parent form).
+
+<p>&nbsp;</p>
+
+<p>
+  <img src="assets/isderivedfrom.svg"
+     alt="TABELLA SOILSITE EXP"
+     align="left"
+     width="420">
+ <!--
+  <strong>TABELLA SOILSITE EXP</strong><br>
+   Lorem Ipsum.
+ -->
+</p>
+
+<br clear="all">
+<p>&nbsp;</p>
+
 ## Table: `isderivedfrom`
 
 ### Columns
