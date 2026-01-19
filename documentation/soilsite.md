@@ -54,7 +54,9 @@ Any foreign keys (FK) from other tables reference this table’s GUID field rath
 
 The **`soilinves­tigationpurpose`** field is a **coded field** (*codelist-based attribute*), meaning that it can only contain values belonging to a predefined **codelist**, in accordance with the INSPIRE specifications.
 
-Any attempt to insert a value that is not included in the corresponding codelist is considered invalid by the system and will result in the failure of the data insertion operation.
+
+> [!WARNING]
+> Any attempt to insert a value that is not included in the corresponding codelist is considered **invalid** by the system and will result in the **failure of the data insertion operation**.
 
 #### Codelist Definition
 
