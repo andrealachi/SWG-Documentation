@@ -49,6 +49,31 @@ Although GUID is not mandatory at the schema level (it is not declared NOT NULL)
 Any foreign keys (FK) from other tables reference this table’s GUID field rather than the id field, ensuring stable and interoperable references across datasets and database instances.
 
 
+
+### Coded Fields
+
+The **`soilinves­tigationpurpose`** field is a **coded field** (*codelist-based attribute*), meaning that it can only contain values belonging to a predefined **codelist**, in accordance with the INSPIRE specifications.
+
+Any attempt to insert a value that is not included in the corresponding codelist is considered invalid by the system and will result in the failure of the data insertion operation.
+
+#### Codelist Definition
+
+The complete list of allowed codes is stored in the **codelist table**.  
+The associated [documentation](codelist.md), provides a detailed description of:
+
+- which codes are available (INSPIRE codelist URL),
+- the database tables to which each codelist applies,
+- the fields for which each code is valid,
+
+in accordance with the adopted conceptual model.
+
+#### Validation and Data Entry
+
+The semantic and syntactic validation of the inserted values is enforced at the database level through dedicated **control triggers** (i_soilinvestigationpurpose/u_soilinvestigationpurpose), ensuring compliance with the defined codelists.
+
+During data entry via the **QGIS interface**, users are supported by **dropdown menus** that display only the valid codes for the selected field.  
+This mechanism reduces the risk of data entry errors and guarantees alignment with the constraints imposed by the INSPIRE codelists.
+
 ### Relationships (as child)
 - None
 
