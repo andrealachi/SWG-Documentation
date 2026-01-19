@@ -1,3 +1,24 @@
+# Profile Element 
+An abstract spatial object type grouping soil layers and / or horizons for functional/
+operational aims.
+
+<p>&nbsp;</p>
+
+<p>
+  <img src="assets/profileelement.svg"
+     alt="TABELLA SOILSITE EXP"
+     align="left"
+     width="420">
+ <!--
+  <strong>TABELLA SOILSITE EXP</strong><br>
+   Lorem Ipsum.
+ -->
+</p>
+
+<br clear="all">
+<p>&nbsp;</p>
+
+
 ## Table: `profileelement`
 
 ### Columns
