@@ -59,9 +59,9 @@ Some names in the code need to be changed for it to work correctly, as described
 ---
 
 ## Index
-- [codelist](#codelist)
-- [datastream](#datastream)
-- [derivedprofilepresenceinsoilbody](#derivedprofilepresenceinsoilbody)
+- [codelist](codelist.md)
+- [datastream](datastream.md)
+- [derivedprofilepresenceinsoilbody](derivedprofilepresenceinsoilbody.md)
 - [faohorizonnotationtype](#faohorizonnotationtype)
 - [isbasedonobservedsoilprofile](#isbasedonobservedsoilprofile)
 - [isbasedonsoilbody](#isbasedonsoilbody)
