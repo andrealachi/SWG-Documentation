@@ -1,3 +1,21 @@
+# Other Soil Name Type
+
+<p>&nbsp;</p>
+
+<p>
+  <img src="assets/othersoilnametype.svg"
+     alt="TABELLA SOILSITE EXP"
+     align="left"
+     width="420">
+ <!--
+  <strong>TABELLA SOILSITE EXP</strong><br>
+   Lorem Ipsum.
+ -->
+</p>
+
+<br clear="all">
+<p>&nbsp;</p>
+
 ## Table: `othersoilnametype`
 
 ### Columns
