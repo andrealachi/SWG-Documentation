@@ -113,7 +113,10 @@ Let’s look at each step in detail.
 
 QGIS allows the import of geometries from various formats, such as CSV, Shapefile, or other GeoPackages. In this example, we will import data from a CSV file.
 
-- Click the **Open Data Source Manager** button <mark>(1)</mark> in the QGIS toolbar.  
+- Click the **Open Data Source Manager** button <mark>(1)</mark> in the QGIS toolbar.
+
+![structure poster](./assets/db_structure.webp)
+
 - In the window that opens, you can choose from various data sources to import.  
 - In our example, select **CSV** <mark>(2)</mark> as the source format and proceed with importing the desired file <mark>(3)</mark>.  
 - Check the **geometry type** (e.g., WKT or coordinates separated into latitude/longitude) <mark>(4)</mark>.  
