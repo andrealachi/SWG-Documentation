@@ -1,5 +1,12 @@
 # Soil Plot
-Is the location of a specific soil investigation
+
+## Definition
+
+> “Is the location of a specific soil investigation.”[^1]
+[^1]: European Commission – Joint Research Centre (JRC),  
+**INSPIRE Data Specification on Soil – Technical Guidelines**,  
+D2.8.III.3.  
+https://inspire-mif.github.io/technical-guidelines/data/so/dataspecification_so.pdf
 
 <p>&nbsp;</p>
 
@@ -150,6 +157,8 @@ For every trigger you will find:
 **If the check passes:** Update continues.
 
 **If the check fails:** Aborts with: `If you change record endlifespanversion must be greater than today`.
+
+
 
 ---
 <a id="soilprofile"></a>
