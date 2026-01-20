@@ -1,6 +1,13 @@
 # WRB Qualifier Group Type
-A data type to define the group of a qualifier and its possible specifier(s), its place and
-position with regard to the World Reference Base (WRB)
+
+> “A data type to define the group of a qualifier and its possible specifier(s), its place and
+position with regard to the World Reference Base (WRB)”[^1]
+> [^1]: European Commission – Joint Research Centre (JRC),  
+**INSPIRE Data Specification on Soil – Technical Guidelines**,  
+D2.8.III.3.  
+https://inspire-mif.github.io/technical-guidelines/data/so/dataspecification_so.pdf
+
+
 
 
 <p>&nbsp;</p>
@@ -163,7 +170,7 @@ For every trigger you will find:
 **If the check fails:** Aborts with either `wrbspecifier_1 and wrbspecifier_2 must not be equal` or `wrbspecifier_1 must not be NULL when wrbspecifier_2 is not NULL`.
 
 
----
+
 
 Relationships (child → parent):
 -------------------------------
@@ -173,118 +180,4 @@ Relationships (child → parent):
 - [datastream].guid_soilsite  -->  [soilsite].guid  (ON UPDATE CASCADE, ON DELETE CASCADE)
 - [datastream].guid_observingprocedure  -->  [observingprocedure].guid  (ON UPDATE CASCADE, ON DELETE SET NULL)
 - [datastream].guid_observedproperty  -->  [observedproperty].guid  (ON UPDATE CASCADE, ON DELETE CASCADE)
-- [datastream].guid_sensor  -->  [sensor].guid  (ON UPDATE CASCADE, ON DELETE CASCADE)
-- [datastream].guid_thing  -->  [thing].guid  (ON UPDATE CASCADE, ON DELETE CASCADE)
-- [datastream].code_unitofmeasure  -->  [unitofmeasure].code  (ON UPDATE CASCADE, ON DELETE CASCADE)
-- [derivedprofilepresenceinsoilbody].guid_soilprofile  -->  [soilprofile].guid  (ON UPDATE CASCADE, ON DELETE CASCADE)
-- [derivedprofilepresenceinsoilbody].guid_soilbody  -->  [soilbody].guid  (ON UPDATE CASCADE, ON DELETE CASCADE)
-- [faohorizonnotationtype].guid_profileelement  -->  [profileelement].guid  (ON UPDATE CASCADE, ON DELETE CASCADE)
-- [isbasedonobservedsoilprofile].guid_soilprofile  -->  [soilprofile].guid  (ON UPDATE CASCADE, ON DELETE CASCADE)
-- [isbasedonobservedsoilprofile].guid_soilderivedobject  -->  [soilderivedobject].guid  (ON UPDATE CASCADE, ON DELETE CASCADE)
-- [isbasedonsoilbody].guid_soilbody  -->  [soilbody].guid  (ON UPDATE CASCADE, ON DELETE CASCADE)
-- [isbasedonsoilbody].guid_soilderivedobject  -->  [soilderivedobject].guid  (ON UPDATE CASCADE, ON DELETE CASCADE)
-- [isbasedonsoilderivedobject].guid_related  -->  [soilderivedobject].guid  (ON UPDATE CASCADE, ON DELETE CASCADE)
-- [isbasedonsoilderivedobject].guid_base  -->  [soilderivedobject].guid  (ON UPDATE CASCADE, ON DELETE CASCADE)
-- [isderivedfrom].guid_related  -->  [soilprofile].guid  (ON UPDATE CASCADE, ON DELETE CASCADE)
-- [isderivedfrom].guid_base  -->  [soilprofile].guid  (ON UPDATE CASCADE, ON DELETE CASCADE)
-- [observation].guid_datastream  -->  [datastream].guid  (ON UPDATE CASCADE, ON DELETE CASCADE)
-- [obsprocedure_obsdproperty].guid_observedproperty  -->  [observedproperty].guid  (ON UPDATE CASCADE, ON DELETE RESTRICT)
-- [obsprocedure_obsdproperty].guid_observingprocedure  -->  [observingprocedure].guid  (ON UPDATE CASCADE, ON DELETE CASCADE)
-- [obsprocedure_sensor].guid_sensor  -->  [sensor].guid  (ON UPDATE CASCADE, ON DELETE RESTRICT)
-- [obsprocedure_sensor].guid_observingprocedure  -->  [observingprocedure].guid  (ON UPDATE CASCADE, ON DELETE CASCADE)
-- [otherhorizon_profileelement].guid_otherhorizonnotationtype  -->  [otherhorizonnotationtype].guid  (ON UPDATE CASCADE, ON DELETE CASCADE)
-- [otherhorizon_profileelement].guid_profileelement  -->  [profileelement].guid  (ON UPDATE CASCADE, ON DELETE CASCADE)
-- [othersoilnametype].othersoilname  -->  [soilprofile].guid  (ON UPDATE CASCADE, ON DELETE CASCADE)
-- [profileelement].ispartof  -->  [soilprofile].guid  (ON UPDATE CASCADE, ON DELETE CASCADE)
-- [soilbody_geom].guid_soilbody  -->  [soilbody].guid  (ON UPDATE CASCADE, ON DELETE CASCADE)
-- [soilplot].locatedon  -->  [soilsite].guid  (ON UPDATE CASCADE, ON DELETE NO ACTION)
-- [soilprofile].location  -->  [soilplot].guid  (ON UPDATE CASCADE, ON DELETE CASCADE)
-- [wrbqualifiergroup_profile].guid_wrbqualifiergrouptype  -->  [wrbqualifiergrouptype].guid  (ON UPDATE CASCADE, ON DELETE CASCADE)
-- [wrbqualifiergroup_profile].guid_soilprofile  -->  [soilprofile].guid  (ON UPDATE CASCADE, ON DELETE CASCADE)
-
-Reverse relationships (parent → children):
-------------------------------------------
-- [datastream].guid  -->  [observation].guid_datastream  (ON UPDATE CASCADE, ON DELETE CASCADE)
-- [observedproperty].guid  -->  [datastream].guid_observedproperty  (ON UPDATE CASCADE, ON DELETE CASCADE)
-- [observedproperty].guid  -->  [obsprocedure_obsdproperty].guid_observedproperty  (ON UPDATE CASCADE, ON DELETE RESTRICT)
-- [observingprocedure].guid  -->  [datastream].guid_observingprocedure  (ON UPDATE CASCADE, ON DELETE SET NULL)
-- [observingprocedure].guid  -->  [obsprocedure_obsdproperty].guid_observingprocedure  (ON UPDATE CASCADE, ON DELETE CASCADE)
-- [observingprocedure].guid  -->  [obsprocedure_sensor].guid_observingprocedure  (ON UPDATE CASCADE, ON DELETE CASCADE)
-- [otherhorizonnotationtype].guid  -->  [otherhorizon_profileelement].guid_otherhorizonnotationtype  (ON UPDATE CASCADE, ON DELETE CASCADE)
-- [profileelement].guid  -->  [datastream].guid_profileelement  (ON UPDATE CASCADE, ON DELETE CASCADE)
-- [profileelement].guid  -->  [faohorizonnotationtype].guid_profileelement  (ON UPDATE CASCADE, ON DELETE CASCADE)
-- [profileelement].guid  -->  [otherhorizon_profileelement].guid_profileelement  (ON UPDATE CASCADE, ON DELETE CASCADE)
-- [sensor].guid  -->  [datastream].guid_sensor  (ON UPDATE CASCADE, ON DELETE CASCADE)
-- [sensor].guid  -->  [obsprocedure_sensor].guid_sensor  (ON UPDATE CASCADE, ON DELETE RESTRICT)
-- [soilbody].guid  -->  [derivedprofilepresenceinsoilbody].guid_soilbody  (ON UPDATE CASCADE, ON DELETE CASCADE)
-- [soilbody].guid  -->  [isbasedonsoilbody].guid_soilbody  (ON UPDATE CASCADE, ON DELETE CASCADE)
-- [soilbody].guid  -->  [soilbody_geom].guid_soilbody  (ON UPDATE CASCADE, ON DELETE CASCADE)
-- [soilderivedobject].guid  -->  [datastream].guid_soilderivedobject  (ON UPDATE CASCADE, ON DELETE CASCADE)
-- [soilderivedobject].guid  -->  [isbasedonobservedsoilprofile].guid_soilderivedobject  (ON UPDATE CASCADE, ON DELETE CASCADE)
-- [soilderivedobject].guid  -->  [isbasedonsoilbody].guid_soilderivedobject  (ON UPDATE CASCADE, ON DELETE CASCADE)
-- [soilderivedobject].guid  -->  [isbasedonsoilderivedobject].guid_related  (ON UPDATE CASCADE, ON DELETE CASCADE)
-- [soilderivedobject].guid  -->  [isbasedonsoilderivedobject].guid_base  (ON UPDATE CASCADE, ON DELETE CASCADE)
-- [soilplot].guid  -->  [soilprofile].location  (ON UPDATE CASCADE, ON DELETE CASCADE)
-- [soilprofile].guid  -->  [datastream].guid_soilprofile  (ON UPDATE CASCADE, ON DELETE CASCADE)
-- [soilprofile].guid  -->  [derivedprofilepresenceinsoilbody].guid_soilprofile  (ON UPDATE CASCADE, ON DELETE CASCADE)
-- [soilprofile].guid  -->  [isbasedonobservedsoilprofile].guid_soilprofile  (ON UPDATE CASCADE, ON DELETE CASCADE)
-- [soilprofile].guid  -->  [isderivedfrom].guid_related  (ON UPDATE CASCADE, ON DELETE CASCADE)
-- [soilprofile].guid  -->  [isderivedfrom].guid_base  (ON UPDATE CASCADE, ON DELETE CASCADE)
-- [soilprofile].guid  -->  [othersoilnametype].othersoilname  (ON UPDATE CASCADE, ON DELETE CASCADE)
-- [soilprofile].guid  -->  [profileelement].ispartof  (ON UPDATE CASCADE, ON DELETE CASCADE)
-- [soilprofile].guid  -->  [wrbqualifiergroup_profile].guid_soilprofile  (ON UPDATE CASCADE, ON DELETE CASCADE)
-- [soilsite].guid  -->  [datastream].guid_soilsite  (ON UPDATE CASCADE, ON DELETE CASCADE)
-- [soilsite].guid  -->  [soilplot].locatedon  (ON UPDATE CASCADE, ON DELETE NO ACTION)
-- [thing].guid  -->  [datastream].guid_thing  (ON UPDATE CASCADE, ON DELETE CASCADE)
-- [unitofmeasure].code  -->  [datastream].code_unitofmeasure  (ON UPDATE CASCADE, ON DELETE CASCADE)
-- [wrbqualifiergrouptype].guid  -->  [wrbqualifiergroup_profile].guid_wrbqualifiergrouptype  (ON UPDATE CASCADE, ON DELETE CASCADE)
-
-Legend:
-  * column name prefixed with '*' denotes PRIMARY KEY in table boxes.
-  * arrow 'child --> parent' indicates a many-to-one relationship.
-  * arrow 'parent --> child' indicates the reverse view of the same FK.
-
-
-## Cascade Summary
-- Deleting from `datastream` may delete rows in:
-  - `observation`
-- Deleting from `observedproperty` may delete rows in:
-  - `datastream`
-- Deleting from `observingprocedure` may delete rows in:
-  - `obsprocedure_obsdproperty`
-  - `obsprocedure_sensor`
-- Deleting from `otherhorizonnotationtype` may delete rows in:
-  - `otherhorizon_profileelement`
-- Deleting from `profileelement` may delete rows in:
-  - `datastream`
-  - `faohorizonnotationtype`
-  - `otherhorizon_profileelement`
-- Deleting from `sensor` may delete rows in:
-  - `datastream`
-- Deleting from `soilbody` may delete rows in:
-  - `derivedprofilepresenceinsoilbody`
-  - `isbasedonsoilbody`
-  - `soilbody_geom`
-- Deleting from `soilderivedobject` may delete rows in:
-  - `datastream`
-  - `isbasedonobservedsoilprofile`
-  - `isbasedonsoilbody`
-  - `isbasedonsoilderivedobject`
-- Deleting from `soilplot` may delete rows in:
-  - `soilprofile`
-- Deleting from `soilprofile` may delete rows in:
-  - `datastream`
-  - `derivedprofilepresenceinsoilbody`
-  - `isbasedonobservedsoilprofile`
-  - `isderivedfrom`
-  - `othersoilnametype`
-  - `profileelement`
-  - `wrbqualifiergroup_profile`
-- Deleting from `soilsite` may delete rows in:
-  - `datastream`
-- Deleting from `thing` may delete rows in:
-  - `datastream`
-- Deleting from `unitofmeasure` may delete rows in:
-  - `datastream`
-- Deleting from `wrbqualifiergrouptype` may delete rows in:
-  - `wrbqualifiergroup_profile`
+- [datastream].guid_sensor 
