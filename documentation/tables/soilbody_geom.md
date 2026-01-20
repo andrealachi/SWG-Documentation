@@ -3,7 +3,7 @@
 <p>&nbsp;</p>
 
 <p>
-  <img src="assets/soilbody_geom.svg"
+  <img src="../assets/soilbody_geom.svg"
      alt="TABELLA SOILSITE EXP"
      align="left"
      width="420">

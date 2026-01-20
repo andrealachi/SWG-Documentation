@@ -5,7 +5,7 @@ position with regard to the World Reference Base (WRB)
 <p>&nbsp;</p>
 
 <p>
-  <img src="assets/wrbqualifiergroup_profile.svg"
+  <img src="../assets/wrbqualifiergroup_profile.svg"
      alt="TABELLA SOILSITE EXP"
      align="left"
      width="420">

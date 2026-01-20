@@ -9,7 +9,7 @@ Please Note (Editing related elements in the parent form).
 <p>&nbsp;</p>
 
 <p>
-  <img src="assets/isderivedfrom.svg"
+  <img src="../assets/isderivedfrom.svg"
      alt="TABELLA SOILSITE EXP"
      align="left"
      width="420">

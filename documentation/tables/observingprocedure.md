@@ -3,7 +3,7 @@
 <p>&nbsp;</p>
 
 <p>
-  <img src="assets/observingprocedure.svg"
+  <img src="../assets/observingprocedure.svg"
      alt="TABELLA SOILSITE EXP"
      align="left"
      width="420">

@@ -9,7 +9,7 @@ knowledge-based procedures.
 <p>&nbsp;</p>
 
 <p>
-  <img src="assets/soilderivedobject.svg"
+  <img src="../assets/soilderivedobject.svg"
      alt="TABELLA SOILSITE EXP"
      align="left"
      width="420">

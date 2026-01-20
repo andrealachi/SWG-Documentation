@@ -3,7 +3,7 @@
 <p>&nbsp;</p>
 
 <p>
-  <img src="assets/otherhorizon_profileelement.svg"
+  <img src="../assets/otherhorizon_profileelement.svg"
      alt="TABELLA SOILSITE EXP"
      align="left"
      width="420">

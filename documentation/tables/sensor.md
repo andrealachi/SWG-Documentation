@@ -5,7 +5,7 @@ A Sensor entity in an OGC SensorThings API deployment can represent either a spe
 <p>&nbsp;</p>
 
 <p>
-  <img src="assets/sensor.svg"
+  <img src="../assets/sensor.svg"
      alt="TABELLA SOILSITE EXP"
      align="left"
      width="420">

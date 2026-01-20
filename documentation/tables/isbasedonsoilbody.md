@@ -3,7 +3,7 @@
 <p>&nbsp;</p>
 
 <p>
-  <img src="assets/isbasedonsoilbody.svg"
+  <img src="../assets/isbasedonsoilbody.svg"
      alt="TABELLA SOILSITE EXP"
      align="left"
      width="420">

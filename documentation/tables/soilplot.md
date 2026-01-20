@@ -11,7 +11,7 @@ https://inspire-mif.github.io/technical-guidelines/data/so/dataspecification_so.
 <p>&nbsp;</p>
 
 <p>
-  <img src="assets/soilplot.svg"
+  <img src="../assets/soilplot.svg"
      alt="TABELLA SOILSITE EXP"
      align="left"
      width="420">

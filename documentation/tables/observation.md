@@ -4,7 +4,7 @@ Observation representing the measurement of a property at a single time instant.
 <p>&nbsp;</p>
 
 <p>
-  <img src="assets/observation.svg"
+  <img src="../assets/observation.svg"
      alt="TABELLA SOILSITE EXP"
      align="left"
      width="420">

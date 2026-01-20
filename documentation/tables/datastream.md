@@ -4,7 +4,7 @@ A Datastream groups a collection of Observations into a time series measuring th
 <p>&nbsp;</p>
 
 <p>
-  <img src="assets/datastream.svg"
+  <img src="../assets/datastream.svg"
      alt="TABELLA SOILSITE EXP"
      align="left"
      width="420">

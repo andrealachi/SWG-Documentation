@@ -5,7 +5,7 @@ The unitOfMeasure is part of the SWE-Common structure description found in resul
 <p>&nbsp;</p>
 
 <p>
-  <img src="assets/unitofmeasure.svg"
+  <img src="../assets/unitofmeasure.svg"
      alt="TABELLA SOILSITE EXP"
      align="left"
      width="420">

@@ -4,7 +4,7 @@ The OGC SensorThings API Standard follows the ITU-T definition with regard to th
 <p>&nbsp;</p>
 
 <p>
-  <img src="assets/thing.svg"
+  <img src="../assets/thing.svg"
      alt="TABELLA SOILSITE EXP"
      align="left"
      width="420">

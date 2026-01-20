@@ -7,7 +7,7 @@ one or more derived soil profiles that are found together in the area specified 
 <p>&nbsp;</p>
 
 <p>
-  <img src="assets/soilbody.svg"
+  <img src="../assets/soilbody.svg"
      alt="TABELLA SOILSITE EXP"
      align="left"
      width="420">

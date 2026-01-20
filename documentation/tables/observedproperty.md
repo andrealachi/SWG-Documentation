@@ -4,7 +4,7 @@ An ObservedProperty is a property of a Feature that is being observed by a Senso
 <p>&nbsp;</p>
 
 <p>
-  <img src="assets/observedproperty.svg"
+  <img src="../assets/observedproperty.svg"
      alt="TABELLA SOILSITE EXP"
      align="left"
      width="420">

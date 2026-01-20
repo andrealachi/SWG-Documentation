@@ -13,7 +13,7 @@ https://inspire-mif.github.io/technical-guidelines/data/so/dataspecification_so.
 <p>&nbsp;</p>
 
 <p>
-  <img src="assets/wrbqualifiergrouptype.svg"
+  <img src="../assets/wrbqualifiergrouptype.svg"
      alt="TABELLA SOILSITE EXP"
      align="left"
      width="420">

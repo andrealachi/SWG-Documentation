@@ -7,7 +7,7 @@ indicated by a range of percentages.
 <p>&nbsp;</p>
 
 <p>
-  <img src="assets/derivedprofilepresenceinsoilbody.svg"
+  <img src="../assets/derivedprofilepresenceinsoilbody.svg"
      alt="TABELLA SOILSITE EXP"
      align="left"
      width="420">
