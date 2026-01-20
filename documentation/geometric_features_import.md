@@ -98,27 +98,51 @@ FROM staging.soil_site_source AS s;
 
 ## Method 2 — QGIS: copy/paste features into the GeoPackage
 
-**Goal**  
-Quickly import existing features into _soilwise_ using **copy & paste** between layers in QGIS. citeturn5search2
 
-**Prerequisites**
-- Source layer and destination layer (in the `.gpkg`) loaded in QGIS
-- **Compatible schema** (field names/types) or a plan to reconcile it first
-- Matching **CRS** and **geometry type**
+The import of geometries into an existing table of a GeoPackage with QGIS is structured in three main steps:
 
-**Procedure (summary)**
-1. Open QGIS and load the **source** and **destination** (_soilwise_) layers.
-2. Put the destination layer **in editing mode**.
-3. Select features in source → **Copy** (`Ctrl+C`).
-4. Activate destination layer → **Paste** (`Ctrl+V`) / *Paste features*.
-5. If prompted, map fields or resolve mismatches → **Save edits**.
+1. **Importing** geometries as a layer in QGIS  
+2. **Copying** the imported geometries  
+3. **Pasting** the geometries into the GeoPackage layer  
 
-**Post‑import checks**
-- Feature counts; correct attribute population; geometry validity; domains/codelists
+Let’s look at each step in detail.
 
-**Notes & limits**
-- If schemas differ, prepare an “harmonized” layer first (e.g., **Refactor fields**).
-- For large volumes or heavy transformations, consider SQL or the Plugin instead. 
+---
+
+### 1) Importing geometries
+
+QGIS allows the import of geometries from various formats, such as CSV, Shapefile, or other GeoPackages. In this example, we will import data from a CSV file.
+
+- Click the **Open Data Source Manager** button <mark>(1)</mark> in the QGIS toolbar.  
+- In the window that opens, you can choose from various data sources to import.  
+- In our example, select **CSV** <mark>(2)</mark> as the source format and proceed with importing the desired file <mark>(3)</mark>.  
+- Check the **geometry type** (e.g., WKT or coordinates separated into latitude/longitude) <mark>(4)</mark>.  
+- Set the correct **Coordinate Reference System (CRS)** <mark>(5)</mark>.  
+- Click **Add** <mark>(6)</mark> to create the layer (in this case, a point layer) in the project.
+
+> [!WARNING]
+> For the copy–paste operation to work correctly, the **source layer** (from which geometries are copied) must have the **same fields** (name and data type) as the **destination layer**, or at least match the required fields.  
+> This check can be done during the import phase, later using QGIS tools, or by using an RDBMS to modify or remove unnecessary fields.  
+> In this example, since the check was not performed during import, a temporary support layer named **“copy”** was created and used for preprocessing.
+
+---
+
+### 2) Copying geometries
+
+- Import the newly created layer (if it is not already present in the project).  
+- Right‑click the layer name <mark>(7)</mark> and, from the context menu, select **Open Attribute Table** <mark>(8)</mark> to view its data.  
+- **Select all** geometries <mark>(9)</mark>.  
+- **Copy** the geometries <mark>(10)</mark>.
+
+---
+
+### 3) Pasting geometries
+
+- Enable **editing mode** on the destination GeoPackage layer using the **Toggle Editing** button <mark>(11)</mark>.  
+- **Paste** the geometries <mark>(12)</mark>.  
+- **Save** the changes.
+
+
 
 ---
 
