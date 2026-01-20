@@ -37,6 +37,11 @@ The **Soilwise** GeoPackage is **natively supported by QGIS**, enabling editing,
 
 # Relational Structure of the GeoPackage (INSPIRE UML + STA2 Transposition)
 
+![structure poster](assets/db_structure.webp)
+
+> [!TIP]
+> Click the image to see it full‑size for better viewing.
+
 ## Purpose and framing
 
 This GeoPackage implements a **relational schema** that is a **faithful transposition** of the **INSPIRE Soil conceptual model (UML)** and its classes/associations, as described in the **INSPIRE Soil Technical Guidelines** and Feature Catalogue. It also integrates the **OGC SensorThings API 2.0 (STA2)** model for the management and exposure of **observations** (time‑series and observation metadata).[^5][^9][^10]
@@ -155,37 +160,39 @@ https://inspire-mif.github.io/uml-models/approved/
 
 
 
-# Database Structure Report
+# Database Tables
 
 
 ## Index
-- [codelist](codelist.md)
-- [datastream](datastream.md)
-- [derivedprofilepresenceinsoilbody](derivedprofilepresenceinsoilbody.md)
-- [faohorizonnotationtype](faohorizonnotationtype.md)
-- [isbasedonobservedsoilprofile](isbasedonobservedsoilprofile.md)
-- [isbasedonsoilbody](isbasedonsoilbody.md)
-- [isbasedonsoilderivedobject](isbasedonsoilderivedobject.md)
-- [isderivedfrom](isderivedfrom.md)
-- [observation](observation.md)
-- [observedproperty](observedproperty.md)
-- [observingprocedure](observingprocedure.md)
-- [obsprocedure_obsdproperty](obsprocedure_obsdproperty.md)
-- [obsprocedure_sensor](obsprocedure_sensor.md)
-- [otherhorizon_profileelement](otherhorizon_profileelement.md)
-- [otherhorizonnotationtype](otherhorizonnotationtype.md)
-- [othersoilnametype](othersoilnametype.md)
-- [profileelement](profileelement.md)
-- [sensor](sensor.md)
-- [soilbody](soilbody.md)
-- [soilbody_geom](soilbody_geom.md)
-- [soilderivedobject](soilderivedobject.md)
-- [soilplot](soilplot.md)
-- [soilprofile](soilprofile.md)
-- [soilsite](soilsite.md)
-- [thing](thing.md)
-- [unitofmeasure](unitofmeasure.md)
-- [wrbqualifiergroup_profile](wrbqualifiergroup_profile.md)
-- [wrbqualifiergrouptype](wrbqualifiergrouptype.md)
+
+- [codelist](./tables/codelist.md)
+- [datastream](./tables/datastream.md)
+- [derivedprofilepresenceinsoilbody](./tables/derivedprofilepresenceinsoilbody.md)
+- [faohorizonnotationtype](./tables/faohorizonnotationtype.md)
+- [isbasedonobservedsoilprofile](./tables/isbasedonobservedsoilprofile.md)
+- [isbasedonsoilbody](./tables/isbasedonsoilbody.md)
+- [isbasedonsoilderivedobject](./tables/isbasedonsoilderivedobject.md)
+- [isderivedfrom](./tables/isderivedfrom.md)
+- [observation](./tables/observation.md)
+- [observedproperty](./tables/observedproperty.md)
+- [observingprocedure](./tables/observingprocedure.md)
+- [obsprocedure_obsdproperty](./tables/obsprocedure_obsdproperty.md)
+- [obsprocedure_sensor](./tables/obsprocedure_sensor.md)
+- [otherhorizon_profileelement](./tables/otherhorizon_profileelement.md)
+- [otherhorizonnotationtype](./tables/otherhorizonnotationtype.md)
+- [othersoilnametype](./tables/othersoilnametype.md)
+- [profileelement](./tables/profileelement.md)
+- [sensor](./tables/sensor.md)
+- [soilbody](./tables/soilbody.md)
+- [soilbody_geom](./tables/soilbody_geom.md)
+- [soilderivedobject](./tables/soilderivedobject.md)
+- [soilplot](./tables/soilplot.md)
+- [soilprofile](./tables/soilprofile.md)
+- [soilsite](./tables/soilsite.md)
+- [thing](./tables/thing.md)
+- [unitofmeasure](./tables/unitofmeasure.md)
+- [wrbqualifiergroup_profile](./tables/wrbqualifiergroup_profile.md)
+- [wrbqualifiergrouptype](./tables/wrbqualifiergrouptype.md)
+
 
 
