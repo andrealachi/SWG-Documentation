@@ -2,11 +2,10 @@
 
 This guide explains how to import geometric layers into the **_soilwise_** GeoPackage in a correct, auditable, and repeatable way. It caters to both **SQL/DB‑centric** workflows and **QGIS‑based** operations, with an additional **plugin‑driven** option for a guided process. For complex mappings, alternative **ETL** tools are also listed.
 
-> [!NOTE]
-> GitHub Flavored Markdown supports callouts like this **NOTE** block using the `[!NOTE]` syntax inside a blockquote; these render natively on GitHub. citeturn8search27
+
 
 > [!IMPORTANT]
-> A GeoPackage is an **SQLite** database that stores geospatial data (features, rasters, attributes) based on the **OGC GeoPackage Encoding Standard**. This means you are writing to a single, portable database file (`.gpkg`). citeturn8search21turn8search26
+> A GeoPackage is an **SQLite** database that stores geospatial data (features, rasters, attributes) based on the **OGC GeoPackage Encoding Standard**. This means you are writing to a single, portable database file (`.gpkg`). 
 
 ---
 
@@ -26,7 +25,7 @@ This guide explains how to import geometric layers into the **_soilwise_** GeoPa
 ## Prerequisites & Best Practices (apply to all methods)
 
 - **CRS**: use the project-wide, agreed coordinate reference system and reproject sources **before** import when needed.
-- **Valid geometries**: ensure geometry validity/topology (closed polygons, no self‑intersections, points within expected extent). QGIS provides native tools for validation and repair. citeturn5search2
+- **Valid geometries**: ensure geometry validity/topology (closed polygons, no self‑intersections, points within expected extent). QGIS provides native tools for validation and repair.
 - **Attribute schema**: align field names, data types, and constraints (PK/UK, domains/codelists) prior to import.
 - **IDs/keys**: guarantee primary key uniqueness; avoid duplicates.
 - **Multipart vs singlepart**: respect the target model.
@@ -37,7 +36,7 @@ This guide explains how to import geometric layers into the **_soilwise_** GeoPa
 ## Overview of import methods (choose what fits your workflow)
 
 1) **Method 1 — SQL import (direct insert into the GeoPackage)**  
-   Perform the import using an **SQL query** that inserts features directly into tables in the GeoPackage (remember: GeoPackage is SQLite-based). This is ideal when your data already resides in a structured source and you want a **repeatable, scriptable** pipeline. citeturn8search21turn8search26
+   Perform the import using an **SQL query** that inserts features directly into tables in the GeoPackage (remember: GeoPackage is SQLite-based). This is ideal when your data already resides in a structured source and you want a **repeatable, scriptable** pipeline. 
    - **Use when**: bulk migrations; fine-grained control over mapping, IDs, and domains.
    - **Prerequisites**: write access to the `.gpkg`; functions/approach to construct the geometry (e.g., WKT/WKB → geometry); correct **SRID** and **geometry type** as per _soilwise_.
    - **Caveats**: respect PK/UK and domain constraints; validate geometries after `INSERT`.
@@ -46,13 +45,13 @@ This guide explains how to import geometric layers into the **_soilwise_** GeoPa
    A quick import by **copy & paste** from a source layer into the destination layer inside the GeoPackage, directly within QGIS. citeturn5search2
    - **Use when**: quick loads, small updates or tests; zero ETL setup.
    - **Prerequisites**: compatible **fields** (name/type) or manual mapping in QGIS; matching **CRS** and **geometry type**; destination layer set **in editing mode**.
-   - **Caveats**: field mismatches can truncate or misalign attributes; prefer harmonizing with tools like **Refactor fields** and run geometry validation post-import. citeturn5search2
+   - **Caveats**: field mismatches can truncate or misalign attributes; prefer harmonizing with tools like **Refactor fields** and run geometry validation post-import. 
 
 3) **Method 3 — QGIS via Plugin (guided, simplified workflow)**  
-   Use a dedicated **QGIS plugin** to assist the import: field mapping, CRS checks, geometry validation, normalization, and safe append. citeturn5search2
+   Use a dedicated **QGIS plugin** to assist the import: field mapping, CRS checks, geometry validation, normalization, and safe append.
    - **Use when**: you want a **guided**, repeatable process less prone to manual mistakes; suitable for non‑SQL users.
    - **Prerequisites**: install/enable the plugin (QGIS → *Plugins* → *Manage and Install Plugins…*), configure mapping to the _soilwise_ schema.
-   - **Caveats**: document plugin version/settings; check how it handles missing fields, domains, SRID, multipart, and editing conflicts. citeturn5search2
+   - **Caveats**: document plugin version/settings; check how it handles missing fields, domains, SRID, multipart, and editing conflicts. 
 
 ---
 
@@ -93,7 +92,7 @@ FROM staging.soil_site_source AS s;
 - Domains/codelists respected; no PK/UK duplicates
 
 > [!NOTE]
-> GeoPackage is an OGC standard backed by SQLite; tooling that can write to SQLite can typically write to GeoPackage—observe the OGC schema, integrity, and extension rules. citeturn8search21turn8search26
+> GeoPackage is an OGC standard backed by SQLite; tooling that can write to SQLite can typically write to GeoPackage—observe the OGC schema, integrity, and extension rules. 
 
 ---
 
@@ -119,7 +118,7 @@ Quickly import existing features into _soilwise_ using **copy & paste** between 
 
 **Notes & limits**
 - If schemas differ, prepare an “harmonized” layer first (e.g., **Refactor fields**).
-- For large volumes or heavy transformations, consider SQL or the Plugin instead. citeturn5search2
+- For large volumes or heavy transformations, consider SQL or the Plugin instead. 
 
 ---
 
@@ -143,7 +142,7 @@ Leverage a **QGIS plugin** to guide the import (field mapping, CRS checks, valid
 - Plugin report; spot checks for attributes/geometry; conformity with domains/codelists
 
 **Notes & limits**
-- Document the **plugin version** and settings for reproducibility; verify handling of **nulls/missing fields**, **SRID**, **multipart**, and editing conflicts. citeturn5search2
+- Document the **plugin version** and settings for reproducibility; verify handling of **nulls/missing fields**, **SRID**, **multipart**, and editing conflicts. 
 
 ---
 
@@ -167,7 +166,7 @@ For complex mappings, schema reconciliation, and automation, consider:
 - [ ] **PK/UK** respected; no duplicates
 - [ ] Domains/codelists enforced (allowed values only)
 - [ ] **Source**, **date**, and **procedure** documented
-- [ ] Visual check in QGIS (symbology, expected extent) citeturn5search2
+- [ ] Visual check in QGIS (symbology, expected extent)
 
 ---
 
@@ -181,8 +180,6 @@ For complex mappings, schema reconciliation, and automation, consider:
   <https://wetransform.to/halestudio/> citeturn5search16
 - **KNIME** — Platform overview.  
   <https://www.knime.com/> citeturn5search10
-- **GitHub Markdown Alerts** — `[!NOTE]`, `[!TIP]`, `[!IMPORTANT]`, `[!WARNING]`, `[!CAUTION]` syntax.  
-  <https://github.com/orgs/community/discussions/16925> citeturn8search27
 
 ---
 
