@@ -77,7 +77,9 @@ in accordance with the adopted conceptual model.
 
 The semantic and syntactic validation of the inserted values is enforced at the database level through dedicated **control triggers** (i_soilplottype/u_soilplottype), ensuring compliance with the defined codelists.
 
-During data entry via the **QGIS interface**, users are supported by **dropdown menus** that display only the valid codes for the selected field.  
+> [!IMPORTANT]
+>During data entry via the **QGIS interface**, users are supported by **dropdown menus** that display only the valid codes for the selected field.
+
 This mechanism reduces the risk of data entry errors and guarantees alignment with the constraints imposed by the INSPIRE codelists.
 
 ### Relationships (as child)
