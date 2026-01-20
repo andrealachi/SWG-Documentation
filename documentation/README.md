@@ -1,5 +1,7 @@
 
-# Introduction to the **Soilwise** GeoPackage (SQLite) within the SoilWise Project
+![Soilvise poster](assets/soilvise_poster.webp)
+
+# Introduction to the **Soilwise** GeoPackage (SQLite)
 
 The **Soilwise** GeoPackage is the relational (SQLite‑based) container adopted by the **SoilWise** project (Horizon Europe – Mission Soil) to enable **exchange, storage, and GIS‑native use** of soil data, with the explicit goal of making them **FAIR** and reusable across European policies, research, and land‑management workflows.[^1][^2] SoilWise provides an **integrated, actionable entry point** to scattered soil data and knowledge, recognising existing workflows and repositories and connecting to them through a **modular, scalable** architecture designed to last beyond the project horizon and co‑created with stakeholders.[^1][^2]
 
