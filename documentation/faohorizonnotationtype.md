@@ -1,8 +1,14 @@
 # Fao Horizon Notation Type
-Part of the soil cover that is delineated and that is homogeneous with regard to certain soil
-properties and/or spatial patterns. The soils present in the soil body are characterized by
-one or more derived soil profiles that are found together in the area specified by the
-"geometry" attribute of the SoilBody.
+
+## Definition
+
+>TI DO.”[^1]
+> [^1]: European Commission – Joint Research Centre (JRC),  
+**INSPIRE Data Specification on Soil – Technical Guidelines**,  
+D2.8.III.3.  
+https://inspire-mif.github.io/technical-guidelines/data/so/dataspecification_so.pdf
+> 
+
 
 <p>&nbsp;</p>
 
@@ -49,7 +55,41 @@ Although GUID is not mandatory at the schema level (it is not declared NOT NULL)
 - **faohorizonnotationtypeguidupdate (UPDATE)** trigger: prevents any modification of GUID after insertion, making it immutable (effectively behaving as a stable key).  
 
 Any foreign keys (FK) from other tables reference this table’s GUID field rather than the id field, ensuring stable and interoperable references across datasets and database instances.
+> [!NOTE]
+> **GUID management** is handled by database triggers, which ensure their automatic generation at the time of record insertion, **without any user involvement**.
 
+### Coded Fields
+
+The **`faohorizonmaster_1`**,**`faohorizonmaster_2`**, **`faohorizonsubordinate_1`**, **`faohorizonsubordinate_2`**, **`faohorizonsubordinate_3`** and **`faoprime`** fields are **coded fields**(*codelist-based attribute*), meaning that they can only contain values belonging to a predefined **codelists**, in accordance with the INSPIRE specifications.
+
+
+> [!WARNING]
+> Any attempt to insert a value that is not included in the corresponding codelist is considered **invalid** by the system and will result in the **failure of the data insertion operation**.
+
+> [!NOTE]
+> WRBRversion is an internal codelist created to manage multiple versions of the WRB soil classification.
+In accordance with the INSPIRE specifications, which require the WRBReferenceSoilGroupValue field to contain a valid WRB Reference Soil Group (RSG), this codelist has been introduced to indicate to the system the **RSG compliant with the selected year** of the WRB classification.
+
+#### Codelist Definition
+
+The complete list of allowed codes is stored in the **codelist table**.  
+The associated [documentation](codelist.md), provides a detailed description of:
+
+- which codes are available (INSPIRE codelist URL),
+- the database tables to which each codelist applies,
+- the fields for which each code is valid,
+
+in accordance with the adopted conceptual model.
+
+#### Validation and Data Entry
+
+The semantic and syntactic validation of the inserted values is enforced at the database level through dedicated **control triggers** 
+(i_checkfaoprofileelementtype/u_ceckfaoprofileelementtype/i_faohorizonmaster_1/u_faohorizonmaster_1/i_faohorizonmaster_2/u_faohorizonmaster_2/i_faohorizonsubordinate_1/u_faohorizonsubordinate_1/i_faohorizonsubordinate_2/u_faohorizonsubordinate_2/i_faohorizonsubordinate_3/u_faohorizonsubordinate_3/i_faoprime/u_faoprime), ensuring compliance with the defined codelists.
+
+> [!IMPORTANT]
+>During data entry via the **QGIS interface**, users are supported by **dropdown menus** that display only the valid codes for the selected field.
+
+This mechanism reduces the risk of data entry errors and guarantees alignment with the constraints imposed by the INSPIRE codelists.
 
 ### Relationships (as child)
 - `faohorizonnotationtype.guid_profileelement` → `profileelement.guid` (**ON UPDATE** CASCADE, **ON DELETE** CASCADE)
@@ -103,5 +143,3 @@ For every trigger you will find:
 
 **If the check fails:** The corresponding invalid-value message is raised and the statement aborts.
 
----
-<a id="isbasedonobservedsoilprofile"></a>
