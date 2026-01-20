@@ -254,8 +254,8 @@ The codespace table will include:
 - **Codespace definitions** (e.g., `coatingNatureValueCode`)
 - **Codespace elements** (e.g., `…-C`, `…-CC`, etc.)
 
-> [!IMPORTANT]
-> Always insert the **codespace list first** (top-level), then its **elements*.
+> [!TIP]
+> Always insert the **codespace list first** (top-level), then its **elements**.
 
 
 ## Workflow Overview
