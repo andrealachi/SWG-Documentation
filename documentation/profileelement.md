@@ -70,9 +70,7 @@ The **`layertype`**,**`layerrocktype`**, **`layergenesisprocess`**, **`layergene
 > [!WARNING]
 > Any attempt to insert a value that is not included in the corresponding codelist is considered **invalid** by the system and will result in the **failure of the data insertion operation**.
 
-> [!NOTE]
-> WRBRversion is an internal codelist created to manage multiple versions of the WRB soil classification.
-In accordance with the INSPIRE specifications, which require the WRBReferenceSoilGroupValue field to contain a valid WRB Reference Soil Group (RSG), this codelist has been introduced to indicate to the system the **RSG compliant with the selected year** of the WRB classification.
+
 
 #### Codelist Definition
 
