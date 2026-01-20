@@ -157,13 +157,13 @@ Codelists used for the `wrbreferencesoilgroup` field depending on the selected w
 **Codelist Authority:** INSPIRE  
 **Codelist URL:** http://inspire.ec.europa.eu/codelist/LayerTypeValue
 
-**Field:** `<field_name>`  
-**Codelist:** `layerrocktype`  
+**Field:** `layerrocktype`  
+**Codelist:** `LithologyValue`  
 **Codelist Authority:** INSPIRE  
 **Codelist URL:** http://inspire.ec.europa.eu/codelist/LithologyValue
 
-**Field:** `<field_name>`  
-**Codelist:** `layergenesisprocess`  
+**Field:** `layergenesisprocess`  
+**Codelist:** `EventProcessValue`  
 **Codelist Authority:** INSPIRE  
 **Codelist URL:** http://inspire.ec.europa.eu/codelist/EventProcessValue
 
@@ -180,7 +180,7 @@ Codelists used for the `wrbreferencesoilgroup` field depending on the selected w
 
 ### Table: faohorizonnotationtype
 
-**Fields:** `faohorizonmaster_1` -`faohorizonmaster_2`  
+**Fields:** `faohorizonmaster_1` - `faohorizonmaster_2`  
 **Codelist:** `FAOHorizonMaster`  
 **Codelist Authority:** INSPIRE  
 **Codelist URL:** https://inspire.ec.europa.eu/codelist/FAOHorizonMasterValue
