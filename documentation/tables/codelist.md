@@ -57,7 +57,7 @@ https://www.w3.org/TR/vocab-ssn/
 <p>&nbsp;</p>
 
 <p>
-  <img src="assets/codelist.svg"
+  <img src="../assets/codelist.svg"
      alt="TABELLA SOILSITE EXP"
      align="left"
      width="420">
