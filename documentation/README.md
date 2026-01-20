@@ -35,6 +35,86 @@ The growing adoption of SensorThings for observational data (well beyond narrow 
 The **Soilwise** GeoPackage is **natively supported by QGIS**, enabling editing, styling, and map production with no format conversion. To improve data‑entry quality and speed, we recommend configuring **custom attribute forms** (widgets, value map/relation, constraints and expressions) and adopting a **design of tabs and groups** aligned with project code lists and validation processes.[^13][^14]
 
 
+# Relational Structure of the GeoPackage (INSPIRE UML + STA2 Transposition)
+
+## Purpose and framing
+
+This GeoPackage implements a **relational schema** that is a **faithful transposition** of the **INSPIRE Soil conceptual model (UML)** and its classes/associations, as described in the **INSPIRE Soil Technical Guidelines** and Feature Catalogue. It also integrates the **OGC SensorThings API 2.0 (STA2)** model for the management and exposure of **observations** (time‑series and observation metadata).[^5][^9][^10]
+
+> [!NOTE]
+> The Soil Technical Guidelines provide the authoritative description of the Soil theme, including the Feature Catalogue and the UML‑based relationships among elements (which underpin any encoding, such as GML or GeoPackage).[^5]
+
+---
+
+## Sources of the model (normative and technical)
+
+- **INSPIRE Soil – Technical Guidelines**: define the content, the Feature Catalogue and the UML elements of the Soil theme, plus implementation recommendations.[^5]  
+- **INSPIRE Good Practice – GeoPackage encoding**: describes how to publish INSPIRE datasets using the OGC GeoPackage standard, while preserving legal and technical compliance; it promotes GIS‑oriented logical models and executable mappings from the conceptual model.[^5][^6]  
+- **OGC SensorThings API 2.0 (STA2)**: provides the data model and API for **Things, Datastreams, Observations, Sensors, ObservedProperties**, including HTTP/MQTT bindings and alignment with **O&M / ISO 19156:2023**.[^9][^10]
+
+---
+
+## From UML to a relational GeoPackage (SQLite)
+
+The translation into GeoPackage follows widely adopted relational design rules, consistent with INSPIRE/OGC guidance:
+
+1. **UML Classes → Tables**  
+   Each INSPIRE *Feature Type* (e.g., *SoilSite*, *SoilPlot*, *SoilProfile*, *ProfileElement*) becomes a table; **attributes** map to typed columns; spatial attributes are stored in `geometry` columns as per GeoPackage.[^3][^4][^5]
+
+2. **UML Associations → Foreign Keys**  
+   UML cardinalities are enforced through **foreign keys** and (where required) **link tables** for *1:N* / *N:M* relationships, preserving the Soil chain *Site → Plot → Profile → ProfileElement* defined at the conceptual level.[^5]
+
+3. **Code lists → Reference tables**  
+   Controlled vocabularies (INSPIRE and other allowed authorities) are materialized as **code‑list tables**, typically keeping **URI / notation / label / authority / version** to ensure **semantic interoperability**.[^5]
+
+4. **Observational component (STA2)**  
+   STA2 entities **Thing / Datastream / Observation / Sensor / ObservedProperty** are mapped to dedicated tables. **Observation** rows reference their **Datastream**, keep temporal attributes (`phenomenonTime`, `resultTime`), and a **result** (numeric or textual) according to STA2. This design makes the observational layer complementary to the core INSPIRE Soil features, and ready for standards‑based exposure via the STA2 API.[^9][^10]
+
+> [!NOTE]
+> GeoPackage is an OGC open, portable and self‑contained standard (an SQLite container) that supports **direct use** of vector/raster/attribute data in a **single file**, without intermediate format translations—ideal for GIS tools and constrained‑connectivity scenarios.[^3][^4]  
+> The INSPIRE Good Practice recognises GeoPackage as **additional/alternative encoding** to the default, with conformity demonstrable via transformation to GML.[^5]
+
+---
+
+## Key INSPIRE Soil features (concise overview)
+
+> [!NOTE]
+> The short summaries below are aligned with the Soil Feature Catalogue; full definitions, attributes, multiplicities and constraints are given in the official Technical Guidelines.[^5]
+
+- **SoilSite** — *Context/area of investigation*: an area (often polygonal) providing the context within which one or more specific investigations are carried out; it acts as a logical container to **combine or compare** investigations performed at nearby points/times.[^5]
+
+- **SoilPlot** — *Investigation point/portion*: a point or area where a specific investigation is performed (e.g., pit, borehole, sample location); it is **contained** in a *SoilSite* and is the operational focus of many descriptions and measurements.[^5]
+
+- **SoilProfile** — *Vertical cross‑section*: the section from ground surface down to material not modified by pedogenesis; it is the basis for describing **horizons** or **layers** (modelled as *ProfileElement*).[^5]
+
+- **ProfileElement** — *Horizon or layer*: either a **SoilHorizon** (a pedogenetic horizon homogeneous by physical/chemical/biological properties) or a **SoilLayer** (a depth‑defined layer, not necessarily equal to a horizon).[^5]
+
+- **SoilBody** — *Mapping unit*: an association of co‑occurring soils in an area (conceptually similar to a **Soil Mapping Unit**), typically linked to one or more representative **SoilProfile(s)**.[^5]
+
+---
+
+## Implementation considerations (high‑level)
+
+- **Primary keys and references**: use stable identifiers (UUID/URI where applicable) for *Site/Plot/Profile/ProfileElement* and observational tables (*Observation/Datastream*); enforce **FK** according to UML associations.[^5]
+
+- **Geometries**: store *Site/Plot* geometries using GeoPackage geometry columns and declare CRS per OGC rules; *Profile/ProfileElement* may use derived/support geometries or be spatially referenced via their parent plot.[^3][^4]
+
+- **Controlled vocabularies**: manage value domains through code‑list tables with **URI/notation/label/authority/version**, as per INSPIRE patterns, to keep traceability and semantic clarity across datasets and tools.[^5]
+
+---
+
+## Additional context (optional)
+
+- **Community practice and examples**: the **INSPIRE Good Practice** repository collects implementations and discussions on GeoPackage encodings; the **EJP SOIL** template and the Soil data guidance (*INSPIRE Soil in a relational database*) document practical workflows for harmonisation and publication.[^6][^7][^8]
+
+- **Why STA2 in this stack**: STA2 adds a standard, web‑friendly **observational layer** that complements the INSPIRE relational core with interoperable time‑series access and filtering—useful when field/lab observations must be queried programmatically or linked to streaming pipelines.[^9][^10][^11][^12]
+
+---
+
+> [!NOTE]
+> **Scope of this chapter.**  
+> This text is an **orientation** for the relational implementation in GeoPackage and its alignment with STA2. For **normative details** (complete definitions, cardinalities, enumerations, constraints), always refer to the **INSPIRE Soil Technical Guidelines** and your authoritative **conceptual (UML) sources**.[^5]
+
 
 [^1]: **SoilWise – project website** (Horizon Europe – Mission Soil).  
 https://soilwise-he.eu/
