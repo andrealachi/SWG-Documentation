@@ -107,7 +107,6 @@ The import of geometries into an existing table of a GeoPackage with QGIS is str
 
 Let’s look at each step in detail.
 
----
 
 ### 1) Importing geometries
 
@@ -115,7 +114,7 @@ QGIS allows the import of geometries from various formats, such as CSV, Shapefil
 
 - Click the **Open Data Source Manager** button <mark>(1)</mark> in the QGIS toolbar.
 
-![structure poster](./assets/db_structure.webp)
+![img 01](./assets/geom_01.webp)
 
 - In the window that opens, you can choose from various data sources to import.  
 - In our example, select **CSV** <mark>(2)</mark> as the source format and proceed with importing the desired file <mark>(3)</mark>.  
@@ -123,21 +122,27 @@ QGIS allows the import of geometries from various formats, such as CSV, Shapefil
 - Set the correct **Coordinate Reference System (CRS)** <mark>(5)</mark>.  
 - Click **Add** <mark>(6)</mark> to create the layer (in this case, a point layer) in the project.
 
+![img 02](./assets/geom_02.webp)
+
 > [!WARNING]
 > For the copy–paste operation to work correctly, the **source layer** (from which geometries are copied) must have the **same fields** (name and data type) as the **destination layer**, or at least match the required fields.  
 > This check can be done during the import phase, later using QGIS tools, or by using an RDBMS to modify or remove unnecessary fields.  
 > In this example, since the check was not performed during import, a temporary support layer named **“copy”** was created and used for preprocessing.
 
----
+
 
 ### 2) Copying geometries
 
 - Import the newly created layer (if it is not already present in the project).  
-- Right‑click the layer name <mark>(7)</mark> and, from the context menu, select **Open Attribute Table** <mark>(8)</mark> to view its data.  
+- Right‑click the layer name <mark>(7)</mark> and, from the context menu, select **Open Attribute Table** <mark>(8)</mark> to view its data.
+
+![img 03](./assets/geom_03.webp)
+
 - **Select all** geometries <mark>(9)</mark>.  
 - **Copy** the geometries <mark>(10)</mark>.
 
----
+![img 04](./assets/geom_04.webp)
+
 
 ### 3) Pasting geometries
 
@@ -145,33 +150,29 @@ QGIS allows the import of geometries from various formats, such as CSV, Shapefil
 - **Paste** the geometries <mark>(12)</mark>.  
 - **Save** the changes.
 
+![img 05](./assets/geom_05.webp)
 
-
----
 
 ## Method 3 — QGIS: import via Plugin (simplified workflow)
 
-**Goal**  
-Leverage a **QGIS plugin** to guide the import (field mapping, CRS checks, validation) and reduce manual errors. citeturn5search2
 
-**Prerequisites**
-- Plugin installed and enabled (version, dependencies)
-- Mapping profile configured to the _soilwise_ schema
+### QGIS plugin support
 
-**Procedure (summary)**
-1. QGIS → *Plugins* → *Manage and Install Plugins…*: install/enable the plugin.
-2. Select the **source** layer and the **_soilwise_ GeoPackage** as destination.
-3. Define field mapping, **CRS**, and validation rules.
-4. Run the import; review the **report** (warnings/errors) and fix as needed.
-5. Save and commit changes to the GeoPackage.
+To support this procedure, there is also a QGIS plugin that simplifies and extends the described steps.  
+It is called **AppendFeaturesToLayer** and is available at:  
+[github.com/gacarrillor/AppendFeaturesToLayer](https://github.com/gacarrillor/AppendFeaturesToLayer)
 
-**Post‑import checks**
-- Plugin report; spot checks for attributes/geometry; conformity with domains/codelists
+The plugin includes two geoprocessing tools:
 
-**Notes & limits**
-- Document the **plugin version** and settings for reproducibility; verify handling of **nulls/missing fields**, **SRID**, **multipart**, and editing conflicts. 
+- **ETL_LOAD** — allows easy matching of the source table with the destination geometry table.
+  
+![img 06](./assets/geom_06.webp)
 
----
+- **Append Feature To Layer** — handles the copy–paste operation with additional advanced options.
+  
+![img 07](./assets/geom_07.webp)
+
+
 
 ## Alternative ETL tools (optional)
 
@@ -183,7 +184,7 @@ For complex mappings, schema reconciliation, and automation, consider:
 - **KNIME** — Visual data/ETL platform with hundreds of connectors/nodes; suitable for reusable and scheduled pipelines, DB integrations, and more. citeturn5search10  
   <https://www.knime.com/>
 
----
+
 
 ## Final quality checklist
 
@@ -195,19 +196,16 @@ For complex mappings, schema reconciliation, and automation, consider:
 - [ ] **Source**, **date**, and **procedure** documented
 - [ ] Visual check in QGIS (symbology, expected extent)
 
----
 
-## References / Bibliographic Notes
+
+## References 
 
 - **OGC GeoPackage** — Official standard/specification and overview pages.  
-  <http://www.geopackage.org/> • <https://www.ogc.org/standards/geopackage/> • <https://www.geopackage.org/spec140/index.html> citeturn8search21turn8search22turn8search26
+  <http://www.geopackage.org/> • <https://www.ogc.org/standards/geopackage/> • <https://www.geopackage.org/spec140/index.html> 
 - **QGIS** — Official download and project pages (desktop editing, validation, GeoPackage support).  
-  <https://qgis.org/download/> • <https://qgis.org/> citeturn5search2turn5search6
+  <https://qgis.org/download/> • <https://qgis.org/> 
 - **HALE Studio** — Product/feature overview.  
-  <https://wetransform.to/halestudio/> citeturn5search16
+  <https://wetransform.to/halestudio/> 
 - **KNIME** — Platform overview.  
-  <https://www.knime.com/> citeturn5search10
+  <https://www.knime.com/>
 
----
-
-*Last updated: 2026‑01‑20*
