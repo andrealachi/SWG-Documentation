@@ -57,43 +57,7 @@ This guide explains how to import geometric layers into the **_soilwise_** GeoPa
 
 ## Method 1 — SQL import (direct insert into the GeoPackage)
 
-**Goal**  
-Insert features into _soilwise_ tables via SQL, ensuring geometry and attributes are consistent.
-
-**Prerequisites**
-- Write access to the `.gpkg`
-- Means to construct geometry (e.g., WKT/WKB → geometry; correct SRID)
-- Clear knowledge of the **_soilwise_ schema** (types, constraints, domains)
-
-**Procedure (summary)**
-1. Prepare/map fields *source → destination* (_soilwise_).
-2. Reproject to the required **CRS** if needed.
-3. Execute `INSERT INTO … SELECT …`, populating the geometry column (from WKT/WKB or another table/source).
-4. Populate traceability fields (source, import date, version) where present.
-5. Update indexes/triggers if applicable.
-
-**Template (customize for your schema/environment)**
-
-```sql
--- Illustrative example: adjust table/field names and SRID
-INSERT INTO soilwise.soil_site (id, name, geometry, src, import_ts)
-SELECT
-    s.id,
-    s.name,
-    GeomFromText(s.wkt_geom, 4326) AS geometry,
-    'Source_X' AS src,
-    CURRENT_TIMESTAMP AS import_ts
-FROM staging.soil_site_source AS s;
-```
-
-**Post‑import checks**
-- Record counts vs source
-- Geometry validity; correct SRID
-- Domains/codelists respected; no PK/UK duplicates
-
-> [!NOTE]
-> GeoPackage is an OGC standard backed by SQLite; tooling that can write to SQLite can typically write to GeoPackage—observe the OGC schema, integrity, and extension rules. 
-
+#### TO DO
 ---
 
 ## Method 2 — QGIS: copy/paste features into the GeoPackage
@@ -152,6 +116,7 @@ QGIS allows the import of geometries from various formats, such as CSV, Shapefil
 
 ![img 05](./assets/geom_05.webp)
 
+---
 
 ## Method 3 — QGIS: import via Plugin (simplified workflow)
 
@@ -172,16 +137,16 @@ The plugin includes two geoprocessing tools:
   
 ![img 07](./assets/geom_07.webp)
 
-
+---
 
 ## Alternative ETL tools (optional)
 
 For complex mappings, schema reconciliation, and automation, consider:
 
-- **HALE Studio** — Open‑source ETL focused on harmonization toward standards (OGC/INSPIRE), with integrated validation and broad format support; helpful to define and document repeatable transformations. citeturn5search16  
+- **HALE Studio** — Open‑source ETL focused on harmonization toward standards (OGC/INSPIRE), with integrated validation and broad format support; helpful to define and document repeatable transformations. 
   <https://wetransform.to/halestudio/>
 
-- **KNIME** — Visual data/ETL platform with hundreds of connectors/nodes; suitable for reusable and scheduled pipelines, DB integrations, and more. citeturn5search10  
+- **KNIME** — Visual data/ETL platform with hundreds of connectors/nodes; suitable for reusable and scheduled pipelines, DB integrations, and more. 
   <https://www.knime.com/>
 
 
