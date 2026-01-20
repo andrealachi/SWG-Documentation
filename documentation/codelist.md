@@ -1,5 +1,64 @@
 # Codelist
 
+Codelists in the SO (Soil) INSPIRE domain are essential for ensuring a standardized representation of soil data across the European Union. They enable consistent classification and encoding of specific values (e.g., soil types, usage categories) across different languages and applications, ensuring interoperability and semantic integrity in environmental datasets.
+
+> [!IMPORTANT]
+> Although the codelist table has no relationship with other tables, its presence is crucial for the correct data management and control.
+> ***Essentially, if a coded value is in the table, it is supposed to be valid; if not, the code is to be considered as incorrect, and the relative value isn’t stored***.
+
+> [!NOTE]
+> It includes replicates of all  SO domain valid codes extracted from the INSPIRE registry (https://inspire.ec.europa.eu/registry).
+
+ 
+The presence of the codelist table in the Geopackage allows forms for displaying dropdown lists, simplifying the data entry. However, up to now (12/2025), not all the mandatory items foreseen in the INSPIRE SOIL UML structure have been populated into the INSPIRE registry. For those mandatory items foreseen in the INSPIRE SOIL UML structure for which there is not yet a published codelis inside the INSPIRE registry, that is, for `WRBdiagnostichorizon`, `ProcessParameterNameValue`,`WRBReferenceSoilGroupValue (2014)`,`WRBReferenceSoilGroupValue (2022)`,`WRBQualifierValue (2022)` and `RBSpecifierValue (2022)`, we made reference to other officially mainatined controlled vocabularies by means of URI.
+ 
+Moreover, internal codelists have also been added to the overmentioned table to manage forms more efficiently.
+INSPIRE registry
+
+
+## Definition, scope, and integration in the model
+
+Code lists are controlled sets of concepts (not mere strings) that provide admissible values for encoded data properties.  
+In practice, they ensure semantic uniformity and interoperability: all producers and users choose values from the same “concept list”, which is documented, versioned, and published with persistent URIs.
+
+## Two families of code lists in the project
+
+### INSPIRE code lists (Soil domain)
+These are the “institutional” lists provided or referenced by INSPIRE for the Soil theme, used for classifications and properties defined in the Technical Guidelines (e.g., LayerTypeValue, WRBQualifierPlaceValue, etc.).  
+These lists guarantee compatibility across European datasets and are part of INSPIRE’s normative/technical foundation. [^1] [^2]
+
+### Code lists for observable properties and for results
+Many data domains adopt specific code lists both for **observable properties** (i.e., what is being observed/measured) and for **result categories** (i.e., how the outcome is classified when it is qualitative rather than numeric).  
+These lists are typically represented with **SKOS**, which models each entry as a concept with multilingual labels, notations, definitions, and hierarchical relationships; this enables stable Web identifiers (URIs), Linked Data publication, and explicit versioning. [^3]  
+On the observation side, integration with the **SOSA/SSN** (W3C/OGC) models clarifies the role of *ObservedProperty*, procedures, and *Result*, providing a formal basis to link an observable property to the **code list of admissible values** and, when needed, to the **code list of result classes**.
+
+In short, code lists for observable properties and results:
+- establish controlled, reusable vocabularies to describe what is observed and how the outcome is expressed; [^4]
+- allow constraining textual fields for qualitative results to the admitted concepts, preserving data consistency and quality. [^4]
+
+### Why two families?
+**INSPIRE** provides the European framework and a set of curated code lists for the Soil theme to support classifications and properties defined in the Technical Guidelines; using them ensures cross‑border compatibility and regulatory alignment. [^1]  
+**Code lists for observable properties and results**, modeled in **SKOS** and aligned with **SOSA/SSN**, instead cover the operational and semantic need to link observations, procedures, and result categories in a machine‑readable manner.
+
+---
+
+[^1]: European Commission – Joint Research Centre (JRC),  
+**INSPIRE Data Specification on Soil – Technical Guidelines**, D2.8.III.3_v3.2.0.  
+https://inspire-mif.github.io/technical-guidelines/data/so/dataspecification_so.html
+
+[^2]: European Commission – INSPIRE Knowledge Base,  
+**INSPIRE Data Specification on Soil – Technical Guidelines** (landing page).  
+https://knowledge-base.inspire.ec.europa.eu/publications/inspire-data-specification-soil-technical-guidelines_en
+
+[^3]: DARIAH‑Campus — Zaytseva, K.,  
+**Controlled Vocabularies and SKOS** (learning module: text + video).  
+https://campus.dariah.eu/resources/hosted/controlled-vocabularies-and-skos
+
+[^4]: W3C/OGC,  
+**Semantic Sensor Network Ontology (SSN)** – W3C Recommendation (2017), SOSA/SSN core module.  
+https://www.w3.org/TR/vocab-ssn/
+``
+
 <p>&nbsp;</p>
 
 <p>
@@ -38,21 +97,6 @@
 ### Triggers
 - None
 
-Codelists in the SO (Soil) INSPIRE domain are essential for ensuring a standardized representation of soil data across the European Union. They enable consistent classification and encoding of specific values (e.g., soil types, usage categories) across different languages and applications, ensuring interoperability and semantic integrity in environmental datasets.
-
-> [!IMPORTANT]
-> Although the codelist table has no relationship with other tables, its presence is crucial for the correct data management and control.
-> ***Essentially, if a coded value is in the table, it is supposed to be valid; if not, the code is to be considered as incorrect, and the relative value isn’t stored***.
-
-> [!NOTE]
-> It includes replicates of all  SO domain valid codes extracted from the INSPIRE registry (https://inspire.ec.europa.eu/registry).
-
- 
-The presence of the codelist table in the Geopackage allows forms for displaying dropdown lists, simplifying the data entry. However, up to now (12/2025), not all the mandatory items foreseen in the INSPIRE SOIL UML structure have been populated into the INSPIRE registry. For those mandatory items foreseen in the INSPIRE SOIL UML structure for which there is not yet a published codelis inside the INSPIRE registry, that is, for WRBdiagnostichorizon, ProcessParameterNameValue, WRBReferenceSoilGroupValue (2014), WRBReferenceSoilGroupValue (2022), WRBQualifierValue (2022), and WRBSpecifierValue (2022)), we made reference to other officially mainatined controlled vocabularies by means of URI.
- 
-Moreover, internal codelists have also been added to the overmentioned table to manage forms more efficiently.
-INSPIRE registry
-
 
 ## List of Tables with their respective codelists
 
@@ -75,6 +119,7 @@ INSPIRE registry
 
 ### Table:  soilprofile
 
+**Field:** `wrbversion`  
 The following table lists the available values for the **`wrbversion`** **internal codelist**, which is used to identify the reference year of the WRB soil classification adopted.
 
 | ID (URI) | Label | Collection |
@@ -85,17 +130,21 @@ The following table lists the available values for the **`wrbversion`** **intern
 
 Codelists used for the `wrbreferencesoilgroup` field depending on the selected wrbversion.
 
-- WRBReferenceSoilGroupValue (2006)
-CODELIST ***INSPIRE***
-http://inspire.ec.europa.eu/codelist/WRBReferenceSoilGroupValue
 
-- WRBReferenceSoilGroupValue (2014)
-CODELIST AGROPORTAL
-https://agroportal.lirmm.fr/ontologies/AGROVOC/
+**Field:** `wrbreferencesoilgroup`  
+**Codelist:** `WRBReferenceSoilGroupValue (2006)`  
+**Codelist Authority:** INSPIRE  
+**Codelist URL:** http://inspire.ec.europa.eu/codelist/WRBReferenceSoilGroupValue
 
-- WRBReferenceSoilGroupValue (2022)
-CODELIST ORBL-SOIL
-https://obrl-soil.github.io/wrbsoil2022/
+**Field:** `wrbreferencesoilgroup`  
+**Codelist:** `WRBReferenceSoilGroupValue (2014)`  
+**Codelist Authority:** AGROPORTAL  
+**Codelist URL:** https://agroportal.lirmm.fr/ontologies/AGROVOC/
+
+**Field:** `wrbreferencesoilgroup`  
+**Codelist:** `WRBReferenceSoilGroupValue (2022)`  
+**Codelist Authority:** ORBL-SOIL
+**Codelist URL:** https://obrl-soil.github.io/wrbsoil2022/
 
 
 ### Table: othersoilnametype
@@ -201,16 +250,12 @@ https://obrl-soil.github.io/wrbsoil2022/
 This document provides technical guidelines for correctly populating the `codelist` table in a **GeoPackage/SQLite database**.  
 Proper population of this table ensures that **triggers** defined in the GeoPackage work as intended and that codespaces are managed consistently.
 
-### Why Is This Important?
-
-The `codelist` table contains all **INSPIRE code lists** required to manage many tables in the GeoPackage.  
-In this context, it is also used to store **codespaces** and their corresponding values.
-
 The table will include:
 - **Codespace definitions** (e.g., `coatingNatureValueCode`)
 - **Codespace elements** (e.g., `…-C`, `…-CC`, etc.)
 
->**Rule:** Always insert the **codespace list first** (top-level), then its **elements**.
+> [!IMPORTANT]
+> Always insert the **codespace list first** (top-level), then its **elements*.
 
 
 ## Workflow Overview
