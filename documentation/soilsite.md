@@ -4,6 +4,10 @@
 ## Definition
 
 > “A **Soil Site** is considered as the surrounding of a soil profile, and/or the larger piece of land that is directly linked to and described by all soil investigations on one or more spots, called soil plots.”[^1]
+> [^1]: European Commission – Joint Research Centre (JRC),  
+**INSPIRE Data Specification on Soil – Technical Guidelines**,  
+D2.8.III.3.  
+https://inspire-mif.github.io/technical-guidelines/data/so/dataspecification_so.pdf
 
 <p>&nbsp;</p>
 
@@ -185,9 +189,5 @@ For every trigger you will find:
 
 **If the check fails:** Aborts with: `If you change record endlifespanversion must be greater than today`.
 
-[^1]: European Commission – Joint Research Centre (JRC),  
-**INSPIRE Data Specification on Soil – Technical Guidelines**,  
-D2.8.III.3.  
-https://inspire-mif.github.io/technical-guidelines/data/so/dataspecification_so.pdf
----
-<a id="thing"></a>
+
+
