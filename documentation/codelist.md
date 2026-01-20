@@ -36,11 +36,6 @@ In short, code lists for observable properties and results:
 - establish controlled, reusable vocabularies to describe what is observed and how the outcome is expressed; [^4]
 - allow constraining textual fields for qualitative results to the admitted concepts, preserving data consistency and quality. [^4]
 
-### Why two families?
-**INSPIRE** provides the European framework and a set of curated code lists for the Soil theme to support classifications and properties defined in the Technical Guidelines; using them ensures cross‑border compatibility and regulatory alignment. [^1]  
-**Code lists for observable properties and results**, modeled in **SKOS** and aligned with **SOSA/SSN**, instead cover the operational and semantic need to link observations, procedures, and result categories in a machine‑readable manner.
-
----
 
 [^1]: European Commission – Joint Research Centre (JRC),  
 **INSPIRE Data Specification on Soil – Technical Guidelines**, D2.8.III.3_v3.2.0.  
@@ -247,10 +242,15 @@ Codelists used for the `wrbreferencesoilgroup` field depending on the selected w
 
 ##  How to Populate the `codelist` Table for Codespace Management
 
-This document provides technical guidelines for correctly populating the `codelist` table in a **GeoPackage/SQLite database**.  
-Proper population of this table ensures that **triggers** defined in the GeoPackage work as intended and that codespaces are managed consistently.
+This chapter explains how to correctly populate the `codelist` table in a GeoPackage/SQLite database so that codespaces are managed consistently and database triggers behave as intended.  
+In addition, it introduces the role of **code lists for observable properties**, i.e., the controlled vocabularies that define *what* can be observed or measured in your data model.
 
-The table will include:
+**Observable‑property code lists** enumerate the set of admissible concepts used to identify *what is being observed* (e.g., soil color, structure, texture class, horizon boundary distinctness). They are concept‑based (not free text) and typically include:
+- a persistent identifier (URI) and a stable code (notation);
+- one human‑readable labels;
+
+
+The codespace table will include:
 - **Codespace definitions** (e.g., `coatingNatureValueCode`)
 - **Codespace elements** (e.g., `…-C`, `…-CC`, etc.)
 
