@@ -69,7 +69,7 @@ The **`soilinves­tigationpurpose`** field is a **coded field** (*codelist-based
 The complete list of allowed codes is stored in the **codelist table**.  
 The associated [documentation](codelist.md), provides a detailed description of:
 
-- which codes are available (INSPIRE codelist URL),
+- which codes are available (codelist URL),
 - the database tables to which each codelist applies,
 - the fields for which each code is valid,
 
