@@ -48,8 +48,8 @@ This GeoPackage implements a **relational schema** that is a **faithful transpos
 
 ## Sources of the model (normative and technical)
 
-- **INSPIRE Soil – Technical Guidelines**: define the content, the Feature Catalogue and the UML elements of the Soil theme, plus implementation recommendations.[^5]  
-- **INSPIRE Good Practice – GeoPackage encoding**: describes how to publish INSPIRE datasets using the OGC GeoPackage standard, while preserving legal and technical compliance; it promotes GIS‑oriented logical models and executable mappings from the conceptual model.[^5][^6]  
+- **INSPIRE Soil – Technical Guidelines**: define the content, the Feature Catalogue and the UML elements of the Soil theme, plus implementation recommendations.[^5][^15]  
+- **INSPIRE Good Practice – GeoPackage encoding**: describes how to publish INSPIRE datasets using the OGC GeoPackage standard, while preserving legal and technical compliance; it promotes GIS‑oriented logical models and executable mappings from the conceptual model.[^5][^6][^15]  
 - **OGC SensorThings API 2.0 (STA2)**: provides the data model and API for **Things, Datastreams, Observations, Sensors, ObservedProperties**, including HTTP/MQTT bindings and alignment with **O&M / ISO 19156:2023**.[^9][^10]
 
 ---
@@ -59,13 +59,13 @@ This GeoPackage implements a **relational schema** that is a **faithful transpos
 The translation into GeoPackage follows widely adopted relational design rules, consistent with INSPIRE/OGC guidance:
 
 1. **UML Classes → Tables**  
-   Each INSPIRE *Feature Type* (e.g., *SoilSite*, *SoilPlot*, *SoilProfile*, *ProfileElement*) becomes a table; **attributes** map to typed columns; spatial attributes are stored in `geometry` columns as per GeoPackage.[^3][^4][^5]
+   Each INSPIRE *Feature Type* (e.g., *SoilSite*, *SoilPlot*, *SoilProfile*, *ProfileElement*) becomes a table; **attributes** map to typed columns; spatial attributes are stored in `geometry` columns as per GeoPackage.[^3][^4][^5][^15]  
 
 2. **UML Associations → Foreign Keys**  
-   UML cardinalities are enforced through **foreign keys** and (where required) **link tables** for *1:N* / *N:M* relationships, preserving the Soil chain *Site → Plot → Profile → ProfileElement* defined at the conceptual level.[^5]
+   UML cardinalities are enforced through **foreign keys** and (where required) **link tables** for *1:N* / *N:M* relationships, preserving the Soil chain *Site → Plot → Profile → ProfileElement* defined at the conceptual level.[^5][^15]  
 
 3. **Code lists → Reference tables**  
-   Controlled vocabularies (INSPIRE and other allowed authorities) are materialized as **code‑list tables**, typically keeping **URI / notation / label / authority / version** to ensure **semantic interoperability**.[^5]
+   Controlled vocabularies (INSPIRE and other allowed authorities) are materialized as **code‑list tables**, typically keeping **URI / notation / label / authority / version** to ensure **semantic interoperability**.[^5][^15]  
 
 4. **Observational component (STA2)**  
    STA2 entities **Thing / Datastream / Observation / Sensor / ObservedProperty** are mapped to dedicated tables. **Observation** rows reference their **Datastream**, keep temporal attributes (`phenomenonTime`, `resultTime`), and a **result** (numeric or textual) according to STA2. This design makes the observational layer complementary to the core INSPIRE Soil features, and ready for standards‑based exposure via the STA2 API.[^9][^10]
@@ -113,7 +113,7 @@ The translation into GeoPackage follows widely adopted relational design rules, 
 
 > [!NOTE]
 > **Scope of this chapter.**  
-> This text is an **orientation** for the relational implementation in GeoPackage and its alignment with STA2. For **normative details** (complete definitions, cardinalities, enumerations, constraints), always refer to the **INSPIRE Soil Technical Guidelines** and your authoritative **conceptual (UML) sources**.[^5]
+> This text is an **orientation** for the relational implementation in GeoPackage and its alignment with STA2. For **normative details** (complete definitions, cardinalities, enumerations, constraints), always refer to the **INSPIRE Soil Technical Guidelines** and your authoritative **conceptual (UML) sources**.[^15]
 
 
 [^1]: **SoilWise – project website** (Horizon Europe – Mission Soil).  
@@ -157,7 +157,11 @@ https://docs.qgis.org/latest/en/docs/training_manual/create_vector_data/forms.ht
 
 [^14]: **QField Documentation** – *Simple attribute form configuration*.  
 https://docs.qfield.org/how-to/project-setup/attributes-form/
+
+[^15]: **INSPIRE UML models — Approved (HTML view).**  
+https://inspire-mif.github.io/uml-models/approved/
 ``
+
 
 
 
