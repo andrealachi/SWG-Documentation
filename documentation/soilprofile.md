@@ -1,9 +1,13 @@
 # Soil Profile
 
-Soil Profile" can be defined as a cross-section of the soil from the surface down to and
-including the beginning of the fresh material unmodified by pedogenesis, consisting of
-various more or less horizontally oriented features formed by pedogenic processes called
-horizons.
+## Definition
+
+> “**Soil Profile** can be defined as a cross-section of the soil from the surface down to and including the beginning of the fresh material unmodified by pedogenesis, consisting of various more or less horizontally oriented features formed by pedogenic processes called horizons.”[^1]
+
+[^1]: European Commission – Joint Research Centre (JRC),  
+**INSPIRE Data Specification on Soil – Technical Guidelines**,  
+D2.8.III.3.  
+https://inspire-mif.github.io/technical-guidelines/data/so/dataspecification_so.pdf
 
 <p>&nbsp;</p>
 
@@ -74,7 +78,7 @@ In accordance with the INSPIRE specifications, which require the WRBReferenceSoi
 The complete list of allowed codes is stored in the **codelist table**.  
 The associated [documentation](codelist.md), provides a detailed description of:
 
-- which codes are available (INSPIRE codelist URL),
+- which codes are available (codelist URL),
 - the database tables to which each codelist applies,
 - the fields for which each code is valid,
 
@@ -192,5 +196,3 @@ For every trigger you will find:
 
 **If the check fails:** Aborts with (verbatim): `Table soilprofile: Invalid value for wrbversion. Must be present in id of wrbreferencesoilgroupvalue codelist.`
 
----
-<a id="soilsite"></a>
