@@ -43,7 +43,7 @@ This guide explains how to import geometric layers into the **_soilwise_** GeoPa
 
 2) **Method 2 — QGIS “workaround” (copy/paste from a source layer to the GeoPackage)**  
    A quick import by **copy & paste** from a source layer into the destination layer inside the GeoPackage, directly within QGIS. citeturn5search2
-   - **Use when**: quick loads, small updates or tests; zero ETL setup.
+   - **Use when**: you have little or no SQL experience and prefer a **visual, GIS‑style** workflow where you can see and edit geometries as you import.
    - **Prerequisites**: compatible **fields** (name/type) or manual mapping in QGIS; matching **CRS** and **geometry type**; destination layer set **in editing mode**.
    - **Caveats**: field mismatches can truncate or misalign attributes; prefer harmonizing with tools like **Refactor fields** and run geometry validation post-import. 
 
