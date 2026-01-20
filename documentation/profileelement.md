@@ -1,7 +1,15 @@
 # Profile Element 
-An abstract spatial object type grouping soil layers and / or horizons for functional/
-operational aims.
 
+## Definition
+
+> An abstract spatial object type grouping soil layers and / or horizons for functional/
+operational aims [^1]
+
+
+[^1]: European Commission – Joint Research Centre (JRC),  
+**INSPIRE Data Specification on Soil – Technical Guidelines**,  
+D2.8.III.3.  
+https://inspire-mif.github.io/technical-guidelines/data/so/dataspecification_so.pdf
 <p>&nbsp;</p>
 
 <p>
