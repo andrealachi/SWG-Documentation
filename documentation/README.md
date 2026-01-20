@@ -44,7 +44,7 @@ This GeoPackage implements a **relational schema** that is a **faithful transpos
 > [!NOTE]
 > The Soil Technical Guidelines provide the authoritative description of the Soil theme, including the Feature Catalogue and the UML‑based relationships among elements (which underpin any encoding, such as GML or GeoPackage).[^5]
 
----
+
 
 ## Sources of the model (normative and technical)
 
@@ -52,7 +52,7 @@ This GeoPackage implements a **relational schema** that is a **faithful transpos
 - **INSPIRE Good Practice – GeoPackage encoding**: describes how to publish INSPIRE datasets using the OGC GeoPackage standard, while preserving legal and technical compliance; it promotes GIS‑oriented logical models and executable mappings from the conceptual model.[^5][^6][^15]  
 - **OGC SensorThings API 2.0 (STA2)**: provides the data model and API for **Things, Datastreams, Observations, Sensors, ObservedProperties**, including HTTP/MQTT bindings and alignment with **O&M / ISO 19156:2023**.[^9][^10]
 
----
+
 
 ## From UML to a relational GeoPackage (SQLite)
 
@@ -74,7 +74,7 @@ The translation into GeoPackage follows widely adopted relational design rules, 
 > GeoPackage is an OGC open, portable and self‑contained standard (an SQLite container) that supports **direct use** of vector/raster/attribute data in a **single file**, without intermediate format translations—ideal for GIS tools and constrained‑connectivity scenarios.[^3][^4]  
 > The INSPIRE Good Practice recognises GeoPackage as **additional/alternative encoding** to the default, with conformity demonstrable via transformation to GML.[^5]
 
----
+
 
 ## Key INSPIRE Soil features (concise overview)
 
@@ -91,29 +91,19 @@ The translation into GeoPackage follows widely adopted relational design rules, 
 
 - **SoilBody** — *Mapping unit*: an association of co‑occurring soils in an area (conceptually similar to a **Soil Mapping Unit**), typically linked to one or more representative **SoilProfile(s)**.[^5]
 
----
+
 
 ## Implementation considerations (high‑level)
 
-- **Primary keys and references**: use stable identifiers (UUID/URI where applicable) for *Site/Plot/Profile/ProfileElement* and observational tables (*Observation/Datastream*); enforce **FK** according to UML associations.[^5]
+- **Primary keys and references**: use stable identifiers (UUID/URI where applicable) for *Site/Plot/Profile/ProfileElement* and observational tables (*Observation/Datastream*); enforce **FK** according to UML associations.[^5][^15]
 
 - **Geometries**: store *Site/Plot* geometries using GeoPackage geometry columns and declare CRS per OGC rules; *Profile/ProfileElement* may use derived/support geometries or be spatially referenced via their parent plot.[^3][^4]
 
 - **Controlled vocabularies**: manage value domains through code‑list tables with **URI/notation/label/authority/version**, as per INSPIRE patterns, to keep traceability and semantic clarity across datasets and tools.[^5]
 
----
 
-## Additional context (optional)
 
-- **Community practice and examples**: the **INSPIRE Good Practice** repository collects implementations and discussions on GeoPackage encodings; the **EJP SOIL** template and the Soil data guidance (*INSPIRE Soil in a relational database*) document practical workflows for harmonisation and publication.[^6][^7][^8]
 
-- **Why STA2 in this stack**: STA2 adds a standard, web‑friendly **observational layer** that complements the INSPIRE relational core with interoperable time‑series access and filtering—useful when field/lab observations must be queried programmatically or linked to streaming pipelines.[^9][^10][^11][^12]
-
----
-
-> [!NOTE]
-> **Scope of this chapter.**  
-> This text is an **orientation** for the relational implementation in GeoPackage and its alignment with STA2. For **normative details** (complete definitions, cardinalities, enumerations, constraints), always refer to the **INSPIRE Soil Technical Guidelines** and your authoritative **conceptual (UML) sources**.[^15]
 
 
 [^1]: **SoilWise – project website** (Horizon Europe – Mission Soil).  
