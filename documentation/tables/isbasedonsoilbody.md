@@ -1,5 +1,10 @@
 # Is Based On Soil Body
 
+## Definition
+
+> *The **`isbasedonsoilbody`** table defines a **many-to-many relationship** between soil-derived objects and soil bodies, linking the `soilderivedobject` and `soilbody` tables.
+This relationship allows soil-derived objects to be based on one or more soil bodies and, conversely, enables a single soil body to contribute to multiple derived objects.*
+
 <p>&nbsp;</p>
 
 <p>
