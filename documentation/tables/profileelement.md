@@ -2,8 +2,8 @@
 
 ## Definition
 
-> "An abstract spatial object type grouping soil layers and / or horizons for functional/
-operational aims."[^1]
+> "*An abstract spatial object type grouping soil layers and / or horizons for functional/
+operational aims.*"[^1]
 
 
 [^1]: European Commission – Joint Research Centre (JRC),  
