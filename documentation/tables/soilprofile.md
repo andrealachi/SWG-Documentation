@@ -2,7 +2,7 @@
 
 ## Definition
 
-> “**Soil Profile** can be defined as a cross-section of the soil from the surface down to and including the beginning of the fresh material unmodified by pedogenesis, consisting of various more or less horizontally oriented features formed by pedogenic processes called horizons.”[^1]
+> “***Soil Profile** can be defined as a cross-section of the soil from the surface down to and including the beginning of the fresh material unmodified by pedogenesis, consisting of various more or less horizontally oriented features formed by pedogenic processes called horizons.*”[^1]
 
 [^1]: European Commission – Joint Research Centre (JRC),  
 **INSPIRE Data Specification on Soil – Technical Guidelines**,  
