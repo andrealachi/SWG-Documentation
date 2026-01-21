@@ -125,6 +125,8 @@ The following table lists the available values for the **`wrbversion`** **intern
 
 Codelists used for the `wrbreferencesoilgroup` field depending on the selected wrbversion.
 
+> [!NOTE]
+>**Internal codelists** have been defined to address specific operational scenarios. These codelists are used both to implement rule enforcement via database triggers and to manage dropdown list values within QGIS.
 
 **Field:** `wrbreferencesoilgroup`  
 **Codelist:** `WRBReferenceSoilGroupValue (2006)`  
@@ -313,4 +315,3 @@ After executing the above statements, the codelist table will look like this:
 | http://w3id.org/glosis/model/codelists/coatingNatureValueCode-CC | Calcium carbonate| http://w3id.org/glosis/model/codelists/coatingNatureValueCode |
 | http://w3id.org/glosis/model/codelists/coatingNatureValueCode-CH | Clay and humus (organic matter)| http://w3id.org/glosis/model/codelists/coatingNatureValueCode |
 
----
