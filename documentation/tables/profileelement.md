@@ -2,8 +2,8 @@
 
 ## Definition
 
-> An abstract spatial object type grouping soil layers and / or horizons for functional/
-operational aims [^1]
+> "An abstract spatial object type grouping soil layers and / or horizons for functional/
+operational aims."[^1]
 
 
 [^1]: European Commission – Joint Research Centre (JRC),  
@@ -226,5 +226,3 @@ For every trigger you will find:
 
 **If the check fails:** Aborts with: `If you change record endlifespanversion must be greater than today`.
 
----
-<a id="sensor"></a>
