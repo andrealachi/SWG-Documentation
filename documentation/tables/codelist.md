@@ -150,6 +150,9 @@ Codelists used for the `wrbreferencesoilgroup` field depending on the selected w
 **Codelist URL:** https://inspire.ec.europa.eu/codelist/OtherSoilNameTypeValue
 
 
+> [!WARNING]
+> The INSPIRE codelist is defined; however, it is currently **empty** and does not contain any code values. Consequently, this table cannot be populated. Users are advised to define a project-specific codelist and implement it within the GeoPackage in accordance with the schema and guidance described on this page.
+
 ### Table: profileelement
 
 **Field:** `layertype`  
