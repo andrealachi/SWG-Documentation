@@ -2,7 +2,7 @@
 
 ## Definition
 
-> “Is the location of a specific soil investigation.”[^1]
+> “*Is the location of a specific soil investigation.*”[^1]
 [^1]: European Commission – Joint Research Centre (JRC),  
 **INSPIRE Data Specification on Soil – Technical Guidelines**,  
 D2.8.III.3.  
