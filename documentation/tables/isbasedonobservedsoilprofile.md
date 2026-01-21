@@ -67,5 +67,3 @@ For every trigger you will find:
 
 **If the check fails:** Aborts with: `Table isbasedonobservedsoilprofile : Attention, the value of the "guid_soilprofile" field cannot be inserted because profile is not of type observed`.
 
----
-<a id="isbasedonsoilbody"></a>
