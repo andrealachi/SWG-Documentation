@@ -62,5 +62,3 @@ This approach improves both:
 ### Triggers
 - None
 
----
-<a id="isderivedfrom"></a>
