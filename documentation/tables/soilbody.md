@@ -1,8 +1,17 @@
 # Soil Body
-Part of the soil cover that is delineated and that is homogeneous with regard to certain soil
+## Definition
+
+> “*Part of the soil cover that is delineated and that is homogeneous with regard to certain soil
 properties and/or spatial patterns. The soils present in the soil body are characterized by
 one or more derived soil profiles that are found together in the area specified by the
-"geometry" attribute of the SoilBody.
+"geometry" attribute of the SoilBody.*”[^1]
+
+
+[^1]: European Commission – Joint Research Centre (JRC),  
+**INSPIRE Data Specification on Soil – Technical Guidelines**,  
+D2.8.III.3.  
+https://inspire-mif.github.io/technical-guidelines/data/so/dataspecification_so.pdf
+
 
 <p>&nbsp;</p>
 
@@ -44,6 +53,9 @@ Although GUID is not mandatory at the schema level (it is not declared NOT NULL)
 - **soilbodyguidupdate (UPDATE)** trigger: prevents any modification of GUID after insertion, making it immutable (effectively behaving as a stable key).  
 
 Any foreign keys (FK) from other tables reference this table’s GUID field rather than the id field, ensuring stable and interoperable references across datasets and database instances.
+
+> [!NOTE]
+> **GUID management** is handled by database triggers, which ensure their automatic generation at the time of record insertion, **without any user involvement**.
 
 
 ### Relationships (as child)
@@ -99,5 +111,3 @@ For every trigger you will find:
 **If the check fails:** Aborts with: `If you change record endlifespanversion must be greater than today`.
 
 
----
-<a id="soilbody_geom"></a>
