@@ -3,7 +3,7 @@
 
 ## Definition
 
-> “A **Soil Site** is considered as the surrounding of a soil profile, and/or the larger piece of land that is directly linked to and described by all soil investigations on one or more spots, called soil plots.”[^1]
+> “*A **Soil Site** is considered as the surrounding of a soil profile, and/or the larger piece of land that is directly linked to and described by all soil investigations on one or more spots, called soil plots.*”[^1]
 > [^1]: European Commission – Joint Research Centre (JRC),  
 **INSPIRE Data Specification on Soil – Technical Guidelines**,  
 D2.8.III.3.  
