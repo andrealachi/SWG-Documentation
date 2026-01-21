@@ -1,7 +1,7 @@
 # WRB Qualifier Group Type
 
-> “A data type to define the group of a qualifier and its possible specifier(s), its place and
-position with regard to the World Reference Base (WRB)”[^1]
+> “*A data type to define the group of a qualifier and its possible specifier(s), its place and
+position with regard to the World Reference Base (WRB)*”[^1]
 > [^1]: European Commission – Joint Research Centre (JRC),  
 **INSPIRE Data Specification on Soil – Technical Guidelines**,  
 D2.8.III.3.  
