@@ -1,8 +1,10 @@
 # Derived Profile Presence In Soilbody
-Indicates the percentages (lower and upper boundary) that the derived profile takes part
-in the Soil body. When the soil body is characterized by more than one derived profiles, the
-distribution area of these derived soil profiles is not spatially defined, but their presence is
-indicated by a range of percentages.
+
+
+## Definition
+
+> *The **`derivedprofilepresenceinsoilbody`** table defines a **many-to-many** relationship between soil profiles and soil bodies, linking the `soilprofile` and `soilbody` tables. This relationship allows a soil profile to be associated with one or more soil bodies and, conversely, enables a single soil body to include multiple soil profiles. The table also stores information on the relative presence of each derived soil profile within a soil body, expressed as a range of percentages (lower and upper boundaries). When a soil body is characterized by more than one derived profile, the spatial distribution of these profiles is not explicitly defined; instead, their contribution is described through percentage ranges indicating their share in the overall soil body.*
+
 
 <p>&nbsp;</p>
 
