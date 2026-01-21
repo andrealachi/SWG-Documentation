@@ -1,5 +1,10 @@
 # Is Based On Observed Soil Profile
 
+## Definition
+
+> *The **`isbasedonobservedsoilprofile`** table defines a **many-to-many relationship** between soil-derived objects and observed soil profiles, linking the `soilderivedobject` and `soilprofile` tables.
+This relationship allows soil-derived objects to be based on one or more soil profiles and, conversely, enables a single soil profile to contribute to multiple derived objects.*
+
 <p>&nbsp;</p>
 
 <p>
