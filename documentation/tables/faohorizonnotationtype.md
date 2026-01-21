@@ -2,10 +2,10 @@
 
 ## Definition
 
->A code system that denotes horizons in which the same dominant soil
+"*A code system that denotes horizons in which the same dominant soil
 forming processes has been active similarly. This code summarizes many
 observations of the soil description and gives an impression about the
-genetic processes that have formed the soil .[^1]
+genetic processes that have formed the soil.*"[^1]
 > [^1]: European Commission – Joint Research Centre (JRC),  
 **INSPIRE Data Specification on Soil – Technical Guidelines**,  
 D2.8.III.3.  
