@@ -1,5 +1,15 @@
 # Other Horizon Notation Type
 
+## Definition
+
+> “*Classification of a horizon according to a specific classification system.*”[^1]
+
+
+[^1]: European Commission – Joint Research Centre (JRC),  
+**INSPIRE Data Specification on Soil – Technical Guidelines**,  
+D2.8.III.3.  
+https://inspire-mif.github.io/technical-guidelines/data/so/dataspecification_so.pdf
+
 <p>&nbsp;</p>
 
 <p>
@@ -92,5 +102,3 @@ For every trigger you will find:
 
 **If the check fails:** Aborts with: `Table otherhorizonnotationtype: Invalid value for diagnostichorizon. Must be present in the relativecodelist.`
 
----
-<a id="othersoilnametype"></a>
