@@ -48,6 +48,3 @@ This relationship allows soil-derived objects to be based on one or more soil bo
 
 ### Triggers
 - None
-
----
-<a id="isbasedonsoilderivedobject"></a>
