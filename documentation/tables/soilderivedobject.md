@@ -1,11 +1,23 @@
 # Soil Derived Object
-Spatial object with soil-related property derived from one or more soil and possibly other
+
+
+## Definition
+
+> “*Spatial object with soil-related property derived from one or more soil and possibly other
 non soil properties. Soil thematic maps can be derived directly from the involved soil
 database (organic matter content, pH, texture, etc.) or they can be derived by using
 pedotransfer functions or pedotransfer rules (e.g. plant available water in the rooting
 depth). Derivation can be simple extraction from a single data field, or a complex
 combination of different kind of data and application of e.g. mathematical or expert
-knowledge-based procedures.
+knowledge-based procedures.*”[^1]
+
+
+[^1]: European Commission – Joint Research Centre (JRC),  
+**INSPIRE Data Specification on Soil – Technical Guidelines**,  
+D2.8.III.3.  
+https://inspire-mif.github.io/technical-guidelines/data/so/dataspecification_so.pdf
+
+
 <p>&nbsp;</p>
 
 <p>
@@ -45,6 +57,9 @@ Although GUID is not mandatory at the schema level (it is not declared NOT NULL)
 - **soilderivedobjectguidupdate (UPDATE)** trigger: prevents any modification of GUID after insertion, making it immutable (effectively behaving as a stable key).  
 
 Any foreign keys (FK) from other tables reference this table’s GUID field rather than the id field, ensuring stable and interoperable references across datasets and database instances.
+
+> [!NOTE]
+> **GUID management** is handled by database triggers, which ensure their automatic generation at the time of record insertion, **without any user involvement**.
 
 
 ### Relationships (as child)
