@@ -2,8 +2,8 @@
 
 ## Definition
 
-> “An identification of the soil profile according to a specific classification
-scheme.”[^1]
+> “*An identification of the soil profile according to a specific classification
+scheme.*”[^1]
 
 
 [^1]: European Commission – Joint Research Centre (JRC),  
