@@ -2,8 +2,8 @@
 
 ## Definition
 
->The **`isbasedonsoilderivedobject`** table is designed to represent **derivation relationships between soil-derived objects**, allowing a soil-derived object to be based on another soil-derived object.
-This table implements a **self-referencing (recursive) relationship** on the `soilderivedobject` entity, enabling the explicit modeling of derivation chains, dependencies, or transformations within the set of soil-derived objects. Through this mechanism, it is possible to describe cases where a derived object results from the refinement, aggregation, reinterpretation, or further processing of an existing derived object, rather than directly from a primary soil entity.
+>*The **`isbasedonsoilderivedobject`** table is designed to represent **derivation relationships between soil-derived objects**, allowing a soil-derived object to be based on another soil-derived object.
+This table implements a **self-referencing (recursive) relationship** on the `soilderivedobject` entity, enabling the explicit modeling of derivation chains, dependencies, or transformations within the set of soil-derived objects. Through this mechanism, it is possible to describe cases where a derived object results from the refinement, aggregation, reinterpretation, or further processing of an existing derived object, rather than directly from a primary soil entity.*
 
 The use of a dedicated relationship table ensures that derivation links are:
 
