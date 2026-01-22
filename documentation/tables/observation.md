@@ -137,179 +137,102 @@ For every trigger you will find:
 - **What happens on failure** (the exact error text raised)
 
  
-## `observationguid`
+#### `observationguid`   
+**When they run:** AFTER INSERT (per row)  
 
-**When it runs:** AFTER INSERT (per row)
+**What they do:** If `NEW.guid` is `NULL`, generates a lowercase UUID (v4‑like) and sets it on the inserted row.  
 
-**What it reads and compares:**  
-- Checks `NEW.guid` of the just-inserted row.
+**If the check passes:** The row is updated with the generated GUID; insert proceeds (no message).  
 
-**What happens on success:**  
-- If `NEW.guid` is `NULL`, it generates a lowercase UUID (v4-like) and updates the inserted row’s `guid`.  
-- If `NEW.guid` is already set, nothing else happens. The insert succeeds.
+**If the check fails:** No failure path — it only assigns when GUID is missing.
 
-**What happens on failure:**  
-- **No failure path** — the trigger only assigns a GUID when missing.  
-[1](https://github.com/INSPIRE-MIF/technical-guidelines/blob/2022.2/data/so/dataspecification_so.adoc)
 
----
+#### `observationguidupdate`   
+**When they run:** AFTER UPDATE OF `guid` (per row)  
 
-## `observationguidupdate`
+**What they do:** Compares `NEW.guid` with `OLD.guid` to block GUID changes.  
 
-**When it runs:** AFTER UPDATE OF `guid` (per row)
+**If the check passes:** If `NEW.guid = OLD.guid`, the update proceeds.  
 
-**What it reads and compares:**  
-- Compares `NEW.guid` vs `OLD.guid`.
+**If the check fails:** Aborts with: `Cannot update guid column.`
 
-**What happens on success:**  
-- If `NEW.guid = OLD.guid` (no change), the update proceeds.
 
-**What happens on failure:**  
-- If `NEW.guid <> OLD.guid`, aborts with:  
-  **`Cannot update guid column.`**  
-[1](https://github.com/INSPIRE-MIF/technical-guidelines/blob/2022.2/data/so/dataspecification_so.adoc)
+#### `observation_bi_type_constraints`   
+**When they run:** BEFORE INSERT (per row)  
 
----
+**What they do:** Reads `NEW.result_text`, `NEW.result_real`, `NEW.result_boolean`, `NEW.guid_datastream`; looks up the linked `datastream.type`, `value_min`, `value_max`, `codespace`; for `Category`, checks `result_text ∈ codelist.id` where `codelist.collection = datastream.codespace`.  
 
-## `observation_bi_type_constraints`
+**If the check passes:** Insert proceeds (shape, bounds and membership satisfied for the given `datastream.type`).  
 
-**When it runs:** BEFORE INSERT (per row)
+**If the check fails:** Aborts with one of (depending on `datastream.type`):  
+`Type Quantity: result_real must be NOT NULL; result_text and result_boolean must be NULL.`;  
+`Type Quantity: result_real is below value_min.`;  
+`Type Quantity: result_real exceeds value_max.`;  
+`Type Category: result_text must be NOT NULL; result_real and result_boolean must be NULL.`;  
+`Type Category: result_text must exist in codelist.id for the collection equal to the datastream codespace.`;  
+`Type Boolean: result_boolean must be 0 or 1; result_text and result_real must be NULL.`;  
+`Type Count: result_real must be an integer; result_text and result_boolean must be NULL.`;  
+`Type Count: result_real is below value_min.`;  
+`Type Count: result_real exceeds value_max.`;  
+`Type Text: result_text must be NOT NULL; result_real and result_boolean must be NULL.`
 
-**What it reads and compares:**  
-- Reads `NEW.result_text`, `NEW.result_real`, `NEW.result_boolean`, `NEW.guid_datastream`.  
-- Looks up in `datastream` (by `guid = NEW.guid_datastream`):  
-  - `type` ∈ {`Quantity`, `Category`, `Boolean`, `Count`, `Text`}  
-  - `value_min`, `value_max`, `codespace`  
-- For `Category`, validates membership in `codelist` where `codelist.collection = datastream.codespace` and `codelist.id = NEW.result_text`.
+#### `observation_bu_type_constraints`   
+**When they run:** BEFORE UPDATE OF `result_text`, `result_real`, `result_boolean`, `guid_datastream` (per row)  
 
-**What happens on success:**  
-- Insert proceeds if the **shape** and **bounds/membership** rules match the `datastream.type`.
+**What they do:** Re‑applies the same shape/bounds/membership checks as the INSERT trigger, against the (possibly changed) `datastream`.  
 
-**What happens on failure (exact messages):**  
-- **Quantity (shape):**  
-  `Type Quantity: result_real must be NOT NULL; result_text and result_boolean must be NULL.`  
-- **Quantity (min bound):**  
-  `Type Quantity: result_real is below value_min.`  
-- **Quantity (max bound):**  
-  `Type Quantity: result_real exceeds value_max.`  
-- **Category (shape):**  
-  `Type Category: result_text must be NOT NULL; result_real and result_boolean must be NULL.`  
-- **Category (membership):**  
-  `Type Category: result_text must exist in codelist.id for the collection equal to the datastream codespace.`  
-- **Boolean (shape):**  
-  `Type Boolean: result_boolean must be 0 or 1; result_text and result_real must be NULL.`  
-- **Count (shape):**  
-  `Type Count: result_real must be an integer; result_text and result_boolean must be NULL.`  
-- **Count (min bound):**  
-  `Type Count: result_real is below value_min.`  
-- **Count (max bound):**  
-  `Type Count: result_real exceeds value_max.`  
-- **Text (shape):**  
-  `Type Text: result_text must be NOT NULL; result_real and result_boolean must be NULL.`  
-[1](https://github.com/INSPIRE-MIF/technical-guidelines/blob/2022.2/data/so/dataspecification_so.adoc)
+**If the check passes:** Update proceeds.  
 
----
+**If the check fails:** Aborts with the same messages listed for `observation_bi_type_constraints`.
 
-## `observation_bu_type_constraints`
+#### `observation_bi_result_text_in_codespace`   
+**When they run:** BEFORE INSERT (per row)  
 
-**When it runs:** BEFORE UPDATE OF `result_text`, `result_real`, `result_boolean`, `guid_datastream` (per row)
+**What they do:** Only if `NEW.result_text IS NOT NULL` **and** the linked `datastream.type = 'Category'`: checks membership of `NEW.result_text` in `codelist.id` where `collection = datastream.codespace`.  
 
-**What it reads and compares:**  
-- Same as the *INSERT* variant above, but re‑applied on update.
+**If the check passes:** Insert proceeds.  
 
-**What happens on success:**  
-- Update proceeds if the **shape** and **bounds/membership** rules match the (possibly new) `datastream.type`.
+**If the check fails:** Aborts with: `Insert denied: result_text must exist in codelist.id within the collection equal to the linked datastream codespace (type=Category).`
 
-**What happens on failure (exact messages):**  
-- Same messages as in `observation_bi_type_constraints`.  
-[1](https://github.com/INSPIRE-MIF/technical-guidelines/blob/2022.2/data/so/dataspecification_so.adoc)
 
----
+#### `observation_bu_result_text_in_codespace`   
+**When they run:** BEFORE INSERT (per row) *(note: despite the “_bu_” name, it’s defined as BEFORE INSERT in the DDL)*  
 
-## `observation_bi_result_text_in_codespace`
+**What they do:** Same condition and membership check as the previous trigger.  
 
-**When it runs:** BEFORE INSERT (per row)
+**If the check passes:** Insert proceeds.  
 
-**What it reads and compares:**  
-- Fires **only if** `NEW.result_text IS NOT NULL` **and** the linked datastream has `type = 'Category'`.  
-- Verifies `NEW.result_text ∈ codelist.id` where `codelist.collection = datastream.codespace`.
+**If the check fails:** Aborts with: `Insert denied: result_text must exist in codelist.id within the collection equal to the linked datastream codespace (type=Category).`
 
-**What happens on success:**  
-- Insert proceeds (membership satisfied).
 
-**What happens on failure:**  
-- Aborts with:  
-  **`Insert denied: result_text must exist in codelist.id within the collection equal to the linked datastream codespace (type=Category).`**  
-[1](https://github.com/INSPIRE-MIF/technical-guidelines/blob/2022.2/data/so/dataspecification_so.adoc)
+#### `observation_ai_recalc_ds_times`   
+**When they run:** AFTER INSERT (per row)  
 
----
+**What they do:** Recomputes the parent datastream’s time range using all observations for `NEW.guid_datastream`: `phenomenontime_start = MIN(phenomenontime_start)`; `phenomenontime_end = MAX(COALESCE(phenomenontime_end, phenomenontime_start))`.  
 
-## `observation_bu_result_text_in_codespace`
+**If the check passes:** Updates the `datastream` range; insert succeeds.  
 
-**When it runs:** **BEFORE INSERT** (per row)  
-> **Note:** Although named “_bu_” (suggesting an UPDATE hook), in the DDL it is declared as **BEFORE INSERT** again.
+**If the check fails:** No specific failure path (ordinary DML errors aside).
 
-**What it reads and compares:**  
-- Same condition and lookup as `observation_bi_result_text_in_codespace`.
+####  `observation_au_recalc_ds_times`   
+**When they run:** AFTER UPDATE OF `phenomenontime_start`, `phenomenontime_end`, `guid_datastream` (per row)  
 
-**What happens on success:**  
-- Insert proceeds.
+**What they do:** Recomputes the range for the **new** `guid_datastream`; if the row moved between datastreams, also recomputes the **old** one.  
 
-**What happens on failure:**  
-- Aborts with the same message:  
-  **`Insert denied: result_text must exist in codelist.id within the collection equal to the linked datastream codespace (type=Category).`**  
-[1](https://github.com/INSPIRE-MIF/technical-guidelines/blob/2022.2/data/so/dataspecification_so.adoc)
+**If the check passes:** Updates the affected `datastream`(s); update succeeds.  
 
----
+**If the check fails:** No specific failure path.
 
-## `observation_ai_recalc_ds_times`
 
-**When it runs:** AFTER INSERT (per row)
+#### `observation_ad_recalc_ds_times`   
+**When they run:** AFTER DELETE (per row)  
 
-**What it reads and compares:**  
-- Aggregates all `observation` rows for `NEW.guid_datastream`.
+**What they do:** Recomputes the parent datastream’s time range from remaining observations for `OLD.guid_datastream`.  
 
-**What happens on success:**  
-- Updates the parent `datastream`:
-  - `phenomenontime_start = MIN(observation.phenomenontime_start)`  
-  - `phenomenontime_end   = MAX(COALESCE(observation.phenomenontime_end, observation.phenomenontime_start))`  
-- No error is raised.
+**If the check passes:** Updates the `datastream` range; delete succeeds.  
 
-**What happens on failure:**  
-- No explicit failure path (normal DML errors aside).  
-[1](https://github.com/INSPIRE-MIF/technical-guidelines/blob/2022.2/data/so/dataspecification_so.adoc)
+**If the check fails:** No specific failure path.
 
----
 
-## `observation_au_recalc_ds_times`
-
-**When it runs:** AFTER UPDATE OF `phenomenontime_start`, `phenomenontime_end`, `guid_datastream` (per row)
-
-**What it reads and compares:**  
-- Recomputes the range for the **new** `guid_datastream`.  
-- If the observation moved to a different datastream, also recomputes the **old** one (only when `OLD.guid_datastream <> NEW.guid_datastream`).
-
-**What happens on success:**  
-- Updates the affected `datastream`(s) time range as above.
-
-**What happens on failure:**  
-- No explicit failure path.  
-[1](https://github.com/INSPIRE-MIF/technical-guidelines/blob/2022.2/data/so/dataspecification_so.adoc)
-
----
-
-## `observation_ad_recalc_ds_times`
-
-**When it runs:** AFTER DELETE (per row)
-
-**What it reads and compares:**  
-- Aggregates remaining `observation` rows for `OLD.guid_datastream`.
-
-**What happens on success:**  
-- Updates the parent `datastream` time range as above.
-
-**What happens on failure:**  
-- No explicit failure path.  
-[1](https://github.com/INSPIRE-MIF/technical-guidelines/blob/2022.2/data/so/dataspecification_so.adoc)
 
 
