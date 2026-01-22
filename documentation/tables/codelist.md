@@ -272,9 +272,6 @@ Each codespace list requires:
 - `label`: A human-readable name for the list
 - `collection`: Always set to **`'Category'`**
 
-> [!IMPORTANT]
-> The value of the `collection` element **SHALL be equal** to, and reference, the same URI defined in the `id` field of the top-level codespace list.
-
 **Example:**
 ```sql
 INSERT INTO codelist (id, label, collection)
@@ -289,6 +286,9 @@ For each element in the codespace:
 - `id`: A unique URI or key for the element (e.g., …-C, …-CC)
 - `label`: A descriptive label for the element
 - `collection`: **The id of the codespace list created in Step 1**
+
+> [!IMPORTANT]
+> The value of the `collection` element **SHALL be equal** to, and reference, the same URI defined in the `id` field of the top-level codespace list.
 
 **Example:**
 ```sql
