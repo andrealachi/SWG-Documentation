@@ -60,6 +60,9 @@ In this way, the `datastream` always reflects the **earliest** phenomenon start 
 > [!NOTE]
 > this mechanism is **fully automated**. No manual intervention is required, as the system transparently handles the **synchronisation of temporal attributes** based on the current set of observations.
 
+>[!WARNING]
+> Records that do not comply with the defined constraints **shall be rejected by the system and shall not be persisted** in the GeoPackage.
+
 
 <p>
   <img src="../assets/datastream.svg"
