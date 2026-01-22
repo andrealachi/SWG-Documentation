@@ -1,5 +1,14 @@
 # Observed Property
-An ObservedProperty is a property of a Feature that is being observed by a Sensor, such as temperature, humidity, population count or color. It should be uniquely identified by its definition, which should point to an external vocabulary by means of a URL, URI or DID.
+
+## Definition
+
+> *An ObservedProperty is a property of a Feature that is being observed by a Sensor, such as temperature, humidity, population count or color. It should be uniquely identified by its definition, which should point to an external vocabulary by means of a URL, URI or DID.* [^1]
+
+> [^1]: Hylke van der Schaaf — **Open Geospatial Consortium (OGC)**,  
+> **SensorThings API 2.0 (23-019)** *(DRAFT)*,  
+> version 23-019.  
+> https://hylkevds.github.io/23-019/23-019.html
+
 
 <p>&nbsp;</p>
 
@@ -42,6 +51,8 @@ Although GUID is not mandatory at the schema level (it is not declared NOT NULL)
 
 Any foreign keys (FK) from other tables reference this table’s GUID field rather than the id field, ensuring stable and interoperable references across datasets and database instances.
 
+> [!NOTE]
+> **GUID management** is handled by database triggers, which ensure their automatic generation at the time of record insertion, **without any user involvement**.
 
 ### Relationships (as child)
 - None
@@ -77,5 +88,3 @@ For every trigger you will find:
 
 **If the check fails:** On change, abort with: `Cannot update guid column.`
 
----
-<a id="observingprocedure"></a>
