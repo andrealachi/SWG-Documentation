@@ -1,10 +1,18 @@
 # Is Derived From
-As mentioned in the "Soil Profile", section, there is a relationship between "Observed Soil Profile",
-and "Derived Soil Profile".
-"Derived Soil Profile", are composed of one or more "Observed Soil Profiles", while "Observed Soil
-Profiles", can belong to none, one, or more "Derived Soil Profiles".
-Let's see how to view and create these relationships using the forms.
-Please Note (Editing related elements in the parent form).
+
+
+## Definition
+
+> *The **`isderivedfrom`** table models a dependency relationship between **DERIVED** and **OBSERVED** soil profiles.  
+It implements a **self-referential relationship** on the **`soilprofile`** table, allowing soil profiles to be linked to each other according to their role (derived or observed).
+Specifically, the table associates each **derived soil profile** (`guid_base`) with one or more **observed soil profiles** (`guid_related`) from which the derived profile has been constructed or inferred, making the data provenance and the conceptual link between point observations and reference profiles explicit.*
+
+From a conceptual perspective:
+
+- a **derived soil profile** may be based on **0..N observed soil profiles**;
+- an **observed soil profile** may contribute to **0..N derived soil profiles**.
+
+The relationship is therefore **many-to-many (N:M)** between derived and observed soil profiles and is specialised by rules that enforce semantic consistency between the roles of the linked profiles.
 
 <p>&nbsp;</p>
 
@@ -76,5 +84,3 @@ For every trigger you will find:
 
 **If the check fails:** Aborts with: `Table isderivedfrom: Attention, the value of the "guid_related" field in the "isderivedfrom" table cannot be inserted because profile is not of type observed`.
 
----
-<a id="observation"></a>
