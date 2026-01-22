@@ -233,5 +233,69 @@ For every trigger you will find:
 **If the check fails:** The corresponding type-specific message is raised and the statement aborts.
 
 
+#### `observation_bi_type_constraints` datastream_ai_set_guid_thing  
+**When they run:** AFTER INSERT (per row), only when **exactly one** of the FOI columns  
+(`guid_soilsite`, `guid_soilprofile`, `guid_profileelement`, `guid_soilderivedobject`) is non‑NULL **and** `NEW.guid_thing` equals the placeholder GUID (`a615db6e-383c-42b0-add3-5a9e333c0664`).  
+**What they do:** Creates (if missing) a `thing` corresponding to the chosen FOI and sets `datastream.guid_thing` to:  
+- the **SoilSite GUID** if FOI = SoilSite;  
+- the **SoilProfile GUID** if FOI = Derived SoilProfile;  
+- the **SoilSite GUID** resolved via Profile→Plot→Site if FOI = Observed SoilProfile;  
+- for ProfileElement: the **parent SoilProfile GUID** if derived, otherwise the **SoilSite GUID** (via Plot) if observed;  
+- the **SoilDerivedObject GUID** if FOI = SoilDerivedObject.  
+**If the check passes:** `thing` may be inserted on-demand; `datastream.guid_thing` is updated accordingly; insert succeeds.  
+**If the check fails:** No explicit failure path (trigger does nothing if preconditions aren’t met).
+
+
+
+#### `datastream_au_set_guid_thing_on_foi_change`   
+**When they run:** AFTER UPDATE OF `guid_soilsite`, `guid_soilprofile`, `guid_profileelement`, `guid_soilderivedobject` (per row), only when **exactly one** FOI is non‑NULL and `NEW.guid_thing` equals the placeholder GUID.  
+**What they do:** Same FOI→`thing` creation and `guid_thing` update logic as the AFTER INSERT trigger, but applied after FOI changes.  
+**If the check passes:** `thing` may be inserted on-demand; `datastream.guid_thing` is updated; update succeeds.  
+**If the check fails:** No explicit failure path (trigger does nothing if preconditions aren’t met).
+
+
+#### `datastream_bi_bounds_consistency`   
+**When they run:** BEFORE INSERT (per row)  
+**What they do:** If both `NEW.value_min` and `NEW.value_max` are not NULL, checks `value_min ≤ value_max`.  
+**If the check passes:** Insert proceeds.  
+**If the check fails:** Aborts with: `Datastream bounds: value_min must be less than or equal to value_max when both are provided.`
+
+
+#### `datastream_bu_bounds_consistency`   
+**When they run:** BEFORE UPDATE OF `value_min`, `value_max` (per row)  
+**What they do:** If both new bounds are not NULL, checks `NEW.value_min ≤ NEW.value_max`.  
+**If the check passes:** Update proceeds.  
+**If the check fails:** Aborts with: `Datastream bounds: value_min must be less than or equal to value_max when both are provided.`
+
+
+#### `datastream_bi_count_bounds_are_integers`   
+**When they run:** BEFORE INSERT (per row)  
+**What they do:** If `NEW.type = 'Count'`, validates that numeric bounds are **integral in value**:  
+`NEW.value_min = CAST(NEW.value_min AS INTEGER)` (when not NULL) and same for `value_max`.  
+**If the check passes:** Insert proceeds.  
+**If the check fails:** Aborts with one of:  
+`Type Count: value_min must be an integer (numerically integral).`  
+`Type Count: value_max must be an integer (numerically integral).`
+
+
+#### `datastream_bu_count_bounds_are_integers`   
+**When they run:** BEFORE UPDATE OF `type`, `value_min`, `value_max` (per row)  
+**What they do:** Re-applies the same “integers-only” checks as above when changing type and/or bounds.  
+**If the check passes:** Update proceeds.  
+**If the check fails:** Aborts with one of:  
+`Type Count: value_min must be an integer (numerically integral).`  
+`Type Count: value_max must be an integer (numerically integral).`
+
+
+#### `datastream_bu_bounds_validate_observations`   
+**When they run:** BEFORE UPDATE OF `value_min`, `value_max` (per row)  
+**What they do:** For `NEW.type IN ('Quantity','Count')`, if tightening bounds, verifies that **existing observations** linked to this datastream are not below `NEW.value_min` or above `NEW.value_max`.  
+**If the check passes:** Update proceeds.  
+**If the check fails:** Aborts with one of:  
+`Bounds update rejected: some existing observations have result_real below the new value_min.`  
+`Bounds update rejected: some existing observations have result_real above the new value_max.`
+
+
+
 
 
