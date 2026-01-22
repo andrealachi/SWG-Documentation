@@ -1,15 +1,27 @@
  # WRB Qualifier Group Profile
-A data type to define the group of a qualifier and its possible specifier(s), its place and
-position with regard to the World Reference Base (WRB)
-
 
 ## Definition
 
-> *The wrbqualifiergroup_profile table defines a many-to-many relationship between soil profiles and WRB qualifier group types, linking the soilprofile and wrbqualifiergrouptype tables. This relationship allows a soil profile to be associated with one or more WRB qualifier group types and, conversely, enables a single WRB qualifier group type to be assigned to multiple soil profiles.*
+> *The **`wrbqualifiergroup_profile`** table defines a **many-to-many relationship**
+between soil profiles and **WRB qualifier groups**, linking the
+**`soilprofile`** and **`wrbqualifiergrouptype`** tables.This relationship allows a single soil profile to be associated with one or
+more WRB qualifier groups and, conversely, enables the same WRB qualifier group
+to be assigned to multiple soil profiles.*
+
+A **WRB qualifier group** is defined as a data type representing:
+
+- the **qualifier group** according to the World Reference Base (WRB);
+- the **possible specifier(s)** associated with the qualifier;
+- its **placement and position** within the formal WRB sequence.
+
+Through this structure, the application of WRB qualifiers to soil profiles can
+be explicitly and flexibly modelled, preserving both their **taxonomic meaning**
+and their **order and role** within the WRB classification system.
+
+
 
 > [!NOTE]
 > In order to assign a WRB classification to a soil profile, the corresponding wrbqualifiergrouptype records must first be created.
-
 
 
 <p>&nbsp;</p>
@@ -84,5 +96,4 @@ For every trigger you will find:
 
 **If the check fails:** Aborts with: `qualifierposition must be unique for each qualifierplace within the same soilprofile`.
 
----
-<a id="wrbqualifiergrouptype"></a>
+
