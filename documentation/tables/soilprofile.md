@@ -76,7 +76,7 @@ In accordance with the INSPIRE specifications, which require the WRBReferenceSoi
 #### Codelist Definition
 
 The complete list of allowed codes is stored in the **codelist table**.  
-The associated [documentation](/codelist.md#table--soilprofile), provides a detailed description of:
+The associated [documentation](codelist.md#table--soilprofile), provides a detailed description of:
 
 - which codes are available (codelist URL),
 - the database tables to which each codelist applies,
