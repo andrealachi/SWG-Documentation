@@ -1,5 +1,65 @@
-# Obrservation
-Observation representing the measurement of a property at a single time instant.
+# Observation
+
+## Definition
+
+> *An Observation provides a value for an ObservedProperty of a Feature, as observed by a Sensor. This value can be of any type, as described by the resultType of the Datastream that Observation is associated with.* [^1]
+
+> [^1]: Hylke van der Schaaf — **Open Geospatial Consortium (OGC)**,  
+> **SensorThings API 2.0 (23-019)** *(DRAFT)*,  
+> version 23-019.  
+> https://hylkevds.github.io/23-019/23-019.html
+
+
+
+## Result Compliance Based on `datastream.type`
+Two BEFORE triggers (INSERT and UPDATE) apply expected structure and domain rules to the observation’s `result`, according to the type defined in the linked datastream row:
+- `observation_bi_type_constraints` (BEFORE INSERT)
+- `observation_bu_type_constraints` (BEFORE UPDATE OF result_*, iddatastream)
+
+The rules by type are:
+
+### Quantity
+- Expected structure: only `result_real` NOT NULL; `result_text` and `result_boolean` must be NULL.
+- Constraints with respect to the bounds (if configured in the datastream):
+  - if `value_min` is not NULL → `result_real >= value_min`;
+  - if `value_max` is not NULL → `result_real <= value_max`.
+
+### Category
+- Expected structure: only `result_text` NOT NULL; `result_real` and `result_boolean` must be NULL.
+- Codelist membership: `result_text` must exist as `codelist.id` in the collection equal to `datastream.codespace` (join by collection).
+
+### Boolean
+- Expected structure: only `result_boolean` NOT NULL with value 0 or 1; `result_text` and `result_real` must be NULL.
+
+### Count
+- Expected structure: only `result_real` NOT NULL, but it must be integer in value (comparison `result_real = CAST(result_real AS INTEGER)`). `result_text` and `result_boolean` must be NULL.
+- Constraints with respect to the bounds (if present in the datastream):
+  - if `value_min` is not NULL → `result_real >= value_min`;
+  - if `value_max` is not NULL → `result_real <= value_max`.
+
+### Text
+- Expected structure: only `result_text` NOT NULL; `result_real` and `result_boolean` must be NULL.
+
+### Bounds Consistency Between Datastream and Observations (Related Logic)
+Although they are not triggers “of the observation table,” two triggers on `datastream` ensure that any changes to `value_min`/`value_max` do not make existing observations inconsistent:
+- `datastream_bu_bounds_validate_observations` (BEFORE UPDATE OF value_min, value_max) blocks the update if there exist observations (for that datastream) with `result_real` outside the new limits. Applies to types Quantity and Count.
+- In addition, `datastream_bi/bu_bounds_consistency` prevent setting `value_min > value_max` when both are non-NULL.
+- For Count, `datastream_bi/bu_count_bounds_are_integers` enforce that the extrema, if present, are integers in value (the “integer” form is verified with numeric cast, e.g., 3.0 is accepted).
+
+This family therefore guarantees semantic stability: you cannot tighten a series’ admissibility interval in such a way as to “expel” measurements already acquired.
+
+>[!IMPORTANT]
+>### Error Messages and Diagnosis
+>The triggers use `RAISE(ABORT, '...')` with specific messages (e.g., “Type Quantity: result_real is below value_min.”, “Type Category: result_text must exist in codelist...”), facilitating diagnosis during data ingestion and ETL automation.
+
+## Alignment of the Datastream Time Window
+To maintain in `datastream` a consistent summary of the temporal coverage of its observations, there are three triggers that recompute the fields `datastream.phenomenontime_start` (MIN) and `datastream.phenomenontime_end` (MAX) with respect to all related rows in `observation`:
+- `observation_ai_recalc_ds_times` (AFTER INSERT): upon a new insert, recomputes MIN/MAX on the datastream of `NEW.iddatastream`.
+- `observation_au_recalc_ds_times` (AFTER UPDATE OF phenomenontime_*, iddatastream): recomputes for the new datastream; if the observation has been moved across series, it also recomputes for the old datastream.
+- `observation_ad_recalc_ds_times` (AFTER DELETE): upon deletion, recomputes MIN/MAX on the datastream of `OLD.iddatastream`.
+
+To support these recurring aggregations, recommended indexes are defined:
+- `idx_observation_ds_times (iddatastream, phenomenontime_start, phenomenontime_end)`
 
 <p>&nbsp;</p>
 
@@ -47,6 +107,9 @@ Although GUID is not mandatory at the schema level (it is not declared NOT NULL)
 
 Any foreign keys (FK) from other tables reference this table’s GUID field rather than the id field, ensuring stable and interoperable references across datasets and database instances.
 
+> [!NOTE]
+> **GUID management** is handled by database triggers, which ensure their automatic generation at the time of record insertion, **without any user involvement**.
+
 
 ### Relationships (as child)
 - `observation.guid_datastream` → `datastream.guid` (**ON UPDATE** CASCADE, **ON DELETE** CASCADE)
@@ -85,54 +148,4 @@ For every trigger you will find:
 
 
 
-### Alignment of the Datastream Time Window
-To maintain in `datastream` a consistent summary of the temporal coverage of its observations, there are three triggers that recompute the fields `datastream.phenomenontime_start` (MIN) and `datastream.phenomenontime_end` (MAX) with respect to all related rows in `observation`:
-- `observation_ai_recalc_ds_times` (AFTER INSERT): upon a new insert, recomputes MIN/MAX on the datastream of `NEW.iddatastream`.
-- `observation_au_recalc_ds_times` (AFTER UPDATE OF phenomenontime_*, iddatastream): recomputes for the new datastream; if the observation has been moved across series, it also recomputes for the old datastream.
-- `observation_ad_recalc_ds_times` (AFTER DELETE): upon deletion, recomputes MIN/MAX on the datastream of `OLD.iddatastream`.
 
-To support these recurring aggregations, recommended indexes are defined:
-- `idx_observation_ds_times (iddatastream, phenomenontime_start, phenomenontime_end)`
-
-### Result Compliance Based on `datastream.type`
-Two BEFORE triggers (INSERT and UPDATE) apply expected structure and domain rules to the observation’s `result`, according to the type defined in the linked datastream row:
-- `observation_bi_type_constraints` (BEFORE INSERT)
-- `observation_bu_type_constraints` (BEFORE UPDATE OF result_*, iddatastream)
-
-The rules by type are:
-
-### Quantity
-- Expected structure: only `result_real` NOT NULL; `result_text` and `result_boolean` must be NULL.
-- Constraints with respect to the bounds (if configured in the datastream):
-  - if `value_min` is not NULL → `result_real >= value_min`;
-  - if `value_max` is not NULL → `result_real <= value_max`.
-
-### Category
-- Expected structure: only `result_text` NOT NULL; `result_real` and `result_boolean` must be NULL.
-- Codelist membership: `result_text` must exist as `codelist.id` in the collection equal to `datastream.codespace` (join by collection).
-
-### Boolean
-- Expected structure: only `result_boolean` NOT NULL with value 0 or 1; `result_text` and `result_real` must be NULL.
-
-### Count
-- Expected structure: only `result_real` NOT NULL, but it must be integer in value (comparison `result_real = CAST(result_real AS INTEGER)`). `result_text` and `result_boolean` must be NULL.
-- Constraints with respect to the bounds (if present in the datastream):
-  - if `value_min` is not NULL → `result_real >= value_min`;
-  - if `value_max` is not NULL → `result_real <= value_max`.
-
-### Text
-- Expected structure: only `result_text` NOT NULL; `result_real` and `result_boolean` must be NULL.
-
-### Bounds Consistency Between Datastream and Observations (Related Logic)
-Although they are not triggers “of the observation table,” two triggers on `datastream` ensure that any changes to `value_min`/`value_max` do not make existing observations inconsistent:
-- `datastream_bu_bounds_validate_observations` (BEFORE UPDATE OF value_min, value_max) blocks the update if there exist observations (for that datastream) with `result_real` outside the new limits. Applies to types Quantity and Count.
-- In addition, `datastream_bi/bu_bounds_consistency` prevent setting `value_min > value_max` when both are non-NULL.
-- For Count, `datastream_bi/bu_count_bounds_are_integers` enforce that the extrema, if present, are integers in value (the “integer” form is verified with numeric cast, e.g., 3.0 is accepted).
-
-This family therefore guarantees semantic stability: you cannot tighten a series’ admissibility interval in such a way as to “expel” measurements already acquired.
-
-### Error Messages and Diagnosis
-The triggers use `RAISE(ABORT, '...')` with specific messages (e.g., “Type Quantity: result_real is below value_min.”, “Type Category: result_text must exist in codelist...”), facilitating diagnosis during data ingestion and ETL automation.
-
----
-<a id="observedproperty"></a>
