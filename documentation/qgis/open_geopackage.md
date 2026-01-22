@@ -11,9 +11,55 @@ From a technical standpoint, the QGIS project is **stored directly inside the Ge
 
 Opening is **one‑click**: select the **embedded project** from the GeoPackage and the SoilWise environment loads exactly as designed, with **forms, styles, and settings** ready to use.
 
-## Opne PRJ_SO project
+## Open the PRJ_SO Project
 
 Open Qgis.
+
+<p>&nbsp;</p>
+
+
+
+| | |
+|---|---|
+| <img src="./assets/01_Qgis.webp" alt="TABELLA SOILSITE EXP" width="220"> | In the Browser Tab, right-click on the Geopackage icon ① and click on “New Connection”. ② |
+
+
+
+<p>
+  <img src="./assets/01_Qgis.webp"
+       alt="TABELLA SOILSITE EXP" align="left" width="220">
+  In the Browser Tab, right-click on the
+Geopackage icon ① and click on “New
+Connection”. ②
+</p>
+
+
+
+<div style="display:flex; gap:12px; align-items:flex-start;">
+  <img src="./assets/01_Qgis.webp"
+       alt="TABELLA SOILSITE EXP"
+       style="width:66%; max-width:560px; height:auto;">
+  <div>
+    In the Browser Tab, right-click on the
+    Geopackage icon ① and click on “New
+    Connection”. ②
+  </div>
+</div>
+
+
+
+
+<p style="overflow:auto;">
+  <img src="./assets/01_Qgis.webp"
+       alt="TABELLA SOILSITE EXP"
+       style="float:left; width:66%; max-width:560px; height:auto; margin:0 12px 8px 0;">
+  In the Browser Tab, right-click on the
+  Geopackage icon ① and click on “New
+  Connection”. ②
+</p>
+<div style="clear:both;"></div>
+
+
 
 In the Browser Tab, right-click on the
 Geopackage icon ① and click on “New
