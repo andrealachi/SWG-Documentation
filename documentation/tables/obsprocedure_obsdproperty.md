@@ -9,8 +9,10 @@
 
 Only **procedure–property pairs** that are explicitly registered in **`obsprocedure_obsdproperty`** **shall** be persisted in the **`datastream`** table (`guid_observingprocedure`, `guid_observedproperty`).  
 This constraint **shall be enforced** by triggers that verify pair membership **prior to** INSERT and UPDATE operations on `datastream`.  
-If the specified pair **is not present** in `obsprocedure_obsdproperty`, the operation **shall be rejected** and the record **shall not be saved**.  
-Accordingly, each `datastream` **shall declare only** Observed Procedure - Observed Property combinations that are pre‑defined in the relational catalogue.
+
+>[!WARNING]
+>If the specified pair **is not present** in `obsprocedure_obsdproperty`, the operation **shall be rejected** and the record **shall not be saved**.  
+>Accordingly, each `datastream` **shall declare only** Observed Procedure - Observed Property combinations that are pre‑defined in the relational catalogue.
 
 
 
