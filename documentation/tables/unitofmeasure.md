@@ -1,6 +1,14 @@
 # Unit Of Measure
-The uom attribute contains the unit of measurement and is an object that must contain either a code attribute with the UCUM code of the unit, or a href attribute with a URI pointing to a unit definition. It may also contain the label and symbol attributes that can be displayed in user interfaces.
-The unitOfMeasure is part of the SWE-Common structure description found in resultType. 
+## Definition
+
+> *The **uom** attribute contains the unit of measurement and is an object that must contain either a code attribute with the **UCUM code of the unit**, or a href attribute with a URI pointing to a unit definition. It may also contain the label and symbol attributes that can be displayed in user interfaces.
+The unitOfMeasure is part of the SWE-Common structure description found in resultType.* [^1]
+
+> [^1]: Hylke van der Schaaf — **Open Geospatial Consortium (OGC)**,  
+> **SensorThings API 2.0 (23-019)** *(DRAFT)*,  
+> version 23-019.  
+> https://hylkevds.github.io/23-019/23-019.html
+ 
 
 <p>&nbsp;</p>
 
@@ -47,5 +55,3 @@ The unitOfMeasure is part of the SWE-Common structure description found in resul
 ### Triggers
 - None
 
----
-<a id="wrbqualifiergroup_profile"></a>
