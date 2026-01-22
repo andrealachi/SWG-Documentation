@@ -1,7 +1,65 @@
 # Datastream
-A Datastream groups a collection of Observations into a time series measuring the same ObservedProperties by the same Sensor for the same Thing and the same FeatureOfInterest
+## Definition
 
+> *A Datastream groups a collection of Observations into a time series measuring the same ObservedProperties by the same Sensor for the same Thing and the same FeatureOfInterest.* [^1]
+
+> [^1]: Hylke van der Schaaf — **Open Geospatial Consortium (OGC)**,  
+> **SensorThings API 2.0 (23-019)** *(DRAFT)*,  
+> version 23-019.  
+> https://hylkevds.github.io/23-019/23-019.html
+
+# Rules Applied to Fields Describing ResultType
+The JSON object `resultType` (SWE-Common AbstractDataComponent), which represents the formal description of the structure of the `result` attribute of observations in a Datastream, is managed by decomposing its fields within the `datastream` table. This approach enforces specific rules to ensure data consistency based on the type of result.
+
+To simplify management, it has been defined that each Datastream can have only one result type (one-to-one relationship), avoiding the complexity of a one-to-many relationship as in OGC models. This choice allows mapping the fields directly into the `datastream` table.
+
+Specifically, the fields **Label** and **Definition** are not duplicated in the `datastream` table because they are already defined in the `ObservedProperty` entity. Both are retrieved through the foreign key `idobservedproperty` present in `datastream`:
+- `label` corresponds to the `name` field of `ObservedProperty`.
+- `definition` corresponds to the `definition` field of `ObservedProperty`.
+
+Since both `idobservedproperty` in `datastream` and the fields `name` and `definition` in `ObservedProperty` are mandatory, no data loss occurs, and it is always possible to correctly reconstruct the JSON `resultType` object.
+
+## Allowed Values of ResultType are: (listed constraints of each Type)
+1. **type = Quantity**
+   - Required: `iduom` (unit of measure).
+   - Forbidden: `codespace`.
+   - Optional: `value_min` and `value_max`.
+   - Additional constraint: if both are present, `value_max > value_min`.
+
+2. **type = Category**
+   - Forbidden: `iduom`, `value_min`, and `value_max`.
+   - Required: `codespace`.
+
+3. **type = Boolean**
+   - Forbidden: `iduom`, `codespace`, `value_min`, `value_max`.
+
+4. **type = Text**
+   - Forbidden: `iduom`, `codespace`, `value_min`, `value_max`.
+
+5. **type = Count**
+   - Forbidden: `iduom`, `codespace`.
+   - Optional: `value_min` and `value_max`.
+   - Additional constraint: if both are present, `value_max > value_min`.
 <p>&nbsp;</p>
+
+>[!CAUTION]
+> A set of triggers ensures that the **ResultType** is populated in accordance with the rules described above, **preventing the insertion or update of records** that do not comply with those rules.
+
+## Phenomenon-time synchronization (`observation`)
+
+**When they run:** `AFTER INSERT` / `AFTER UPDATE` / `AFTER DELETE` on the **`observation`** table.
+
+**What they do:** whenever an observation is inserted, updated, or deleted, a set of triggers automatically recalculates the phenomenon time window of the related **`datastream`**, deriving it exclusively from the timestamps stored in the **`observation`** table. In particular:
+- `datastream.phenomenontime_start = MIN(observation.phenomenontime_start)` across all related observations;
+- `datastream.phenomenontime_end   = MAX(COALESCE(observation.phenomenontime_end, observation.phenomenontime_start))` across all related observations.
+
+In this way, the `datastream` always reflects the **earliest** phenomenon start time and the **latest** phenomenon end time, as computed directly from the rows in the `observation` table.
+
+**Outcome of the checks:** no application-level errors are raised; these triggers do not block operations and are solely responsible for **keeping the temporal fields of the `datastream` in sync** with the values stored in `observation`.
+
+> [!NOTE]
+> this mechanism is **fully automated**. No manual intervention is required, as the system transparently handles the **synchronisation of temporal attributes** based on the current set of observations.
+
 
 <p>
   <img src="../assets/datastream.svg"
@@ -16,6 +74,7 @@ A Datastream groups a collection of Observations into a time series measuring th
 
 <br clear="all">
 <p>&nbsp;</p>
+
 
 ## Table: `datastream`
 
@@ -59,6 +118,8 @@ Although GUID is not mandatory at the schema level (it is not declared NOT NULL)
 
 Any foreign keys (FK) from other tables reference this table’s GUID field rather than the id field, ensuring stable and interoperable references across datasets and database instances.
 
+> [!NOTE]
+> **GUID management** is handled by database triggers, which ensure their automatic generation at the time of record insertion, **without any user involvement**.
 
 ### Relationships (as child)
 - `datastream.guid_soilderivedobject` → `soilderivedobject.guid` (**ON UPDATE** CASCADE, **ON DELETE** CASCADE)
@@ -168,117 +229,6 @@ For every trigger you will find:
 
 **If the check fails:** The corresponding type-specific message is raised and the statement aborts.
 
-#### Phenomenon-time synchronization (`observation_ai/au/ad_recalc_ds_times`)
-**When they run:** AFTER INSERT / AFTER UPDATE / AFTER DELETE on `observation`
-
-**What they do:** Recompute the datastream’s phenomenon time window by scanning all observations:
-- `phenomenontime_start = MIN(observation.phenomenontime_start)`
-- `phenomenontime_end = MAX(COALESCE(observation.phenomenontime_end, observation.phenomenontime_start))`
-
-**If the check passes:** No error; times are updated transparently.
-
-**If the check fails:** No failure path — these triggers just keep times in sync.
-
-### Rules Applied to Fields Describing ResultType
-The JSON object `resultType` (SWE-Common AbstractDataComponent), which represents the formal description of the structure of the `result` attribute of observations in a Datastream, is managed by decomposing its fields within the `datastream` table. This approach enforces specific rules to ensure data consistency based on the type of result.
-
-To simplify management, it has been defined that each Datastream can have only one result type (one-to-one relationship), avoiding the complexity of a one-to-many relationship as in OGC models. This choice allows mapping the fields directly into the `datastream` table.
-
-Specifically, the fields **Label** and **Definition** are not duplicated in the `datastream` table because they are already defined in the `ObservedProperty` entity. Both are retrieved through the foreign key `idobservedproperty` present in `datastream`:
-- `label` corresponds to the `name` field of `ObservedProperty`.
-- `definition` corresponds to the `definition` field of `ObservedProperty`.
-
-Since both `idobservedproperty` in `datastream` and the fields `name` and `definition` in `ObservedProperty` are mandatory, no data loss occurs, and it is always possible to correctly reconstruct the JSON `resultType` object.
-
-### Allowed Values of ResultType are: (listed constraints of each Type)
-1. **type = Quantity**
-   - Required: `iduom` (unit of measure).
-   - Forbidden: `codespace`.
-   - Optional: `value_min` and `value_max`.
-   - Additional constraint: if both are present, `value_max > value_min`.
-
-2. **type = Category**
-   - Forbidden: `iduom`, `value_min`, and `value_max`.
-   - Required: `codespace`.
-
-3. **type = Boolean**
-   - Forbidden: `iduom`, `codespace`, `value_min`, `value_max`.
-
-4. **type = Text**
-   - Forbidden: `iduom`, `codespace`, `value_min`, `value_max`.
-
-5. **type = Count**
-   - Forbidden: `iduom`, `codespace`.
-   - Optional: `value_min` and `value_max`.
-   - Additional constraint: if both are present, `value_max > value_min`.
 
 
 
-##  How to Populate the `codelist` Table for Codespace Management
-
-This document provides technical guidelines for correctly populating the `codelist` table in a **GeoPackage/SQLite database**.  
-Proper population of this table ensures that **triggers** defined in the GeoPackage work as intended and that codespaces are managed consistently.
-
-### Why Is This Important?
-
-The `codelist` table contains all **INSPIRE code lists** required to manage many tables in the GeoPackage.  
-In this context, it is also used to store **codespaces** and their corresponding values.
-
-The table will include:
-- **Codespace definitions** (e.g., `coatingNatureValueCode`)
-- **Codespace elements** (e.g., `…-C`, `…-CC`, etc.)
-
->**Rule:** Always insert the **codespace list first** (top-level), then its **elements**.
-
-
-## Workflow Overview
-
-### Step 1 — Insert the Codespace List (Top-Level)
-
-Each codespace list requires:
-- `id`: **A unique URI or key for the list**
-- `label`: A human-readable name for the list
-- `collection`: Always set to **`'Category'`**
-
-**Example:**
-```sql
-INSERT INTO codelist (id, label, collection)
-VALUES ('http://w3id.org/glosis/model/codelists/coatingNatureValueCode',
-        'coatingNatureValueCode',
-        'Category');
-```
-
-### Step 2 — Insert the Codespace Elements
-
-For each element in the codespace:
-- `id`: A unique URI or key for the element (e.g., …-C, …-CC)
-- `label`: A descriptive label for the element
-- `collection`: **The id of the codespace list created in Step 1**
-
-**Example:**
-```sql
-INSERT INTO codelist (id, label, collection) 
-VALUES('http://w3id.org/glosis/model/codelists/coatingNatureValueCode-C',  
-	   'Clay',                
-	   'http://w3id.org/glosis/model/codelists/coatingNatureValueCode'),
-INSERT INTO "codelist" (id, label, collection) 
-VALUES ('http://w3id.org/glosis/model/codelists/coatingNatureValueCode-CC', 
-		'Calcium carbonate', 
-		'http://w3id.org/glosis/model/codelists/coatingNatureValueCode'),
-INSERT INTO "codelist" (id, label, collection) 
-VALUES ('http://w3id.org/glosis/model/codelists/coatingNatureValueCode-CH', 
-		'Clay and humus (organic matter)', 
-		'http://w3id.org/glosis/model/codelists/coatingNatureValueCode');
-```
-### Resulting Table Structure
-After executing the above statements, the codelist table will look like this:
-
-| id | label | collection |
-|------|------|-----------|
-| http://w3id.org/glosis/model/codelists/coatingNatureValueCode | coatingNatureValueCode| Category |
-| http://w3id.org/glosis/model/codelists/coatingNatureValueCode-C | Clay| http://w3id.org/glosis/model/codelists/coatingNatureValueCode |
-| http://w3id.org/glosis/model/codelists/coatingNatureValueCode-CC | Calcium carbonate| http://w3id.org/glosis/model/codelists/coatingNatureValueCode |
-| http://w3id.org/glosis/model/codelists/coatingNatureValueCode-CH | Clay and humus (organic matter)| http://w3id.org/glosis/model/codelists/coatingNatureValueCode |
-
----
-<a id="derivedprofilepresenceinsoilbody"></a>
