@@ -10,7 +10,7 @@ D2.8.III.3.
 https://inspire-mif.github.io/technical-guidelines/data/so/dataspecification_so.pdf
 
 
-## Observed vs Derived Soil Profile (INSPIRE) — Introduction
+## Observed vs Derived Soil Profile (INSPIRE)
 
 In the INSPIRE *Soil* data model, an **Observed Soil Profile** represents a soil profile **found at a specific location**, typically documented from a trial pit or a borehole. A **Derived Soil Profile** is **non point‑located** and acts as a **reference profile** for a specific soil type over a broader geographic area. These concepts are defined in the INSPIRE Feature Concept Dictionary and described in the Technical Guidelines for the Soil theme.[^2][^3][^1]
 
