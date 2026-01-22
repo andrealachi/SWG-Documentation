@@ -1,9 +1,9 @@
 
-# INSPIRE Soil GeoPackage Template — Data Loading & Modelling Guide
+# SOILWISE Soil GeoPackage Template — Data Loading & Modelling Guide
 
 **Goal.** Provide a complete, deterministic **loading order** and **data entry rules** to populate the database that implements the INSPIRE Soil application schema. The guide covers the logical flow **Site → Plot → Profile → Elements**, the **Observed vs Derived** distinction, **Horizon vs Layer** behaviour, **classifications**, **associations**, and **O&M (datastream/observation)** integration. References to the INSPIRE Technical Guidelines and Feature Concept Dictionary are provided as footnotes.[^2][^3][^4][^5]
 
----
+
 
 ## 1) Concepts at a glance
 
@@ -20,7 +20,7 @@
 
 (See official INSPIRE definitions.)[^4][^5]
 
----
+
 
 ## 2) Conventions & prerequisites
 
@@ -29,7 +29,7 @@
 - **Temporal rules.** Many tables implement: `beginlifespanversion = now()` on insert; `beginlifespanversion` auto‑update upon relevant changes; checks on `validfrom ≤ validto` and `beginlifespanversion < endlifespanversion`.
 - **GUIDs.** If `guid` is NULL on insert, the DB generates a UUIDv4‑like lowercase value; updates to `guid` are blocked by triggers.
 
----
+
 
 ## 3) Recommended loading order (deterministic)
 
@@ -49,7 +49,7 @@
 
 > **Why this order?** Each step unlocks the next (FKs and triggers). For instance: Plots need Sites; Observed Profiles need Plots; Derived–Observed links need both sides; Elements need Profiles; Notations and WRB need both codelists and target types; Datastreams require master data and FOI; Observations require Datastreams and, for Category, a codespace collection.
 
----
+
 
 ## 4) Table‑specific rules (summary)
 
@@ -146,7 +146,7 @@
   - **Text**: `result_text` only.
 - **Datastream range maintenance**: `datastream.phenomenontime_*` is recalculated from member observations on insert/update/delete.
 
----
+
 
 ## 5) Troubleshooting checklist
 
@@ -159,7 +159,7 @@
 - **`observation` fails** → Shape/type mismatch, bounds violation, or Category value not in the `codespace` collection.
 - **Unexpected FOI → thing mapping** → Review the resolution rules in §4.12 (Observed Profile & some ProfileElements resolve to **SoilSite**).
 
----
+
 
 ## References
 
