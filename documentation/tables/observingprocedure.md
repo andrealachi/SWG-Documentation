@@ -1,5 +1,8 @@
 # Observing Procedure
 
+## Definition
+
+> *An **Observing Procedure** describes the method, process, or operational setup used to produce an observation. It defines *how* an observation is carried out. By providing explicit information on the observation method, the observing procedure ensures traceability, interpretability, and interoperability of observation results.*
 <p>&nbsp;</p>
 
 <p>
@@ -38,6 +41,9 @@ Although GUID is not mandatory at the schema level (it is not declared NOT NULL)
 - **observingprocedureguidupdate (UPDATE)** trigger: prevents any modification of GUID after insertion, making it immutable (effectively behaving as a stable key).  
 
 Any foreign keys (FK) from other tables reference this table’s GUID field rather than the id field, ensuring stable and interoperable references across datasets and database instances.
+
+> [!NOTE]
+> **GUID management** is handled by database triggers, which ensure their automatic generation at the time of record insertion, **without any user involvement**.
 
 
 ### Relationships (as child)
