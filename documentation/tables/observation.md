@@ -60,6 +60,9 @@ To maintain in `datastream` a consistent summary of the temporal coverage of its
 
 To support these recurring aggregations, recommended indexes are defined:
 - `idx_observation_ds_times (iddatastream, phenomenontime_start, phenomenontime_end)`
+  
+>[!WARNING]
+> Records that do not comply with the defined constraints **shall be rejected by the system and shall not be persisted** in the GeoPackage.
 
 <p>&nbsp;</p>
 
