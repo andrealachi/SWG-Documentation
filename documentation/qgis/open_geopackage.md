@@ -34,28 +34,16 @@ Search the file system for the Geopackage
 file you want to use.
 
 Inside the newly connected file, ③ you will
-find the **`PRJ_SO`**project. ④
+find the `PRJ_SO` project. ④
 </p>
 
 <br clear="all"><br><br>
 
-From a technical standpoint, the QGIS project is **stored directly inside the GeoPackage** in the **`qgis_projects`** table; each project is saved as **textual content** representing a **QGZ archive** (a zipped package) which, in turn, contains the **`.qgs` project file in XML format** [^2][^3]. This ensures that the project and the data live in the **same `.gpkg` file**, preserving styles, layouts, views, and settings as defined by SoilWise.
-
-In the Browser Tab, right-click on the
-Geopackage icon ① and click on “New
-Connection”. ②
-
-Search the file system for the Geopackage
-file you want to use.
-
-Inside the newly connected file, ③ you will
-find the **`PRJ_SO`**project. ④
 
 Double-click on it, and the project will open.
 
 
 
----
 
 [^1]: **SoilWise – project website** (Horizon Europe – Mission Soil).  
 https://soilwise-he.eu/
