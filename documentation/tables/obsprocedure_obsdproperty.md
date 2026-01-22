@@ -1,5 +1,19 @@
 # Observed Procedure - Observed Property
 
+## Definition
+
+> *The **`obsprocedure_obsdproperty`** table defines a **many‑to‑many relationship** between observing procedures and observed properties, linking the **`observingprocedure`** and **`observedproperty`** tables. This relationship allows a single observing procedure to be associated with one or more observed properties and, conversely, enables the same observed property to be used by multiple observing procedures.*
+
+
+## Integrity rule used by `datastream`
+
+Only **procedure–property pairs** that are explicitly registered in **`obsprocedure_obsdproperty`** **shall** be persisted in the **`datastream`** table (`guid_observingprocedure`, `guid_observedproperty`).  
+This constraint **shall be enforced** by triggers that verify pair membership **prior to** INSERT and UPDATE operations on `datastream`.  
+If the specified pair **is not present** in `obsprocedure_obsdproperty`, the operation **shall be rejected** and the record **shall not be saved**.  
+Accordingly, each `datastream` **shall declare only** Observed Procedure - Observed Property combinations that are pre‑defined in the relational catalogue.
+
+
+
 <p>&nbsp;</p>
 
 <p>
@@ -43,5 +57,3 @@
 ### Triggers
 - None
 
----
-<a id="obsprocedure_sensor"></a>
