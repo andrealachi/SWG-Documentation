@@ -1,5 +1,12 @@
 # Other Horizon - Profile Element
 
+## Definition
+
+> *The **`otherhorizon_profileelement`** table defines a many-to-many relationship between soil profile elements and alternative horizon notations, linking the **`profileelement`** and **`otherhorizonnotationtype`** tables. This relationship allows a single profile element (horizon) to be associated with one or more additional horizon notation types and, conversely, enables the same horizon notation to be applied to multiple profile elements.*
+
+> [!NOTE]
+> Before assigning alternative horizon notations to a soil profile element, the relevant **`otherhorizonnotationtype`** entries must be defined.
+
 <p>&nbsp;</p>
 
 <p>
@@ -61,5 +68,4 @@ For every trigger you will find:
 
 **If the check fails:** Aborts with: `Table otherhorizon_profileelement: The associated profileelement must have profileelementtype = 0 (HORIZON)`.
 
----
-<a id="otherhorizonnotationtype"></a>
+
