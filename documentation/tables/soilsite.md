@@ -67,7 +67,7 @@ The **`soilinves­tigationpurpose`** field is a **coded field** (*codelist-based
 #### Codelist Definition
 
 The complete list of allowed codes is stored in the **codelist table**.  
-The associated [documentation](codelist.md#table-soilsite), provides a detailed description of:
+The associated [documentation](codelist.md#soilsite), provides a detailed description of:
 
 - which codes are available (codelist URL),
 - the database tables to which each codelist applies,
