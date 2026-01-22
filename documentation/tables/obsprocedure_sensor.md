@@ -1,5 +1,9 @@
 # Observed Procedure - Sensor
 
+## Definition
+
+> *The **`obsprocedure_sensor`** table defines a many-to-many relationship between observing procedures and sensors, linking the **`observingprocedure`** and **`sensor`** tables. This relationship allows a single observing procedure to be associated with one or more sensors and, conversely, enables the same sensor to participate in multiple observing procedures.*
+> 
 <p>&nbsp;</p>
 
 <p>
@@ -24,7 +28,7 @@
 |------|------|-------------|-------------|
 | `id` | `INTEGER` | PRIMARY KEY | A unique, read-only attribute that serves as an identifier for the entity. |
 | `guid_observingprocedure` | `TEXT` | NOT NULL | Foreign key to the  Procedure table, guid field. |
-| `guid_sensor` | `TEXT` | NOT NULL |  |
+| `guid_sensor` | `TEXT` | NOT NULL | Foreign key to the Sensor table, guid field. |
 
 ### Relationships (as child)
 - `obsprocedure_sensor.guid_sensor` → `sensor.guid` (**ON UPDATE** CASCADE, **ON DELETE** RESTRICT)
@@ -43,5 +47,3 @@
 ### Triggers
 - None
 
----
-<a id="otherhorizon_profileelement"></a>
