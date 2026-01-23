@@ -203,17 +203,8 @@ Codelists used for the `wrbreferencesoilgroup` field depending on the selected w
 
 ### Table: otherhorizonnotationtype
 
-
-## INTERNAL to do
-
 **Field:** `horizonnotation`  
 **Codelist:** `OtherHorizonNotationTypeValue`  
-**Codelist Authority:** ORBL‑SOIL  
-**Codelist URL:** https://obrl-soil.github.io/wrbsoil2022/chapter-03.html#sec-diagh
-
-
-**Field:** `diagnostichorizon`  
-**Codelist:** `WRBdiagnostichorizon`  
 **Codelist Authority:** ORBL‑SOIL  
 **Codelist URL:** https://obrl-soil.github.io/wrbsoil2022/chapter-03.html#sec-diagh
 
