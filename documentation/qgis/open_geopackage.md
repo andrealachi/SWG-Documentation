@@ -48,6 +48,10 @@ Double-click on it, and the project will open.
 > Given the system’s complexity, it is **strongly recommended to always use the complete project** to maintain data integrity.
 
 
+> [!WARNING]
+>If the GeoPackage file has been renamed, the project will not load correctly.  
+>To resolve this issue, please refer to the solutions described in the documentation How to Handle Issues Caused by Renaming the Soilwise GeoPackage
+
 
 [^1]: **SoilWise – project website** (Horizon Europe – Mission Soil).  
 https://soilwise-he.eu/
