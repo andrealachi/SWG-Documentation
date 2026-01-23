@@ -36,7 +36,6 @@ https://inspire-mif.github.io/technical-guidelines/data/so/dataspecification_so.
 | `guid` | `TEXT` |  | Universally unique identifier. |
 | `horizonnotation` | `TEXT` | NOT NULL | Notation characterizing the soil horizon according to a specified classification system. |
 | `isoriginalclassification` | `BOOLEAN` | NOT NULL, DEFAULT 0 | Boolean value to indicate whether the specified horizon notation system was the original notation system to describe the horizon. |
-| `otherhorizonnotation` | `TEXT` |  |  |
 
 
 ### Table Identifiers
