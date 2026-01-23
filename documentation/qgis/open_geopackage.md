@@ -49,8 +49,8 @@ Double-click on it, and the project will open.
 
 
 > [!WARNING]
->If the GeoPackage file has been renamed, the project will not load correctly.  
->To resolve this issue, please refer to the solutions described in the documentation How to Handle Issues Caused by Renaming the Soilwise GeoPackage
+>If the GeoPackage **file has been renamed**, the project will not load correctly.  
+>To resolve this issue, please refer to the solutions described in the documentation [How to Handle Issues Caused by Renaming the Soilwise GeoPackage](./rename_geopackage.md) 
 
 
 [^1]: **SoilWise – project website** (Horizon Europe – Mission Soil).  
