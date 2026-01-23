@@ -1,5 +1,5 @@
 
-# Open Geopackage Soilwise in QGis
+# Open the Soilwise Geopackage in QGIS
 
 ## Introduction
 
