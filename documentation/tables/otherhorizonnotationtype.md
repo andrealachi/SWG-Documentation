@@ -78,7 +78,7 @@ The semantic and syntactic validation of the inserted values is enforced at the 
 >During data entry via the **QGIS interface**, users are supported by **dropdown menus** that display only the valid codes for the selected field.
 
 > [!NOTE]
->This mechanism reduces the risk of data entry errors and guarantees alignment with the constraints imposed by the INSPIRE codelists.
+>This mechanism **reduces the risk of data entry errors** and guarantees alignment with the constraints imposed by the INSPIRE codelists.
 
 ### Relationships (as child)
 - None
