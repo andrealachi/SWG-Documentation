@@ -44,8 +44,9 @@ Double-click on it, and the project will open.
 > [!IMPORTANT]
 > To ensure proper database functionality, always **load the full QGIS project associated with the GeoPackage**.  
 > Loading only a subset of layers may prevent records from being saved: QGIS cannot display or manage related objects if their corresponding layers are not loaded, and due to **relationships and internal database triggers**, this can lead to errors or failed save operations.  
->  
-> Given the system’s complexity, it is **strongly recommended to always use the complete project** to maintain data integrity.
+
+> [!CAUTION]
+>  Given the system’s complexity, it is **strongly recommended to always use the complete project** to maintain data integrity.
 
 
 > [!WARNING]
