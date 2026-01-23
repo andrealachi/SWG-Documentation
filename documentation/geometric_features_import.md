@@ -78,15 +78,30 @@ QGIS allows the import of geometries from various formats, such as CSV, Shapefil
 
 - Click the **Open Data Source Manager** button <mark>(1)</mark> in the QGIS toolbar.
 
-![img 01](./assets/geom_01.webp)
+<p>
+  <img src="./assets/geom_01.webp"
+       alt="Fig.1" align="left" width="500">
+  In the window that opens, you can choose from various data sources to import.<br>
+  In our example, select <strong>CSV</strong> ② as the source format and proceed with importing the desired file ③.<br>
+  Check the <strong>geometry type</strong> (e.g., WKT or coordinates separated into latitude/longitude) ④.<br>
+  Set the correct <strong>Coordinate Reference System (CRS)</strong> ⑤.<br>
+  Click <strong>Add</strong> ⑥ to create the layer (in this case, a point layer) in the project.
+</p>
+``
 
-- In the window that opens, you can choose from various data sources to import.  
-- In our example, select **CSV** <mark>(2)</mark> as the source format and proceed with importing the desired file <mark>(3)</mark>.  
-- Check the **geometry type** (e.g., WKT or coordinates separated into latitude/longitude) <mark>(4)</mark>.  
-- Set the correct **Coordinate Reference System (CRS)** <mark>(5)</mark>.  
-- Click **Add** <mark>(6)</mark> to create the layer (in this case, a point layer) in the project.
+</p>
 
-![img 02](./assets/geom_02.webp)
+<br clear="all"><br>
+
+
+<p>
+  <img src="../assets/geom_02.webp"
+       alt="Fig.1" align="left" width="500">
+
+</p>
+
+<br clear="all"><br>
+
 
 > [!WARNING]
 > For the copy–paste operation to work correctly, the **source layer** (from which geometries are copied) must have the **same fields** (name and data type) as the **destination layer**, or at least match the required fields.  
@@ -97,26 +112,37 @@ QGIS allows the import of geometries from various formats, such as CSV, Shapefil
 
 ### 2) Copying geometries
 
-- Import the newly created layer (if it is not already present in the project).  
-- Right‑click the layer name <mark>(7)</mark> and, from the context menu, select **Open Attribute Table** <mark>(8)</mark> to view its data.
 
-![img 03](./assets/geom_03.webp)
+<p>
+  <img src="./assets/geom_03.webp"
+       alt="Fig.1" align="left" width="500">
+- Import the newly created layer (if it is not already present in the project).  <br>
+- Right‑click the layer name <mark>(7)</mark> and, from the context menu, select **Open Attribute Table** <mark>(8)</mark> to view its data.<br>
+</p>
 
+<br clear="all"><br>
+
+
+<p>
+  <img src="./assets/geom_04.webp"
+       alt="Fig.1" align="left" width="500">
 - **Select all** geometries <mark>(9)</mark>.  
 - **Copy** the geometries <mark>(10)</mark>.
-
-![img 04](./assets/geom_04.webp)
-
+</p>
+<br clear="all"><br>
 
 ### 3) Pasting geometries
 
+<p>
+  <img src="./assets/geom_05.webp"
+       alt="Fig.1" align="left" width="500">
 - Enable **editing mode** on the destination GeoPackage layer using the **Toggle Editing** button <mark>(11)</mark>.  
 - **Paste** the geometries <mark>(12)</mark>.  
 - **Save** the changes.
+</p>
 
-![img 05](./assets/geom_05.webp)
+<br clear="all"><br>
 
----
 
 ## Method 3 — QGIS: import via Plugin (simplified workflow)
 
@@ -130,12 +156,27 @@ It is called **AppendFeaturesToLayer** and is available at:
 The plugin includes two geoprocessing tools:
 
 - **ETL_LOAD** — allows easy matching of the source table with the destination geometry table.
-  
-![img 06](./assets/geom_06.webp)
+
+  <p>
+  <img src="./assets/geom_06.webp"
+       alt="Fig.1" align="left" width="500">
+
+</p>
+
+<br clear="all"><br>
+
 
 - **Append Feature To Layer** — handles the copy–paste operation with additional advanced options.
-  
-![img 07](./assets/geom_07.webp)
+
+  <p>
+  <img src="./assets/geom_07.webp"
+       alt="Fig.1" align="left" width="500">
+
+</p>
+
+<br clear="all"><br>
+
+
 
 ---
 
