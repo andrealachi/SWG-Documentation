@@ -1,5 +1,5 @@
 
-# How to Rename the Soilwise GeoPackage
+# How to Handle Issues Caused by Renaming the Soilwise GeoPackage
 
 
 When a QGIS project is saved inside a GeoPackage, it stores **hard‑coded paths and references to the file using its exact filename**. These references are not dynamic—QGIS does not automatically update them if the file name changes.
