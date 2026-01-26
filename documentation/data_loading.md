@@ -1,7 +1,7 @@
 
 # SOILWISE Soil GeoPackage Template — Data Loading & Modelling Guide
 
-**Goal.** Provide a complete, deterministic **loading order** and **data entry rules** to populate the database that implements the INSPIRE Soil application schema. The guide covers the logical flow **Site → Plot → Profile → Elements**, the **Observed vs Derived** distinction, **Horizon vs Layer** behaviour, **classifications**, **associations**, and **O&M (datastream/observation)** integration. References to the INSPIRE Technical Guidelines and Feature Concept Dictionary are provided as footnotes.[^2][^3][^4][^5]
+**Goal.** Provide a complete, deterministic **loading order** and **data entry rules** to populate the database that implements the INSPIRE Soil application schema. The guide covers the logical flow **Site → Plot → Profile → Elements**, the **Observed vs Derived** distinction, **Horizon vs Layer** behaviour, **classifications**, **associations**, and **STA2 (datastream/observation)** integration. References to the INSPIRE Technical Guidelines and Feature Concept Dictionary are provided as footnotes.[^2][^3][^4][^5]
 
 
 
@@ -42,7 +42,7 @@
 7. **`derivedprofilepresenceinsoilbody`** — assign Derived profiles with shares (≤ 100 per soilbody)  
 8. **`profileelement`** (then, for Horizons only: `faohorizonnotationtype`, `otherhorizonnotationtype` + `otherhorizon_profileelement`)  
 9. **WRB qualifiers:** `wrbqualifiergrouptype`, then `wrbqualifiergroup_profile`  
-10. **O&M master data:** `observedproperty`, `sensor`, `observingprocedure`, `obsprocedure_obsdproperty`, `obsprocedure_sensor`  
+10. **STA2 master data:** `observedproperty`, `sensor`, `observingprocedure`, `obsprocedure_obsdproperty`, `obsprocedure_sensor`  
 11. **`datastream`** — set the FOI; triggers resolve and/or create the target `thing`  
 12. **`observation`** — value‑level checks per `datastream.type`  
 13. **(Optional)** `soilderivedobject` and its relations: `isbasedonobservedsoilprofile`, `isbasedonsoilbody`, `isbasedonsoilderivedobject`
