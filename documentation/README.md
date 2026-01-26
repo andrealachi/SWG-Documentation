@@ -98,19 +98,6 @@ The translation into GeoPackage follows widely adopted relational design rules, 
 
 
 
-## Implementation considerations (high‑level)
-
-- **Primary keys and references**: use stable identifiers (UUID/URI where applicable) for *Site/Plot/Profile/ProfileElement* and observational tables (*Observation/Datastream*); enforce **FK** according to UML associations.[^5][^15]
-
-- **Geometries**: store *Site/Plot* geometries using GeoPackage geometry columns and declare CRS per OGC rules; *Profile/ProfileElement* may use derived/support geometries or be spatially referenced via their parent plot.[^3][^4]
-
-- **Controlled vocabularies**: manage value domains through code‑list tables with **URI/notation/label/authority/version**, as per INSPIRE patterns, to keep traceability and semantic clarity across datasets and tools.[^5]
-
-
-
-
-
-
 [^1]: **SoilWise – project website** (Horizon Europe – Mission Soil).  
 https://soilwise-he.eu/
 
@@ -156,9 +143,8 @@ https://docs.qfield.org/how-to/project-setup/attributes-form/
 [^15]: **INSPIRE UML models — Approved (HTML view).**  
 https://inspire-mif.github.io/uml-models/approved/
 
-
-## Data Loading ([./data_loading.md](./data_loading.md)) — the key document
-`data_loading.md` is the practical guide for **populating (loading)** the GeoPackage.  
+## Data Loading & Modelling Guide
+[Data Loading & Modelling Guide](./data_loading.md) document  is the practical guide for **populating (loading)** the GeoPackage.  
 It explains, clearly and in sequence:
 - the **order** in which datasets must be loaded and their **dependencies**;
 - the **constraints** to respect (e.g., required fields, minimum cross-table consistency);
@@ -178,7 +164,7 @@ The Forms are designed to guide users in filling fields correctly:
 - **Sections** that group the most used fields and hide technical fields.
 - **Actions** (where available) for automatic completion or quick checks.
 
->>[!WARNING]
+> [!WARNING]
 > QGIS version **3.44.0 – Solothurn** or higher is required.
 
 
@@ -219,16 +205,16 @@ For each table, you will find its **purpose**, **key fields**, any **geometry**,
 
 
 
-## Relationship Summary ([./relationship_summary.md](./relationship_summary.md))
-This document helps you understand **how tables are connected**.  
+## Relationship Summary 
+[This document](./relationship_summary.md) helps you understand **how tables are connected**.  
 It highlights the most relevant links and suggests when tables should be used together—useful to navigate between **core entities** and **supporting tables**.
 
 
-## Cascade Summary ([./cascade_summary.md](./cascade_summary.md))
-This document explains how the system manages the **consequences** of updates and deletions across related tables.  
+## Cascade Summary 
+[This document](./cascade_summary.md) explains how the system manages the **consequences** of updates and deletions across related tables.  
 It clarifies what happens to **related records** and how to keep data **consistent** when modifying “parent” or “child” data.
 
 
-## Geometric Feature Import ([./geometric_feature_import.md](./geometric_feature_import.md))
-If some tables contain **geometries** (points, lines, polygons), this document explains **how they are imported and managed**.  
+## Geometric Feature Import
+If some tables contain **geometries** (points, lines, polygons), [this document](./geometric_feature_import.md) explains **how they are imported and managed**.  
 It indicates what to expect in terms of **geometry type** and **spatial reference**, and how to keep geometries **usable** for analysis.
