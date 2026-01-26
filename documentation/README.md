@@ -155,15 +155,37 @@ https://docs.qfield.org/how-to/project-setup/attributes-form/
 
 [^15]: **INSPIRE UML models — Approved (HTML view).**  
 https://inspire-mif.github.io/uml-models/approved/
-``
 
 
+## Data Loading ([./data_loading.md](./data_loading.md)) — the key document
+`data_loading.md` is the practical guide for **populating (loading)** the GeoPackage.  
+It explains, clearly and in sequence:
+- the **order** in which datasets must be loaded and their **dependencies**;
+- the **constraints** to respect (e.g., required fields, minimum cross-table consistency);
+- what to **verify before/after loading** to ensure a correct result.
+
+>[!IMPORTANT]
+> In short: if you need to **populate or update** the GeoPackage, **start here**.
+
+## QGIS Manual
+
+This chapter is a practical guide to using QGIS to **read from and write to** the database (GeoPackage), supported by **custom Forms** that simplify data entry and updates.
+
+### Custom Forms
+The Forms are designed to guide users in filling fields correctly:
+- Guided fields with **drop-down menus**, **default values**, and **contextual help**.
+- **Validation checks** to flag incomplete forms or inconsistent values.
+- **Sections** that group the most used fields and hide technical fields.
+- **Actions** (where available) for automatic completion or quick checks.
+
+>>[!WARNING]
+> QGIS version **3.44.0 – Solothurn** or higher is required.
 
 
-# Database Tables
+## Database Tables
 
-
-## Index
+This chapter provides the **detailed description of all database tables**.  
+For each table, you will find its **purpose**, **key fields**, any **geometry**, the most relevant **relationships**, and **usage notes**.
 
 - [codelist](./tables/codelist.md)
 - [datastream](./tables/datastream.md)
@@ -196,3 +218,17 @@ https://inspire-mif.github.io/uml-models/approved/
 
 
 
+
+## Relationship Summary ([./relationship_summary.md](./relationship_summary.md))
+This document helps you understand **how tables are connected**.  
+It highlights the most relevant links and suggests when tables should be used together—useful to navigate between **core entities** and **supporting tables**.
+
+
+## Cascade Summary ([./cascade_summary.md](./cascade_summary.md))
+This document explains how the system manages the **consequences** of updates and deletions across related tables.  
+It clarifies what happens to **related records** and how to keep data **consistent** when modifying “parent” or “child” data.
+
+
+## Geometric Feature Import ([./geometric_feature_import.md](./geometric_feature_import.md))
+If some tables contain **geometries** (points, lines, polygons), this document explains **how they are imported and managed**.  
+It indicates what to expect in terms of **geometry type** and **spatial reference**, and how to keep geometries **usable** for analysis.
