@@ -114,7 +114,7 @@
   - `isbasedonsoilbody`; 
   - `isbasedonsoilderivedobject` (hierarchies of derived objects).
 
-### 4.11 O&M master data (ISO 19156 alignment)
+### 4.11 STA2 master data
 - **`observedproperty`**: `name`; `definition` must be a well‑formed URI (checked). Optional JSON `properties`.
 - **`sensor`**: `name`; if `metadata` is set, `encodingtype` must be `PDF` or `HTML`; otherwise both NULL.
 - **`observingprocedure`**: `name`; optional `definition` URI.
@@ -127,7 +127,7 @@
   - **Quantity**: requires `code_unitofmeasure` and forbids `codespace` and categorical bounds;
   - **Category**: requires `codespace` (well‑formed URI and a `codelist.collection`), forbids units and numeric bounds;
   - **Boolean/Count/Text**: shape and bounds rules apply at `observation` level (see below).
-- **FOI multiplicity**: exactly **0 or 1** among `guid_soilsite`, `guid_soilprofile`, `guid_profileelement`, `guid_soilderivedobject`.
+- **FOI multiplicity**: exactly **1** among `guid_soilsite`, `guid_soilprofile`, `guid_profileelement`, `guid_soilderivedobject`.
 - **Auto‑resolve to `thing`** (triggered):
   - FOI = **SoilSite** → `guid_thing = SoilSite.guid`;
   - FOI = **SoilProfile (Derived)** → `guid_thing = SoilProfile.guid`;
