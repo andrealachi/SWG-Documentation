@@ -1,7 +1,6 @@
-<h1 align="center">Soilwise GeoPackage</h1>
+<h1 align="center">QGIS</h1>
 
 
-![Soilvise poster](assets/soilvise_poster.webp)
 
 # Introduction to the **Soilwise** GeoPackage (SQLite)
 
