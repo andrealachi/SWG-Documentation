@@ -56,7 +56,7 @@ Selection tools ④ ⑤ determine which records can be opened or edited through 
 >Selection is an essential part of the editing workflow, as it controls which records are loaded into the form.
 
 
->[!NOTE]
+>[!TIP]
 >For more details, refer to the official QGIS [documentation](https://docs.qgis.org/3.44/en/docs/user_manual/working_with_vector/attribute_table.html)
 
 
