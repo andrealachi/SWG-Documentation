@@ -28,4 +28,23 @@ The toggle button remains in the <strong>checked (pressed) state</strong> ⑤ �
 </p>
 <br clear="all"><br>
 
+## Editing Operations
+When editing mode is enabled, the form allows you to:
 
+
+### Update existing attribute values
+In QGIS, updating attribute values is done directly through the attribute form, which can be opened by selecting a feature and viewing its properties. The form allows modification of single or multiple fields, applying controls, dedicated widgets, and constraints defined in the layer’s configuration.
+
+### Add new records
+New records can be created using digitizing tools, which generate a new feature and automatically open the associated attribute form. For tables without geometry, new records are added directly through the form, with no geometric digitizing involved. The form allows filling in all fields defined by the data model, using widgets, default values, validation rules, and custom controls.
+
+### Delete features
+Deleting features in QGIS removes both the geometric element and its attributes. Once a feature is selected, it can be deleted using the **Delete Feature** tool <img src="../assets/deletel.webp">. This operation permanently removes the record from the dataset, ensuring it is no longer displayed or referenced in subsequent operations.
+
+> [!IMPORTANT]
+> These changes **are not written to disk immediately**.
+They remain in a temporary in‑memory edit buffer until you explicitly [save](./save_form.md).
+
+> [!NOTE]
+> When **deleting a record**, please be aware that the underlying database may enforce **cascade rules** that automatically remove or update related records in other tables. This can lead to additional, unintended deletions if the feature being removed participates in foreign‑key relationships or dependency chains.
+You can find the complete list of cascade rules applied in the database [here](../cascade_summary.md).
