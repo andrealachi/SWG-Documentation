@@ -1,14 +1,15 @@
 # Saving Edits in QGIS Forms
 
 ## Edit Buffer
-When a layer is put into editing mode, all operations performed through the form—such as inserting, updating, or deleting records—are **not written directly** to the data source.  
+When a layer is [put into editing mode](./edit_form.md) , all operations performed through the form—such as inserting, updating, or deleting records—are **not written directly** to the data source.  
 QGIS uses an **edit buffer**, an in‑memory structure that:
 
 - records every modification made by the user,  
 - allows local undo/redo during the editing session,  
 - isolates changes from the physical dataset until they are explicitly committed.
 
-The contents of the buffer are temporary: if the editing session ends without saving, the buffer is discarded.
+> [!WARNING]
+>The contents of the buffer are temporary: if the editing session ends without saving, the buffer is discarded.
 
 
 
@@ -23,6 +24,9 @@ During the commit:
 
 If validation succeeds, the buffer is cleared and the dataset is updated.
 
+> [!WARNING]
+>**Errors are displayed in a banner within the map canvas**. However, the banner may not always be visible when some panels are in a floating (undocked) state, which can partially cover or obscure the map canvas.
+Make sure to check the map canvas if error messages are not immediately visible.
 
 
 ## Rolling Back Changes
@@ -60,15 +64,5 @@ At the end of a successful commit:
 The dataset now reflects the final state of the editing session.
 
 
-
-## Edit mode
-After the **Toggle Editing Mode** button is clicked, the form enters **editing mode**.
-
-<p>
-  <img src="../assets/edit_01.webp"
-       alt="Fig.1" align="left" width="500">
-The toggle button remains in the <strong>checked (pressed) state</strong> ⑤ ⑥ to indicate that editing is enabled, and a <strong>pencil icon</strong> ⑦ appears in the <strong>Layers</strong>panel next to the layer currently being edited.
-</p>
-<br clear="all"><br>
 
 
