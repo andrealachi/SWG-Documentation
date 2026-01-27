@@ -1,13 +1,11 @@
 # Customized Attribute Forms in QGIS
 
-## Overview
 
 In QGIS, customized attribute forms allow full control over the layout and behavior of the user interface used for viewing, inserting, and editing attribute data.  
 Instead of relying on automatically generated forms, a clearer and more structured layout has been defined, enabling precise control over which fields are displayed, how they are grouped, and under which conditions they are visible.
 
 Each field has been associated with a specific **widget**, i.e., a control designed to facilitate data entry and reduce user errors.
 
----
 
 ## Available Widgets
 
@@ -22,7 +20,6 @@ The main widget types used include:
 
 These widgets allow the form to guide the user and enforce the data‑entry rules defined in the underlying data model.
 
----
 
 ## Purpose of Customized Forms
 
@@ -33,51 +30,35 @@ Customized forms are used to:
 - ensure consistency with the data model  
 - display enriched information (images, documents, related records)
 
-The goal is to provide a functional interface, more efficient and clearer than the default one, particularly suitable for complex datasets.
+>[!IMPORTANT]
+>The goal is to provide a functional interface, more efficient and clearer than the default one, particularly suitable for complex datasets.
 
----
 
 # Interface Elements Related to Forms
 
-## Record List Panel (Left Side)
 
-On the left side of the interface, a panel lists all the records belonging to the layer.  
-Selecting a record from this list displays its attribute content on the right-hand side, using the associated customized form.
+<p>
+  <img src="../assets/form_01.webp"
+       alt="Fig.1" align="left" width="500">
+On the left side of the interface, a panel ① lists all the records belonging to the layer.  
+Selecting a record from this list displays its attribute content on the right-hand side ②, using the associated customized form.
 
----
+The attribute toolbar provides two main viewing modes ③:
+<strong>Form View</strong>  Displays the attribute form for a single record at a time.
+<strong>Table View</strong> Shows the attributes in tabular mode, useful for multi-record inspection and quick selection operations.
 
-## “Form” and “Table” Toolbar Buttons
+Selection tools ④ ⑤ determine which records can be opened or edited through the form.  
+</p>
+<br clear="all"><br> 
 
-The attribute toolbar provides two main viewing modes:
 
-- **Form View**  
-  Displays the attribute form for a single record at a time.
+>[!NOTE]
+>Selection is an essential part of the editing workflow, as it controls which records are loaded into the form.
 
-- **Table View**  
-  Shows the attributes in tabular mode, useful for multi-record inspection and quick selection operations.
 
-These two modes correspond to the official QGIS Attribute Table viewing options.
+>[!NOTE]
+>For more details, refer to the official QGIS [documentation](https://docs.qgis.org/3.44/en/docs/user_manual/working_with_vector/attribute_table.html)
 
----
-
-## Selection Tools
-
-Selection tools determine which records can be opened or edited through the form.  
-The main selection options include:
-
-- **Select Feature** / **Select by Rectangle** / **Select by Polygon** / **Select by Freehand**  
-- **Select by Expression**  
-- **Filter Selected** / **Show Selected Features** (within the attribute table)
-
-Selection is an essential part of the editing workflow, as it controls which records are loaded into the form.
-
----
-
-## Additional Information
-
-For more details, refer to the official QGIS documentation:  
-https://docs.qgis.org/3.44/en/docs/user_manual/working_with_vector/attribute_table.html
-``
 
 
 
