@@ -22,7 +22,7 @@ This setup allows for faster and more complete editing of all elements that make
 After the **Toggle Editing Mode** button is clicked, the form enters **editing mode**.
 
 <p>
-  <img src="../assets/edit_01.webp"
+  <img src="../assets/edit_02.webp"
        alt="Fig.1" align="left" width="500">
 The toggle button remains in the <strong>checked (pressed) state</strong> ⑤ ⑥ to indicate that editing is enabled, and a <strong>pencil icon</strong> ⑦ appears in the <strong>Layers</strong>panel next to the layer currently being edited.
 </p>
