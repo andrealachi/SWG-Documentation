@@ -5,7 +5,7 @@
 
 The parent–child relationship is fundamental for modeling complex data in an organized, scalable way and in accordance with the principles of the relational database model
 
-You can explore the GeoPackage tables using forms. 
+You can explore the GeoPackage tables using [forms](./custom_form.md). 
 ## Parent‑to‑Child Navigation
 <p>
   <img src="../assets/nav_form_01.webp"
