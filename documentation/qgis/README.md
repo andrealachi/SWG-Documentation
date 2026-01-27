@@ -17,7 +17,7 @@ While QGIS serves as the main interface for interactive data inspection and edit
 
 These complementary tools support more complex data‑processing scenarios such as bulk imports, schema transformations, QC procedures, and integration with external systems.
 
-For a complete understanding of the database structure, its constraints, relationships, and the required loading logic, users should refer to the [**Data Loading & Modelling Guide** e](./data_loading.md) , which defines the conceptual and structural foundations of the Geopackage.
+For a complete understanding of the database structure, its constraints, relationships, and the required loading logic, users should refer to the [**Data Loading & Modelling Guide**](./data_loading.md) , which defines the conceptual and structural foundations of the Geopackage.
 
 
 
@@ -25,7 +25,13 @@ For a complete understanding of the database structure, its constraints, relatio
 
 Below is the index of the technical documentation available in this repository:
 
-- `open_geopackage.md`  
+[Open the Soilwise Geopackage in QGIS](./open_geopackage.md)  
+[Renaming the Soilwise GeoPackage](./rename_geopackage.md)  
+[Navigating GeoPackage Tables via Forms](./navigating_via_form.md)  
+[Editing Records Through a QGIS Form](./edit_form.md)  
+[Saving Edits in QGIS Forms](./save_form.md)  
+
+
 - `rename_geopackage.md`  
 - `navigating_via_form.md`  
 - `edit_form.md`  
