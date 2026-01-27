@@ -39,7 +39,7 @@ In QGIS, updating attribute values is done directly through the attribute form, 
 New records can be created using digitizing tools, which generate a new feature and automatically open the associated attribute form. For tables without geometry, new records are added directly through the form, with no geometric digitizing involved. The form allows filling in all fields defined by the data model, using widgets, default values, validation rules, and custom controls.
 
 ### Delete features
-Deleting features in QGIS removes both the geometric element and its attributes. Once a feature is selected, it can be deleted using the **Delete Feature** tool <img src="../assets/deletel.webp">. This operation permanently removes the record from the dataset, ensuring it is no longer displayed or referenced in subsequent operations.
+Deleting features in QGIS removes both the geometric element and its attributes. Once a feature is selected, it can be deleted using the **Delete Feature** tool <img src="../assets/delete.webp">. This operation permanently removes the record from the dataset, ensuring it is no longer displayed or referenced in subsequent operations.
 
 > [!IMPORTANT]
 > These changes **are not written to disk immediately**.
