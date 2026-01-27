@@ -25,8 +25,10 @@ Reduce the width of the left panel (the one showing the list of records) by drag
   <img src="../assets/nav_form_02.webp"
        alt="Fig.1" align="left" width="500">
 Navigation to the parent record is performed through the button ⑥ associated with the foreign key field. 
+  
 Clicking it opens the form ⑦  of the corresponding record.
 </p>
+<br clear="all"><br>
 
 >[!TIP]
 > To open the customized forms, go to the **Layers** panel, right‑click the desired layer, and choose **Open Attribute Table** from the context menu.
