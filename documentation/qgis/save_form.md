@@ -24,9 +24,13 @@ During the commit:
 
 If validation succeeds, the buffer is cleared and the dataset is updated.
 
-> [!WARNING]
+> [!CAUTION]
 >**Errors are displayed in a banner within the map canvas**. However, the banner may not always be visible when some panels are in a floating (undocked) state, which can partially cover or obscure the map canvas.
 Make sure to check the map canvas if error messages are not immediately visible.
+
+> [!TIP]
+> In case of an error, to understand its cause it is necessary to locate the corresponding message directly within the **trigger section** of the table associated with the form where the error occurred.
+
 
 
 ## Rolling Back Changes
