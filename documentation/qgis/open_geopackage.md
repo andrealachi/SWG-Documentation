@@ -33,21 +33,18 @@ file you want to use.
 
 Inside the newly connected file, ③ you will
 find the `PRJ_SO` project. ④
-</p>
-
-<br clear="all"><br><br>
-
 
 Double-click on it, and the project will open.
+</p>
+
+<br clear="all"><br>
 
 
-> [!IMPORTANT]
-> To ensure proper database functionality, always **load the full QGIS project associated with the GeoPackage**.  
-> Loading only a subset of layers may prevent records from being saved: QGIS cannot display or manage related objects if their corresponding layers are not loaded, and due to **relationships and internal database triggers**, this can lead to errors or failed save operations.  
 
 > [!CAUTION]
->  Given the system’s complexity, it is **strongly recommended to always use the complete project** to maintain data integrity.
-
+> Given the system’s complexity, it is **strongly recommended to always use the complete project** to maintain data integrity.
+> 
+> Loading only a subset of layers may prevent records from being saved: QGIS cannot display or manage related objects if their corresponding layers are not loaded, and due to **relationships and internal database triggers**, this can lead to errors or failed save operations. 
 
 > [!WARNING]
 >If the GeoPackage **file has been renamed**, the project will not load correctly.  
