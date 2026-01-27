@@ -11,12 +11,12 @@ Each field has been associated with a specific **widget**, i.e., a control desig
 
 The main widget types used include:
 
-- **Text Edit** – free‑text input  
-- **Checkbox** – boolean values  
-- **Date/Time** – date and time selection  
-- **Value Map / Value Relation** – predefined lists of values (fixed or derived from another table)  
-- **Relation Reference / Relation Editor** – handling one‑to‑many or many‑to‑many table relationships  
-- **HTML / Text / Spacer** – support elements for notes, layout structure, or separators  
+- `Text Edit`– free‑text input  
+- `Checkbox`– boolean values  
+- `Date/Time`– date and time selection  
+- `Value Map / Value Relation` – predefined lists of values (fixed or derived from another table)  
+- `Relation Reference / Relation Editor`– handling one‑to‑many or many‑to‑many table relationships  
+- `HTML / Text / Spacer`– support elements for notes, layout structure, or separators  
 
 These widgets allow the form to guide the user and enforce the data‑entry rules defined in the underlying data model.
 
@@ -25,10 +25,10 @@ These widgets allow the form to guide the user and enforce the data‑entry rule
 
 Customized forms are used to:
 
-- guide the user through data entry with a clear and structured layout  
-- apply constraints, conditional visibility, and default values  
-- ensure consistency with the data model  
-- display enriched information (images, documents, related records)
+- **guide the user** through data entry with a clear and structured layout  
+- **apply constraints**, conditional visibility, and default values  
+- **ensure consistency** with the data model  
+- **display enriched information** (images, documents, related records)
 
 >[!IMPORTANT]
 >The goal is to provide a functional interface, more efficient and clearer than the default one, particularly suitable for complex datasets.
