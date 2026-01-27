@@ -1,7 +1,5 @@
 # Introduction to the Custom Forms for Geopackage Data Entry in QGIS
 
-## Overview
-
 **QGIS** is a fully **Open Source** Geographic Information System designed for the visualization, editing, and analysis of both spatial and non‑spatial data. One of its most relevant capabilities is the ability to display **geometries and attribute tables together**, leveraging **customizable attribute forms** that can be tailored to project‑specific data‑entry workflows.
 
 These features make QGIS an excellent choice as the **primary user-facing environment**  for consulting and updating the contents of the Geopackage. Custom forms provide a controlled, guided interface for data entry, ensuring consistency with the underlying data model and validation rules.
