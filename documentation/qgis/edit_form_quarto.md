@@ -12,11 +12,24 @@ Per creare o modificare un record tramite un form di QGIS, è necessario attivar
 
 ## Start Editing
 
-Fig.1  
-Questo pulsante è disponibile sia nella toolbar di digitalizzazione di QGIS ① che nel menu contestuale di ciascun layer ②.  
-Inoltre, lo stesso pulsante—insieme ad altri strumenti utili all’editing—è presente direttamente all’interno dei form ③ e dei sotto‑form ④.
+:::{.columns}
+::: {.column width="60%"}
+![Fig.1 – Toggle Editing Mode](assets/fig1.webp)
+:::
 
-Questa configurazione permette un editing più rapido e completo di tutti gli elementi che compongono il GeoPackage.
+::: {.column width="40%"}
+**Fig.1 — Toggle Editing Mode**
+
+Il pulsante è disponibile:
+
+1. Nella toolbar di digitalizzazione di QGIS ①  
+2. Nel menu contestuale del layer ②  
+3. Direttamente nei form ③  
+4. Nei sotto‑form ④  
+
+Questa configurazione permette un editing più rapido e completo del GeoPackage.
+:::
+:::
 
 ::: important
 Il pulsante **Toggle Editing Mode** nella toolbar principale di **Digitizing** abilita l’editing *del layer attualmente selezionato* nel pannello Layers.
@@ -24,45 +37,52 @@ Il pulsante **Toggle Editing Mode** nella toolbar principale di **Digitizing** a
 
 ## Edit mode
 
-Dopo aver cliccato il pulsante **Toggle Editing Mode**, il form entra in **editing mode**.
+:::{.columns}
+::: {.column width="60%"}
+![Fig.1 – Edit Mode attivo](assets/fig1_edit.webp)
+:::
 
-Fig.1  
-Il pulsante rimane nello stato selezionato (pulsante premuto) ⑤ ⑥ a indicare che l’editing è abilitato, e un’icona a forma di matita ⑦ compare nel pannello Layers accanto al layer in modifica.
+::: {.column width="40%"}
+**Fig.1 — Stato di editing attivo**
+
+Quando l’editing è abilitato:
+- il pulsante resta premuto ⑤ ⑥  
+- compare un’icona a forma di matita ⑦ accanto al layer  
+:::
+:::
 
 ## Editing Operations
 
-Quando la modalità di editing è attiva, il form consente di eseguire le seguenti operazioni:
-
 ### Update existing attribute values
 
-In QGIS, l’aggiornamento dei valori attributi avviene direttamente tramite il form attributi, che si apre selezionando una feature e visualizzandone le proprietà.
+In QGIS, l’aggiornamento dei valori attributi avviene tramite il form attributi, che permette la modifica di uno o più campi, applicando:
 
-Il form permette di modificare uno o più campi, applicando controlli, widget dedicati e vincoli definiti nella configurazione del layer.
+- controlli
+- widget personalizzati
+- vincoli configurati nel layer
 
 ### Add new records
 
-Nuovi record possono essere creati utilizzando gli strumenti di digitalizzazione, che generano una nuova feature e aprono automaticamente il form attributi associato.
+Nuovi record possono essere creati tramite:
 
-Per le tabelle prive di geometria, i nuovi record vengono aggiunti direttamente tramite il form, senza operazioni di digitalizzazione.  
-Il form consente la compilazione di tutti i campi del modello dati, con widget, valori predefiniti, regole di validazione e controlli personalizzati.
+- strumenti di digitalizzazione (con geometria)
+- form diretto (senza geometria)
+
+Il form applica valori predefiniti, regole di validazione e controlli coerenti col data model.
 
 ### Delete features
 
-La cancellazione delle feature in QGIS rimuove sia l’elemento geometrico sia i relativi attributi.  
-Una volta selezionata una feature, può essere eliminata tramite lo strumento **Delete Feature**.
+Quando una feature viene eliminata in QGIS, vengono rimossi:
 
-Questa operazione rimuove definitivamente il record dal dataset, impedendone la visualizzazione o l’uso in operazioni successive.
+- l’elemento geometrico  
+- tutti i relativi attributi  
 
 ::: important
-Le modifiche **non vengono scritte su disco immediatamente**.  
-Rimangono in un buffer di modifica in memoria fino al momento del salvataggio esplicito: vedere [save](./save_form.md).
+Le modifiche **non vengono salvate su disco subito**: restano nel buffer di editing finché non si effettua il salvataggio esplicito (vedi: ./save_form.md).
 :::
 
 ::: note
-Durante la **cancellazione di un record**, la base dati può applicare **regole di cascata** che rimuovono o aggiornano automaticamente record collegati in altre tabelle.
-
-Questo può portare alla rimozione non intenzionale di ulteriori elementi, se la feature cancellata partecipa a relazioni foreign‑key o catene di dipendenze.
-
-L’elenco completo delle regole di cascata applicate è disponibile qui:  
-[../cascade_summary.md](../cascade_summary.md)
+La cancellazione di un record può attivare **regole di cascata** nella base dati, che rimuovono o aggiornano record correlati.  
+L’elenco completo delle regole è disponibile qui:  
+../cascade_summary.md
 :::
