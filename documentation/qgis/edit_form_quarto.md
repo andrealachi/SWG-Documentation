@@ -14,7 +14,7 @@ Per creare o modificare un record tramite un form di QGIS, è necessario attivar
 
 :::{.columns}
 ::: {.column width="60%"}
-![Fig.1 – Toggle Editing Mode](assets/fig1.webp)
+![Fig.1 – Toggle Editing Mode](../assets/fig1.webp)
 :::
 
 ::: {.column width="40%"}
@@ -39,7 +39,7 @@ Il pulsante **Toggle Editing Mode** nella toolbar principale di **Digitizing** a
 
 :::{.columns}
 ::: {.column width="60%"}
-![Fig.1 – Edit Mode attivo](assets/fig1_edit.webp)
+![Fig.1 – Edit Mode attivo](../assets/fig1_edit.webp)
 :::
 
 ::: {.column width="40%"}
