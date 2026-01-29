@@ -10,11 +10,31 @@ execute: false
 
 Per creare o modificare un record tramite un form di QGIS, è necessario attivare la modalità di editing usando il pulsante **Toggle Editing Mode**.
 
+## Test
+
+<table>
+<tr>
+<td style="width:60%">
+<img src="../assets/edit_01.webp" width="100%">
+</td>
+<td style="width:40%; vertical-align: top;">
+<b>Fig.1 — Toggle Editing Mode</b><br>
+1. Nella toolbar di digitalizzazione di QGIS ①  
+2. Nel menu contestuale del layer ②  
+3. Direttamente nei form ③  
+4. Nei sotto‑form ④  
+</td>
+</tr>
+</table>
+
+
+
+
 ## Start Editing
 
 :::{.columns}
 ::: {.column width="60%"}
-![Fig.1 – Toggle Editing Mode](../assets/fig1.webp)
+![Fig.1 – Toggle Editing Mode](../assets/edit_01.webp)
 :::
 
 ::: {.column width="40%"}
@@ -39,7 +59,7 @@ Il pulsante **Toggle Editing Mode** nella toolbar principale di **Digitizing** a
 
 :::{.columns}
 ::: {.column width="60%"}
-![Fig.1 – Edit Mode attivo](../assets/fig1_edit.webp)
+![Fig.1 – Edit Mode attivo](../assets/edit_02.webp)
 :::
 
 ::: {.column width="40%"}
