@@ -1,5 +1,9 @@
 # Soil Site Forms
 
+To open the Soil Site custom forms, go to the Layers panel, right‑click the `soilsite` layer, and choose **Open Attribute Table** from the context menu.
+
+> [!TIP]
+> For further information on the custom forms, consult the documents `UNO.doc` and `DUE.doc`.
 
 ## ID GROUP
 
