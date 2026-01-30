@@ -41,6 +41,11 @@ You can modify the data using the various widgets provided by the form.
 For detailed information on initiating edit mode for a custom form, refer to the [Editing Records Through a QGIS Form](./edit_form.md).documentation.
 
 ### ID Group
+<p>
+  <img src="../assets/group_id.webp"
+       alt="Fig.1" align="left" width="500">
+</p>
+<br clear="all"><br>
 
 #### Fields
 
