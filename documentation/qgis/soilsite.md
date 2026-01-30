@@ -30,9 +30,9 @@ https://epanet.eea.europa.eu/Eionet/reportnet/docs/noise/guidelines/inspire_iden
 
 #### Fields
 
-- **`localId`** — Local identifier assigned by the data provider; **unique** within its namespace.
-- **`namespace`** — Namespace that uniquely identifies the data source/domain of the spatial object. 
-- **`versionId`** — Identifier of the specific **version** of the object; **optional (voidable)** and used to distinguish different versions of the same object. 
+- **`Local id`** — Local identifier assigned by the data provider; **unique** within its namespace.
+- **`Namespace`** — Namespace that uniquely identifies the data source/domain of the spatial object. 
+- **`Version id`** — Identifier of the specific **version** of the object; **optional (voidable)** and used to distinguish different versions of the same object. 
 
 > [!IMPORTANT]
 > These fields are not mandatory, but **filling them out is strongly recommended**: they help uniquely identify the record in forms and across data exchanges.  
