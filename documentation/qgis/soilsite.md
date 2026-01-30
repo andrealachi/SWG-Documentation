@@ -1,13 +1,17 @@
 # Soil Site Forms
 
+## Open
 To open the Soil Site custom forms, go to the Layers panel, right‑click the `soilsite` layer, and choose **Open Attribute Table** from the context menu.
 
 > [!TIP]
 > For further information on the custom forms, consult the documents [Customized Attribute Forms in QGIS](./custom_form.md) and [Navigating GeoPackage Tables via Forms](./navigating_via_form.md)  
 
-## ID GROUP
+## Edit
+For detailed information on initiating edit mode for a custom form, refer to the [Editing Records Through a QGIS Form](./edit_form.md).documentation.
 
-### Fields
+### ID GROUP
+
+#### Fields
 
 - **`id`** - Primary **AUTO_INCREMENT INTEGER PRIMARY KEY**; it’s the required identifier for GeoPackage tables and is assigned automatically on insert.
 
@@ -16,7 +20,7 @@ To open the Soil Site custom forms, go to the Layers panel, right‑click the `s
 > [!IMPORTANT]
 > On opening, the **ID** group is collapsed: there’s no need to edit these manually because **both fields are system‑managed** (`id` by the SQLite engine, `guid` by triggers), reducing errors and ensuring identifier consistency over time.
 
-## INSPIRE ID GROUP
+### INSPIRE ID GROUP
 
 >An **INSPIRE ID** is the **external unique identifier** assigned to each spatial object in INSPIRE datasets; it ensures **uniqueness** and **persistence** and allows external applications to reliably reference the same object over time.
 The identifier **must not be changed** during the object’s life cycle; it can also be published as a **URI** to facilitate web-based referencing. [^1]
@@ -24,7 +28,7 @@ The identifier **must not be changed** during the object’s life cycle; it can 
 [^1]: Creating INSPIRE external unique object identifiers in the scope of the END reporting.
 https://epanet.eea.europa.eu/Eionet/reportnet/docs/noise/guidelines/inspire_identifiers_doc.pdf 
 
-### Fields
+#### Fields
 
 - **`localId`** — Local identifier assigned by the data provider; **unique** within its namespace.
 - **`namespace`** — Namespace that uniquely identifies the data source/domain of the spatial object. 
@@ -35,13 +39,17 @@ https://epanet.eea.europa.eu/Eionet/reportnet/docs/noise/guidelines/inspire_iden
 > In particular, `localid` + `namespace` form a stable identifier; `versionid` helps track changes over time.
 
 
-## REQUIRED fields
+### REQUIRED fields
 
 - `id` primary key, autoincrement
 - `geometry` POLYGON
-- `soilinvestigationpurpose` TEXT
-- `validfrom` DATETIME  DEFAULT Today
-- `beginlifespanversion` DATETIME  DEFAULT Today
+- `Soil Investigation Purpose` TEXT
+- `Valid From` DATETIME  DEFAULT Today
+- `Begin Lifespan version` DATETIME  DEFAULT Today
 
+### Attribute Reference
+For a more in‑depth and comprehensive understanding of the attributes exposed within the custom form, it is recommended to consult the [documentation](../tables/soilsite.md) associated with the soilsite table. This reference provides detailed descriptions of each attribute, including their purpose, data types, and their role within the broader data model. Reviewing this information can help ensure correct data interpretation and proper form configuration, especially when implementing advanced validation rules or integrating the form into more complex editing workflows.
 
+## Save
 
+For a more comprehensive overview of form‑saving workflows, refer to the detailed documentation in [Saving Edits in QGIS Forms](./save_form.md).
