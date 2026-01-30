@@ -57,6 +57,11 @@ For detailed information on initiating edit mode for a custom form, refer to the
 > On opening, the **ID** group is collapsed: there’s no need to edit these manually because **both fields are system‑managed** (`id` by the SQLite engine, `guid` by triggers), reducing errors and ensuring identifier consistency over time.
 
 ### INSPIRE ID Group
+<p>
+  <img src="../assets/group_inspireid.webp"
+       alt="Fig.1" align="left" width="500">
+</p>
+<br clear="all"><br>
 
 >An **INSPIRE ID** is the **external unique identifier** assigned to each spatial object in INSPIRE datasets; it ensures **uniqueness** and **persistence** and allows external applications to reliably reference the same object over time.
 The identifier **must not be changed** during the object’s life cycle; it can also be published as a **URI** to facilitate web-based referencing. [^1]
