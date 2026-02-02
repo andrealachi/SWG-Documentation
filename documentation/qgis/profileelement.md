@@ -35,14 +35,14 @@ A Profile Element does not contain any geometry. To enable editing through forms
 > [!IMPORTANT]
 > On opening, the **ID** group is collapsed: there is no need for manual editing, as **both fields are system‑managed** (the `id` by the SQLite engine and the `guid` by triggers), reducing errors and ensuring identifier consistency over time.
 
-### Dynamic Form Behaviour Based on `isderived`
+### Dynamic Form Behaviour Based on `Is a Layer`
 
 The **Soil Profile** data-entry form must adapt dynamically according to the value of the field `soilprofile.isderived`, which determines whether the profile is **Observed** (`0`) or **Derived** (`1`). This behaviour follows the INSPIRE Soil data model and is strictly enforced in the GeoPackage through database triggers and CHECK constraints.
 
 #### `isderived = 0` → **Observed Soil Profile**
 
 <p>
-  <img src="../assets/observed.webp"
+  <img src="../assets/horizon.webp"
        alt="Fig.1" align="left" width="500">
 When users select <strong>Observed</strong> -  <strong>The checkbox is unchecked</strong> ①
 
@@ -60,7 +60,7 @@ Database logic prevents these derived‑only relations from being created for an
 #### `isderived = 1` → **Derived Soil Profile**
 
 <p>
-  <img src="../assets/derived.webp"
+  <img src="../assets/layer.webp"
        alt="Fig.1" align="left" width="500">
 When users select <strong>Derived</strong> - <strong>The checkbox is checked</strong> ①
 
