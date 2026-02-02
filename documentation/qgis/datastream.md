@@ -31,7 +31,7 @@ In the toolbar, select the "Add Polygon Feature" icon ⑤ and draw the geometry 
 <br clear="all"><br>
 
 <p>
-  <img src="../assets/datas_03.webpp"
+  <img src="../assets/datas_03.webp"
        alt="Fig.1" align="left" width="500">
 Right-click to close the geometry, and the data entry form will appear. ⑦
 
@@ -45,18 +45,19 @@ Use the widgets provided by the form to modify data.
        alt="Fig.1" align="left" width="500">
 A small pencil icon ④ will appear, indicating that the feature is in edit mode.
   
-In the toolbar, select the "Add Polygon Feature" icon ⑤ and draw the geometry of the new "Soil Site". ⑥
+Right-click in the "Layers" panel on the "datastream", and from the menu, select "Open Attribute Table" ⑤
 </p>
 <br clear="all"><br>
 
 <p>
-  <img src="../assets/datas_05.webpp"
+  <img src="../assets/datas_05.webp"
        alt="Fig.1" align="left" width="500">
-Right-click to close the geometry, and the data entry form will appear. ⑦
+Click the "Add Feature" buttn; ⑥ a new data‑entry form will appear on the right. ⑦
 
 Use the widgets provided by the form to modify data.
 </p>
 <br clear="all"><br>
+
 For detailed information on how to initiate edit mode for a custom form, refer to the [Editing Records Through a QGIS Form](./edit_form.md) documentation.
 
 
