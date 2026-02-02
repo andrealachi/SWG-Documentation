@@ -46,6 +46,13 @@ You can modify the data using the various widgets provided by the form.
 
 For detailed information on initiating edit mode for a custom form, refer to the [Editing Records Through a QGIS Form](./edit_form.md).documentation.
 
+### REQUIRED fields
+- `id`: primary key (auto-incrementing)
+- `geometry`: POLYGON 
+- `Soil Investigation Purpose`: TEXT (codelist)
+- `Valid From`: DATETIME (default: today)
+- `Begin Lifespan version`: DATETIME (default: today)
+  
 ### ID Group
 <p>
   <img src="../assets/group_id.webp"
@@ -57,10 +64,10 @@ For detailed information on initiating edit mode for a custom form, refer to the
 
 - **`id`** - Primary **AUTO_INCREMENT INTEGER PRIMARY KEY**; it’s the required identifier for GeoPackage tables and is assigned automatically on insert.
 
-- **`guid`** - **Global identifier** in UUID format, stored as text.This field is **optional**, but in this project it is **automatically managed via triggers**.
+- **`guid`** - **Global identifier** in UUID format, stored as text. The field is **optional**. It's **automatically managed via triggers**.
 
 > [!IMPORTANT]
-> On opening, the **ID** group is collapsed: there’s no need to edit these manually because **both fields are system‑managed** (`id` by the SQLite engine, `guid` by triggers), reducing errors and ensuring identifier consistency over time.
+> On opening, the **ID** group is collapsed: there is no need for manual editing, as **both fields are system‑managed** (the `id` by the SQLite engine and the `guid` by triggers), reducing errors and ensuring identifier consistency over time.
 
 ### INSPIRE ID Group
 <p>
@@ -86,16 +93,8 @@ https://epanet.eea.europa.eu/Eionet/reportnet/docs/noise/guidelines/inspire_iden
 > In particular, `localid` + `namespace` form a stable identifier; `versionid` helps track changes over time.
 
 
-### REQUIRED fields
-
-- `id` primary key, autoincrement
-- `geometry` POLYGON
-- `Soil Investigation Purpose` TEXT
-- `Valid From` DATETIME  DEFAULT Today
-- `Begin Lifespan version` DATETIME  DEFAULT Today
-
 ### Attribute Reference
-For a more in‑depth and comprehensive understanding of the attributes exposed within the custom form, it is recommended to consult the [documentation](../tables/soilsite.md) associated with the soilsite table. This reference provides detailed descriptions of each attribute, including their purpose, data types, and their role within the broader data model. Reviewing this information can help ensure correct data interpretation and proper form configuration, especially when implementing advanced validation rules or integrating the form into more complex editing workflows.
+For an  overview of the **attributes used in the custom form**, refer to the soilsite table  [documentation](../tables/soilsite.md). It provides the key definitions and data types needed to correctly interpret the fields and configure the form within the data model.
 
 ## Save
 
