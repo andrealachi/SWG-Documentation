@@ -1,6 +1,6 @@
 
 
-# Profile Element Forms
+# Profile Element Form
 
 ## Open
 To open the Profile Element custom forms, go to the Layers panel, right‑click the `profileelement` layer, and choose **Open Attribute Table** from the context menu.
