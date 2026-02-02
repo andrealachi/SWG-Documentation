@@ -101,7 +101,7 @@ Editing child elements directly within a parent form improves data quality and s
 
 ### Sub Form 
 <p>
-  <img src="../assets/spr_sub_wrb.webp"
+  <img src="../assets/sub_base.webp"
        alt="Fig.1" align="left" width="500">
 </p>
 <br clear="all"><br>
