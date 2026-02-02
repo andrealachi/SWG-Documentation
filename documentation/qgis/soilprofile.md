@@ -52,7 +52,50 @@ For detailed information on initiating edit mode for a custom form, refer to the
 - `Valid From`: DATETIME (default: today)
 - `isderived`: BOOLEAN (default: 0)
 - `isoriginalclassification`: BOOLEAN (default: 1)
+
+### Dynamic Form Behaviour Based on `isderived`
+
+The **Soil Profile** data-entry form must adapt dynamically according to the value of the field `soilprofile.isderived`, which determines whether the profile is **Observed** (`0`) or **Derived** (`1`). This behaviour follows the INSPIRE Soil data model and is strictly enforced in the GeoPackage through database triggers and CHECK constraints.
+
+#### `isderived = 0` → **Observed Soil Profile**
+
+<p>
+  <img src="../assets/soilplot_01.webp"
+       alt="Fig.1" align="left" width="500">
+When users select <strong>Observed</strong>
   
+<strong>Location fields must be displayed.</strong> The form must show all input fields related to the point‑location of the profile (map interaction, coordinates, soilplot selector). The `location` attribute must reference an existing `soilplot.guid`, and the database rejects inserts or updates where the location is NULL or invalid.
+
+<strong>Derived‑only sections must be hidden.</strong> The form must hide UI elements used only for derived profiles, including relations such as:
+  - Derived Profile → Observed Profiles (`isderivedfrom` base relations)
+ Soil Body assignment (`derivedprofilepresenceinsoilbody`)
+  Database triggers prevent use of these relations when the profile is declared as observed.
+
+- <strong>Observed‑enabled associations must be available.</strong> The profile may appear as `guid_related` in `isderivedfrom`. The form may display an optional section listing derived profiles referencing this observed profile. 
+</p>
+<br clear="all"><br>
+
+#### `isderived = 1` → **Derived Soil Profile**
+
+<p>
+  <img src="../assets/soilplot_01.webp"
+       alt="Fig.1" align="left" width="500">
+When users select <strong>Derived</strong>:
+
+<strong>Location fields must be hidden and disabled.</strong> A derived profile is non point‑located. The form must hide and disable all location-related inputs. Triggers reject any non-null value in the `location` field. 
+
+<strong>Derived‑specific sections must be displayed.</strong> The following elements must become visible:
+  - Associations with Observed Soil Profiles (`isderivedfrom` where the derived profile is `guid_base`)
+  - Soil Body presence records (`derivedprofilepresenceinsoilbody`), subject to percentage constraints enforced by triggers
+  Type coherence and cumulative constraints are enforced at DB level.
+
+<strong>Observed‑only sections must be hidden.</strong> Any field or interface element related to plot location must not be shown.
+</p>
+<br clear="all"><br>
+
+
+
+
 ### ID Group
 <p>
   <img src="../assets/group_id.webp"
