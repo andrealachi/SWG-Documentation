@@ -9,42 +9,7 @@ To open the Soil Profile custom forms, go to the Layers panel, right‑click the
 
 ## Edit
 
-The "Soil Plot" it's a **point-based geographic entity**. The first step To create a new Soil Plot feature is to define its geometry.
-
-<p>
-  <img src="../assets/soilplot_01.webp"
-       alt="Fig.1" align="left" width="500">
-Right-click in the "Layers" panel on the "soilsite", ① and from the menu, select "Toggle Editing" ②.
-  
-It is also possible to select only the "Soil Site" layer ① and click the "Toggle Editing", ③ button in the toolbar.
-</p>
-<br clear="all"><br>
-
-<p>
-  <img src="../assets/soilplot_02.webp"
-       alt="Fig.1" align="left" width="500">
-A small pencil icon ④ will appear, indicating that the feature is in edit mode.
-  
-In the toolbar, select the "Add Point Feature" icon ⑤.
-
-
-To add a new point, **click directly on the map** ⑥.   A marker will be created at the exact location where you click
-
-
-</p>
-<br clear="all"><br>
-
-<p>
-  <img src="../assets/soilplot_03.webp"
-       alt="Fig.1" align="left" width="500">
-As soon as the point is created, the data entry form will open. ⑦
-
-You can modify the data using the various widgets provided by the form.
-</p>
-<br clear="all"><br>
-
-
-For detailed information on initiating edit mode for a custom form, refer to the [Editing Records Through a QGIS Form](./edit_form.md).documentation.
+A Soil Profile does not contain any geometry. To enable editing through forms, follow the instructions provided in the document [Editing Records Through a QGIS Form](./edit_form.md).
 
 ### REQUIRED fields
 - `id`: primary key (auto-incrementing)
@@ -52,49 +17,6 @@ For detailed information on initiating edit mode for a custom form, refer to the
 - `Valid From`: DATETIME (default: today)
 - `isderived`: BOOLEAN (default: 0)
 - `isoriginalclassification`: BOOLEAN (default: 1)
-
-### Dynamic Form Behaviour Based on `isderived`
-
-The **Soil Profile** data-entry form must adapt dynamically according to the value of the field `soilprofile.isderived`, which determines whether the profile is **Observed** (`0`) or **Derived** (`1`). This behaviour follows the INSPIRE Soil data model and is strictly enforced in the GeoPackage through database triggers and CHECK constraints.
-
-#### `isderived = 0` → **Observed Soil Profile**
-
-<p>
-  <img src="../assets/observed.webp"
-       alt="Fig.1" align="left" width="500">
-When users select <strong>Observed</strong>
-  
-<strong>Location fields must be displayed.</strong> The form must show all input fields related to the point‑location of the profile (map interaction, coordinates, soilplot selector). The `location` attribute must reference an existing `soilplot.guid`, and the database rejects inserts or updates where the location is NULL or invalid.
-
-<strong>Derived‑only sections must be hidden.</strong> The form must hide UI elements used only for derived profiles, including relations such as:
-  - Derived Profile → Observed Profiles (`isderivedfrom` base relations)
- Soil Body assignment (`derivedprofilepresenceinsoilbody`)
-  Database triggers prevent use of these relations when the profile is declared as observed.
-
-- <strong>Observed‑enabled associations must be available.</strong> The profile may appear as `guid_related` in `isderivedfrom`. The form may display an optional section listing derived profiles referencing this observed profile. 
-</p>
-<br clear="all"><br>
-
-#### `isderived = 1` → **Derived Soil Profile**
-
-<p>
-  <img src="../assets/derived.webp"
-       alt="Fig.1" align="left" width="500">
-When users select <strong>Derived</strong>:
-
-<strong>Location fields must be hidden and disabled.</strong> A derived profile is non point‑located. The form must hide and disable all location-related inputs. Triggers reject any non-null value in the `location` field. 
-
-<strong>Derived‑specific sections must be displayed.</strong> The following elements must become visible:
-  - Associations with Observed Soil Profiles (`isderivedfrom` where the derived profile is `guid_base`)
-  - Soil Body presence records (`derivedprofilepresenceinsoilbody`), subject to percentage constraints enforced by triggers
-  Type coherence and cumulative constraints are enforced at DB level.
-
-<strong>Observed‑only sections must be hidden.</strong> Any field or interface element related to plot location must not be shown.
-</p>
-<br clear="all"><br>
-
-
-
 
 ### ID Group
 <p>
@@ -111,6 +33,47 @@ When users select <strong>Derived</strong>:
 
 > [!IMPORTANT]
 > On opening, the **ID** group is collapsed: there is no need for manual editing, as **both fields are system‑managed** (the `id` by the SQLite engine and the `guid` by triggers), reducing errors and ensuring identifier consistency over time.
+
+### Dynamic Form Behaviour Based on `isderived`
+
+The **Soil Profile** data-entry form must adapt dynamically according to the value of the field `soilprofile.isderived`, which determines whether the profile is **Observed** (`0`) or **Derived** (`1`). This behaviour follows the INSPIRE Soil data model and is strictly enforced in the GeoPackage through database triggers and CHECK constraints.
+
+#### `isderived = 0` → **Observed Soil Profile**
+
+<p>
+  <img src="../assets/observed.webp"
+       alt="Fig.1" align="left" width="500">
+When users select <strong>Observed</strong> -  <strong>The checkbox is unchecked</strong> ①
+
+The form automatically shows the elements related to point‑location and to the contextual relations available for observed profiles.
+The <strong>Soil Plot section</strong> becomes visible, ② allowing the selection of the associated soilplot.guid. 
+
+The <strong>Derived Soil Profile section</strong> (representing the isderivedfrom relation where the observed profile may appear as guid_related) also appears,③ along with the <strong>SoilDerived Object</strong> relation area ④.
+Attempts to store a NULL or invalid location are blocked by database triggers, ensuring data consistency. 
+
+Interface elements specific to derived profiles—such as derived‑only constraints or soil‑body‑percentage definitions—do not appear while the profile is in Observed mode.
+Database logic prevents these derived‑only relations from being created for an observed profile.
+</p>
+<br clear="all"><br>
+
+#### `isderived = 1` → **Derived Soil Profile**
+
+<p>
+  <img src="../assets/derived.webp"
+       alt="Fig.1" align="left" width="500">
+When users select <strong>Derived</strong> - <strong>The checkbox is checked</strong> ①
+
+The form adjusts by hiding all location‑related components, including the Soil Plot section, since derived profiles are not point‑located. Any non‑NULL value in the location field is rejected by database triggers.
+
+In this mode, the form exposes only the relational structures applicable to derived profiles:
+
+the <strong>Is Derived From section</strong>, ② which represents the association to observed profiles through the isderivedfrom table (where the derived profile appears as guid_base)
+the Derived Presence in <strong>Soil Body section</strong>,③ corresponding to the derivedprofilepresenceinsoilbody table, used to express the percentage‑based presence of the derived profile within a Soil Body
+
+These interface elements reflect the constraints, type‑coherence checks, and consistency rules enforced at database level.
+</p>
+<br clear="all"><br>
+
 
 ### INSPIRE ID Group
 <p>
@@ -135,33 +98,44 @@ https://epanet.eea.europa.eu/Eionet/reportnet/docs/noise/guidelines/inspire_iden
 > These fields are not mandatory, but **filling them out is strongly recommended**: they help uniquely identify the record in forms and across data exchanges.  
 > In particular, `localid` + `namespace` form a stable identifier; `versionid` helps track changes over time.
 
-### Sub Form WRB Qualifier
+### Editing Child Elements in QGIS Forms
+Editing child elements directly within a parent form improves data quality and speed: it keeps users in context, guarantees referential integrity through predefined relations, and reduces errors by enforcing database rules at the moment of entry. In your GeoPackage, several relationships are validated by triggers and codelist checks, so capturing child data where it belongs (inside the parent form) closely aligns UI behavior with DB constraints.
+
+### Sub Form 
 <p>
   <img src="../assets/spr_sub_wrb.webp"
        alt="Fig.1" align="left" width="500">
 </p>
 <br clear="all"><br>
 
+Use the following buttons to manage child layers during data editing.
+  
+**Toggle editing mode for child layer** ① enables editing on the related (child) layer embedded in the form; once active, you can add/modify/delete child records directly from the parent record’s view.
+
+**Save child layer edit** ② commits the pending edits for the child layer to the GeoPackage. Use this to persist changes without leaving the parent form.
+
+**Add child feature** ③ creates a new child record pre‑linked to the current parent (relation fields are auto‑populated by the form’s relation widget), ensuring correct foreign keys and preventing orphan rows.
+
+### Sub Form WRB Qualifier
+**Purpose**: attaches WRB qualifier groups to a soil profile with an explicit qualifierposition (ordering).
+
+**DB enforcement**: triggers align wrbversion between profile and qualifier group, and ensure qualifierposition is unique per qualifierplace within the same profile.
+
+**Form hint**: expose as a child list on the Soil Profile form; use Add child feature to add qualifiers in order, and Save child layer edit to commit.
+
 ### Sub Form Other Soil Name
-<p>
-  <img src="../assets/spr_sub_other.webp"
-       alt="Fig.1" align="left" width="500">
-</p>
-<br clear="all"><br>
+**Purpose**: stores additional soil names and related classification flags for a profile.
 
-### Sub Form Derived Soil Profile (*Visible if `isderived` = TRUE*)
-<p>
-  <img src="../assets/spr_sub_derived.webp"
-       alt="Fig.1" align="left" width="500">
-</p>
-<br clear="all"><br>
+**DB enforcement**: codelist checks on othersoilname_type; GUID immutability; cascading rules via FK to soilprofile.
 
-### Sub Form Is Derived From (*Visible if `isderived` = FALSE*)
-<p>
-  <img src="../assets/spr_sub_isderived.webp"
-       alt="Fig.1" align="left" width="500">
-</p>
-<br clear="all"><br>
+**Form hint**: present as a child panel in the Soil Profile form for quick insertion of multiple alternative names; Save child layer edit to persist
+
+### Sub Form Derived Soil Profile (*Visible if `isderived` = TRUE*) - Is Derived From (*Visible if `isderived` = FALSE*)
+**Purpose**: records the association Derived Soil Profile (guid_base) → Observed Soil Profile (guid_related).
+
+**DB enforcement**: triggers guarantee that guid_base points to a derived profile and guid_related to an observed one; duplicates of the same pair are prevented.
+
+**Form hint**: embed this as a child table under Derived Soil Profile; use Add child feature to append observed sources and Save child layer edit to persist.
 
 ### Constraints
 - **CHECK**: `validfrom <= validto` (BEFORE INSERT/UPDATE).
