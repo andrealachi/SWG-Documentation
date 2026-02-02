@@ -37,41 +37,38 @@ A Profile Element does not contain any geometry. To enable editing through forms
 
 ### Dynamic Form Behaviour Based on `Is a Layer`
 
-The **Soil Profile** data-entry form must adapt dynamically according to the value of the field `soilprofile.isderived`, which determines whether the profile is **Observed** (`0`) or **Derived** (`1`). This behaviour follows the INSPIRE Soil data model and is strictly enforced in the GeoPackage through database triggers and CHECK constraints.
+>In the INSPIRE *Soil* model, *Profile Element* is an abstract type that groups the vertical slices composing a soil profile; it specialises into **Soil Horizon** and **Soil Layer**. A **Soil Horizon** is a pedogenetically formed, relatively homogeneous layer (roughly parallel to the surface) identified by morphological/analytical characteristics. A **Soil Layer** is an arbitrary (often depth‑based) slice or a grouping of horizons, not necessarily reflecting pedogenic boundaries.[^1]
 
-#### `isderived = 0` → **Observed Soil Profile**
+The **Profile Element** data-entry form adapts dynamically based on the value of profileelementtype, which determines whether the profile element is a **Soil Horizon** (`0`) or a **Soil Layer** (`1`). This behaviour follows the INSPIRE Soil data model and is strictly enforced in the GeoPackage by database triggers and CHECK constraints.
+
+[^1]: European Commission – Joint Research Centre (JRC),  
+**INSPIRE Data Specification on Soil – Technical Guidelines**,  
+D2.8.III.3.  
+https://inspire-mif.github.io/technical-guidelines/data/so/dataspecification_so.pdf
+
+#### `Is a Layer = 0` → **Horizon**
 
 <p>
   <img src="../assets/horizon.webp"
        alt="Fig.1" align="left" width="500">
-When users select <strong>Observed</strong> -  <strong>The checkbox is unchecked</strong> ①
+When users select <strong>Horizon</strong> -  <strong>The checkbox is unchecked</strong> ①
+  
+The sections <strong>FAO Horizon Notation Type</strong> ② and <strong>Other Horizon Notation Type</strong> ③ are <strong>visible</strong>.
 
-The form automatically shows the elements related to point‑location and to the contextual relations available for observed profiles.
-The <strong>Soil Plot section</strong> becomes visible, ② allowing the selection of the associated soilplot.guid. 
-
-The <strong>Derived Soil Profile section</strong> (representing the isderivedfrom relation where the observed profile may appear as guid_related) also appears,③ along with the <strong>SoilDerived Object</strong> relation area ④.
-Attempts to store a NULL or invalid location are blocked by database triggers, ensuring data consistency. 
-
-Interface elements specific to derived profiles—such as derived‑only constraints or soil‑body‑percentage definitions—do not appear while the profile is in Observed mode.
-Database logic prevents these derived‑only relations from being created for an observed profile.
+The section <strong>Layer Parameter</strong> is <strong>hidden</strong> (layer‑only attributes are not applicable and are rejected by triggers if present).
 </p>
 <br clear="all"><br>
 
-#### `isderived = 1` → **Derived Soil Profile**
+#### `Is a Layer = 1` → **Layer**
 
 <p>
   <img src="../assets/layer.webp"
        alt="Fig.1" align="left" width="500">
-When users select <strong>Derived</strong> - <strong>The checkbox is checked</strong> ①
-
-The form adjusts by hiding all location‑related components, including the Soil Plot section, since derived profiles are not point‑located. Any non‑NULL value in the location field is rejected by database triggers.
-
-In this mode, the form exposes only the relational structures applicable to derived profiles:
-
-the <strong>Is Derived From section</strong>, ② which represents the association to observed profiles through the isderivedfrom table (where the derived profile appears as guid_base)
-the Derived Presence in <strong>Soil Body section</strong>,③ corresponding to the derivedprofilepresenceinsoilbody table, used to express the percentage‑based presence of the derived profile within a Soil Body
-
-These interface elements reflect the constraints, type‑coherence checks, and consistency rules enforced at database level.
+When users select <strong>Layer</strong> - <strong>The checkbox is checked</strong> ①
+  
+The section <strong>Layer Parameter</strong> ② is <strong>visible</strong> (for `layertype`, `layerrocktype`, `layergenesisprocess`, `layergenesisenviroment`, `layergenesisprocessstate`).
+  
+The sections <strong>FAO Horizon Notation Type</strong> and <strong>Other Horizon Notation Type</strong> are <strong>hidden</strong> (notation applies to Horizons only and is blocked by triggers for Layers).
 </p>
 <br clear="all"><br>
 
@@ -84,9 +81,9 @@ These interface elements reflect the constraints, type‑coherence checks, and c
 <br clear="all"><br>
 
 >An **INSPIRE ID** is the **external unique identifier** assigned to each spatial object in INSPIRE datasets; it ensures **uniqueness** and **persistence** and allows external applications to reliably reference the same object over time.
-The identifier **must not be changed** during the object’s life cycle; it can also be published as a **URI** to facilitate web-based referencing. [^1]
+The identifier **must not be changed** during the object’s life cycle; it can also be published as a **URI** to facilitate web-based referencing. [^2]
 
-[^1]: Creating INSPIRE external unique object identifiers in the scope of the END reporting.
+[^2]: Creating INSPIRE external unique object identifiers in the scope of the END reporting.
 https://epanet.eea.europa.eu/Eionet/reportnet/docs/noise/guidelines/inspire_identifiers_doc.pdf 
 
 #### Fields
