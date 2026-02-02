@@ -48,9 +48,7 @@ For detailed information on initiating edit mode for a custom form, refer to the
 
 ### REQUIRED fields
 - `id`: primary key (auto-incrementing)
-- `geometry`: POLYGON 
-- `Soil Investigation Purpose`: TEXT (codelist)
-- `Valid From`: DATETIME (default: today)
+- `Soil Plot Type`: TEXT (codelist)
 - `Begin Lifespan version`: DATETIME (default: today)
   
 ### ID Group
