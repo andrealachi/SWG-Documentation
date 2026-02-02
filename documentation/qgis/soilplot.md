@@ -2,7 +2,7 @@
 # Soil Plot Forms
 
 ## Open
-To open the Soil Plot custom forms, go to the Layers panel, right‑click the `soilsite` layer, and choose **Open Attribute Table** from the context menu.
+To open the Soil Plot custom forms, go to the Layers panel, right‑click the `soilplot` layer, and choose **Open Attribute Table** from the context menu.
 
 > [!TIP]
 > For further information on the custom forms, consult the documents [Customized Attribute Forms in QGIS](./custom_form.md) and [Navigating GeoPackage Tables via Forms](./navigating_via_form.md)  
@@ -12,7 +12,7 @@ To open the Soil Plot custom forms, go to the Layers panel, right‑click the `s
 The "Soil Plot" it's a **point-based geographic entity**. The first step To create a new Soil Plot feature is to define its geometry.
 
 <p>
-  <img src="../assets/soilsite_01.webp"
+  <img src="../assets/soilplot_01.webp"
        alt="Fig.1" align="left" width="500">
 Right-click in the "Layers" panel on the "soilsite", ① and from the menu, select "Toggle Editing" ②.
   
@@ -21,18 +21,23 @@ It is also possible to select only the "Soil Site" layer ① and click the "Togg
 <br clear="all"><br>
 
 <p>
-  <img src="../assets/soilsite_02.webp"
+  <img src="../assets/soilplot_02.webp"
        alt="Fig.1" align="left" width="500">
 A small pencil icon ④ will appear, indicating that the feature is in edit mode.
   
-In the toolbar, select the "Add Polygon Feature" icon ⑤ and draw the geometry of the new "Soil Site". ⑥
+In the toolbar, select the "Add Point Feature" icon ⑤.
+
+
+To add a new point, **click directly on the map** ⑥.   A marker will be created at the exact location where you click
+
+
 </p>
 <br clear="all"><br>
 
 <p>
-  <img src="../assets/soilsite_03.webp"
+  <img src="../assets/soilplot_03.webp"
        alt="Fig.1" align="left" width="500">
-Right-click to close the geometry, and the data entry form will appear. ⑦
+As soon as the point is created, the data entry form will open. ⑦
 
 You can modify the data using the various widgets provided by the form.
 </p>
