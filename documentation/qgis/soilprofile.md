@@ -106,13 +106,19 @@ https://epanet.eea.europa.eu/Eionet/reportnet/docs/noise/guidelines/inspire_iden
 </p>
 <br clear="all"><br>
 
-### Sub Form Derived Soil Profile
+### Sub Form Derived Soil Profile (*Visible if `isderived` = TRUE*)
 <p>
   <img src="../assets/spr_sub_derived.webp"
        alt="Fig.1" align="left" width="500">
 </p>
 <br clear="all"><br>
 
+### Sub Form Is Derived From (*Visible if `isderived` = FALSE*)
+<p>
+  <img src="../assets/spr_sub_isderived.webp"
+       alt="Fig.1" align="left" width="500">
+</p>
+<br clear="all"><br>
 
 ### Constraints
 - **CHECK**: `validfrom <= validto` (BEFORE INSERT/UPDATE).
