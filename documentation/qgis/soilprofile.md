@@ -1,5 +1,5 @@
 
-# Soil Profile Forms
+# Soil Profile Form
 
 ## Open
 To open the Soil Profile custom forms, go to the Layers panel, right‑click the `soilprofile` layer, and choose **Open Attribute Table** from the context menu.
