@@ -77,7 +77,7 @@ These interface elements reflect the constraints, type‑coherence checks, and c
 
 ### INSPIRE ID Group
 <p>
-  <img src="../assets/group_inspireid.webp"
+  <img src="../assets/sub_base.webp"
        alt="Fig.1" align="left" width="500">
 </p>
 <br clear="all"><br>
