@@ -34,7 +34,7 @@ A Soil Profile does not contain any geometry. To enable editing through forms, f
 > [!IMPORTANT]
 > On opening, the **ID** group is collapsed: there is no need for manual editing, as **both fields are system‑managed** (the `id` by the SQLite engine and the `guid` by triggers), reducing errors and ensuring identifier consistency over time.
 
-### Dynamic Form Behaviour Based on `isderived`
+### Dynamic Form Behaviour Based on `Is Derived`
 
 The **Soil Profile** data-entry form must adapt dynamically according to the value of the field `soilprofile.isderived`, which determines whether the profile is **Observed** (`0`) or **Derived** (`1`). This behaviour follows the INSPIRE Soil data model and is strictly enforced in the GeoPackage through database triggers and CHECK constraints.
 
