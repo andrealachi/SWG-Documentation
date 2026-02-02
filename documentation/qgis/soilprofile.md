@@ -38,7 +38,7 @@ A Soil Profile does not contain any geometry. To enable editing through forms, f
 
 The **Soil Profile** data-entry form must adapt dynamically according to the value of the field `soilprofile.isderived`, which determines whether the profile is **Observed** (`0`) or **Derived** (`1`). This behaviour follows the INSPIRE Soil data model and is strictly enforced in the GeoPackage through database triggers and CHECK constraints.
 
-#### `isderived = 0` → **Observed Soil Profile**
+#### `Is Derived = 0` → **Observed Soil Profile**
 
 <p>
   <img src="../assets/observed.webp"
@@ -56,7 +56,7 @@ Database logic prevents these derived‑only relations from being created for an
 </p>
 <br clear="all"><br>
 
-#### `isderived = 1` → **Derived Soil Profile**
+#### `Is Derived = 1` → **Derived Soil Profile**
 
 <p>
   <img src="../assets/derived.webp"
