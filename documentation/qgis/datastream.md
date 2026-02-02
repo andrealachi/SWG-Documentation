@@ -9,7 +9,56 @@ To open the Soil Profile custom forms, go to the Layers panel, right‑click the
 
 ## Edit
 
-A Soil Profile does not contain any geometry. To enable editing through forms, follow the instructions provided in the document [Editing Records Through a QGIS Form](./edit_form.md).
+The "Soil Site" it's a **polygonal geographic entity**. The first step To create a new Soil Site feature is to define its geometry.
+
+<p>
+  <img src="../assets/datas_01.webp"
+       alt="Fig.1" align="left" width="500">
+Right-click in the "Layers" panel on the "soilsite", ① and from the menu, select "Toggle Editing" ②.
+  
+Alternatively, select only the “Soil Site” layer ① and click the “Toggle Editing” button ③ in the toolbar.
+</p>
+<br clear="all"><br>
+
+### With geometry
+<p>
+  <img src="../assets/datas_02.webp"
+       alt="Fig.1" align="left" width="500">
+A small pencil icon ④ will appear, indicating that the feature is in edit mode.
+  
+In the toolbar, select the "Add Polygon Feature" icon ⑤ and draw the geometry of the new "Soil Site". ⑥
+</p>
+<br clear="all"><br>
+
+<p>
+  <img src="../assets/datas_03.webpp"
+       alt="Fig.1" align="left" width="500">
+Right-click to close the geometry, and the data entry form will appear. ⑦
+
+Use the widgets provided by the form to modify data.
+</p>
+<br clear="all"><br>
+
+### Without geometry
+<p>
+  <img src="../assets/datas_04.webp"
+       alt="Fig.1" align="left" width="500">
+A small pencil icon ④ will appear, indicating that the feature is in edit mode.
+  
+In the toolbar, select the "Add Polygon Feature" icon ⑤ and draw the geometry of the new "Soil Site". ⑥
+</p>
+<br clear="all"><br>
+
+<p>
+  <img src="../assets/datas_05.webpp"
+       alt="Fig.1" align="left" width="500">
+Right-click to close the geometry, and the data entry form will appear. ⑦
+
+Use the widgets provided by the form to modify data.
+</p>
+<br clear="all"><br>
+For detailed information on how to initiate edit mode for a custom form, refer to the [Editing Records Through a QGIS Form](./edit_form.md) documentation.
+
 
 ### REQUIRED fields
 - `id`: primary key (auto-incrementing)
