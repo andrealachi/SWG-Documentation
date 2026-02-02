@@ -114,26 +114,19 @@ Use the following buttons to manage child layers during data editing.
 
 **Add child feature** ③ creates a new child record pre‑linked to the current parent (relation fields are auto‑populated by the form’s relation widget), ensuring correct foreign keys and preventing orphan rows.
 
-### Sub Form WRB Qualifier
-**Purpose**: attaches WRB qualifier groups to a soil profile with an explicit qualifierposition (ordering).
+### Sub Form FAO Horizon Notation Type (*Visible if `Is a Layer` = FALSE*)
+**Purpose**: encodes the FAO horizon notation for a Horizon (one record per horizon via the unique guid_profileelement), including master horizons, subordinate designations, discontinuities, vertical suffix, and prime.
 
-**DB enforcement**: triggers align wrbversion between profile and qualifier group, and ensure qualifierposition is unique per qualifierplace within the same profile.
+**DB enforcement**: allowed only when the linked profileelement is a Horizon (profileelementtype = 0); codelist membership checks on faohorizonmaster_1/2, faohorizonsubordinate_1..3 (with sequencing of 2→requires 1, 3→requires 2), and faoprime; GUID auto‑generation and immutability; guid_profileelement is UNIQUE; FK to profileelement with CASCADE on delete/update. 
 
-**Form hint**: expose as a child list on the Soil Profile form; use Add child feature to add qualifiers in order, and Save child layer edit to commit.
+**Form hint**: present as a child panel inside the Profile Element form when Is a Layer = No (Horizon); hidden for Layer; saving commits a single FAO notation per horizon and applies all trigger/codelist checks. 
 
-### Sub Form Other Soil Name
-**Purpose**: stores additional soil names and related classification flags for a profile.
+### Sub Form Other Horizon Notation Type (*Visible if `Is a Layer` = FALSE*)
+**Purpose**: links Horizon elements to Other Horizon Notation records (N:M association between profileelement and otherhorizonnotationtype) to capture alternative notation systems.
 
-**DB enforcement**: codelist checks on othersoilname_type; GUID immutability; cascading rules via FK to soilprofile.
+**DB enforcement**: association permitted only if the target profileelement is a Horizon (profileelementtype = 0); pair (guid_profileelement, guid_otherhorizonnotationtype) is UNIQUE; FKs to both tables with CASCADE; the target notation table enforces codelist membership for horizonnotation.
 
-**Form hint**: present as a child panel in the Soil Profile form for quick insertion of multiple alternative names; Save child layer edit to persist
-
-### Sub Form Derived Soil Profile (*Visible if `isderived` = TRUE*) - Is Derived From (*Visible if `isderived` = FALSE*)
-**Purpose**: records the association Derived Soil Profile (guid_base) → Observed Soil Profile (guid_related).
-
-**DB enforcement**: triggers guarantee that guid_base points to a derived profile and guid_related to an observed one; duplicates of the same pair are prevented.
-
-**Form hint**: embed this as a child table under Derived Soil Profile; use Add child feature to append observed sources and Save child layer edit to persist.
+**Form hint**: present as a child list in the Profile Element (Horizon) form; hidden for Layer; use Add child feature to add links to additional notations and Save child layer edit to persist.
 
 ### Constraints
 - **CHECK (depth range)**: at least one of `profileelementdepthrange_uppervalue` / `..._lowervalue` must be NOT NULL (BEFORE INSERT/UPDATE).
