@@ -2,7 +2,7 @@
 # Soil Profile Forms
 
 ## Open
-To open the Soil Plot custom forms, go to the Layers panel, right‑click the `soilprofile` layer, and choose **Open Attribute Table** from the context menu.
+To open the Soil Profile custom forms, go to the Layers panel, right‑click the `soilprofile` layer, and choose **Open Attribute Table** from the context menu.
 
 > [!TIP]
 > For further information on the custom forms, consult the documents [Customized Attribute Forms in QGIS](./custom_form.md) and [Navigating GeoPackage Tables via Forms](./navigating_via_form.md)  
@@ -92,11 +92,35 @@ https://epanet.eea.europa.eu/Eionet/reportnet/docs/noise/guidelines/inspire_iden
 > These fields are not mandatory, but **filling them out is strongly recommended**: they help uniquely identify the record in forms and across data exchanges.  
 > In particular, `localid` + `namespace` form a stable identifier; `versionid` helps track changes over time.
 
+### Sub Form WRB Qualifier
+<p>
+  <img src="../assets/spr_sub_wrb.webp"
+       alt="Fig.1" align="left" width="500">
+</p>
+<br clear="all"><br>
+
+### Sub Form Other Soil Name
+<p>
+  <img src="../assets/spr_sub_other.webp"
+       alt="Fig.1" align="left" width="500">
+</p>
+<br clear="all"><br>
+
+### Sub Form Derived Soil Profile
+<p>
+  <img src="../assets/spr_sub_derived.webp"
+       alt="Fig.1" align="left" width="500">
+</p>
+<br clear="all"><br>
+
+
 ### Constraints
-- **CHECK**: `beginlifespanversion <= endlifespanversion` (BEFORE INSERT).
-- **Codelist**: `soilplottype ∈ codelist(id)` where `collection='SoilPlotTypeValue'` (BEFORE INSERT/UPDATE).
-- **GUID immutability**: `guid` auto-generated on INSERT; updates to `guid` aborted.
-- **Versioning**: on UPDATE, `beginlifespanversion` refreshed if `endlifespanversion` is NULL/future; update aborted if `endlifespanversion` is past.
+- **CHECK**: `validfrom <= validto` (BEFORE INSERT/UPDATE).
+- **CHECK**: `beginlifespanversion < endlifespanversion` (BEFORE INSERT).
+- **Observed/Derived location rule**: if `isderived=1` then `location` must be NULL; if `isderived=0` then `location` must be NOT NULL (BEFORE INSERT/UPDATE).
+- **WRB version membership**: `wrbversion ∈ codelist(id)` where `collection='wrbversion'` when not NULL (BEFORE INSERT/UPDATE).
+- **WRB RSG + version coherence**: if `wrbversion` targets a specific year, `wrbreferencesoilgroup` must belong to the corresponding year collection (BEFORE INSERT/UPDATE).
+- **GUID immutability** and **versioning refresh** on UPDATE.
 
 ### Attribute Reference
 For an  overview of the **attributes used in the custom form**, refer to the soilsite table  [documentation](../tables/soilplot.md). It provides the key definitions and data types needed to correctly interpret the fields and configure the form within the data model.
