@@ -1,4 +1,4 @@
-# Soil Site Forms
+# Soil Site Form
 
 ## Open
 To open the Soil Site custom forms, go to the Layers panel, right‑click the `soilsite` layer, and choose **Open Attribute Table** from the context menu.
