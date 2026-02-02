@@ -60,7 +60,7 @@ The **Soil Profile** data-entry form must adapt dynamically according to the val
 #### `isderived = 0` → **Observed Soil Profile**
 
 <p>
-  <img src="../assets/soilplot_01.webp"
+  <img src="../assets/observed.webp"
        alt="Fig.1" align="left" width="500">
 When users select <strong>Observed</strong>
   
@@ -78,7 +78,7 @@ When users select <strong>Observed</strong>
 #### `isderived = 1` → **Derived Soil Profile**
 
 <p>
-  <img src="../assets/soilplot_01.webp"
+  <img src="../assets/derived.webp"
        alt="Fig.1" align="left" width="500">
 When users select <strong>Derived</strong>:
 
