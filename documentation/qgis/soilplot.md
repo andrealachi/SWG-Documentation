@@ -90,9 +90,15 @@ https://epanet.eea.europa.eu/Eionet/reportnet/docs/noise/guidelines/inspire_iden
 > These fields are not mandatory, but **filling them out is strongly recommended**: they help uniquely identify the record in forms and across data exchanges.  
 > In particular, `localid` + `namespace` form a stable identifier; `versionid` helps track changes over time.
 
+### Constraints
+- **CHECK**: `beginlifespanversion <= endlifespanversion` (BEFORE INSERT).
+- **Codelist**: `soilplottype ∈ codelist(id)` where `collection='SoilPlotTypeValue'` (BEFORE INSERT/UPDATE).
+- **GUID immutability**: `guid` auto-generated on INSERT; updates to `guid` aborted.
+- **Versioning**: on UPDATE, `beginlifespanversion` refreshed if `endlifespanversion` is NULL/future; update aborted if `endlifespanversion` is past.
 
 ### Attribute Reference
-For an  overview of the **attributes used in the custom form**, refer to the soilsite table  [documentation](../tables/soilsite.md). It provides the key definitions and data types needed to correctly interpret the fields and configure the form within the data model.
+For an  overview of the **attributes used in the custom form**, refer to the soilsite table  [documentation](../tables/soilplot.md). It provides the key definitions and data types needed to correctly interpret the fields and configure the form within the data model.
+
 
 ## Save
 
