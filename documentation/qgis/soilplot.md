@@ -1,5 +1,5 @@
 
-# Soil Plot Forms
+# Soil Plot Form
 
 ## Open
 To open the Soil Plot custom forms, go to the Layers panel, right‑click the `soilplot` layer, and choose **Open Attribute Table** from the context menu.
