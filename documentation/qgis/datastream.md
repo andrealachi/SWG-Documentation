@@ -1,22 +1,22 @@
 
-# Soil Profile Form
+# Datastream Form
 
 ## Open
-To open the Soil Profile custom forms, go to the Layers panel, right‑click the `soilprofile` layer, and choose **Open Attribute Table** from the context menu.
+To open the Datastream custom forms, go to the Layers panel, right‑click the `datastream` layer, and choose **Open Attribute Table** from the context menu.
 
 > [!TIP]
 > For further information on the custom forms, consult the documents [Customized Attribute Forms in QGIS](./custom_form.md) and [Navigating GeoPackage Tables via Forms](./navigating_via_form.md)  
 
 ## Edit
 
-The "Soil Site" it's a **polygonal geographic entity**. The first step To create a new Soil Site feature is to define its geometry.
+Unlike most attribute‑only tables, **Datastream** includes an **optional geometry** (observedarea as POLYGON, EPSG:3035). This makes editing slightly more complex because a Datastream can behave either as a feature layer (when a geometry is present) or simply as an attribute table (when geometry is NULL). Both cases are valid.
 
 <p>
   <img src="../assets/datas_01.webp"
        alt="Fig.1" align="left" width="500">
-Right-click in the "Layers" panel on the "soilsite", ① and from the menu, select "Toggle Editing" ②.
+Right-click in the "Layers" panel on the "datastream", ① and from the menu, select "Toggle Editing" ②.
   
-Alternatively, select only the “Soil Site” layer ① and click the “Toggle Editing” button ③ in the toolbar.
+Alternatively, select only the “datastream” layer ① and click the “Toggle Editing” button ③ in the toolbar.
 </p>
 <br clear="all"><br>
 
@@ -26,7 +26,7 @@ Alternatively, select only the “Soil Site” layer ① and click the “Toggle
        alt="Fig.1" align="left" width="500">
 A small pencil icon ④ will appear, indicating that the feature is in edit mode.
   
-In the toolbar, select the "Add Polygon Feature" icon ⑤ and draw the geometry of the new "Soil Site". ⑥
+In the toolbar, select the "Add Polygon Feature" icon ⑤ and draw the geometry of the new "Datastream". ⑥
 </p>
 <br clear="all"><br>
 
