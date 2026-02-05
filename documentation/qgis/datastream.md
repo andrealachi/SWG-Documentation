@@ -69,14 +69,28 @@ Context‑aware data entry: Working inside the parent form (e.g. Soil Site, Soil
 
 Integrity by design: The QGIS relation editor widget exposes dedicated child‑layer controls and honors relationship cardinalities, minimizing orphan data and key mismatches. It includes built‑in actions for Add child feature and Save child edits. 
 
+<p>
+  <img src="../assets/datas_06.webp"
+       alt="Fig.1" align="left" width="500">
+</p>
+<br clear="all"><br>
 
+Use the following buttons to manage child layers during data editing.
+  
+**Toggle editing mode for child layer** ① enables editing on the related (child) layer embedded in the form; once active, you can add/modify/delete child records directly from the parent record’s view.
+
+**Save child layer edit** ② commits the pending edits for the child layer to the GeoPackage. Use this to persist changes without leaving the parent form.
+
+**Add Polygon Feature** ③ tool in QGIS allows users to create new polygon geometries within an editable vector layer.
+
+**Add child feature** ④ creates a new child record pre‑linked to the current parent (relation fields are auto‑populated by the form’s relation widget), ensuring correct foreign keys and preventing orphan rows.
 
 ### REQUIRED fields
 - `id`: primary key (auto-incrementing)
-- `Begin Lifespan version`: DATETIME (default: today)
-- `Valid From`: DATETIME (default: today)
-- `isderived`: BOOLEAN (default: 0)
-- `isoriginalclassification`: BOOLEAN (default: 1)
+- `name`: TEXT
+- `type`: TEXT (constrained values)
+- `guid_sensor`: TEXT (FK)
+- `guid_observedproperty`: TEXT (FK)
 
 ### ID Group
 <p>
@@ -94,69 +108,9 @@ Integrity by design: The QGIS relation editor widget exposes dedicated child‑l
 > [!IMPORTANT]
 > On opening, the **ID** group is collapsed: there is no need for manual editing, as **both fields are system‑managed** (the `id` by the SQLite engine and the `guid` by triggers), reducing errors and ensuring identifier consistency over time.
 
-### Dynamic Form Behaviour Based on `Is Derived`
-
-The **Soil Profile** data-entry form must adapt dynamically according to the value of the field `soilprofile.isderived`, which determines whether the profile is **Observed** (`0`) or **Derived** (`1`). This behaviour follows the INSPIRE Soil data model and is strictly enforced in the GeoPackage through database triggers and CHECK constraints.
-
-#### `Is Derived = 0` → **Observed Soil Profile**
-
-<p>
-  <img src="../assets/observed.webp"
-       alt="Fig.1" align="left" width="500">
-When users select <strong>Observed</strong> -  <strong>The checkbox is unchecked</strong> ①
-
-The form automatically shows the elements related to point‑location and to the contextual relations available for observed profiles.
-The <strong>Soil Plot section</strong> becomes visible, ② allowing the selection of the associated soilplot.guid. 
-
-The <strong>Derived Soil Profile section</strong> (representing the isderivedfrom relation where the observed profile may appear as guid_related) also appears,③ along with the <strong>SoilDerived Object</strong> relation area ④.
-Attempts to store a NULL or invalid location are blocked by database triggers, ensuring data consistency. 
-
-Interface elements specific to derived profiles—such as derived‑only constraints or soil‑body‑percentage definitions—do not appear while the profile is in Observed mode.
-Database logic prevents these derived‑only relations from being created for an observed profile.
-</p>
-<br clear="all"><br>
-
-#### `Is Derived = 1` → **Derived Soil Profile**
-
-<p>
-  <img src="../assets/derived.webp"
-       alt="Fig.1" align="left" width="500">
-When users select <strong>Derived</strong> - <strong>The checkbox is checked</strong> ①
-
-The form adjusts by hiding all location‑related components, including the Soil Plot section, since derived profiles are not point‑located. Any non‑NULL value in the location field is rejected by database triggers.
-
-In this mode, the form exposes only the relational structures applicable to derived profiles:
-
-the <strong>Is Derived From section</strong>, ② which represents the association to observed profiles through the isderivedfrom table (where the derived profile appears as guid_base)
-the Derived Presence in <strong>Soil Body section</strong>,③ corresponding to the derivedprofilepresenceinsoilbody table, used to express the percentage‑based presence of the derived profile within a Soil Body
-
-These interface elements reflect the constraints, type‑coherence checks, and consistency rules enforced at database level.
-</p>
-<br clear="all"><br>
-
-
-### INSPIRE ID Group
-<p>
-  <img src="../assets/sub_base.webp"
-       alt="Fig.1" align="left" width="500">
-</p>
-<br clear="all"><br>
-
->An **INSPIRE ID** is the **external unique identifier** assigned to each spatial object in INSPIRE datasets; it ensures **uniqueness** and **persistence** and allows external applications to reliably reference the same object over time.
-The identifier **must not be changed** during the object’s life cycle; it can also be published as a **URI** to facilitate web-based referencing. [^1]
-
-[^1]: Creating INSPIRE external unique object identifiers in the scope of the END reporting.
-https://epanet.eea.europa.eu/Eionet/reportnet/docs/noise/guidelines/inspire_identifiers_doc.pdf 
-
-#### Fields
-
-- **`Local id`** — Local identifier assigned by the data provider; **unique** within its namespace.
-- **`Namespace`** — Namespace that uniquely identifies the data source/domain of the spatial object. 
-- **`Version id`** — Identifier of the specific **version** of the object; **optional (voidable)** and used to distinguish different versions of the same object. 
-
 > [!IMPORTANT]
-> These fields are not mandatory, but **filling them out is strongly recommended**: they help uniquely identify the record in forms and across data exchanges.  
-> In particular, `localid` + `namespace` form a stable identifier; `versionid` helps track changes over time.
+>  S O N O    Q U I ! ! !
+
 
 ### Editing Child Elements in QGIS Forms
 Editing child elements directly within a parent form improves data quality and speed: it keeps users in context, guarantees referential integrity through predefined relations, and reduces errors by enforcing database rules at the moment of entry. In your GeoPackage, several relationships are validated by triggers and codelist checks, so capturing child data where it belongs (inside the parent form) closely aligns UI behavior with DB constraints.
@@ -198,15 +152,18 @@ Use the following buttons to manage child layers during data editing.
 **Form hint**: embed this as a child table under Derived Soil Profile; use Add child feature to append observed sources and Save child layer edit to persist.
 
 ### Constraints
-- **CHECK**: `validfrom <= validto` (BEFORE INSERT/UPDATE).
-- **CHECK**: `beginlifespanversion < endlifespanversion` (BEFORE INSERT).
-- **Observed/Derived location rule**: if `isderived=1` then `location` must be NULL; if `isderived=0` then `location` must be NOT NULL (BEFORE INSERT/UPDATE).
-- **WRB version membership**: `wrbversion ∈ codelist(id)` where `collection='wrbversion'` when not NULL (BEFORE INSERT/UPDATE).
-- **WRB RSG + version coherence**: if `wrbversion` targets a specific year, `wrbreferencesoilgroup` must belong to the corresponding year collection (BEFORE INSERT/UPDATE).
-- **GUID immutability** and **versioning refresh** on UPDATE.
+- **Type set**: `type ∈ {Quantity, Category, Boolean, Count, Text}` (CHECK).
+- **Type combinations**: exclusive requirements among `code_unitofmeasure`, `codespace`, `value_min`, `value_max` by `type` (CHECK).
+- **Bounds order**: if both bounds set, `value_min <= value_max` (CHECK + BEFORE INSERT/UPDATE).
+- **Count bounds as integers**: when `type='Count'`, provided bounds must be numerically integral (BEFORE INSERT/UPDATE).
+- **Codespace membership**: if `codespace` is not NULL, it must exist in `codelist(id)` for `collection='Category'` (BEFORE INSERT/UPDATE).
+- **Procedure–Property pairing**: `(guid_observingprocedure, guid_observedproperty)` must exist in `obsprocedure_obsdproperty` on INSERT/UPDATE (BEFORE triggers).
+- **Definition/Codespace URI hygiene**: syntax checks on `definition` and `codespace` (CHECK).
+- **Phenomenon time propagation**: AFTER triggers keep `phenomenontime_*` equal to MIN/MAX across linked observations.
+- **Bounds tightening protection**: updating `value_min/max` is aborted if any existing observation would fall outside the new bounds (BEFORE UPDATE).
 
 ### Attribute Reference
-For an  overview of the **attributes used in the custom form**, refer to the soilsite table  [documentation](../tables/soilplot.md). It provides the key definitions and data types needed to correctly interpret the fields and configure the form within the data model.
+For an  overview of the **attributes used in the custom form**, refer to the soilsite table  [documentation](../tables/datastream.md). It provides the key definitions and data types needed to correctly interpret the fields and configure the form within the data model.
 
 
 ## Save
