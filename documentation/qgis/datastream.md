@@ -157,13 +157,15 @@ Used to represent categorical or classified values defined within a controlled c
 <br clear="all"><br>
 
 **Required fields**
-- `codespace` ①
+- `codespace` ① The user can select a codespace from the list of codespaces already available in the system.
 
 **Forbidden fields**
 - `iduom`
 - `value_min`
 - `value_max`
 
+> [!IMPORTANT]
+>  For further information about codespaces and instructions on how to add them to the geopackage, please refer to the [documentation](../tables/codelist.md) of the **Codelist** table.
 
 #### Result Type: Count
 
@@ -201,7 +203,7 @@ Used to represent measurable quantities associated with a numeric value and a un
 <br clear="all"><br>
 
 **Required fields**
-- `iduom` (unit of measure) ①
+- `iduom` (unit of measure) ① The widget allows users to select the available **units of measure** stored in the Geopackage.
 
 **Optional fields**
 - `value_min`②
@@ -210,6 +212,8 @@ Used to represent measurable quantities associated with a numeric value and a un
 **Forbidden fields**
 - `codespace`
 
+> [!IMPORTANT]
+>  Additional units of measure can be added to the system by inserting new records into the [**`unitofmeasure`** ](../tables/unitofmeasure.md)  table.
 
 #### Result Type: Text
 
