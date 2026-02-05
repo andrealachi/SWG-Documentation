@@ -233,41 +233,65 @@ Used to represent free-text or descriptive values.
 - `value_min`
 - `value_max`
 
-### Sub Form 
+### Observed Property - Sensor - Observing Procedure  - Thing
+
 <p>
-  <img src="../assets/spr_sub_wrb.webp"
+  <img src="../assets/datas_relations.webp"
        alt="Fig.1" align="left" width="500">
 </p>
 <br clear="all"><br>
 
-Use the following buttons to manage child layers during data editing.
-  
-**Toggle editing mode for child layer** ① enables editing on the related (child) layer embedded in the form; once active, you can add/modify/delete child records directly from the parent record’s view.
+The **Relation Reference** widgets for **Observed Property**, **Sensor**, **Observing Procedure**, and **Thing** reference the records stored in their respective tables.
 
-**Save child layer edit** ② commits the pending edits for the child layer to the GeoPackage. Use this to persist changes without leaving the parent form.
+Each dropdown list displays **only the rows available in the corresponding Geopackage table**, ensuring data consistency and referential integrity.
 
-**Add child feature** ③ creates a new child record pre‑linked to the current parent (relation fields are auto‑populated by the form’s relation widget), ensuring correct foreign keys and preventing orphan rows.
+#### Mandatory and Optional Fields
 
-### Sub Form WRB Qualifier
-**Purpose**: attaches WRB qualifier groups to a soil profile with an explicit qualifierposition (ordering).
+- **Observed Property**: **Required**
+- **Sensor**: **Required**
+- **Observing Procedure**: Optional
+- **Thing**: Optional
 
-**DB enforcement**: triggers align wrbversion between profile and qualifier group, and ensure qualifierposition is unique per qualifierplace within the same profile.
+#### Observing Procedure Filtering Logic
 
-**Form hint**: expose as a child list on the Soil Profile form; use Add child feature to add qualifiers in order, and Save child layer edit to commit.
+The list of available **Observing Procedures** is dynamically filtered based on the selected **Observed Property**.
 
-### Sub Form Other Soil Name
-**Purpose**: stores additional soil names and related classification flags for a profile.
+> [!IMPORTANT]
+> This filtering is performed according to the relationships defined between **Observed Property** and **Observing Procedure** in the  
+**`obsprocedure_obsdproperty`** table. Only Observing Procedures that are explicitly linked to the selected Observed Property will be available for selection.
 
-**DB enforcement**: codelist checks on othersoilname_type; GUID immutability; cascading rules via FK to soilprofile.
+> [!WARNING]
+> **Validation Constraint**  
+> If the selected **Observed Property – Observing Procedure** key pair is **not present** in the  
+> **`obsprocedure_obsdproperty`** table, the system will raise an error and **prevent the insertion of the Datastream record**.
 
-**Form hint**: present as a child panel in the Soil Profile form for quick insertion of multiple alternative names; Save child layer edit to persist
+> [!NOTE]
+> The Geopackage is distributed with a predefined set of **GLOSIS Observed Property – Observing Procedure** records,  
+> including their relationships already defined in the **`obsprocedure_obsdproperty`** table.
 
-### Sub Form Derived Soil Profile (*Visible if `isderived` = TRUE*) - Is Derived From (*Visible if `isderived` = FALSE*)
-**Purpose**: records the association Derived Soil Profile (guid_base) → Observed Soil Profile (guid_related).
 
-**DB enforcement**: triggers guarantee that guid_base points to a derived profile and guid_related to an observed one; duplicates of the same pair are prevented.
+### Feature 
 
-**Form hint**: embed this as a child table under Derived Soil Profile; use Add child feature to append observed sources and Save child layer edit to persist.
+<p>
+  <img src="../assets/datas_feature.webp"
+       alt="Fig.1" align="left" width="500">
+</p>
+<br clear="all"><br>  
+
+A Datastream must be associated with **one and only one** parent Feature.  
+Among the four available Features, **exactly one must be selected and must not be `NULL`**:
+
+- Soil Site  
+- Soil Profile  
+- Profile Element  
+- Soil Derived Object  
+
+Selecting more than one Feature or leaving all of them unset is not allowed and will result in an invalid Datastream definition.
+
+#### Recommended Workflow
+
+It is **strongly recommended** to create Datastreams **through the child forms of the Features** rather than directly from the Datastream table, as this ensures that the Datastream automatically receives the correct parent keys without manual selection.
+
 
 ### Constraints
 - **Type set**: `type ∈ {Quantity, Category, Boolean, Count, Text}` (CHECK).
