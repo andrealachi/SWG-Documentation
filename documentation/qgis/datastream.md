@@ -69,7 +69,21 @@ Context‑aware data entry: Working inside the parent form (e.g. Soil Site, Soil
 
 Integrity by design: The QGIS relation editor widget exposes dedicated child‑layer controls and honors relationship cardinalities, minimizing orphan data and key mismatches. It includes built‑in actions for Add child feature and Save child edits. 
 
+<p>
+  <img src="../assets/datas_06.webp"
+       alt="Fig.1" align="left" width="500">
+</p>
+<br clear="all"><br>
 
+Use the following buttons to manage child layers during data editing.
+  
+**Toggle editing mode for child layer** ① enables editing on the related (child) layer embedded in the form; once active, you can add/modify/delete child records directly from the parent record’s view.
+
+**Save child layer edit** ② commits the pending edits for the child layer to the GeoPackage. Use this to persist changes without leaving the parent form.
+
+**Add Polygon Feature** ③ tool in QGIS allows users to create new polygon geometries within an editable vector layer.
+
+**Add child feature** ④ creates a new child record pre‑linked to the current parent (relation fields are auto‑populated by the form’s relation widget), ensuring correct foreign keys and preventing orphan rows.
 
 ### REQUIRED fields
 - `id`: primary key (auto-incrementing)
