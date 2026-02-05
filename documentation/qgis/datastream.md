@@ -152,12 +152,15 @@ Use the following buttons to manage child layers during data editing.
 **Form hint**: embed this as a child table under Derived Soil Profile; use Add child feature to append observed sources and Save child layer edit to persist.
 
 ### Constraints
-- **CHECK**: `validfrom <= validto` (BEFORE INSERT/UPDATE).
-- **CHECK**: `beginlifespanversion < endlifespanversion` (BEFORE INSERT).
-- **Observed/Derived location rule**: if `isderived=1` then `location` must be NULL; if `isderived=0` then `location` must be NOT NULL (BEFORE INSERT/UPDATE).
-- **WRB version membership**: `wrbversion ∈ codelist(id)` where `collection='wrbversion'` when not NULL (BEFORE INSERT/UPDATE).
-- **WRB RSG + version coherence**: if `wrbversion` targets a specific year, `wrbreferencesoilgroup` must belong to the corresponding year collection (BEFORE INSERT/UPDATE).
-- **GUID immutability** and **versioning refresh** on UPDATE.
+- **Type set**: `type ∈ {Quantity, Category, Boolean, Count, Text}` (CHECK).
+- **Type combinations**: exclusive requirements among `code_unitofmeasure`, `codespace`, `value_min`, `value_max` by `type` (CHECK).
+- **Bounds order**: if both bounds set, `value_min <= value_max` (CHECK + BEFORE INSERT/UPDATE).
+- **Count bounds as integers**: when `type='Count'`, provided bounds must be numerically integral (BEFORE INSERT/UPDATE).
+- **Codespace membership**: if `codespace` is not NULL, it must exist in `codelist(id)` for `collection='Category'` (BEFORE INSERT/UPDATE).
+- **Procedure–Property pairing**: `(guid_observingprocedure, guid_observedproperty)` must exist in `obsprocedure_obsdproperty` on INSERT/UPDATE (BEFORE triggers).
+- **Definition/Codespace URI hygiene**: syntax checks on `definition` and `codespace` (CHECK).
+- **Phenomenon time propagation**: AFTER triggers keep `phenomenontime_*` equal to MIN/MAX across linked observations.
+- **Bounds tightening protection**: updating `value_min/max` is aborted if any existing observation would fall outside the new bounds (BEFORE UPDATE).
 
 ### Attribute Reference
 For an  overview of the **attributes used in the custom form**, refer to the soilsite table  [documentation](../tables/soilplot.md). It provides the key definitions and data types needed to correctly interpret the fields and configure the form within the data model.
