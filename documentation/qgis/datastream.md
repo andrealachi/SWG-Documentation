@@ -163,7 +163,7 @@ Use the following buttons to manage child layers during data editing.
 - **Bounds tightening protection**: updating `value_min/max` is aborted if any existing observation would fall outside the new bounds (BEFORE UPDATE).
 
 ### Attribute Reference
-For an  overview of the **attributes used in the custom form**, refer to the soilsite table  [documentation](../tables/soilplot.md). It provides the key definitions and data types needed to correctly interpret the fields and configure the form within the data model.
+For an  overview of the **attributes used in the custom form**, refer to the soilsite table  [documentation](../tables/datastream.md). It provides the key definitions and data types needed to correctly interpret the fields and configure the form within the data model.
 
 
 ## Save
