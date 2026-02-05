@@ -108,12 +108,126 @@ Use the following buttons to manage child layers during data editing.
 > [!IMPORTANT]
 > On opening, the **ID** group is collapsed: there is no need for manual editing, as **both fields are system‑managed** (the `id` by the SQLite engine and the `guid` by triggers), reducing errors and ensuring identifier consistency over time.
 
+### Result Type
+
+The custom form dynamically adapts its layout and available fields based on the selected **Result Type**. ①
+
+When a Result Type is chosen, the form automatically displays only the fields that are required or optional for that specific type, while hiding or disabling fields that are not allowed.  
+This behavior ensures a correct and consistent definition of the Result Type and prevents invalid configurations.
+
+Each Result Type enforces a specific set of **required**, **optional**, and **forbidden** fields, as described below.
+
+<p>
+  <img src="../assets/resut_type_type.webp"
+       alt="Fig.1" align="left" width="500">
+</p>
+<br clear="all"><br>
+
 > [!IMPORTANT]
->  S O N O    Q U I ! ! !
+>  For further details about the **Result Type** definition, validation rules, and related constraints, please refer to the  [documentation](../tables/datastream.md) of the **Datastream** table.
 
 
-### Editing Child Elements in QGIS Forms
-Editing child elements directly within a parent form improves data quality and speed: it keeps users in context, guarantees referential integrity through predefined relations, and reduces errors by enforcing database rules at the moment of entry. In your GeoPackage, several relationships are validated by triggers and codelist checks, so capturing child data where it belongs (inside the parent form) closely aligns UI behavior with DB constraints.
+#### Result Type: Boolean
+
+**Description**  
+Used to represent binary values (true/false).
+
+<p>
+  <img src="../assets/resut_type_boolean.webp"
+       alt="Fig.1" align="left" width="500">
+</p>
+<br clear="all"><br>
+
+**Forbidden fields**
+- `iduom`
+- `codespace`
+- `value_min`
+- `value_max`
+
+
+#### Result Type: Category
+
+**Description**  
+Used to represent categorical or classified values defined within a controlled code list.
+
+<p>
+  <img src="../assets/resut_type_category.webp"
+       alt="Fig.1" align="left" width="500">
+</p>
+<br clear="all"><br>
+
+**Required fields**
+- `codespace` ①
+
+**Forbidden fields**
+- `iduom`
+- `value_min`
+- `value_max`
+
+
+#### Result Type: Count
+
+**Description**  
+Used to represent integer counts or occurrences.
+
+<p>
+  <img src="../assets/resut_type_count.webp"
+       alt="Fig.1" align="left" width="500">
+</p>
+<br clear="all"><br>
+
+**Optional fields**
+- `value_min`①
+- `value_max`②
+
+**Forbidden fields**
+- `iduom`
+- `codespace`
+
+**Additional constraints**
+- If both `value_min` and `value_max` are provided, then:
+  - `value_max` **must be greater than** `value_min`
+
+
+#### Result Type: Quantity
+
+**Description**  
+Used to represent measurable quantities associated with a numeric value and a unit of measure.
+
+<p>
+  <img src="../assets/resut_type_quantity.webp"
+       alt="Fig.1" align="left" width="500">
+</p>
+<br clear="all"><br>
+
+**Required fields**
+- `iduom` (unit of measure) ①
+
+**Optional fields**
+- `value_min`②
+- `value_max` ③
+
+**Forbidden fields**
+- `codespace`
+
+
+#### Result Type: Text
+
+**Description**  
+Used to represent free-text or descriptive values.
+
+<p>
+  <img src="../assets/resut_type_text.webp"
+       alt="Fig.1" align="left" width="500">
+</p>
+<br clear="all"><br>
+
+
+**Forbidden fields**
+- `iduom`
+- `codespace`
+- `value_min`
+- `value_max`
 
 ### Sub Form 
 <p>
