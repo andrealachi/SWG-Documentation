@@ -1,5 +1,5 @@
 
-# Obseravtion Form
+# Observation Form
 
 ## Open
 To open the Obseravtion custom forms, go to the Layers panel, right‑click the `observation` layer, and choose **Open Attribute Table** from the context menu.
