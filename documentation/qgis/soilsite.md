@@ -94,7 +94,7 @@ For a more in‑depth and comprehensive understanding of the attributes exposed 
 ## Datastream Relationship
 Since this table is relationally linked to a SensorThings **Datastream**, you can add further domain‑specific properties in an STA2‑compatible way by correctly populating the Datastream and Observation tables. 
 
-In practice, [Datastream](./datatream.md) holds the series‑level context of the time series, while each [Observation](./observation.md) record carries the measurement‑level details, reflecting the SensorThings data model in which every observation is organized under a datastream
+In practice, [Datastream](./datastream.md) holds the series‑level context of the time series, while each [Observation](./observation.md) record carries the measurement‑level details, reflecting the SensorThings data model in which every observation is organized under a datastream
 
 ## Save
 
