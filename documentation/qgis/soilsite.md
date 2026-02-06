@@ -91,6 +91,11 @@ https://epanet.eea.europa.eu/Eionet/reportnet/docs/noise/guidelines/inspire_iden
 ### Attribute Reference
 For a more in‑depth and comprehensive understanding of the attributes exposed within the custom form, it is recommended to consult the [documentation](../tables/soilsite.md) associated with the soilsite table. This reference provides detailed descriptions of each attribute, including their purpose, data types, and their role within the broader data model. Reviewing this information can help ensure correct data interpretation and proper form configuration, especially when implementing advanced validation rules or integrating the form into more complex editing workflows.
 
+## Datastream Relationship
+Since this table is relationally linked to a SensorThings **Datastream**, you can add further domain‑specific properties in an STA2‑compatible way by correctly populating the [Datastream](./datastream.md) and [Observation](./observation.md) tables. 
+
+In practice, Datastream holds the series‑level context of the time series, while each Observation record carries the measurement‑level details, reflecting the SensorThings data model in which every observation is organized under a datastream
+
 ## Save
 
 For a more comprehensive overview of form‑saving workflows, refer to the detailed documentation in [Saving Edits in QGIS Forms](./save_form.md).

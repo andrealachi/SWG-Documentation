@@ -1,5 +1,5 @@
 
-# Soil Profile Form
+# Observation Form
 
 ## Open
 To open the Obseravtion custom forms, go to the Layers panel, right‑click the `observation` layer, and choose **Open Attribute Table** from the context menu.
@@ -148,7 +148,7 @@ This guarantees integrity even if records are inserted or modified **outside the
 - **Datastream time window maintenance**: AFTER triggers recalculate the parent datastream `phenomenontime_*` after INSERT/UPDATE/DELETE.
 
 ### Attribute Reference
-For an  overview of the **attributes used in the custom form**, refer to the soilsite table  [documentation](../tables/soilplot.md). It provides the key definitions and data types needed to correctly interpret the fields and configure the form within the data model.
+For an  overview of the **attributes used in the custom form**, refer to the soilsite table  [documentation](../tables/observation.md). It provides the key definitions and data types needed to correctly interpret the fields and configure the form within the data model.
 
 
 ## Save
